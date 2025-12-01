@@ -2,7 +2,7 @@ n = int(input('Nhập số lượng n : '))
 List_number = []
 
 for i in range(n):
-    number_1 = int(input(f'Nhập số lượng {n} phần tử'))
+    number_1 = int(input(f'Nhập số lượng {i+1} phần tử : '))
     List_number.append(number_1)
 print(List_number) 
 
