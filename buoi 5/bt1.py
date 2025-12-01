@@ -8,4 +8,6 @@ print(List_number)
 
 print('Số tổng trong List là :' ,sum(List_number) )
 
+
+
     
