@@ -21,7 +21,7 @@ students = [
     }
     for i in range(100)
 ]
-
+print(students)
 # Hàm hỗ trợ lọc điểm
 def filter_students(students, filters):
     def compare(value, op, threshold):
