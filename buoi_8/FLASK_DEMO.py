@@ -187,7 +187,7 @@ def find_book_parameter():
         #print(author.lower())
 
 
-'''Tìm kiếm danh sách có nhiều paramters'''
+'''Tìm kiếm danh sách có nhiều paramters''' # đẩy parameter nếu cùng 1 key mà nhiều lần sẽ đẩy vào mảng list để chạy lọc lấy nhiều values
 @app.route('/book/search_parameters',methods=["GET"])
 @require_api_key
 def find_book_parameters():
@@ -219,6 +219,16 @@ def find_book_parameters():
     return jsonify({"error":"Không tìm thấy sách !"},404)
         #print(author.lower())        
     
+@app.route('/books/available',methods=["GET"])
+@require_api_key
+def get_book_available():
+    #book = next((s for s in books if book_id == s["id"]),None)
+    #available = True
+    result_avaible = [s for s in books if s["available"] is True]
+    if result_avaible:
+        return jsonify(result_avaible)
+    else:
+        return jsonify({"error":"Hiện tại tồn kho sách đã hết"}),401  
 
 
     
