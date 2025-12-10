@@ -15,6 +15,60 @@ def require_api_key(f):
 app = Flask(__name__)
 
 
+def normalize_text_str_only(text: str) -> str:
+    # Chuyển về chữ thường (casefold chuẩn hơn lower khi xử lý Unicode)
+    text = text.casefold()
+
+    # Bỏ khoảng trắng thừa (giữ một khoảng trắng giữa các từ)
+    text = ' '.join(text.split()).strip()
+
+    # Bảng ánh xạ các ký tự có dấu tiếng Việt sang không dấu
+    mapping = str.maketrans({
+        # Chữ a
+        'à':'a','á':'a','ả':'a','ã':'a','ạ':'a',
+        'ă':'a','ằ':'a','ắ':'a','ẳ':'a','ẵ':'a','ặ':'a',
+        'â':'a','ầ':'a','ấ':'a','ẩ':'a','ẫ':'a','ậ':'a',
+        'À':'a','Á':'a','Ả':'a','Ã':'a','Ạ':'a',
+        'Ă':'a','Ằ':'a','Ắ':'a','Ẳ':'a','Ẵ':'a','Ặ':'a',
+        'Â':'a','Ầ':'a','Ấ':'a','Ẩ':'a','Ẫ':'a','Ậ':'a',
+
+        # Chữ e
+        'è':'e','é':'e','ẻ':'e','ẽ':'e','ẹ':'e',
+        'ê':'e','ề':'e','ế':'e','ể':'e','ễ':'e','ệ':'e',
+        'È':'e','É':'e','Ẻ':'e','Ẽ':'e','Ẹ':'e',
+        'Ê':'e','Ề':'e','Ế':'e','Ể':'e','Ễ':'e','Ệ':'e',
+
+        # Chữ i
+        'ì':'i','í':'i','ỉ':'i','ĩ':'i','ị':'i',
+        'Ì':'i','Í':'i','Ỉ':'i','Ĩ':'i','Ị':'i',
+
+        # Chữ o
+        'ò':'o','ó':'o','ỏ':'o','õ':'o','ọ':'o',
+        'ô':'o','ồ':'o','ố':'o','ổ':'o','ỗ':'o','ộ':'o',
+        'ơ':'o','ờ':'o','ớ':'o','ở':'o','ỡ':'o','ợ':'o',
+        'Ò':'o','Ó':'o','Ỏ':'o','Õ':'o','Ọ':'o',
+        'Ô':'o','Ồ':'o','Ố':'o','Ổ':'o','Ỗ':'o','Ộ':'o',
+        'Ơ':'o','Ờ':'o','Ớ':'o','Ở':'o','Ỡ':'o','Ợ':'o',
+
+        # Chữ u
+        'ù':'u','ú':'u','ủ':'u','ũ':'u','ụ':'u',
+        'ư':'u','ừ':'u','ứ':'u','ử':'u','ữ':'u','ự':'u',
+        'Ù':'u','Ú':'u','Ủ':'u','Ũ':'u','Ụ':'u',
+        'Ư':'u','Ừ':'u','Ứ':'u','Ử':'u','Ữ':'u','Ự':'u',
+
+        # Chữ y
+        'ỳ':'y','ý':'y','ỷ':'y','ỹ':'y','ỵ':'y',
+        'Ỳ':'y','Ý':'y','Ỷ':'y','Ỹ':'y','Ỵ':'y',
+
+        # Chữ đ
+        'đ':'d','Đ':'d',
+    })
+
+    # Bỏ dấu theo bảng ánh xạ
+    text = text.translate(mapping)
+
+    return text
+
 
 # Mock database - Danh sách sách
 books = [
@@ -103,5 +157,71 @@ def delete_book(book_id):
             }
         )  ,200
     return jsonify({"error":"Không tìm thấy id book"},404)
+
+
+'''Tìm kiếm danh sách'''
+@app.route('/book/search',methods=["GET"])
+@require_api_key
+def find_book_parameter():
+    '''Tìm sách '''
+    author = request.args.get("author")
+    title = request.args.get("title")
+    year = request.args.get("year",type=int)
+    id = request.args.get("id",type=int)
+    
+    result = None
+    if author:
+        result = next((s for s in books if normalize_text_str_only(s["author"].lower().strip()) == normalize_text_str_only(author.lower().strip())),None)
+    elif title:
+        result = next((s for s in books if normalize_text_str_only(s["title"].lower().strip()) == normalize_text_str_only(author.lower().strip())),None)
+    elif year:
+        result = next((s for s in books if s["year"] == year),None)
+    elif id:
+        result = next((s for s in books if s["id"] == id),None)
+    print(result)
+    if result:
+        return jsonify(result)
+        
+    else:
+        return jsonify({"errror":"Không tìm thấy sách bạn cần tìm"}),404
+        #print(author.lower())
+
+
+'''Tìm kiếm danh sách có nhiều paramters'''
+@app.route('/book/search_parameters',methods=["GET"])
+@require_api_key
+def find_book_parameters():
+    '''Tìm sách'''
+    author = request.args.getlist("author")
+    title = request.args.getlist("title")
+    year = request.args.getlist("year",type=int)
+    id = request.args.getlist("id",type=int)
+    
+    result = []
+    print("title:", title)
+    for s in books:
+        flag = True
+
+        if author and normalize_text_str_only(s["author"].lower().strip()) not in (normalize_text_str_only(t.lower().strip()) for t in author ):
+            flag = False
+        elif title and normalize_text_str_only(s["title"].lower().strip()) not in (normalize_text_str_only(t.lower().strip()) for t in title ):
+            flag = False
+        elif year and s["year"] not in (t for t in year):
+            flag = False
+        elif id and s["id"] not in (t for t in id):
+            flag = False
+
+
+        if flag is True:
+            result.append(s)
+    if result:
+         return jsonify(result)   
+    return jsonify({"error":"Không tìm thấy sách !"},404)
+        #print(author.lower())        
+    
+
+
+    
+    # books.append(new_book)
 if __name__ == '__main__':
     app.run(debug=True, port=8000)
