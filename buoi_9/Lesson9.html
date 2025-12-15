@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Doanh thu 12 tháng</title>
+
+    <!-- Highcharts CDN -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+<h2>Dashboard Doanh Thu 12 Tháng</h2>
+
+<div class="controls">
+    <label>Chọn cửa hàng:</label>
+    <select id="storeFilter">
+        <option value="all">Tất cả</option>
+        <option value="A">Cửa hàng A</option>
+        <option value="B">Cửa hàng B</option>
+        <option value="C">Cửa hàng C</option>
+    </select>
+</div>
+
+<div id="lineChart"></div>
+<div id="donutChart"></div>
+
+<h3>Nhập dữ liệu mới</h3>
+<div class="input-area">
+    <select id="storeInput">
+        <option value="A">Cửa hàng A</option>
+        <option value="B">Cửa hàng B</option>
+        <option value="C">Cửa hàng C</option>
+    </select>
+
+    <select id="monthInput">
+        <option value="0">Tháng 1</option>
+        <option value="1">Tháng 2</option>
+        <option value="2">Tháng 3</option>
+        <option value="3">Tháng 4</option>
+        <option value="4">Tháng 5</option>
+        <option value="5">Tháng 6</option>
+        <option value="6">Tháng 7</option>
+        <option value="7">Tháng 8</option>
+        <option value="8">Tháng 9</option>
+        <option value="9">Tháng 10</option>
+        <option value="10">Tháng 11</option>
+        <option value="11">Tháng 12</option>
+    </select>
+
+    <input type="number" id="revenueInput" placeholder="Doanh thu">
+    <button onclick="updateData()">Cập nhật</button>
+</div>
+
+<script src="src/script.js"></script>
+</body>
+</html>

@@ -230,7 +230,7 @@ def get_book_available():
     else:
         return jsonify({"error":"Hiện tại tồn kho sách đã hết"}),401  
 
-
+    # 12312
     
     # books.append(new_book)
 if __name__ == '__main__':

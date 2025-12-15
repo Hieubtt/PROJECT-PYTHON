@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background: #f4f6f8;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.controls, .input-area {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#lineChart,
+#donutChart {
+    width: 90%;
+    margin: 20px auto;
+    background: white;
+    padding: 10px;
+}
+
+
+input, select, button {
+    padding: 6px 10px;
+    margin: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
