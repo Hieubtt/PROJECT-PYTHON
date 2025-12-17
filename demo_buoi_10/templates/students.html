@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Students List</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+<div class="container my-4">
+    <h1 class="mb-4">Danh sách sinh viên từ API</h1>
+
+    {% if error %}
+        <div class="alert alert-danger">
+            Lỗi gọi API: {{ error }}
+        </div>
+    {% endif %}
+
+    {% if students|length == 0 %}
+        <div class="alert alert-warning">
+            Không có dữ liệu sinh viên.
+        </div>
+    {% else %}
+        <div class="row g-3">
+            {% for stu in students %}
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Sinh viên #{{ loop.index }}
+                                {% if stu.target %}
+                                    - <span class="badge bg-danger">{{ stu.target }}</span>
+                                {% endif %}
+                            </h5>
+                            <ul class="list-group list-group-flush mt-3">
+
+                                <li class="list-group-item">
+                                    <strong>Admission grade:</strong>
+                                    {{ stu["Admission grade"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Age at enrollment:</strong>
+                                    {{ stu["Age at enrollment"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Application mode:</strong>
+                                    {{ stu["Application mode"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Application order:</strong>
+                                    {{ stu["Application order"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Course:</strong>
+                                    {{ stu["Course"] }}
+                                </li>
+
+                                <li class="list-group-item">
+                                    <strong>Curricular units 1st sem (approved):</strong>
+                                    {{ stu["Curricular units 1st sem (approved)"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Curricular units 1st sem (credited):</strong>
+                                    {{ stu["Curricular units 1st sem (credited)"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Curricular units 1st sem (enrolled):</strong>
+                                    {{ stu["Curricular units 1st sem (enrolled)"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Curricular units 1st sem (evaluations):</strong>
+                                    {{ stu["Curricular units 1st sem (evaluations)"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Curricular units 1st sem (grade):</strong>
+                                    {{ stu["Curricular units 1st sem (grade)"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Curricular units 1st sem (without evaluations):</strong>
+                                    {{ stu["Curricular units 1st sem (without evaluations)"] }}
+                                </li>
+
+                                <li class="list-group-item">
+                                    <strong>Curricular units 2nd sem (approved):</strong>
+                                    {{ stu["Curricular units 2nd sem (approved)"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Curricular units 2nd sem (credited):</strong>
+                                    {{ stu["Curricular units 2nd sem (credited)"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Curricular units 2nd sem (enrolled):</strong>
+                                    {{ stu["Curricular units 2nd sem (enrolled)"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Curricular units 2nd sem (evaluations):</strong>
+                                    {{ stu["Curricular units 2nd sem (evaluations)"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Curricular units 2nd sem (grade):</strong>
+                                    {{ stu["Curricular units 2nd sem (grade)"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Curricular units 2nd sem (without evaluations):</strong>
+                                    {{ stu["Curricular units 2nd sem (without evaluations)"] }}
+                                </li>
+
+                                <li class="list-group-item">
+                                    <strong>Daytime/evening attendance:</strong>
+                                    {{ stu["Daytime/evening attendance"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Debtor:</strong>
+                                    {{ stu["Debtor"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Displaced:</strong>
+                                    {{ stu["Displaced"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Educational special needs:</strong>
+                                    {{ stu["Educational special needs"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Father's occupation:</strong>
+                                    {{ stu["Father's occupation"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Father's qualification:</strong>
+                                    {{ stu["Father's qualification"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Mother's occupation:</strong>
+                                    {{ stu["Mother's occupation"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Mother's qualification:</strong>
+                                    {{ stu["Mother's qualification"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>GDP:</strong>
+                                    {{ stu["GDP"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Inflation rate:</strong>
+                                    {{ stu["Inflation rate"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Unemployment rate:</strong>
+                                    {{ stu["Unemployment rate"] }}
+                                </li>
+
+                                <li class="list-group-item">
+                                    <strong>Gender:</strong>
+                                    {{ stu["Gender"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>International:</strong>
+                                    {{ stu["International"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Marital Status:</strong>
+                                    {{ stu["Marital Status"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Nacionality:</strong>
+                                    {{ stu["Nacionality"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Previous qualification:</strong>
+                                    {{ stu["Previous qualification"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Previous qualification (grade):</strong>
+                                    {{ stu["Previous qualification (grade)"] }}
+                                </li>
+
+                                <li class="list-group-item">
+                                    <strong>Scholarship holder:</strong>
+                                    {{ stu["Scholarship holder"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Tuition fees up to date:</strong>
+                                    {{ stu["Tuition fees up to date"] }}
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Target:</strong>
+                                    {{ stu["target"] }}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>
+</body>
+</html>
