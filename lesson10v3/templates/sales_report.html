@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="vi"><!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - Sales Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-shopping-cart text-blue-600 text-2xl mr-3"></i>
+                    <span class="text-xl font-bold text-gray-800">Sales Dashboard</span>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-home mr-2"></i>Home
+                    </a>
+                    <a href="/sales" class="text-gray-600 hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-chart-line mr-2"></i>Sales
+                    </a>
+                    <a href="/analytics" class="text-blue-600 hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-chart-bar mr-2"></i>Analytics
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-bold mb-2">Sales Analytics Dashboard</h1>
+            <p class="text-xl text-blue-100">Trực quan hóa doanh thu, đơn hàng và hiệu suất bán hàng</p>
+        </div>
+    </header>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="flex justify-center items-center py-20">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-600"></div>
+        <span class="ml-4 text-gray-600 text-lg">Đang tải dữ liệu bán hàng...</span>
+    </div>
+
+    <!-- Main Content -->
+    <main id="content" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 hidden">
+
+        <!-- Summary Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <!-- Total Revenue -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-green-500">
+                <div class="flex items-center">
+                    <div class="p-3 bg-green-100 rounded-full">
+                        <i class="fas fa-dollar-sign text-green-600 text-2xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-500 text-sm">Tổng doanh thu</p>
+                        <p id="totalRevenue" class="text-2xl font-bold text-green-600">-</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Orders -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-500">
+                <div class="flex items-center">
+                    <div class="p-3 bg-blue-100 rounded-full">
+                        <i class="fas fa-file-invoice text-blue-600 text-2xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-500 text-sm">Tổng đơn hàng</p>
+                        <p id="totalOrders" class="text-2xl font-bold text-blue-600">-</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Quantity -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-purple-500">
+                <div class="flex items-center">
+                    <div class="p-3 bg-purple-100 rounded-full">
+                        <i class="fas fa-boxes-stacked text-purple-600 text-2xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-500 text-sm">Tổng số lượng bán</p>
+                        <p id="totalQuantity" class="text-2xl font-bold text-purple-600">-</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Average Order Value -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-yellow-500">
+                <div class="flex items-center">
+                    <div class="p-3 bg-yellow-100 rounded-full">
+                        <i class="fas fa-chart-line text-yellow-600 text-2xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-500 text-sm">Giá trị đơn trung bình</p>
+                        <p id="avgOrderValue" class="text-2xl font-bold text-yellow-600">-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Row 1 -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <!-- Revenue by Month (Line Chart) -->
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-chart-line text-blue-600 mr-2"></i>
+                    Xu hướng doanh thu theo tháng
+                </h2>
+                <div class="h-80">
+                    <canvas id="revenueTrendChart"></canvas>
+                </div>
+                <p class="text-gray-500 text-sm mt-4 text-center">
+                    Doanh thu theo thời gian (dựa trên cột Ngaydathang)
+                </p>
+            </div>
+
+            <!-- Top Distributors (Bar Chart) -->
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-building text-indigo-600 mr-2"></i>
+                    Top nhà phân phối / khách hàng
+                </h2>
+                <div class="h-80">
+                    <canvas id="topDistributorsChart"></canvas>
+                </div>
+                <p class="text-gray-500 text-sm mt-4 text-center">
+                    Top 10 theo tổng doanh thu (Nhaphanphoi)
+                </p>
+            </div>
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-building text-indigo-600 mr-2"></i>
+                    So sánh giữa hàng bán và hàng khuyến mãi
+                </h2>
+                <div class="h-80">
+                    <canvas id="Freeitem_Chart" style="height:100%;"></canvas>
+                </div>
+                <p class="text-gray-500 text-sm mt-4 text-center">
+                    <!-- Top 10 theo tổng doanh thu (Nhaphanphoi) -->
+                </p>
+            </div>
+        </div>
+
+        <!-- Charts Row 2 -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <!-- Revenue by Product (Pie Chart) -->
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-chart-pie text-green-600 mr-2"></i>
+                    Phân bổ doanh thu theo sản phẩm
+                </h2>
+                <div class="h-80">
+                    <canvas id="productRevenueChart"></canvas>
+                </div>
+                <p class="text-gray-500 text-sm mt-4 text-center">
+                    Tỷ lệ doanh thu theo mã sản phẩm (MasanphamTAC)
+                </p>
+            </div>
+
+            <!-- Monthly Revenue & Quantity (Bar Chart) -->
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-layer-group text-purple-600 mr-2"></i>
+                    Doanh thu & Số lượng theo tháng
+                </h2>
+                <div class="h-80">
+                    <canvas id="monthlyCombinedChart"></canvas>
+                </div>
+                <p class="text-gray-500 text-sm mt-4 text-center">
+                    So sánh doanh thu và số lượng bán theo tháng
+                </p>
+            </div>
+        </div>
+
+        <!-- Note: Bạn có thể thêm các biểu đồ khác như Top Hóa đơn lớn, Doanh thu theo ngày trong tuần, v.v. -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">
+                <i class="fas fa-chart-line mr-2"></i>
+                Sales Analytics Dashboard - Dữ liệu từ DE.csv
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        async function loadData() {
+            try {
+                const response = await fetch('/api/sales_report');
+                const data = await response.json();
+
+                document.getElementById('loading').classList.add('hidden');
+                document.getElementById('content').classList.remove('hidden');
+
+                processSalesData(data);
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('loading').innerHTML = `
+                    <div class="text-red-600 text-center">
+                        <i class="fas fa-exclamation-triangle text-4xl mb-4"></i>
+                        <p>Lỗi tải dữ liệu bán hàng. Vui lòng kiểm tra API.</p>
+                    </div>
+                `;
+            }
+        }
+
+        function processSalesData(data) {
+            // === Tính toán các chỉ số chính ===
+            const totalRevenue = data.reduce((sum, row) => sum + (Number(row.Doanhthu) || 0), 0);
+            const totalQuantity = data.reduce((sum, row) => sum + (Number(row.SanLuongLe) || 0), 0);
+            const uniqueHoadon = new Set(
+                data
+                    .map(row => row.Hoadon)               // Lấy tất cả giá trị Hoadon
+                    .filter(hd => hd != null && hd !== '') // Loại bỏ null, undefined, chuỗi rỗng
+                );
+
+            const totalOrders = uniqueHoadon.size;
+            const avgOrderValue = totalOrders ? (totalRevenue / totalOrders).toFixed(0) : 0;
+
+            // Update cards
+            document.getElementById('totalRevenue').textContent = totalRevenue.toLocaleString('vi-VN') + ' ₫';
+            document.getElementById('totalOrders').textContent = totalOrders.toLocaleString('vi-VN');
+            document.getElementById('totalQuantity').textContent = totalQuantity.toLocaleString('vi-VN');
+            document.getElementById('avgOrderValue').textContent = avgOrderValue.toLocaleString('vi-VN') + ' ₫';
+
+            // === 1. Xu hướng doanh thu theo tháng (Line) ===
+            const monthlyRevenue = {};
+            data.forEach(row => {
+                const date = row.Ngaydathang;
+                if (!date) return;
+                const month = date.slice(0, 7); // YYYY-MM
+                monthlyRevenue[month] = (monthlyRevenue[month] || 0) + (Number(row.Doanhthu) || 0);
+            });
+
+            const months = Object.keys(monthlyRevenue).sort();
+            const revenueValues = months.map(m => monthlyRevenue[m]);
+
+            new Chart(document.getElementById('revenueTrendChart'), {
+                type: 'line',
+                data: {
+                    labels: months,
+                    datasets: [{
+                        label: 'Doanh thu (₫)',
+                        data: revenueValues,
+                        borderColor: '#3B82F6',
+                        backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                        tension: 0.3,
+                        fill: true
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // === 2. Top nhà phân phối / khách hàng (Bar) ===
+            const distributorRevenue = {};
+            data.forEach(row => {
+                const name = row.Nhaphanphoi || 'Không xác định';
+                distributorRevenue[name] = (distributorRevenue[name] || 0) + (Number(row.Doanhthu) || 0);
+            });
+
+            const topDistributors = Object.entries(distributorRevenue)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 10);
+
+            new Chart(document.getElementById('topDistributorsChart'), {
+                type: 'bar',
+                data: {
+                    labels: topDistributors.map(([name]) => name),
+                    datasets: [{
+                        label: 'Doanh thu (₫)',
+                        data: topDistributors.map(([, val]) => val),
+                        backgroundColor: '#8B5CF6'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y', 
+                    plugins: { legend: { display: false } }
+                }
+            });
+            // === 2.1. So sánh sản phẩm bán và khuyến mãi
+            const Freeitem_data = {
+              sale: 0,
+              promo: 0
+            };
+
+            data.forEach(row => {
+              const freeitem = Number(row.FreeItem);
+              const qty = Number(row.SanLuongLe) || 0;
+
+              if (freeitem === 0) {
+                Freeitem_data.sale += qty;    // SUM(SanLuongLe)
+              } else if (freeitem === 1) {
+                Freeitem_data.promo += qty;   // SUM(SanLuongLe)
+              }
+            });
+
+            const Freeitem_top = Object.entries(Freeitem_data)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 10);
+
+            new Chart(document.getElementById('Freeitem_Chart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Sản phẩm bán', 'Sản phẩm khuyến mãi'],
+                    datasets: [{
+                        label: 'Số lượng',
+                        data: [Freeitem_data.sale,Freeitem_data.promo],//, 
+                        backgroundColor: ['#3B82F6','#F59E0B']//, 
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y', // ngang để tên dài không bị cắt
+                    plugins: { legend: { display: false } }
+                }
+            });
+            // console.log(Freeitem_data.sale, Freeitem_data.promo);
+            
+
+            // === 3. Phân bổ doanh thu theo sản phẩm (Pie) ===
+            const productRevenue = {};
+            data.forEach(row => {
+                const prod = row.MasanphamTAC || 'Không xác định';
+                productRevenue[prod] = (productRevenue[prod] || 0) + (Number(row.Doanhthu) || 0);
+            });
+
+            const productLabels = Object.keys(productRevenue);
+            const productData = Object.values(productRevenue);
+
+            new Chart(document.getElementById('productRevenueChart'), {
+                type: 'pie',
+                data: {
+                    labels: productLabels,
+                    datasets: [{
+                        data: productData,
+                        backgroundColor: ['#3B82F6', '#10B981', '#EF4444', '#F59E0B', '#8B5CF6', '#EC4899', '#14B8A6']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'right' }
+                    }
+                }
+            });
+
+            // === 4. Doanh thu + Số lượng theo tháng (Bar kết hợp) ===
+            const monthlyQuantity = {};
+            data.forEach(row => {
+                const month = (row.Ngaydathang || '').slice(0, 7);
+                if (!month) return;
+                monthlyQuantity[month] = {
+                    revenue: (monthlyQuantity[month]?.revenue || 0) + (Number(row.Doanhthu) || 0),
+                    qty: (monthlyQuantity[month]?.qty || 0) + (Number(row.DoanhSo) || 0)
+                };
+            });
+
+            const mLabels = Object.keys(monthlyQuantity).sort();
+            const mRevenue = mLabels.map(m => monthlyQuantity[m].revenue);
+            const mQty = mLabels.map(m => monthlyQuantity[m].qty);
+
+            new Chart(document.getElementById('monthlyCombinedChart'), {
+                type: 'bar',
+                data: {
+                    labels: mLabels,
+                    datasets: [
+                        { label: 'Doanh thu (₫)', data: mRevenue, backgroundColor: '#10B981', yAxisID: 'y' },
+                        { label: 'Số lượng', data: mQty, backgroundColor: '#3B82F6', yAxisID: 'y1' }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: { position: 'left', title: { display: true, text: 'Doanh thu' } },
+                        y1: { position: 'right', title: { display: true, text: 'Số lượng' }, grid: { drawOnChartArea: false } }
+                    }
+                }
+            });
+            
+        }
+
+        // Tự động tải dữ liệu khi mở trang
+        loadData();
+    </script>
+</body>
+</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Phân tích doanh thu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .header {
+      margin-bottom: 25px;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .update-time {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .filter-panel {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .filter-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: flex-end;
+    }
+
+    .filter-item {
+      display: flex;
+      flex-direction: column;
+      min-width: 160px;
+    }
+
+    .filter-item label {
+      font-size: 13px;
+      margin-bottom: 6px;
+      color: #555;
+    }
+
+    select, input[type="text"] {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .btn-primary { background: #0066ff; color: white; border: none; }
+    .btn-reset   { background: #f0f0f0; color: #333; border: 1px solid #ddd; }
+    .btn-export  { background: #28a745; color: white; border: none; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    }
+
+    .card-title {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #222;
+    }
+
+    /* Giả lập chart - bạn sẽ thay bằng chart thật (Chart.js, ApexCharts,...) */
+    .chart-placeholder {
+      height: 280px;
+      background: linear-gradient(135deg, #f0f4ff 0%, #e6ecff 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-style: italic;
+    }
+
+    .pie-chart-placeholder {
+      height: 300px;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Dashboard Phân tích doanh thu</h1>
+    <div class="update-time">Cập nhật lần cuối 12/23/2025 8:51 PM</div>
+  </div>
+
+  <!-- Bộ lọc -->
+  <div class="filter-panel">
+    <div class="filter-title">Bộ lọc dữ liệu</div>
+    
+    <div class="filters">
+      <div class="filter-item">
+        <label>Thời gian</label>
+        <select>
+          <option>Tháng</option>
+          <option>Quý</option>
+          <option>Năm</option>
+        </select>
+      </div>
+
+      <div class="filter-item">
+        <label>Thời gian cụ thể</label>
+        <select>
+          <option>Tất cả</option>
+          <!-- Bạn thêm các tháng ở đây -->
+        </select>
+      </div>
+
+      <div class="filter-item">
+        <label>Vùng</label>
+        <select>
+          <option>Tất cả</option>
+          <!-- SỬA TÊN VÙNG Ở ĐÂY -->
+        </select>
+      </div>
+
+      <div class="filter-item">
+        <label>Trạng thái đơn hàng</label>
+        <select>
+          <option>Tất cả</option>
+          <!-- SỬA TÊN TRẠNG THÁI Ở ĐÂY -->
+        </select>
+      </div>
+
+      <div class="filter-item" style="flex-grow: 1; min-width: 240px;">
+        <label>Tìm kiếm khách hàng</label>
+        <input type="text" placeholder="Nhập tên khách hàng..." />
+      </div>
+
+      <div class="button-group">
+        <button class="btn btn-primary">Áp dụng</button>
+        <button class="btn btn-reset">Đặt lại</button>
+        <button class="btn btn-export">Xuất báo cáo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid các biểu đồ -->
+  <div class="grid">
+
+    <!-- Doanh thu theo tháng -->
+    <div class="card">
+      <div class="card-title">
+        <!-- SỬA TIÊU ĐỀ NÀY -->
+        Doanh thu theo tháng
+      </div>
+      <div class="chart-placeholder">
+        [ Biểu đồ cột - Doanh thu theo tháng ]
+      </div>
+    </div>
+
+    <!-- Xu hướng doanh thu theo thời gian -->
+    <div class="card">
+      <div class="card-title">
+        <!-- SỬA TIÊU ĐỀ NÀY -->
+        Xu hướng doanh thu theo thời gian
+      </div>
+      <div class="chart-placeholder">
+        [ Biểu đồ đường - Doanh thu theo ngày ]
+      </div>
+    </div>
+
+    <!-- 2 card dưới cùng nằm ngang -->
+    <div class="two-column">
+
+      <!-- Phân bổ trạng thái đơn hàng -->
+      <div class="card">
+        <div class="card-title">
+          <!-- SỬA TIÊU ĐỀ NÀY -->
+          Phân bổ trạng thái đơn hàng
+        </div>
+        <div class="pie-chart-placeholder">
+          [ Biểu đồ tròn - Shipped 92.7% / Cancelled / ... ]
+        </div>
+      </div>
+
+      <!-- Doanh thu theo loại sản phẩm -->
+      <div class="card">
+        <div class="card-title">
+          <!-- SỬA TIÊU ĐỀ NÀY -->
+          Doanh thu theo loại sản phẩm
+        </div>
+        <div class="chart-placeholder">
+          [ Biểu đồ cột - Motorcycles, Classic Cars, Trucks & Buses, ... ]
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

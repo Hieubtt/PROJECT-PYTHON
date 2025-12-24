@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <title>Sales Dashboard – API Version</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Highcharts + modules -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <style>
+    body { background:#0b1020; color:#e5e7eb; }
+    .card { background:rgba(15,23,42,.78); border:1px solid #1f2937; border-radius:16px; }
+    .chart-wrap { min-height: 500px; }
+    .hidden { display:none }
+    select, input, button { background:#0b1220; border:1px solid #1f2937; border-radius:10px; padding:8px 10px }
+    label { font-size:12px; color:#cbd5e1 }
+  </style>
+</head>
+<body class="min-h-screen">
+  <div class="max-w-7xl mx-auto p-4 md:p-6">
+    <h1 class="text-2xl md:text-3xl font-semibold mb-2">Sales Dashboard – Gọi API</h1>
+    <p class="text-slate-400 mb-4">Nguồn dữ liệu: <code>http://127.0.0.1:8080/api/sales</code> · Highcharts · Tailwind</p>
+
+    <!-- Controls -->
+    <div class="card p-4 md:p-5 mb-5">
+      <div class="flex flex-wrap gap-3 items-end">
+        <label>Store
+          <select id="fStore"></select>
+        </label>
+        <label>Channel
+          <select id="fChannel"></select>
+        </label>
+        <label>Category
+          <select id="fCategory"></select>
+        </label>
+        <label>Status
+          <select id="fStatus"></select>
+        </label>
+        <label>Từ ngày
+          <input id="fFrom" type="date" />
+        </label>
+        <label>Đến ngày
+          <input id="fTo" type="date" />
+        </label>
+        <button id="btnApply" class="px-3 py-2 hover:bg-slate-700">Áp dụng lọc</button>
+        <button id="btnReset" class="px-3 py-2 hover:bg-slate-700">Reset</button>
+        <button id="btnDownload" class="px-3 py-2 hover:bg-slate-700">Tải ảnh PNG</button>
+        <button id="btnExport" class="px-3 py-2 hover:bg-slate-700">Export CSV (dữ liệu đã lọc)</button>
+        <span id="status" class="ml-auto text-xs text-slate-300">Đang tải dữ liệu…</span>
+      </div>
+      <div class="mt-3 flex flex-wrap gap-6 text-sm">
+        <div><span class="text-slate-400">Tổng đơn:</span> <b id="mOrders">0</b></div>
+        <div><span class="text-slate-400">Tổng doanh thu:</span> <b id="mRevenue">0</b></div>
+        <div><span class="text-slate-400">AOV:</span> <b id="mAov">0</b></div>
+        <div><span class="text-slate-400">Tỷ lệ trả hàng:</span> <b id="mReturnRate">0%</b></div>
+      </div>
+      <div class="mt-3">
+        <label>Chọn biểu đồ
+          <select id="chartSelect">
+            <option value="stacked">Stacked Bar – Revenue theo Status × Store</option>
+            <option value="line">Line – Orders & AOV theo Tháng</option>
+            <option value="heatmap">Heatmap – Avg Metrics theo Status</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="card p-4 md:p-5">
+      <div id="chart-stacked" class="chart-wrap"></div>
+      <div id="chart-line" class="chart-wrap hidden"></div>
+      <div id="chart-heatmap" class="chart-wrap hidden"></div>
+    </div>
+
+    <div class="mt-6 text-slate-400 text-xs">
+      Lưu ý: Cần bật CORS ở server API (Flask dùng <code>flask-cors</code>). Nút “Tải ảnh PNG” xuất ảnh của biểu đồ đang hiển thị.
+    </div>
+  </div>
+
+<script>
+const API_URL = 'http://127.0.0.1:8080/api/sales';
+const $ = (id)=>document.getElementById(id);
+
+let RAW = [];
+let FILTERED = [];
+let chartObject = null;
+
+// ===== Utils =====
+function unique(arr, key){
+  return Array.from(new Set(arr.map(x=>x[key]).filter(v=>v!==undefined && v!==null))).sort();
+}
+function toNumber(x, def=0){ const n = +x; return isNaN(n) ? def : n; }
+function fmtMoney(n){ return n.toLocaleString('en-US', {maximumFractionDigits:2}); }
+function yyyymmdd(s){ // string 'YYYY-MM-DD' ok
+  return s && /^\d{4}-\d{2}-\d{2}$/.test(s) ? s : null;
+}
+
+// ===== Fetch Data =====
+async function loadData(){
+  $('status').textContent = 'Đang tải dữ liệu…';
+  try{
+    const res = await fetch(API_URL);
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+    RAW = Array.isArray(data) ? data : [];
+    $('status').textContent = `Đã nạp ${RAW.length} bản ghi`;
+    initFilters();
+    applyFilters();
+  }catch(e){
+    $('status').textContent = 'Lỗi gọi API. Kiểm tra server & CORS.';
+    console.error(e);
+  }
+}
+
+// ===== Filters =====
+function initFilters(){
+  const stores = ['ALL', ...unique(RAW,'store')];
+  const channels = ['ALL', ...unique(RAW,'channel')];
+  const cats = ['ALL', ...unique(RAW,'product_category')];
+  const status = ['ALL', ...unique(RAW,'order_status')];
+
+  fillSelect('fStore', stores);
+  fillSelect('fChannel', channels);
+  fillSelect('fCategory', cats);
+  fillSelect('fStatus', status);
+
+  // date bounds
+  const dates = RAW.map(r => r.order_date).filter(Boolean).sort();
+  const minD = dates[0] || '';
+  const maxD = dates[dates.length-1] || '';
+  $('fFrom').value = minD;
+  $('fTo').value = maxD;
+}
+
+function fillSelect(id, arr){
+  const el = $(id);
+  el.innerHTML = arr.map(v=>`<option value="${v}">${v}</option>`).join('');
+}
+
+function applyFilters(){
+  const fStore = $('fStore').value;
+  const fChannel = $('fChannel').value;
+  const fCat = $('fCategory').value;
+  const fStat = $('fStatus').value;
+  const dFrom = yyyymmdd($('fFrom').value);
+  const dTo = yyyymmdd($('fTo').value);
+
+  FILTERED = RAW.filter(r => {
+    if (fStore !== 'ALL' && r.store !== fStore) return false;
+    if (fChannel !== 'ALL' && r.channel !== fChannel) return false;
+    if (fCat !== 'ALL' && r.product_category !== fCat) return false;
+    if (fStat !== 'ALL' && r.order_status !== fStat) return false;
+    const d = r.order_date;
+    if (dFrom && d && d < dFrom) return false;
+    if (dTo && d && d > dTo) return false;
+    return true;
+  });
+
+  updateMetrics(FILTERED);
+  updateCharts();
+  $('status').textContent = `Đang xem ${FILTERED.length} bản ghi (lọc)`;
+}
+
+$('btnApply').addEventListener('click', applyFilters);
+$('btnReset').addEventListener('click', ()=>{
+  initFilters();
+  applyFilters();
+});
+$('chartSelect').addEventListener('change', updateCharts);
+$('btnDownload').addEventListener('click', ()=>{
+  if (chartObject) chartObject.exportChart({ type: 'image/png' });
+});
+$('btnExport').addEventListener('click', ()=>{
+  if (!FILTERED.length) return;
+  const header = Object.keys(FILTERED[0]);
+  const csv = [header.join(',')].concat(FILTERED.map(row => header.map(h => {
+    const v = row[h];
+    if (v == null) return '';
+    const s = String(v).replace(/"/g,'""');
+    return s.includes(',') ? `"${s}"` : s;
+  }).join(','))).join('\n');
+  const blob = new Blob([csv], {type:'text/csv;charset=utf-8;'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'filtered_sales.csv';
+  a.click();
+});
+
+// ===== Metrics =====
+function updateMetrics(rows){
+  const totalOrders = rows.length;
+  const totalRevenue = rows.reduce((s,r)=> s + toNumber(r.revenue), 0);
+  const aov = totalOrders ? totalRevenue/totalOrders : 0;
+  const returns = rows.filter(r => r.order_status === 'Returned').length;
+  const returnRate = totalOrders ? (returns*100/totalOrders) : 0;
+
+  $('mOrders').textContent = totalOrders.toString();
+  $('mRevenue').textContent = fmtMoney(totalRevenue);
+  $('mAov').textContent = fmtMoney(aov);
+  $('mReturnRate').textContent = returnRate.toFixed(2) + '%';
+}
+
+// ===== Aggregations for charts =====
+function aggStackedRevenueByStore(rows){
+  const stores = unique(rows,'store');
+  const status = ['Completed','Returned','Cancelled'];
+  const map = {}; stores.forEach(s => map[s] = {Completed:0, Returned:0, Cancelled:0});
+  rows.forEach(r=>{
+    const s = r.store;
+    const st = r.order_status;
+    const rev = toNumber(r.revenue);
+    if (map[s] && st in map[s]) map[s][st] += rev;
+  });
+  return {
+    categories: stores,
+    series: status.map(st => ({ name: st, data: stores.map(s => +map[s][st].toFixed(2)) }))
+  };
+}
+
+function aggLineOrdersAOVByMonth(rows){
+  // month should be YYYY-MM if exists; otherwise derive from order_date
+  const monthOf = r => r.month || (r.order_date ? r.order_date.slice(0,7) : 'Unknown');
+  const groups = {}; // month -> {orders, revenue}
+  rows.forEach(r=>{
+    const m = monthOf(r);
+    if (!groups[m]) groups[m] = {orders:0, revenue:0};
+    groups[m].orders += 1;
+    groups[m].revenue += toNumber(r.revenue);
+  });
+  const months = Object.keys(groups).sort();
+  const orders = months.map(m => groups[m].orders);
+  const aov = months.map(m => groups[m].orders ? +(groups[m].revenue/groups[m].orders).toFixed(2) : 0);
+  return { months, orders, aov };
+}
+
+function aggHeatmapAvgByStatus(rows){
+  const metrics = ['discount_rate','voucher_amount','delivery_days','margin_rate','quantity'];
+  const status = ['Completed','Returned','Cancelled'];
+  const acc = {}; status.forEach(s => acc[s] = { count:0, sums:Object.fromEntries(metrics.map(k=>[k,0])) });
+  rows.forEach(r=>{
+    const st = r.order_status;
+    if (!acc[st]) return;
+    acc[st].count += 1;
+    metrics.forEach(k => acc[st].sums[k] += toNumber(r[k]));
+  });
+  const data = [];
+  status.forEach((st, y)=>{
+    const cnt = acc[st].count || 1;
+    metrics.forEach((m, x)=>{
+      const avg = +(acc[st].sums[m]/cnt).toFixed(3);
+      data.push([x, y, avg]);
+    });
+  });
+  const vals = data.map(d=>d[2]);
+  return { xCategories: metrics, yCategories: status, data, vmin: Math.min(...vals), vmax: Math.max(...vals) };
+}
+
+// ===== Renderers =====
+function showOnly(id){
+  ['chart-stacked','chart-line','chart-heatmap'].forEach(el => $(el).classList.add('hidden'));
+  $(id).classList.remove('hidden');
+}
+
+function renderStacked(containerId, agg){
+  if (chartObject) chartObject.destroy();
+  chartObject = Highcharts.chart(containerId, {
+    chart: { type:'column', backgroundColor:'transparent' },
+    title: { text: 'Revenue theo Status × Store', style:{ color:'#e5e7eb' } },
+    xAxis: { categories: agg.categories, labels:{ style:{ color:'#cbd5e1' } } },
+    yAxis: {
+      min:0, title:{ text:'Revenue', style:{ color:'#cbd5e1' } },
+      labels:{ style:{ color:'#cbd5e1' } }, gridLineColor:'#1f2937'
+    },
+    legend: { itemStyle:{ color:'#e5e7eb' } },
+    tooltip: {
+      shared:true,
+      pointFormatter: function(){
+        return `<span style="color:${this.color}">●</span> ${this.series.name}: <b>${fmtMoney(this.y)}</b><br/>`;
+      }
+    },
+    plotOptions: { column: { stacking:'normal', borderWidth:0 } },
+    series: agg.series,
+    exporting: { enabled:true },
+    credits: { enabled:false }
+  });
+}
+
+function renderLine(containerId, agg){
+  if (chartObject) chartObject.destroy();
+  chartObject = Highcharts.chart(containerId, {
+    chart: { backgroundColor:'transparent' },
+    title: { text:'Orders & AOV theo Tháng', style:{ color:'#e5e7eb' } },
+    xAxis: { categories: agg.months, labels:{ style:{ color:'#cbd5e1' } }, gridLineColor:'#1f2937' },
+    yAxis: [{
+      title:{ text:'Orders', style:{ color:'#cbd5e1' } },
+      labels:{ style:{ color:'#cbd5e1' } }, gridLineColor:'#1f2937'
+    },{
+      title:{ text:'AOV', style:{ color:'#cbd5e1' } },
+      labels:{ style:{ color:'#cbd5e1' } }, opposite:true, gridLineColor:'#1f2937'
+    }],
+    legend: { itemStyle:{ color:'#e5e7eb' } },
+    tooltip: { shared:true },
+    series: [
+      { name:'Orders', type:'line', data: agg.orders, yAxis:0 },
+      { name:'AOV', type:'line', data: agg.aov, yAxis:1 }
+    ],
+    exporting: { enabled:true },
+    credits: { enabled:false }
+  });
+}
+
+function renderHeatmap(containerId, agg){
+  if (chartObject) chartObject.destroy();
+  chartObject = Highcharts.chart(containerId, {
+    chart: { type:'heatmap', backgroundColor:'transparent' },
+    title: { text:'Avg Metrics theo Status', style:{ color:'#e5e7eb' } },
+    xAxis: { categories: agg.xCategories, labels:{ style:{ color:'#cbd5e1' } } },
+    yAxis: { categories: agg.yCategories, title:null, labels:{ style:{ color:'#cbd5e1' } } },
+    colorAxis: { min: agg.vmin, max: agg.vmax },
+    legend: { itemStyle:{ color:'#e5e7eb' }, labels:{ style:{ color:'#cbd5e1' } } },
+    tooltip: {
+      formatter: function(){
+        const feat = this.series.xAxis.categories[this.point.x];
+        const stat = this.series.yAxis.categories[this.point.y];
+        return `<b>${stat}</b><br/>${feat}: <b>${this.point.value}</b>`;
+      }
+    },
+    series: [{ name:'Average', data: agg.data, borderWidth:0 }],
+    exporting: { enabled:true },
+    credits: { enabled:false }
+  });
+}
+
+// ===== Update Charts =====
+function updateCharts(){
+  const mode = $('chartSelect').value;
+  if (mode === 'stacked'){
+    showOnly('chart-stacked');
+    renderStacked('chart-stacked', aggStackedRevenueByStore(FILTERED));
+  }else if (mode === 'line'){
+    showOnly('chart-line');
+    renderLine('chart-line', aggLineOrdersAOVByMonth(FILTERED));
+  }else{
+    showOnly('chart-heatmap');
+    renderHeatmap('chart-heatmap', aggHeatmapAvgByStatus(FILTERED));
+  }
+}
+
+// ===== Init =====
+loadData();
+</script>
+</body>
+</html>

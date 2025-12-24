@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - Student Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-graduation-cap text-blue-600 text-2xl mr-3"></i>
+                    <span class="text-xl font-bold text-gray-800">Lec 10</span>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-home mr-2"></i>Home
+                    </a>
+                    <a href="/students" class="text-gray-600 hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-users mr-2"></i>Students
+                    </a>
+                    <a href="/analytics" class="text-blue-600 hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-chart-bar mr-2"></i>Analytics
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-bold mb-2">Student Analytics Dashboard</h1>
+            <p class="text-xl text-blue-100">Trực quan hóa dữ liệu Dropout và Academic Success</p>
+        </div>
+    </header>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="flex justify-center items-center py-20">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-600"></div>
+        <span class="ml-4 text-gray-600 text-lg">Đang tải dữ liệu...</span>
+    </div>
+
+    <!-- Main Content -->
+    <main id="content" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 hidden">
+
+        <!-- Summary Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+            <!-- Total Students -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-500">
+                <div class="flex items-center">
+                    <div class="p-3 bg-blue-100 rounded-full">
+                        <i class="fas fa-users text-blue-600 text-2xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-500 text-sm">Tổng sinh viên</p>
+                        <p id="totalStudents" class="text-2xl font-bold text-gray-800">-</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Graduates -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-green-500">
+                <div class="flex items-center">
+                    <div class="p-3 bg-green-100 rounded-full">
+                        <i class="fas fa-graduation-cap text-green-600 text-2xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-500 text-sm">Tốt nghiệp</p>
+                        <p id="graduates" class="text-2xl font-bold text-green-600">-</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropouts -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-red-500">
+                <div class="flex items-center">
+                    <div class="p-3 bg-red-100 rounded-full">
+                        <i class="fas fa-user-times text-red-600 text-2xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-500 text-sm">Bỏ học</p>
+                        <p id="dropouts" class="text-2xl font-bold text-red-600">-</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enrolled -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-yellow-500">
+                <div class="flex items-center">
+                    <div class="p-3 bg-yellow-100 rounded-full">
+                        <i class="fas fa-user-clock text-yellow-600 text-2xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-500 text-sm">Đang học</p>
+                        <p id="enrolled" class="text-2xl font-bold text-yellow-600">-</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Store -->
+            <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-yellow-500">
+                <div class="flex items-center">
+                    <div class="p-3 bg-yellow-100 rounded-full">
+                        <i class="fas fa-user-clock text-yellow-600 text-2xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-gray-500 text-sm">Điểm tuyển sinh đạt trên 130</p>
+                        <p id="Store_1" class="text-2xl font-bold text-yellow-600">-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Row 1 -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <!-- Target Distribution (Pie Chart) -->
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-chart-pie text-blue-600 mr-2"></i>
+                    Phân bố kết quả học tập
+                </h2>
+                <div class="h-80">
+                    <canvas id="targetChart"></canvas>
+                </div>
+                <p class="text-gray-500 text-sm mt-4 text-center">
+                    Tỷ lệ sinh viên theo trạng thái: Tốt nghiệp, Bỏ học, Đang học
+                </p>
+            </div>
+
+            <!-- Gender Distribution (Doughnut Chart) -->
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-venus-mars text-pink-600 mr-2"></i>
+                    Phân bố theo giới tính
+                </h2>
+                <div class="h-80">
+                    <canvas id="genderChart"></canvas>
+                </div>
+                <p class="text-gray-500 text-sm mt-4 text-center">
+                    Tỷ lệ nam (1) và nữ (0) trong tập dữ liệu
+                </p>
+            </div>
+        </div>
+
+        <!-- Charts Row 2 -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <!-- Age Distribution (Bar Chart) -->
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-birthday-cake text-purple-600 mr-2"></i>
+                    Phân bố độ tuổi khi nhập học
+                </h2>
+                <div class="h-80">
+                    <canvas id="ageChart"></canvas>
+                </div>
+                <p class="text-gray-500 text-sm mt-4 text-center">
+                    Số lượng sinh viên theo nhóm tuổi khi đăng ký nhập học
+                </p>
+            </div>
+
+            <!-- Grades Comparison (Bar Chart) -->
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-chart-bar text-green-600 mr-2"></i>
+                    So sánh điểm trung bình theo kết quả
+                </h2>
+                <div class="h-80">
+                    <canvas id="gradesChart"></canvas>
+                </div>
+                <p class="text-gray-500 text-sm mt-4 text-center">
+                    Điểm đầu vào và điểm các học kỳ theo nhóm Tốt nghiệp/Bỏ học
+                </p>
+            </div>
+        </div>
+
+        <!-- Charts Row 3 -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <!-- Scholarship vs Dropout (Bar Chart) -->
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-award text-yellow-600 mr-2"></i>
+                    Ảnh hưởng của học bổng
+                </h2>
+                <div class="h-80">
+                    <canvas id="scholarshipChart"></canvas>
+                </div>
+                <p class="text-gray-500 text-sm mt-4 text-center">
+                    So sánh tỷ lệ tốt nghiệp giữa sinh viên có và không có học bổng
+                </p>
+            </div>
+
+            <!-- Tuition Status (Bar Chart) -->
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-money-bill-wave text-emerald-600 mr-2"></i>
+                    Tình trạng đóng học phí
+                </h2>
+                <div class="h-80">
+                    <canvas id="tuitionChart"></canvas>
+                </div>
+                <p class="text-gray-500 text-sm mt-4 text-center">
+                    So sánh tỷ lệ kết quả theo tình trạng đóng học phí đúng hạn
+                </p>
+            </div>
+        </div>
+
+        <!-- Charts Row 4 -->
+        <div class="grid grid-cols-1 gap-8 mb-8">
+            <!-- Curricular Units Performance -->
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-book-open text-indigo-600 mr-2"></i>
+                    Hiệu suất học tập qua các học kỳ
+                </h2>
+                <div class="h-96">
+                    <canvas id="semesterChart"></canvas>
+                </div>
+                <p class="text-gray-500 text-sm mt-4 text-center">
+                    So sánh số môn đăng ký, hoàn thành và điểm trung bình giữa 2 học kỳ
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">
+                <i class="fas fa-chart-line mr-2"></i>
+                Student Analytics Dashboard - Dữ liệu từ students_dropout_academic_success.csv
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Fetch data from API
+        async function loadData() {
+            try {
+                const response = await fetch('/api/students');
+                const data = await response.json();
+
+                // Hide loading, show content
+                document.getElementById('loading').classList.add('hidden');
+                document.getElementById('content').classList.remove('hidden');
+
+                // Process and display data
+                processData(data);
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('loading').innerHTML = `
+                    <div class="text-red-600">
+                        <i class="fas fa-exclamation-triangle text-4xl mb-4"></i>
+                        <p>Lỗi tải dữ liệu. Vui lòng thử lại.</p>
+                    </div>
+                `;
+            }
+        }
+
+        function processData(data) {
+            // Calculate summary statistics
+            const total = data.length;
+            const graduates = data.filter(s => s.target === 'Graduate').length;
+            const dropouts = data.filter(s => s.target === 'Dropout').length;
+            const enrolled = data.filter(s => s.target === 'Enrolled').length;
+            const Admissiongrade = data.filter(s => Number(s['Admission grade']) > 130).length;
+         
+
+            // Update summary cards
+            document.getElementById('Store_1').textContent = Admissiongrade.toLocaleString();
+            document.getElementById('totalStudents').textContent = total.toLocaleString();
+            document.getElementById('graduates').textContent = graduates.toLocaleString();
+            document.getElementById('dropouts').textContent = dropouts.toLocaleString();
+            document.getElementById('enrolled').textContent = enrolled.toLocaleString();
+            //document.getElementById('store').textContent = store.toLocaleString();
+            // Create charts
+            createTargetChart(graduates, dropouts, enrolled);
+            createGenderChart(data);
+            createAgeChart(data);
+            createGradesChart(data);
+            createScholarshipChart(data);
+            createTuitionChart(data);
+            createSemesterChart(data);
+        }
+
+        // 1. Target Distribution Pie Chart
+        function createTargetChart(graduates, dropouts, enrolled) {
+            new Chart(document.getElementById('targetChart'), {
+                type: 'pie',
+                data: {
+                    labels: ['Tốt nghiệp', 'Bỏ học', 'Đang học'],
+                    datasets: [{
+                        data: [graduates, dropouts, enrolled],
+                        backgroundColor: ['#10B981', '#EF4444', '#F59E0B'],
+                        borderWidth: 2,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { font: { size: 14 }, padding: 20 }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = ((context.raw / total) * 100).toFixed(1);
+                                    return `${context.label}: ${context.raw} (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // 2. Gender Distribution Doughnut Chart
+        function createGenderChart(data) {
+            const male = data.filter(s => s.Gender === 1).length;
+            const female = data.filter(s => s.Gender === 0).length;
+
+            new Chart(document.getElementById('genderChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['Nam', 'Nữ'],
+                    datasets: [{
+                        data: [male, female],
+                        backgroundColor: ['#3B82F6', '#EC4899'],
+                        borderWidth: 2,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { font: { size: 14 }, padding: 20 }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = ((context.raw / total) * 100).toFixed(1);
+                                    return `${context.label}: ${context.raw} (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // 3. Age Distribution Bar Chart
+        function createAgeChart(data) {
+            const ageGroups = {
+                '17-19': 0, '20-22': 0, '23-25': 0, '26-30': 0, '31-40': 0, '40+': 0
+            };
+
+            data.forEach(s => {
+                const age = s['Age at enrollment'];
+                if (age <= 19) ageGroups['17-19']++;
+                else if (age <= 22) ageGroups['20-22']++;
+                else if (age <= 25) ageGroups['23-25']++;
+                else if (age <= 30) ageGroups['26-30']++;
+                else if (age <= 40) ageGroups['31-40']++;
+                else ageGroups['40+']++;
+            });
+
+            new Chart(document.getElementById('ageChart'), {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(ageGroups),
+                    datasets: [{
+                        label: 'Số sinh viên',
+                        data: Object.values(ageGroups),
+                        backgroundColor: '#8B5CF6',
+                        borderRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: 'Số lượng' }
+                        },
+                        x: {
+                            title: { display: true, text: 'Nhóm tuổi' }
+                        }
+                    }
+                }
+            });
+        }
+
+        // 4. Grades Comparison Bar Chart
+        function createGradesChart(data) {
+            const graduateData = data.filter(s => s.target === 'Graduate');
+            const dropoutData = data.filter(s => s.target === 'Dropout');
+
+            const avgGrade = (arr, key) => arr.length ? (arr.reduce((sum, s) => sum + (s[key] || 0), 0) / arr.length).toFixed(2) : 0;
+
+            new Chart(document.getElementById('gradesChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Điểm đầu vào', 'Điểm HK1', 'Điểm HK2'],
+                    datasets: [
+                        {
+                            label: 'Tốt nghiệp',
+                            data: [
+                                avgGrade(graduateData, 'Admission grade'),
+                                avgGrade(graduateData, 'Curricular units 1st sem (grade)'),
+                                avgGrade(graduateData, 'Curricular units 2nd sem (grade)')
+                            ],
+                            backgroundColor: '#10B981',
+                            borderRadius: 8
+                        },
+                        {
+                            label: 'Bỏ học',
+                            data: [
+                                avgGrade(dropoutData, 'Admission grade'),
+                                avgGrade(dropoutData, 'Curricular units 1st sem (grade)'),
+                                avgGrade(dropoutData, 'Curricular units 2nd sem (grade)')
+                            ],
+                            backgroundColor: '#EF4444',
+                            borderRadius: 8
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { font: { size: 14 }, padding: 20 }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: 'Điểm trung bình' }
+                        }
+                    }
+                }
+            });
+        }
+
+        // 5. Scholarship Impact Chart
+        function createScholarshipChart(data) {
+            const withScholarship = data.filter(s => s['Scholarship holder'] === 1);
+            const withoutScholarship = data.filter(s => s['Scholarship holder'] === 0);
+
+            const calcRate = (arr, target) => arr.length ? ((arr.filter(s => s.target === target).length / arr.length) * 100).toFixed(1) : 0;
+
+            new Chart(document.getElementById('scholarshipChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Có học bổng', 'Không có học bổng'],
+                    datasets: [
+                        {
+                            label: 'Tốt nghiệp (%)',
+                            data: [calcRate(withScholarship, 'Graduate'), calcRate(withoutScholarship, 'Graduate')],
+                            backgroundColor: '#10B981',
+                            borderRadius: 8
+                        },
+                        {
+                            label: 'Bỏ học (%)',
+                            data: [calcRate(withScholarship, 'Dropout'), calcRate(withoutScholarship, 'Dropout')],
+                            backgroundColor: '#EF4444',
+                            borderRadius: 8
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { font: { size: 14 }, padding: 20 }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            title: { display: true, text: 'Tỷ lệ (%)' }
+                        }
+                    }
+                }
+            });
+        }
+
+        // 6. Tuition Status Chart
+        function createTuitionChart(data) {
+            const upToDate = data.filter(s => s['Tuition fees up to date'] === 1);
+            const notUpToDate = data.filter(s => s['Tuition fees up to date'] === 0);
+
+            const calcRate = (arr, target) => arr.length ? ((arr.filter(s => s.target === target).length / arr.length) * 100).toFixed(1) : 0;
+
+            new Chart(document.getElementById('tuitionChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Đóng đúng hạn', 'Chưa đóng đủ'],
+                    datasets: [
+                        {
+                            label: 'Tốt nghiệp (%)',
+                            data: [calcRate(upToDate, 'Graduate'), calcRate(notUpToDate, 'Graduate')],
+                            backgroundColor: '#10B981',
+                            borderRadius: 8
+                        },
+                        {
+                            label: 'Bỏ học (%)',
+                            data: [calcRate(upToDate, 'Dropout'), calcRate(notUpToDate, 'Dropout')],
+                            backgroundColor: '#EF4444',
+                            borderRadius: 8
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { font: { size: 14 }, padding: 20 }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            title: { display: true, text: 'Tỷ lệ (%)' }
+                        }
+                    }
+                }
+            });
+        }
+
+        // 7. Semester Performance Chart
+        function createSemesterChart(data) {
+            const avg = (key) => (data.reduce((sum, s) => sum + (s[key] || 0), 0) / data.length).toFixed(2);
+
+            new Chart(document.getElementById('semesterChart'), {
+                type: 'bar',
+                data: {
+                    labels: ['Môn đăng ký', 'Môn hoàn thành', 'Điểm TB'],
+                    datasets: [
+                        {
+                            label: 'Học kỳ 1',
+                            data: [
+                                avg('Curricular units 1st sem (enrolled)'),
+                                avg('Curricular units 1st sem (approved)'),
+                                avg('Curricular units 1st sem (grade)')
+                            ],
+                            backgroundColor: '#3B82F6',
+                            borderRadius: 8
+                        },
+                        {
+                            label: 'Học kỳ 2',
+                            data: [
+                                avg('Curricular units 2nd sem (enrolled)'),
+                                avg('Curricular units 2nd sem (approved)'),
+                                avg('Curricular units 2nd sem (grade)')
+                            ],
+                            backgroundColor: '#8B5CF6',
+                            borderRadius: 8
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { font: { size: 14 }, padding: 20 }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: 'Giá trị trung bình' }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Load data when page loads
+        loadData();
+    </script>
+</body>
+
+</html>

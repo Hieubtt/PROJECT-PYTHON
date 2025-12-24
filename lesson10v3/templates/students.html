@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data - Lec 10</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-graduation-cap text-blue-600 text-2xl mr-3"></i>
+                    <span class="text-xl font-bold text-gray-800">Lec 10</span>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-home mr-2"></i>Home
+                    </a>
+                    <a href="/students" class="text-blue-600 font-semibold">
+                        <i class="fas fa-users mr-2"></i>Students
+                    </a>
+                    <a href="/analytics" class="text-gray-600 hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-chart-bar mr-2"></i>Analytics
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-bold mb-2">Student Database</h1>
+            <p class="text-xl text-blue-100">Dropout and Academic Success Data</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Controls Section -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800">Student Records</h2>
+                    <p id="studentCount" class="text-gray-600 mt-1">Loading...</p>
+                </div>
+                <div class="flex gap-3">
+                    <input type="text" id="searchInput" placeholder="Search students..."
+                        class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button onclick="fetchStudentData()"
+                        class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                        <i class="fas fa-sync-alt mr-2"></i>Refresh
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="text-center py-12">
+            <i class="fas fa-spinner fa-spin text-blue-600 text-5xl mb-4"></i>
+            <p class="text-gray-600 text-lg">Loading student data...</p>
+        </div>
+
+        <!-- Error Message -->
+        <div id="error" class="hidden bg-red-50 border border-red-200 rounded-lg p-6 mb-6">
+            <div class="flex items-center">
+                <i class="fas fa-exclamation-circle text-red-600 text-2xl mr-3"></i>
+                <div>
+                    <h3 class="text-red-800 font-semibold">Error Loading Data</h3>
+                    <p id="errorMessage" class="text-red-600"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Students Table -->
+        <div id="tableContainer" class="hidden bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr id="tableHeader"></tr>
+                    </thead>
+                    <tbody id="tableBody" class="bg-white divide-y divide-gray-200"></tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="bg-gray-50 px-6 py-4 flex items-center justify-between border-t border-gray-200">
+                <div class="flex-1 flex justify-between sm:hidden">
+                    <button onclick="previousPage()"
+                        class="px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                        Previous
+                    </button>
+                    <button onclick="nextPage()"
+                        class="ml-3 px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                        Next
+                    </button>
+                </div>
+                <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+                    <div>
+                        <p class="text-sm text-gray-700">
+                            Showing <span id="startRecord" class="font-medium">1</span> to
+                            <span id="endRecord" class="font-medium">10</span> of
+                            <span id="totalRecords" class="font-medium">0</span> results
+                        </p>
+                    </div>
+                    <div>
+                        <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px">
+                            <button onclick="previousPage()"
+                                class="px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <span id="pageInfo"
+                                class="px-4 py-2 border-t border-b border-gray-300 bg-white text-sm font-medium text-gray-700">
+                                Page 1
+                            </span>
+                            <button onclick="nextPage()"
+                                class="px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">&copy; 2024 Lecture 10. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Global variables
+        let allStudents = [];
+        let filteredStudents = [];
+        let currentPage = 1;
+        const rowsPerPage = 20;
+
+        // Function to fetch student data from API
+        async function fetchStudentData() {
+            const apiUrl = 'http://127.0.0.1:8080/api/students';
+            const loadingDiv = document.getElementById('loading');
+            const errorDiv = document.getElementById('error');
+            const errorMessage = document.getElementById('errorMessage');
+            const tableContainer = document.getElementById('tableContainer');
+
+            try {
+                // Show loading
+                loadingDiv.classList.remove('hidden');
+                errorDiv.classList.add('hidden');
+                tableContainer.classList.add('hidden');
+
+                // Fetch data from API
+                const response = await fetch(apiUrl);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const students = await response.json();
+
+                // Store data
+                allStudents = students;
+                filteredStudents = students;
+                currentPage = 1;
+
+                // Hide loading
+                loadingDiv.classList.add('hidden');
+
+                if (students.length === 0) {
+                    errorMessage.textContent = 'No student data available.';
+                    errorDiv.classList.remove('hidden');
+                    return;
+                }
+
+                // Display data
+                displayTable();
+                tableContainer.classList.remove('hidden');
+
+            } catch (error) {
+                // Hide loading and show error
+                loadingDiv.classList.add('hidden');
+                errorMessage.textContent = error.message;
+                errorDiv.classList.remove('hidden');
+                console.error('Error fetching student data:', error);
+            }
+        }
+
+        // Function to display table
+        function displayTable() {
+            const tableHeader = document.getElementById('tableHeader');
+            const tableBody = document.getElementById('tableBody');
+            const studentCountDiv = document.getElementById('studentCount');
+
+            if (filteredStudents.length === 0) {
+                studentCountDiv.textContent = 'No students found';
+                tableBody.innerHTML = '<tr><td colspan="100" class="px-6 py-8 text-center text-gray-500">No data to display</td></tr>';
+                return;
+            }
+
+            // Update student count
+            studentCountDiv.textContent = `Total: ${filteredStudents.length} students`;
+
+            // Get column names from first student object
+            const columns = Object.keys(filteredStudents[0]);
+
+            // Create table header
+            tableHeader.innerHTML = columns.map(col =>
+                `<th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider bg-gray-50">
+                    ${col.replace(/_/g, ' ')}
+                </th>`
+            ).join('');
+
+            // Calculate pagination
+            const startIndex = (currentPage - 1) * rowsPerPage;
+            const endIndex = Math.min(startIndex + rowsPerPage, filteredStudents.length);
+            const pageStudents = filteredStudents.slice(startIndex, endIndex);
+
+            // Create table rows
+            tableBody.innerHTML = pageStudents.map((student, index) =>
+                `<tr class="${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} hover:bg-blue-50 transition">
+                    ${columns.map(col =>
+                    `<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            ${student[col] !== null && student[col] !== '' ? student[col] : '-'}
+                        </td>`
+                ).join('')}
+                </tr>`
+            ).join('');
+
+            // Update pagination info
+            updatePaginationInfo();
+        }
+
+        // Update pagination information
+        function updatePaginationInfo() {
+            const totalPages = Math.ceil(filteredStudents.length / rowsPerPage);
+            const startRecord = (currentPage - 1) * rowsPerPage + 1;
+            const endRecord = Math.min(currentPage * rowsPerPage, filteredStudents.length);
+
+            document.getElementById('startRecord').textContent = startRecord;
+            document.getElementById('endRecord').textContent = endRecord;
+            document.getElementById('totalRecords').textContent = filteredStudents.length;
+            document.getElementById('pageInfo').textContent = `Page ${currentPage} of ${totalPages}`;
+        }
+
+        // Pagination functions
+        function nextPage() {
+            const totalPages = Math.ceil(filteredStudents.length / rowsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                displayTable();
+            }
+        }
+
+        function previousPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                displayTable();
+            }
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function (e) {
+            const searchTerm = e.target.value.toLowerCase();
+
+            if (searchTerm === '') {
+                filteredStudents = allStudents;
+            } else {
+                filteredStudents = allStudents.filter(student => {
+                    return Object.values(student).some(value =>
+                        value !== null && value.toString().toLowerCase().includes(searchTerm)
+                    );
+                });
+            }
+
+            currentPage = 1;
+            displayTable();
+        });
+
+        // Load data when page is ready
+        document.addEventListener('DOMContentLoaded', fetchStudentData);
+    </script>
+</body>
+
+</html>
