@@ -25,8 +25,6 @@ def sales_report():
 
 @app.route('/api/sales_report', methods=['GET'])
 def get_salesreport():
-    # Load the CSV file into a DataFrame
-
     columns_needed = [
     'Ngaydathang',          # Số đơn hàng
     'Nhaphanphoi',            # Ngày đặt hàng
@@ -36,9 +34,8 @@ def get_salesreport():
     'Doanhthu',                 # Doanh thu
     'SanLuongLe',
     'FreeItem'
-    # Thêm/bớt cột tùy ý
 ]
-    df = pd.read_csv('./data/DE.csv', encoding='windows-1258')
+    df = pd.read_csv('./lesson10v3/data/DE.csv', encoding='windows-1258')
     try:
         df = df[columns_needed] 
     except KeyError as e:
