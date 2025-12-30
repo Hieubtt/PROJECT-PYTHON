@@ -23,6 +23,10 @@ def sales_dashboard():
 def sales_report():
     return render_template('sales_report.html')
 
+@app.route('/sales_charts', methods=['GET'])    
+def sales_charts():
+    return render_template('sales_charts.html')
+
 @app.route('/api/sales_report', methods=['GET'])
 def get_salesreport():
     columns_needed = [
@@ -33,7 +37,10 @@ def get_salesreport():
     'DoanhSo',          # Loại sản phẩm
     'Doanhthu',                 # Doanh thu
     'SanLuongLe',
-    'FreeItem'
+    'FreeItem',
+    'Tuan',
+    'MaNV',
+    'Tennhanvien'
 ]
     df = pd.read_csv('./lesson10v3/data/DE.csv', encoding='windows-1258')
     try:
