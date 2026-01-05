@@ -22,6 +22,13 @@
 
 <body class="bg-gray-50 min-h-screen">
 
+  <!-- Nút Quay lại Dashboard -->
+  <button onclick="window.location.href = 'http://127.0.0.1:8080/sales_report'"
+    class="fixed top-5 left-5 z-50 px-6 py-3.5 bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white font-semibold text-lg rounded-xl shadow-2xl transition-all duration-300 flex items-center gap-3">
+    <i class="fas fa-arrow-left"></i>
+    Quay lại Dashboard
+  </button>
+
   <!-- Header -->
   <header class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-8">
     <div class="max-w-7xl mx-auto px-4 text-center">
@@ -29,6 +36,27 @@
       <p id="dataInfo" class="mt-2 text-indigo-100">Dữ liệu từ file DE.csv</p>
     </div>
   </header>
+
+  <!-- Filter Box -->
+  <div id="filterBox" class="hidden max-w-7xl mx-auto px-4 py-6">
+    <div class="bg-white rounded-xl shadow-lg p-6">
+      <h3 class="text-lg font-semibold mb-4 flex items-center">
+        <i class="fas fa-filter mr-2 text-indigo-600"></i>
+        Lọc theo Nhân viên Sales
+      </h3>
+      <div class="flex flex-wrap items-center gap-4">
+        <select id="staffFilter" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 min-w-[300px]">
+          <option value="">-- Tất cả Nhân viên --</option>
+        </select>
+        <button onclick="applyStaffFilter()" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
+          Áp dụng lọc
+        </button>
+        <button onclick="clearFilter()" class="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition">
+          Xóa lọc
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- Loading -->
   <div id="loading" class="flex flex-col items-center justify-center py-32">
@@ -41,9 +69,9 @@
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
 
-      <!-- 1. Pie - Doanh thu theo 3 tháng gần nhất -->
+      <!-- 1. Pie tháng -->
       <div class="bg-white rounded-xl shadow-lg p-6">
-        <h2 class="text-xl font-bold mb-4 text-center flex items-center justify-center">
+        <h2 id="pieMonthTitle" class="text-xl font-bold mb-4 text-center flex items-center justify-center">
           <i class="fas fa-chart-pie text-indigo-600 mr-2"></i>
           Doanh thu 3 tháng gần nhất
         </h2>
@@ -52,9 +80,9 @@
         </div>
       </div>
 
-      <!-- 2. Pie - Doanh thu theo sản phẩm -->
+      <!-- 2. Pie sản phẩm -->
       <div class="bg-white rounded-xl shadow-lg p-6">
-        <h2 class="text-xl font-bold mb-4 text-center flex items-center justify-center">
+        <h2 id="pieProductTitle" class="text-xl font-bold mb-4 text-center flex items-center justify-center">
           <i class="fas fa-chart-pie text-purple-600 mr-2"></i>
           Phân bổ doanh thu theo sản phẩm
         </h2>
@@ -62,12 +90,11 @@
           <canvas id="pieProductChart"></canvas>
         </div>
       </div>
-
     </div>
 
-    <!-- 3. Bar kết hợp Doanh thu & Số lượng theo tháng -->
+    <!-- 3. Bar kết hợp tháng -->
     <div class="bg-white rounded-xl shadow-lg p-6 mb-10">
-      <h2 class="text-xl font-bold mb-6 text-center flex items-center justify-center">
+      <h2 id="monthlyCombinedTitle" class="text-xl font-bold mb-6 text-center flex items-center justify-center">
         <i class="fas fa-layer-group text-emerald-600 mr-2"></i>
         So sánh Doanh thu & Số lượng theo tháng
       </h2>
@@ -76,18 +103,18 @@
       </div>
     </div>
 
-    <!-- Bar chart theo nhân viên -->
+    <!-- 4. Bar nhân viên -->
     <div class="bg-white rounded-xl shadow-lg p-6 mb-10">
       <h2 class="text-xl font-bold mb-6 text-center flex items-center justify-center">
         <i class="fas fa-users text-rose-600 mr-2"></i>
-        Doanh thu & Số lượng theo Nhân viên (3 tháng gần nhất)
+        Doanh thu & Số lượng theo Nhân viên Sales
       </h2>
       <div class="chart-container">
         <canvas id="staffPerformanceChart"></canvas>
       </div>
     </div>
 
-    <!-- Dartboard - Tuần doanh thu cao nhất -->
+    <!-- 5. Radar tuần -->
     <div class="bg-white rounded-xl shadow-lg p-6">
       <h2 class="text-xl font-bold mb-4 flex items-center justify-center">
         <i class="fas fa-radar-chart text-purple-600 mr-2"></i>
@@ -102,14 +129,33 @@
   </div>
 
   <script>
-    // Global chart instances
     const charts = {};
+    let allStaffList = [];
 
     async function loadData() {
       try {
         const response = await fetch('/api/sales_report');
         if (!response.ok) throw new Error('API error');
         const data = await response.json();
+
+        // Populate dropdown nhân viên
+        const staffSet = new Set();
+        data.forEach(row => {
+          const maNV = (row.MaNV || '').trim();
+          const tenNV = (row.Tennhanvien || 'Không xác định').trim();
+          if (maNV) staffSet.add(JSON.stringify({ ma: maNV, ten: tenNV }));
+        });
+        allStaffList = Array.from(staffSet).map(JSON.parse);
+
+        const select = document.getElementById('staffFilter');
+        allStaffList.forEach(staff => {
+          const opt = document.createElement('option');
+          opt.value = staff.ma;
+          opt.textContent = `${staff.ma} - ${staff.ten}`;
+          select.appendChild(opt);
+        });
+
+        document.getElementById('filterBox').classList.remove('hidden');
 
         document.getElementById('loading').classList.add('hidden');
         document.getElementById('content').classList.remove('hidden');
@@ -120,65 +166,77 @@
         document.getElementById('loading').innerHTML = `
           <div class="text-red-600 text-center py-32">
             <i class="fas fa-exclamation-circle text-6xl mb-6"></i>
-            <p class="text-2xl font-bold">Lỗi tải dữ liệu chi tiết</p>
-            <p class="mt-4">Kiểm tra kết nối API hoặc file DE.csv</p>
+            <p class="text-2xl font-bold">Lỗi tải dữ liệu</p>
+            <p class="mt-4">Kiểm tra API / file DE.csv</p>
           </div>
         `;
       }
     }
 
+    function applyStaffFilter() {
+      const val = document.getElementById('staffFilter').value;
+      window.location.href = val ? `?staff=${encodeURIComponent(val)}` : window.location.pathname;
+    }
+
+    function clearFilter() {
+      window.location.href = window.location.pathname;
+    }
+
     function processSalesData(data) {
       if (!Array.isArray(data) || data.length === 0) {
-        alert('Không có dữ liệu để phân tích chi tiết');
+        alert('Không có dữ liệu');
         return;
       }
 
-      // === Tìm 3 tháng gần nhất THỰC TẾ có trong dữ liệu ===
-      const monthSet = new Set();
+      const urlParams = new URLSearchParams(window.location.search);
+      const filterStaff = urlParams.get('staff');
 
-      data.forEach(row => {
+      let filteredData = data;
+      let staffName = '';
+
+      if (filterStaff) {
+        filteredData = data.filter(row => (row.MaNV || '').trim() === filterStaff.trim());
+        if (filteredData.length === 0) {
+          alert(`Không có dữ liệu cho nhân viên MaNV: ${filterStaff}`);
+          return;
+        }
+        staffName = filteredData[0]?.Tennhanvien || 'Không xác định';
+        document.getElementById('staffFilter').value = filterStaff;
+      }
+
+      console.log(`Tổng dữ liệu gốc: ${data.length} dòng`);
+      console.log(`Sau filter (staff: ${filterStaff || 'TẤT CẢ'}): ${filteredData.length} dòng`);
+
+      const monthSet = new Set();
+      filteredData.forEach(row => {
         let dateStr = row.Ngaydathang;
         if (!dateStr) return;
-
+        const parts = String(dateStr).trim().split(/[-/]/);
         let year, month;
-        if (typeof dateStr === 'string') {
-          dateStr = dateStr.trim();
-          const parts = dateStr.split(/[-/]/);
-          if (parts.length >= 2) {
-            if (parts[0].length === 4) {
-              // YYYY-MM-DD hoặc YYYY/MM/DD
-              year = parts[0];
-              month = parts[1].padStart(2, '0');
-            } else if (parts.length >= 3 && parts[2]?.length === 4) {
-              // DD/MM/YYYY hoặc DD-MM-YYYY
-              year = parts[2];
-              month = parts[1].padStart(2, '0');
-            }
+        if (parts.length >= 2) {
+          if (parts[0].length === 4) [year, month] = parts;
+          else if (parts.length >= 3 && parts[2].length === 4) {
+            year = parts[2];
+            month = parts[1];
           }
-        }
-
-        if (year && month && year.length === 4 && month.length === 2) {
-          const key = `${year}-${month}`;
-          monthSet.add(key);
+          if (year && month) monthSet.add(`${year}-${month.padStart(2, '0')}`);
         }
       });
 
-      // Sắp xếp giảm dần (tháng mới nhất trước)
-      const allMonthsSorted = Array.from(monthSet).sort((a, b) => b.localeCompare(a));
-
-      // Lấy tối đa 3 tháng gần nhất
-      const last3Months = allMonthsSorted.slice(0, 3);
+      const last3Months = Array.from(monthSet).sort((a, b) => b.localeCompare(a)).slice(0, 3);
 
       if (last3Months.length === 0) {
-        alert('Không tìm thấy tháng nào hợp lệ trong cột Ngaydathang');
+        alert('Không tìm thấy tháng hợp lệ');
         return;
       }
 
-      // Hiển thị thông tin tháng đang dùng
-      document.getElementById('dataInfo').textContent = 
-        `Dữ liệu từ file DE.csv | Tháng: ${last3Months.join(' → ')}`;
+      const suffix = filterStaff ? ` (Nhân viên: ${filterStaff} - ${staffName})` : '';
+      document.getElementById('pieMonthTitle').textContent = 'Doanh thu 3 tháng gần nhất' + suffix;
+      document.getElementById('pieProductTitle').textContent = 'Phân bổ doanh thu theo sản phẩm' + suffix;
+      document.getElementById('monthlyCombinedTitle').textContent = 'So sánh Doanh thu & Số lượng theo tháng' + suffix;
 
-      // Khởi tạo
+      document.getElementById('dataInfo').textContent = `Dữ liệu từ file DE.csv | Tháng: ${last3Months.join(' → ')} ${suffix}`;
+
       const revenueByMonth = {};
       const monthlyQuantity = {};
       const revenueByProduct = {};
@@ -189,57 +247,47 @@
         monthlyQuantity[m] = { revenue: 0, qty: 0 };
       });
 
-      // === Xử lý dữ liệu ===
-      data.forEach(row => {
+      filteredData.forEach(row => {
         let dateStr = row.Ngaydathang;
         if (!dateStr) return;
 
         let year, month;
-        if (typeof dateStr === 'string') {
-          dateStr = dateStr.trim();
-          const parts = dateStr.split(/[-/]/);
-          if (parts.length >= 2) {
-            if (parts[0].length === 4) {
-              year = parts[0];
-              month = parts[1].padStart(2, '0');
-            } else if (parts.length >= 3 && parts[2]?.length === 4) {
-              year = parts[2];
-              month = parts[1].padStart(2, '0');
-            }
+        const parts = String(dateStr).trim().split(/[-/]/);
+        if (parts.length >= 2) {
+          if (parts[0].length === 4) [year, month] = parts;
+          else if (parts.length >= 3 && parts[2].length === 4) {
+            year = parts[2];
+            month = parts[1];
           }
         }
+        if (!year || !month) return;
+
+        const key = `${year}-${month.padStart(2, '0')}`;
+        if (!last3Months.includes(key)) return;
+
+        const doanhthu = Number(row.Doanhthu) || 0;
+        const soluong = Number(row.SanLuongLe || row.Soluong || 0);
+
+        revenueByMonth[key] += doanhthu;
+        monthlyQuantity[key].revenue += doanhthu;
+        monthlyQuantity[key].qty += soluong;
 
         const maNV = (row.MaNV || 'Không xác định').trim();
         const tenNV = (row.Tennhanvien || 'Không xác định').trim();
         const staffKey = `${maNV} - ${tenNV}`;
 
-        if (!staffPerformance[staffKey]) {
-          staffPerformance[staffKey] = { revenue: 0, qty: 0 };
-        }
+        if (!staffPerformance[staffKey]) staffPerformance[staffKey] = { revenue: 0, qty: 0 };
+        staffPerformance[staffKey].revenue += doanhthu;
+        staffPerformance[staffKey].qty += soluong;
 
-        if (year && month) {
-          const key = `${year}-${month}`;
-          if (last3Months.includes(key)) {
-            const doanhthu = Number(row.Doanhthu) || 0;
-            const soluong = Number(row.SanLuongLe) || Number(row.Soluong) || 0;
-
-            revenueByMonth[key] += doanhthu;
-            monthlyQuantity[key].revenue += doanhthu;
-            monthlyQuantity[key].qty += soluong;
-
-            staffPerformance[staffKey].revenue += doanhthu;
-            staffPerformance[staffKey].qty += soluong;
-          }
-        }
-
-        // Doanh thu theo sản phẩm (tổng toàn bộ)
         const masp = row.MasanphamTAC || 'Không xác định';
-        revenueByProduct[masp] = (revenueByProduct[masp] || 0) + (Number(row.Doanhthu) || 0);
+        revenueByProduct[masp] = (revenueByProduct[masp] || 0) + doanhthu;
       });
 
-      // === Vẽ biểu đồ ===
+      console.log('Doanh thu theo tháng:', revenueByMonth);
+      console.log('Top sản phẩm:', Object.fromEntries(Object.entries(revenueByProduct).sort((a, b) => b[1] - a[1]).slice(0, 15)));
 
-      // 1. Pie tháng
+      // Vẽ chart 1: Pie tháng
       charts.pieMonth = new Chart(document.getElementById('pieMonthChart'), {
         type: 'pie',
         data: {
@@ -266,19 +314,31 @@
         plugins: [ChartDataLabels]
       });
 
-      // 2. Pie sản phẩm
+      // Vẽ chart 2: Pie sản phẩm Top 10 + Khác
       const prodLabels = Object.keys(revenueByProduct);
       const prodData = Object.values(revenueByProduct);
+      const topN = 10;
+      const products = prodLabels.map((l, i) => ({ label: l, value: prodData[i] }));
+      products.sort((a, b) => b.value - a.value);
+      const topProducts = products.slice(0, topN);
+      const others = products.slice(topN).reduce((s, i) => s + i.value, 0);
+
+      const chartLabels = topProducts.map(p => p.label);
+      const chartData = topProducts.map(p => p.value);
+      if (others > 0) {
+        chartLabels.push('Khác');
+        chartData.push(others);
+      }
 
       charts.pieProduct = new Chart(document.getElementById('pieProductChart'), {
         type: 'pie',
         data: {
-          labels: prodLabels,
+          labels: chartLabels,
           datasets: [{
-            data: prodData,
+            data: chartData,
             backgroundColor: [
               '#3B82F6', '#10B981', '#EF4444', '#F59E0B', '#8B5CF6',
-              '#EC4899', '#14B8A6', '#6366F1', '#F97316', '#06B6D4'
+              '#EC4899', '#14B8A6', '#6366F1', '#F97316', '#06B6D4', '#9CA3AF'
             ]
           }]
         },
@@ -299,24 +359,14 @@
         plugins: [ChartDataLabels]
       });
 
-      // 3. Bar kết hợp tháng
+      // Vẽ chart 3: Bar kết hợp tháng
       charts.monthlyCombined = new Chart(document.getElementById('monthlyCombinedChart'), {
         type: 'bar',
         data: {
           labels: last3Months,
           datasets: [
-            {
-              label: 'Doanh thu (₫)',
-              data: last3Months.map(m => monthlyQuantity[m]?.revenue || 0),
-              backgroundColor: '#10B981',
-              yAxisID: 'y'
-            },
-            {
-              label: 'Số lượng',
-              data: last3Months.map(m => monthlyQuantity[m]?.qty || 0),
-              backgroundColor: '#3B82F6',
-              yAxisID: 'y1'
-            }
+            { label: 'Doanh thu (₫)', data: last3Months.map(m => monthlyQuantity[m]?.revenue || 0), backgroundColor: '#10B981', yAxisID: 'y' },
+            { label: 'Số lượng', data: last3Months.map(m => monthlyQuantity[m]?.qty || 0), backgroundColor: '#3B82F6', yAxisID: 'y1' }
           ]
         },
         options: {
@@ -329,32 +379,22 @@
         }
       });
 
-      // 4. Bar theo nhân viên
+      // Vẽ chart 4: Bar nhân viên
       const staffEntries = Object.entries(staffPerformance)
-        .filter(([, stats]) => stats.revenue > 0)
+        .filter(([, s]) => s.revenue > 0)
         .sort((a, b) => b[1].revenue - a[1].revenue);
 
-      const staffLabels = staffEntries.map(([name]) => name.length > 22 ? name.slice(0, 19) + '...' : name);
-      const staffRevenue = staffEntries.map(([, stats]) => stats.revenue);
-      const staffQty = staffEntries.map(([, stats]) => stats.qty);
+      const staffLabels = staffEntries.map(([n]) => n.length > 22 ? n.slice(0, 19) + '...' : n);
+      const staffRevenue = staffEntries.map(([, s]) => s.revenue);
+      const staffQty = staffEntries.map(([, s]) => s.qty);
 
       charts.staffPerformance = new Chart(document.getElementById('staffPerformanceChart'), {
         type: 'bar',
         data: {
           labels: staffLabels,
           datasets: [
-            {
-              label: 'Doanh thu (₫)',
-              data: staffRevenue,
-              backgroundColor: '#EC4899',
-              yAxisID: 'y'
-            },
-            {
-              label: 'Số lượng',
-              data: staffQty,
-              backgroundColor: '#6366F1',
-              yAxisID: 'y1'
-            }
+            { label: 'Doanh thu (₫)', data: staffRevenue, backgroundColor: '#EC4899', yAxisID: 'y' },
+            { label: 'Số lượng', data: staffQty, backgroundColor: '#6366F1', yAxisID: 'y1' }
           ]
         },
         options: {
@@ -362,45 +402,133 @@
           maintainAspectRatio: false,
           indexAxis: staffLabels.length > 12 ? 'y' : 'x',
           scales: {
-            y: { 
-              position: 'left', 
-              title: { display: true, text: 'Doanh thu' },
-              ticks: { callback: v => v.toLocaleString('vi-VN') }
-            },
-            y1: { 
-              position: 'right', 
-              title: { display: true, text: 'Số lượng' }, 
-              grid: { drawOnChartArea: false },
-              ticks: { callback: v => v.toLocaleString('vi-VN') }
-            },
-            x: { 
-              ticks: { autoSkip: false, maxRotation: 45, minRotation: 45 }
+            y: { position: 'left', title: { display: true, text: 'Doanh thu' }, ticks: { callback: v => v.toLocaleString('vi-VN') } },
+            y1: { position: 'right', title: { display: true, text: 'Số lượng' }, grid: { drawOnChartArea: false }, ticks: { callback: v => v.toLocaleString('vi-VN') } },
+            x: { ticks: { autoSkip: false, maxRotation: 45, minRotation: 45 } }
+          },
+          plugins: {
+            legend: { position: 'top' },
+            tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString('vi-VN')}` } }
+          }
+        }
+      });
+
+      // Vẽ chart 5: Radar tuần cao nhất
+      createRadarChartForTopWeek(filteredData, last3Months);
+    }
+
+    // Hàm vẽ Radar chart - Tuần cao nhất
+    function createRadarChartForTopWeek(filteredData, last3Months) {
+      const daysOfWeek = ['Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7', 'CN'];
+
+      const weeklyRevenue = {};
+      filteredData.forEach(row => {
+        const dateStr = row.Ngaydathang;
+        if (!dateStr) return;
+
+        let date;
+        try {
+          const parts = String(dateStr).trim().split(/[-/]/);
+          let y, m, d;
+          if (parts.length === 3) {
+            if (parts[0].length === 4) [y, m, d] = parts;
+            else [d, m, y] = parts;
+            date = new Date(y, m - 1, d);
+          }
+        } catch (e) {
+          return;
+        }
+
+        if (isNaN(date.getTime())) return;
+
+        const year = date.getFullYear();
+        const monthKey = `${year}-${(date.getMonth() + 1).toString().padStart(2, '0')}`;
+        if (!last3Months.includes(monthKey)) return;
+
+        const week = getISOWeek(date);
+        const weekKey = `${year}-W${week.toString().padStart(2, '0')}`;
+
+        weeklyRevenue[weekKey] = weeklyRevenue[weekKey] || Array(7).fill(0);
+
+        const dayIndex = (date.getDay() === 0 ? 6 : date.getDay() - 1);
+        weeklyRevenue[weekKey][dayIndex] += Number(row.Doanhthu) || 0;
+      });
+
+      let maxWeek = null;
+      let maxTotal = 0;
+      Object.entries(weeklyRevenue).forEach(([key, values]) => {
+        const total = values.reduce((a, b) => a + b, 0);
+        if (total > maxTotal) {
+          maxTotal = total;
+          maxWeek = key;
+        }
+      });
+
+      let radarData = Array(7).fill(0);
+      let weekStartDate = '';
+      if (maxWeek) {
+        radarData = weeklyRevenue[maxWeek];
+        const [year, weekStr] = maxWeek.split('-W');
+        const weekNum = parseInt(weekStr, 10);
+        const firstDay = new Date(year, 0, 1);
+        const dayOffset = (firstDay.getDay() + 6) % 7;
+        const startDate = new Date(year, 0, 1 + (weekNum - 1) * 7 - dayOffset);
+        weekStartDate = startDate.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' });
+      }
+
+      document.getElementById('topWeekInfo').textContent = maxWeek
+        ? `Tuần cao nhất: ${weekStartDate} (từ Thứ 2) - Doanh thu: ${maxTotal.toLocaleString('vi-VN')} ₫`
+        : 'Không có dữ liệu tuần hợp lệ trong 3 tháng gần nhất';
+
+      charts.radarTopWeek = new Chart(document.getElementById('radarTopWeekChart'), {
+        type: 'radar',
+        data: {
+          labels: daysOfWeek,
+          datasets: [{
+            label: 'Doanh thu theo ngày trong tuần cao nhất',
+            data: radarData,
+            backgroundColor: 'rgba(139, 92, 246, 0.2)',
+            borderColor: '#8B5CF6',
+            borderWidth: 3,
+            pointBackgroundColor: '#8B5CF6',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: '#8B5CF6'
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            r: {
+              beginAtZero: true,
+              ticks: {
+                callback: value => value.toLocaleString('vi-VN') + ' ₫'
+              }
             }
           },
           plugins: {
             legend: { position: 'top' },
             tooltip: {
               callbacks: {
-                label: ctx => `${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString('vi-VN')}`
+                label: ctx => `${ctx.dataset.label}: ${ctx.raw.toLocaleString('vi-VN')} ₫`
               }
             }
           }
         }
       });
-
-      // === Radar chart tuần cao nhất (bạn giữ nguyên code cũ) ===
-      createRadarChartForTopWeek(data);
     }
 
-    // Hàm radar chart (bạn paste code cũ vào đây)
-    function createRadarChartForTopWeek(data) {
-      // ... code radar chart cũ của bạn ...
-      // Nếu chưa có thì để trống hoặc comment tạm cũng được
+    // Helper: Lấy số tuần ISO (tuần bắt đầu từ Thứ 2)
+    function getISOWeek(date) {
+      const d = new Date(date);
+      d.setHours(0, 0, 0, 0);
+      d.setDate(d.getDate() + 4 - (d.getDay() || 7));
+      const yearStart = new Date(d.getFullYear(), 0, 1);
+      return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
     }
 
-    // Khởi động
     document.addEventListener('DOMContentLoaded', loadData);
   </script>
 </body>
-
 </html>

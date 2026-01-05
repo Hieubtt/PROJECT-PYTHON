@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,29 +17,36 @@
       height: 320px;
       width: 100%;
     }
+
+    .detail-mode .chart-container {
+      height: 420px;
+    }
+
+    .detail-mode #summary-cards,
+    .detail-mode #basic-charts {
+      display: none !important;
+    }
   </style>
 </head>
+
 <body class="bg-gray-50 min-h-screen">
 
-  <!-- Nút Xem chi tiết -->
-  <div class="fixed top-5 right-5 z-50">
-    <button
-      id="openDetailBtn"
-      onclick="openDetailPage()"
-      class="px-6 py-3.5 bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white font-semibold text-lg rounded-xl shadow-2xl transition-all duration-300 flex items-center gap-3 disabled:opacity-60 disabled:cursor-not-allowed"
-      disabled
-      title="Đợi dữ liệu tải xong"
-    >
-      <i class="fas fa-external-link-alt"></i>
+  <!-- Nút Xem chi tiết / Quay lại - FIXED POSITION -->
+  <div class="fixed top-5 right-5 z-50 flex gap-4">
+    <button id="openDetailBtn"
+      onclick="window.location.href = 'http://127.0.0.1:8080/sales_charts'"
+      class="px-6 py-3.5 bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white font-semibold text-lg rounded-xl shadow-2xl transition-all duration-300 flex items-center gap-3"
+      title="Chuyển đến phân tích chi tiết">
+      <i class="fas fa-search-plus"></i>
       Xem phân tích chi tiết
     </button>
-  </div>
 
-  <script>
-    function openDetailPage() {
-      window.open('sales_charts', '_blank');
-    }
-  </script>
+    <button id="backToDashboardBtn" onclick="backToDashboard()"
+      class="hidden px-6 py-3.5 bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white font-semibold text-lg rounded-xl shadow-2xl transition-all duration-300 flex items-center gap-3">
+      <i class="fas fa-arrow-left"></i>
+      Quay lại Dashboard
+    </button>
+  </div>
 
   <!-- Navigation -->
   <nav class="bg-white shadow-lg">
@@ -48,11 +56,6 @@
           <i class="fas fa-shopping-cart text-blue-600 text-2xl"></i>
           <span class="text-xl font-bold text-gray-800">Sales Dashboard</span>
         </div>
-        <div class="flex items-center space-x-8">
-          <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fas fa-home mr-1"></i>Home</a>
-          <a href="#" class="text-gray-600 hover:text-blue-600"><i class="fas fa-chart-line mr-1"></i>Sales</a>
-          <a href="#" class="text-blue-600 font-bold"><i class="fas fa-chart-bar mr-1"></i>Analytics</a>
-        </div>
       </div>
     </div>
   </nav>
@@ -60,12 +63,35 @@
   <!-- Header -->
   <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl font-bold mb-3">Sales Analytics Dashboard</h1>
-      <p class="text-xl text-blue-100">Trực quan hóa doanh thu, đơn hàng & hiệu suất bán hàng</p>
+      <h1 id="pageTitle" class="text-4xl font-bold mb-3">Sales Analytics Dashboard</h1>
+      <p id="pageDesc" class="text-xl text-blue-100">Trực quan hóa doanh thu, đơn hàng & hiệu suất theo Nhà phân phối</p>
     </div>
   </header>
 
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+    <!-- Filter Box - Lọc theo MaNPP -->
+    <div id="filterBox" class="hidden max-w-7xl mx-auto px-4 py-6">
+      <div class="bg-white rounded-xl shadow-lg p-6">
+        <h3 class="text-lg font-semibold mb-4 flex items-center">
+          <i class="fas fa-filter mr-2 text-indigo-600"></i>
+          Lọc theo Nhà phân phối (MaNPP)
+        </h3>
+        <div class="flex flex-wrap items-center gap-4">
+          <select id="nppFilter" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 min-w-[300px]">
+            <option value="">-- Tất cả Nhà phân phối --</option>
+          </select>
+          <button onclick="applyNppFilter()" 
+            class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
+            Áp dụng lọc
+          </button>
+          <button onclick="clearFilter()" 
+            class="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition">
+            Xóa lọc
+          </button>
+        </div>
+      </div>
+    </div>
 
     <!-- Loading -->
     <div id="loading" class="text-center py-20">
@@ -73,63 +99,57 @@
       <p class="mt-6 text-xl text-gray-700">Đang tải dữ liệu bán hàng...</p>
     </div>
 
-    <!-- Content -->
+    <!-- Content chính -->
     <div id="content" class="hidden">
 
       <!-- Summary Cards -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+      <div id="summary-cards" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
         <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-green-500">
-          <p class="text-sm text-gray-500">Tổng doanh thu</p>
+          <p class="text-sm text-gray-500">Tổng Doanh Thu</p>
           <p id="totalRevenue" class="text-3xl font-bold text-green-700 mt-1">-</p>
         </div>
         <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-blue-500">
-          <p class="text-sm text-gray-500">Tổng đơn hàng</p>
+          <p class="text-sm text-gray-500">Tổng Đơn Hàng</p>
           <p id="totalOrders" class="text-3xl font-bold text-blue-700 mt-1">-</p>
         </div>
         <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-purple-500">
-          <p class="text-sm text-gray-500">Tổng số lượng</p>
+          <p class="text-sm text-gray-500">Tổng Số Lượng</p>
           <p id="totalQuantity" class="text-3xl font-bold text-purple-700 mt-1">-</p>
         </div>
         <div class="bg-white rounded-xl shadow-md p-6 border-l-4 border-yellow-500">
-          <p class="text-sm text-gray-500">Giá trị đơn TB</p>
+          <p class="text-sm text-gray-500">Giá Trị Đơn TB</p>
           <p id="avgOrderValue" class="text-3xl font-bold text-yellow-700 mt-1">-</p>
         </div>
       </div>
 
-      <!-- Charts Row 1 -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
-        <div class="bg-white rounded-xl shadow-md p-6">
-          <h2 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-chart-line text-blue-600 mr-2"></i>Xu hướng doanh thu theo tháng</h2>
-          <div class="chart-container"><canvas id="revenueTrendChart"></canvas></div>
+      <!-- Charts cơ bản -->
+      <div id="basic-charts">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+          <div class="bg-white rounded-xl shadow-md p-6">
+            <h2 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-chart-line text-blue-600 mr-2"></i>Xu hướng doanh thu theo tháng</h2>
+            <div class="chart-container"><canvas id="revenueTrendChart"></canvas></div>
+          </div>
+          <div class="bg-white rounded-xl shadow-md p-6">
+            <h2 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-building text-indigo-600 mr-2"></i>Top 3 Nhà phân phối</h2>
+            <div class="chart-container"><canvas id="topDistributorsChart"></canvas></div>
+          </div>
         </div>
-        <div class="bg-white rounded-xl shadow-md p-6">
-          <h2 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-building text-indigo-600 mr-2"></i>Top 10 Nhà phân phối / Khách hàng</h2>
-          <div class="chart-container"><canvas id="topDistributorsChart"></canvas></div>
-        </div>
-      </div>
-
-      <!-- Charts Row 2 -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10">
-        <div class="bg-white rounded-xl shadow-md p-6">
-          <h2 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-gift text-amber-600 mr-2"></i>Hàng bán vs Khuyến mãi</h2>
-          <div class="chart-container"><canvas id="freeItemChart"></canvas></div>
-        </div>
-        <div class="bg-white rounded-xl shadow-md p-6">
-          <h2 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-chart-pie text-green-600 mr-2"></i>Doanh thu theo sản phẩm</h2>
-          <div class="chart-container"><canvas id="productRevenueChart"></canvas></div>
-        </div>
-        <div class="bg-white rounded-xl shadow-md p-6">
-          <h2 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-chart-pie text-emerald-600 mr-2"></i>Doanh thu 3 tháng gần nhất</h2>
-          <div class="chart-container"><canvas id="last3MonthsChart"></canvas></div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-10">
+          <div class="bg-white rounded-xl shadow-md p-6">
+            <h2 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-gift text-amber-600 mr-2"></i>Hàng bán vs Khuyến mãi</h2>
+            <div class="chart-container"><canvas id="freeItemChart"></canvas></div>
+          </div>
         </div>
       </div>
 
-      <!-- Row 3 -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- CHART CHI TIẾT -->
+      <div id="detail-charts" class="hidden grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+
         <div class="bg-white rounded-xl shadow-md p-6">
           <h2 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-layer-group text-purple-600 mr-2"></i>Doanh thu & Số lượng theo tháng</h2>
           <div class="chart-container"><canvas id="monthlyCombinedChart"></canvas></div>
         </div>
+
         <div class="bg-white rounded-xl shadow-md p-6">
           <h2 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-exclamation-triangle text-red-600 mr-2"></i>Mức độ phụ thuộc doanh thu</h2>
           <div class="grid grid-cols-2 gap-6 mb-6">
@@ -138,14 +158,22 @@
               <p id="mostDependentMonth" class="text-3xl font-bold text-blue-700 mt-2">--</p>
             </div>
             <div class="bg-gray-50 p-5 rounded-xl text-center">
-              <p class="text-sm text-gray-600">Sản phẩm phụ thuộc nhất</p>
-              <p id="mostDependentProduct" class="text-3xl font-bold text-purple-700 mt-2">--</p>
+              <p class="text-sm text-gray-600">Nhà phân phối phụ thuộc nhất</p>
+              <p id="mostDependentNpp" class="text-3xl font-bold text-purple-700 mt-2">--</p>
             </div>
           </div>
           <div id="dependencyInsight" class="p-5 bg-gray-50 rounded-xl text-center text-lg font-medium">
             Đang phân tích...
           </div>
         </div>
+
+        <div class="bg-white rounded-xl shadow-md p-6 lg:col-span-2">
+          <h2 class="text-xl font-bold mb-4 flex items-center"><i class="fas fa-building text-emerald-600 mr-2"></i>Hiệu suất Nhà phân phối - 3 tháng gần nhất</h2>
+          <p class="text-sm text-gray-500 mb-4">Doanh thu theo MaNPP & Tên NPP (Top 8)</p>
+          <div class="chart-container"><canvas id="nppPerformanceChart"></canvas></div>
+          <div id="nppSummary" class="mt-4 p-4 bg-blue-50 rounded-xl text-sm"></div>
+        </div>
+
       </div>
     </div>
   </main>
@@ -157,8 +185,9 @@
   </footer>
 
   <script>
-    // Global chart instances
     const charts = {};
+    let isDetailMode = false;
+    let salesData = [];
 
     async function loadData() {
       try {
@@ -166,14 +195,33 @@
         if (!response.ok) throw new Error('API error');
         const data = await response.json();
 
+        console.log('Dữ liệu từ API (5 dòng đầu):', data.slice(0, 5));
+
+        // Populate dropdown MaNPP
+        const nppSet = new Set();
+        data.forEach(row => {
+          const maNPP = (row.MaNPP || '').trim();
+          const tenNPP = (row.Nhaphanphoi || 'Không xác định').trim();
+          if (maNPP) nppSet.add(JSON.stringify({ ma: maNPP, ten: tenNPP }));
+        });
+        const allNppList = Array.from(nppSet).map(JSON.parse);
+
+        const select = document.getElementById('nppFilter');
+        allNppList.forEach(npp => {
+          const opt = document.createElement('option');
+          opt.value = npp.ma;
+          opt.textContent = `${npp.ma} - ${npp.ten}`;
+          select.appendChild(opt);
+        });
+
+        document.getElementById('filterBox').classList.remove('hidden');
+
         document.getElementById('loading').classList.add('hidden');
         document.getElementById('content').classList.remove('hidden');
+        salesData = data;
 
         processSalesData(data);
-
-        // Kích hoạt nút sau khi dữ liệu đã sẵn sàng
         document.getElementById('openDetailBtn').disabled = false;
-        document.getElementById('openDetailBtn').title = "Mở trang phân tích chi tiết";
       } catch (err) {
         console.error(err);
         document.getElementById('loading').innerHTML = `
@@ -185,16 +233,51 @@
       }
     }
 
+    function applyNppFilter() {
+      const selected = document.getElementById('nppFilter').value;
+      window.location.href = selected ? `?npp=${encodeURIComponent(selected)}` : window.location.pathname;
+    }
+
+    function clearFilter() {
+      window.location.href = window.location.pathname;
+    }
+
     function processSalesData(data) {
-      if (!Array.isArray(data) || data.length === 0) {
-        alert('Không có dữ liệu để phân tích');
-        return;
+      const urlParams = new URLSearchParams(window.location.search);
+      const filterNpp = urlParams.get('npp');
+
+      let filteredData = data;
+      if (filterNpp) {
+        filteredData = data.filter(row => (row.MaNPP || '').trim() === filterNpp.trim());
+        if (filteredData.length === 0) {
+          alert(`Không có dữ liệu cho MaNPP: ${filterNpp}`);
+          return;
+        }
       }
 
-      // 1. Tổng hợp chính
-      const totalRevenue = data.reduce((sum, r) => sum + (Number(r.Doanhthu) || 0), 0);
-      const totalQuantity = data.reduce((sum, r) => sum + (Number(r.SanLuongLe) || 0), 0);
-      const uniqueOrders = new Set(data.map(r => r.Hoadon).filter(Boolean));
+      console.log(`Tổng dữ liệu gốc: ${data.length}`);
+      console.log(`Sau filter MaNPP (${filterNpp || 'TẤT CẢ'}): ${filteredData.length} dòng`);
+
+      // Tìm 3 tháng gần nhất
+      const monthSet = new Set();
+      filteredData.forEach(r => {
+        let dateStr = r.Ngaydathang;
+        if (dateStr) {
+          dateStr = String(dateStr).trim();
+          const monthKey = dateStr.slice(0, 7);
+          if (monthKey && monthKey.includes('-') && monthKey.length >= 7) {
+            monthSet.add(monthKey);
+          }
+        }
+      });
+
+      const sortedMonths = Array.from(monthSet).sort();
+      const last3Months = sortedMonths.slice(-3);
+
+      // Summary
+      const totalRevenue = filteredData.reduce((sum, r) => sum + (Number(r.Doanhthu) || 0), 0);
+      const totalQuantity = filteredData.reduce((sum, r) => sum + (Number(r.SanLuongLe) || 0), 0);
+      const uniqueOrders = new Set(filteredData.map(r => String(r.Hoadon || '').trim()).filter(Boolean));
       const totalOrders = uniqueOrders.size;
       const avgOrderValue = totalOrders ? Math.round(totalRevenue / totalOrders) : 0;
 
@@ -203,103 +286,132 @@
       document.getElementById('totalQuantity').textContent = totalQuantity.toLocaleString('vi-VN');
       document.getElementById('avgOrderValue').textContent = avgOrderValue.toLocaleString('vi-VN') + ' ₫';
 
-      // 2. Doanh thu theo tháng (Line)
+      // Vẽ tất cả chart (cơ bản + chi tiết) với filteredData
+      createRevenueTrendChart(filteredData);
+      createTopDistributorsChart(filteredData);
+      createFreeItemChart(filteredData);
+      createMonthlyCombinedChart(filteredData);
+      createNppPerformanceChart(filteredData, last3Months);
+      createDependencyAnalysis(filteredData, last3Months);
+    }
+
+    // 1. Xu hướng doanh thu theo tháng (sửa dùng Ngaydathang)
+    function createRevenueTrendChart(data) {
       const monthlyRevenue = {};
+
       data.forEach(r => {
-        const month = (r.Ngaydathang || '').slice(0, 7);
-        if (month) monthlyRevenue[month] = (monthlyRevenue[month] || 0) + (Number(r.Doanhthu) || 0);
+        let dateStr = r.Thang;
+        if (!dateStr) return;
+
+        dateStr = String(dateStr).trim();
+        const monthKey = dateStr.slice(0, 7); // YYYY-MM
+        if (monthKey && monthKey.includes('-')) {
+          const [year, month] = monthKey.split('-');
+          const label = `${year.slice(-2)}-${month.padStart(2, '0')}`;
+          monthlyRevenue[label] = (monthlyRevenue[label] || 0) + (Number(r.Doanhthu) || 0);
+        }
       });
-      const sortedMonths = Object.keys(monthlyRevenue).sort();
-      const revenueValues = sortedMonths.map(m => monthlyRevenue[m]);
+
+      const sortedLabels = Object.keys(monthlyRevenue).sort((a, b) => {
+        const [ya, ma] = a.split('-').map(Number);
+        const [yb, mb] = b.split('-').map(Number);
+        return (yb * 100 + mb) - (ya * 100 + ma);
+      });
+
+      const revenueValues = sortedLabels.map(label => monthlyRevenue[label]);
+
+      console.log('Doanh thu theo tháng:', monthlyRevenue);
 
       charts.revenueTrend = new Chart(document.getElementById('revenueTrendChart'), {
-        type: 'line',
-        data: { labels: sortedMonths, datasets: [{ label: 'Doanh thu', data: revenueValues, borderColor: '#3B82F6', backgroundColor: 'rgba(59,130,246,0.15)', tension: 0.3, fill: true }] },
-        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+        type: 'bar',
+        data: {
+          labels: sortedLabels,
+          datasets: [{
+            label: 'Doanh thu',
+            data: revenueValues,
+            backgroundColor: 'rgba(59, 130, 246, 0.7)',
+            borderColor: '#3B82F6',
+            borderWidth: 1,
+            borderRadius: 6
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (context) => new Intl.NumberFormat('vi-VN').format(context.raw) + ' đ'
+              }
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                callback: (value) => new Intl.NumberFormat('vi-VN').format(value) + ' đ'
+              }
+            }
+          }
+        }
       });
+    }
 
-      // 3. Top 10 Nhà phân phối
+    // 2. Top 10 Nhà phân phối
+    function createTopDistributorsChart(data) {
       const distributorRev = {};
       data.forEach(r => {
-        const name = r.Nhaphanphoi || 'Không xác định';
+        const name = String(r.Nhaphanphoi || 'Không xác định').trim();
         distributorRev[name] = (distributorRev[name] || 0) + (Number(r.Doanhthu) || 0);
       });
-      const top10Dist = Object.entries(distributorRev).sort((a,b)=>b[1]-a[1]).slice(0,10);
+      const top10 = Object.entries(distributorRev).sort((a, b) => b[1] - a[1]).slice(0, 10);
 
       charts.topDistributors = new Chart(document.getElementById('topDistributorsChart'), {
         type: 'bar',
         data: {
-          labels: top10Dist.map(([name]) => name.length > 25 ? name.slice(0,22)+'...' : name),
-          datasets: [{ label: 'Doanh thu', data: top10Dist.map(([,v])=>v), backgroundColor: '#8B5CF6' }]
+          labels: top10.map(([name]) => name.length > 25 ? name.slice(0, 22) + '...' : name),
+          datasets: [{ label: 'Doanh thu', data: top10.map(([, v]) => v), backgroundColor: '#8B5CF6' }]
         },
-        options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } }
+        }
       });
+    }
 
-      // 4. Hàng bán vs Khuyến mãi
+    // 3. Hàng bán vs Khuyến mãi
+    function createFreeItemChart(data) {
       let saleQty = 0, promoQty = 0;
       data.forEach(r => {
-        const isPromo = Number(r.FreeItem) === 1;
         const qty = Number(r.SanLuongLe) || 0;
-        if (isPromo) promoQty += qty; else saleQty += qty;
+        const isPromo = Number(r.FreeItem) === 1 || Number(r.Giamgia || 0) > 0 || String(r.Khuyenmai || '').trim().toLowerCase().includes('km');
+        if (isPromo) promoQty += qty;
+        else saleQty += qty;
       });
 
       charts.freeItem = new Chart(document.getElementById('freeItemChart'), {
         type: 'bar',
-        data: { labels: ['Hàng bán', 'Khuyến mãi'], datasets: [{ label: 'Số lượng', data: [saleQty, promoQty], backgroundColor: ['#3B82F6', '#F59E0B'] }] },
-        options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } } }
-      });
-
-      // 5. Doanh thu theo sản phẩm (Pie)
-      const productRev = {};
-      data.forEach(r => {
-        const prod = r.MasanphamTAC || 'Khác';
-        productRev[prod] = (productRev[prod] || 0) + (Number(r.Doanhthu) || 0);
-      });
-      const prodLabels = Object.keys(productRev);
-      const prodValues = Object.values(productRev);
-
-      charts.productRevenue = new Chart(document.getElementById('productRevenueChart'), {
-        type: 'pie',
-        data: { labels: prodLabels, datasets: [{ data: prodValues, backgroundColor: ['#3B82F6','#10B981','#EF4444','#F59E0B','#8B5CF6','#EC4899','#14B8A6','#6366F1','#F97316','#06B6D4'] }] },
-        options: {
-          responsive: true, maintainAspectRatio: false,
-          plugins: { legend: { position: 'right' }, datalabels: { color: '#fff', formatter: (v,ctx) => { const t=ctx.dataset.data.reduce((a,b)=>a+b,0); return t ? Math.round(v/t*100)+'%' : ''; } } }
+        data: {
+          labels: ['Hàng bán', 'Khuyến mãi'],
+          datasets: [{ label: 'Số lượng', data: [saleQty, promoQty], backgroundColor: ['#3B82F6', '#F59E0B'] }]
         },
-        plugins: [ChartDataLabels]
-      });
-
-      // 6. Doanh thu 3 tháng gần nhất (Pie)
-      const now = new Date();
-      const last3Months = [];
-      for (let i = 2; i >= 0; i--) {
-        const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
-        last3Months.push(`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`);
-      }
-      const revenueLast3 = {};
-      last3Months.forEach(m => revenueLast3[m] = 0);
-      data.forEach(r => {
-        if (r.Ngaydathang) {
-          const key = r.Ngaydathang.slice(0,7);
-          if (revenueLast3[key] !== undefined) revenueLast3[key] += Number(r.Doanhthu) || 0;
+        options: {
+          indexAxis: 'y',
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } }
         }
       });
-      const last3Labels = Object.keys(revenueLast3);
-      const last3Values = Object.values(revenueLast3);
+    }
 
-      charts.last3Months = new Chart(document.getElementById('last3MonthsChart'), {
-        type: 'pie',
-        data: { labels: last3Labels, datasets: [{ data: last3Values, backgroundColor: ['#3B82F6', '#10B981', '#F59E0B'] }] },
-        options: {
-          responsive: true, maintainAspectRatio: false,
-          plugins: { legend: { position: 'right' }, datalabels: { color: '#fff', formatter: (v,ctx) => { const t=ctx.dataset.data.reduce((a,b)=>a+b,0); return t ? Math.round(v/t*100)+'%' : ''; } } }
-        },
-        plugins: [ChartDataLabels]
-      });
-
-      // 7. Doanh thu & Số lượng theo tháng (Combo)
+    // 4. Doanh thu & Số lượng theo tháng (Combo)
+    function createMonthlyCombinedChart(data) {
       const monthlyData = {};
       data.forEach(r => {
-        const m = (r.Ngaydathang || '').slice(0,7);
+        const m = String(r.Ngaydathang || '').slice(0, 7);
         if (m) {
           if (!monthlyData[m]) monthlyData[m] = { rev: 0, qty: 0 };
           monthlyData[m].rev += Number(r.Doanhthu) || 0;
@@ -315,58 +427,190 @@
         data: {
           labels: mLabels,
           datasets: [
-            { label: 'Doanh thu', data: mRev, backgroundColor: '#10B981', yAxisID: 'y' },
-            { label: 'Số lượng', data: mQty, backgroundColor: '#3B82F6', yAxisID: 'y1' }
+            { label: 'Doanh thu (₫)', data: mRev, backgroundColor: 'rgba(16,185,129,0.8)', yAxisID: 'y' },
+            { label: 'Số lượng', data: mQty, backgroundColor: 'rgba(59,130,246,0.8)', yAxisID: 'y1' }
           ]
         },
         options: {
-          responsive: true, maintainAspectRatio: false,
-          scales: { y: { position: 'left', title: { display: true, text: 'Doanh thu (₫)' } }, y1: { position: 'right', title: { display: true, text: 'Số lượng' }, grid: { drawOnChartArea: false } } }
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: { position: 'left', title: { display: true, text: 'Doanh thu (₫)' } },
+            y1: { position: 'right', title: { display: true, text: 'Số lượng' }, grid: { drawOnChartArea: false } }
+          }
         }
       });
-
-      // 8. Phụ thuộc doanh thu
-      const monthTotal = Object.values(revenueLast3);
-      const totalLast3 = monthTotal.reduce((a,b)=>a+b,0);
-      const maxMonthVal = Math.max(...monthTotal);
-      const maxMonthIdx = monthTotal.indexOf(maxMonthVal);
-      const mostDepMonth = last3Labels[maxMonthIdx] || '--';
-      const monthPercent = totalLast3 ? Math.round(maxMonthVal / totalLast3 * 100) : 0;
-
-      const prodLast3 = {};
-      data.forEach(r => {
-        const m = (r.Ngaydathang || '').slice(0,7);
-        if (last3Labels.includes(m)) {
-          const p = r.MasanphamTAC || 'Khác';
-          prodLast3[p] = (prodLast3[p] || 0) + (Number(r.Doanhthu) || 0);
-        }
-      });
-      const topProdEntries = Object.entries(prodLast3).sort((a,b)=>b[1]-a[1]);
-      const topProd = topProdEntries[0] || ['-', 0];
-      const prodPercent = totalLast3 ? Math.round(topProd[1] / totalLast3 * 100) : 0;
-
-      document.getElementById('mostDependentMonth').textContent = `${mostDepMonth} (${monthPercent}%)`;
-      document.getElementById('mostDependentProduct').textContent = `${topProd[0]} (${prodPercent}%)`;
-
-      let insightText = '', insightClass = 'text-gray-800';
-      if (monthPercent > 60 || prodPercent > 60) {
-        insightText = 'Cảnh báo: Doanh thu phụ thuộc rất cao vào một tháng/sản phẩm!';
-        insightClass = 'text-red-700 bg-red-50';
-      } else if (monthPercent > 40 || prodPercent > 40) {
-        insightText = 'Mức độ tập trung doanh thu khá cao. Nên đa dạng hóa thêm.';
-        insightClass = 'text-amber-700 bg-amber-50';
-      } else {
-        insightText = 'Cơ cấu doanh thu khá cân bằng trong 3 tháng gần nhất.';
-        insightClass = 'text-green-700 bg-green-50';
-      }
-
-      const insightEl = document.getElementById('dependencyInsight');
-      insightEl.textContent = insightText;
-      insightEl.className = `p-5 rounded-xl text-center text-lg font-medium ${insightClass}`;
     }
 
-    // Khởi động
-    document.addEventListener('DOMContentLoaded', loadData);
+    // 5. Hiệu suất Nhà phân phối 3 tháng gần nhất
+    function createNppPerformanceChart(data, last3Months) {
+      const nppRevenue = {};
+
+      data.forEach(row => {
+        const monthKey = String(row.Ngaydathang || '').trim().slice(0, 7);
+        if (!last3Months.includes(monthKey)) return;
+
+        const manpp = String(row.MaNPP || '').trim();
+        const tennpp = String(row.Nhaphanphoi || manpp || 'Không xác định').trim();
+        const nppKey = manpp ? `${manpp}_${tennpp}` : 'Không xác định';
+        const revenue = Number(row.Doanhthu) || 0;
+
+        if (!nppRevenue[nppKey]) nppRevenue[nppKey] = { total: 0, months: {} };
+        nppRevenue[nppKey].total += revenue;
+        nppRevenue[nppKey].months[monthKey] = (nppRevenue[nppKey].months[monthKey] || 0) + revenue;
+      });
+
+      const topNpp = Object.entries(nppRevenue)
+        .sort((a, b) => b[1].total - a[1].total)
+        .slice(0, 8)
+        .map(([key, stats]) => {
+          const [manpp, tennpp] = key.split('_', 2);
+          return { manpp, tennpp, ...stats };
+        });
+
+      const labels = topNpp.map(s => `${s.manpp}\n${s.tennpp}`);
+      const totals = topNpp.map(s => s.total);
+
+      charts.nppPerformance = new Chart(document.getElementById('nppPerformanceChart'), {
+        type: 'bar',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: 'Tổng doanh thu 3 tháng',
+            data: totals,
+            backgroundColor: 'linear-gradient(45deg, #10B981, #059669)',
+            borderRadius: 8,
+            borderSkipped: false
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          indexAxis: 'y',
+          plugins: {
+            legend: { display: false },
+            datalabels: {
+              anchor: 'end',
+              align: 'end',
+              color: '#1F2937',
+              formatter: (value) => value.toLocaleString('vi-VN') + ' ₫'
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                callback: (value) => value.toLocaleString('vi-VN') + ' ₫',
+                font: { size: 11 }
+              }
+            }
+          }
+        },
+        plugins: [ChartDataLabels]
+      });
+
+      const summary = topNpp.map((s, i) =>
+        `${i + 1}. ${s.manpp} - ${s.tennpp}: ${s.total.toLocaleString('vi-VN')} ₫`
+      ).join('<br>');
+      document.getElementById('nppSummary').innerHTML = `
+        <strong>🏆 Top Nhà phân phối (${last3Months.join(', ')}):</strong><br>${summary}
+      `;
+    }
+
+    // 6. Phân tích phụ thuộc
+    function createDependencyAnalysis(data, last3Months) {
+      const revenueLast3 = {};
+      last3Months.forEach(m => revenueLast3[m] = 0);
+      data.forEach(r => {
+        const key = String(r.Ngaydathang || '').slice(0, 7);
+        if (revenueLast3[key] !== undefined) revenueLast3[key] += Number(r.Doanhthu) || 0;
+      });
+
+      const monthTotal = Object.values(revenueLast3);
+      const totalLast3 = monthTotal.reduce((a, b) => a + b, 0);
+      const maxMonthVal = Math.max(...monthTotal);
+      const maxMonthIdx = monthTotal.indexOf(maxMonthVal);
+      const mostDepMonth = last3Months[maxMonthIdx] || '--';
+      const monthPercent = totalLast3 ? Math.round(maxMonthVal / totalLast3 * 100) : 0;
+
+      const nppLast3 = {};
+      data.forEach(r => {
+        const m = String(r.Ngaydathang || '').slice(0, 7);
+        if (last3Months.includes(m)) {
+          const npp = String(r.Nhaphanphoi || 'Khác').trim();
+          nppLast3[npp] = (nppLast3[npp] || 0) + (Number(r.Doanhthu) || 0);
+        }
+      });
+      const topNppEntries = Object.entries(nppLast3).sort((a, b) => b[1] - a[1]);
+      const topNpp = topNppEntries[0] || ['-', 0];
+      const nppPercent = totalLast3 ? Math.round(topNpp[1] / totalLast3 * 100) : 0;
+
+      document.getElementById('mostDependentMonth').textContent = `${mostDepMonth} (${monthPercent}%)`;
+      document.getElementById('mostDependentNpp').textContent = `${topNpp[0]} (${nppPercent}%)`;
+
+      let insightText = '', insightClass = 'text-gray-800 bg-gray-50';
+      if (monthPercent > 60 || nppPercent > 60) {
+        insightText = '🚨 Cảnh báo: Doanh thu phụ thuộc rất cao vào 1 tháng/NPP duy nhất!';
+        insightClass = 'text-red-700 bg-red-50 border-l-4 border-red-400';
+      } else if (monthPercent > 40 || nppPercent > 40) {
+        insightText = '⚠️ Mức độ tập trung doanh thu cao. Nên đa dạng hóa NPP.';
+        insightClass = 'text-amber-700 bg-amber-50 border-l-4 border-amber-400';
+      } else {
+        insightText = '✅ Cơ cấu doanh thu cân bằng tốt trong 3 tháng gần nhất!';
+        insightClass = 'text-green-700 bg-green-50 border-l-4 border-green-400';
+      }
+
+      document.getElementById('dependencyInsight').innerHTML = insightText;
+      document.getElementById('dependencyInsight').className = `p-5 rounded-xl text-center text-lg font-medium ${insightClass}`;
+    }
+
+    // Chuyển chế độ chi tiết
+    function showDetailView() {
+      isDetailMode = true;
+      document.body.classList.add('detail-mode');
+      document.getElementById('detail-charts').classList.remove('hidden');
+
+      document.getElementById('pageTitle').textContent = "📊 Phân tích Chi tiết Doanh thu & Nhà phân phối";
+      document.getElementById('pageDesc').textContent = `Hiệu suất ${salesData.length.toLocaleString('vi-VN')} dòng data`;
+
+      document.getElementById('openDetailBtn').classList.add('hidden');
+      document.getElementById('backToDashboardBtn').classList.remove('hidden');
+
+      history.pushState({ mode: 'detail' }, 'Phân tích chi tiết', '/sales_charts');
+    }
+
+    function backToDashboard() {
+      isDetailMode = false;
+      document.body.classList.remove('detail-mode');
+      document.getElementById('detail-charts').classList.add('hidden');
+
+      document.getElementById('pageTitle').textContent = "Sales Analytics Dashboard";
+      document.getElementById('pageDesc').textContent = "Trực quan hóa doanh thu, đơn hàng & hiệu suất theo Nhà phân phối";
+
+      document.getElementById('openDetailBtn').classList.remove('hidden');
+      document.getElementById('backToDashboardBtn').classList.add('hidden');
+
+      history.pushState({ mode: 'dashboard' }, 'Dashboard', '/');
+    }
+
+    function initPageState() {
+      const isSalesCharts = window.location.pathname.includes('sales_charts') || window.location.hash === '#detail';
+      if (isSalesCharts) {
+        setTimeout(() => showDetailView(), 100);
+      }
+    }
+
+    window.addEventListener('popstate', (event) => {
+      if (event.state?.mode === 'detail' || window.location.pathname.includes('sales_charts')) {
+        showDetailView();
+      } else {
+        backToDashboard();
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initPageState();
+      loadData();
+    });
   </script>
 </body>
 </html>

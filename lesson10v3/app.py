@@ -40,7 +40,9 @@ def get_salesreport():
     'FreeItem',
     'Tuan',
     'MaNV',
-    'Tennhanvien'
+    'Tennhanvien',
+    'Thang',
+    'MaNPP'
 ]
     df = pd.read_csv('./lesson10v3/data/DE.csv', encoding='windows-1258')
     try:
