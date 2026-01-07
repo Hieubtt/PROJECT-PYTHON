@@ -32,8 +32,8 @@
   <!-- Header -->
   <header class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-8">
     <div class="max-w-7xl mx-auto px-4 text-center">
-      <h1 class="text-3xl font-bold">Phân tích chi tiết 3 tháng gần nhất có dữ liệu</h1>
-      <!-- <p id="dataInfo" class="mt-2 text-indigo-100">Dữ liệu từ file DE.csv</p> -->
+      <h1 class="text-3xl font-bold">Phân tích chi tiết 3 tháng gần nhất có dữ liệu Sales</h1>
+      <p id="dataInfo" class="mt-2 text-indigo-100">Đang tải dữ liệu...</p>
     </div>
   </header>
 
@@ -45,13 +45,16 @@
         Lọc theo Nhân viên Sales
       </h3>
       <div class="flex flex-wrap items-center gap-4">
-        <select id="staffFilter" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 min-w-[300px]">
+        <select id="staffFilter"
+          class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 min-w-[300px]">
           <option value="">-- Tất cả Nhân viên --</option>
         </select>
-        <button onclick="applyStaffFilter()" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
+        <button onclick="applyStaffFilter()"
+          class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
           Áp dụng lọc
         </button>
-        <button onclick="clearFilter()" class="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition">
+        <button onclick="clearFilter()"
+          class="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition">
           Xóa lọc
         </button>
       </div>
@@ -235,8 +238,12 @@
       document.getElementById('pieProductTitle').textContent = 'Phân bổ doanh thu theo sản phẩm' + suffix;
       document.getElementById('monthlyCombinedTitle').textContent = 'So sánh Doanh thu & Số lượng theo tháng' + suffix;
 
-      document.getElementById('dataInfo').textContent = `Dữ liệu từ file DE.csv | Tháng: ${last3Months.join(' → ')} ${suffix}`;
-
+      const dataInfoEl = document.getElementById('dataInfo');
+      if (dataInfoEl) {
+        dataInfoEl.textContent = `Dữ liệu từ file DE.csv | Tháng: ${last3Months.join(' → ')} ${suffix}`;
+      } else {
+        console.warn("Không tìm thấy phần tử #dataInfo trong DOM");
+      }
       const revenueByMonth = {};
       const monthlyQuantity = {};
       const revenueByProduct = {};
@@ -432,7 +439,7 @@
           let y, m, d;
           if (parts.length === 3) {
             if (parts[0].length === 4) [y, m, d] = parts;
-            else [d, m, y] = parts;
+            else[d, m, y] = parts;
             date = new Date(y, m - 1, d);
           }
         } catch (e) {
@@ -531,4 +538,5 @@
     document.addEventListener('DOMContentLoaded', loadData);
   </script>
 </body>
+
 </html>
