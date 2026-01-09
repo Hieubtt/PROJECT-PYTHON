@@ -44,7 +44,7 @@ def get_salesreport():
     'Thang',
     'MaNPP'
 ]
-    df = pd.read_csv('./lesson10v3/data/DE.csv', encoding='windows-1258')
+    df = pd.read_csv('./ProjectModule1/data/DE.csv', encoding='windows-1258')
     try:
         df = df[columns_needed] 
     except KeyError as e:
