@@ -1,0 +1,64 @@
+version: '3.8'
+
+x-airflow-common: &airflow-common
+  image: apache/airflow:2.8.1
+  environment: &airflow-common-env
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin@postgres_airflow/airflow
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    AIRFLOW__API__AUTH_BACKEND: airflow.api.auth.backend.basic_auth
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./scripts:/opt/airflow/scripts
+    - ./logs:/opt/airflow/logs
+  user: "${AIRFLOW_UID:-50000}:0"
+
+services:
+
+  postgres_airflow:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: airflow
+    ports:
+      - "5435:5432"
+    restart: always
+
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - "8079:8080"
+    restart: always
+    depends_on:
+      - postgres_airflow
+      - airflow-init
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    restart: always
+    depends_on:
+      - postgres_airflow
+      - airflow-init
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  airflow-init:
+    <<: *airflow-common
+    command: bash -c "airflow db upgrade && airflow users create \
+      --username admin \
+      --password admin \
+      --firstname admin \
+      --lastname admin \
+      --role Admin \
+      --email admin@example.com"
+    user: "0:0"
+    depends_on:
+      - postgres_airflow
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
