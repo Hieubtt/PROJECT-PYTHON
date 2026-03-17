@@ -1,0 +1,46 @@
+[2026-03-17T02:47:22.902+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_revenue_etl_dag.run_daily_revenue_etl scheduled__2026-03-16T00:00:00+00:00 [queued]>
+[2026-03-17T02:47:22.914+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_revenue_etl_dag.run_daily_revenue_etl scheduled__2026-03-16T00:00:00+00:00 [queued]>
+[2026-03-17T02:47:22.915+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 3
+[2026-03-17T02:47:22.936+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_daily_revenue_etl> on 2026-03-16 00:00:00+00:00
+[2026-03-17T02:47:22.950+0000] {standard_task_runner.py:60} INFO - Started process 202 to run task
+[2026-03-17T02:47:22.958+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'daily_revenue_etl_dag', 'run_daily_revenue_etl', 'scheduled__2026-03-16T00:00:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/daily_revenue_etl_dag.py', '--cfg-path', '/tmp/tmp_r7wzp1a']
+[2026-03-17T02:47:22.963+0000] {standard_task_runner.py:88} INFO - Job 5: Subtask run_daily_revenue_etl
+[2026-03-17T02:47:23.062+0000] {task_command.py:423} INFO - Running <TaskInstance: daily_revenue_etl_dag.run_daily_revenue_etl scheduled__2026-03-16T00:00:00+00:00 [running]> on host 93924721eda1
+[2026-03-17T02:47:23.186+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_engineer_hieubtt' AIRFLOW_CTX_DAG_ID='daily_revenue_etl_dag' AIRFLOW_CTX_TASK_ID='run_daily_revenue_etl' AIRFLOW_CTX_EXECUTION_DATE='2026-03-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-03-16T00:00:00+00:00'
+[2026-03-17T02:47:23.194+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-17T02:47:23.197+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/scripts/daily_revenue_etl.py']
+[2026-03-17T02:47:23.227+0000] {subprocess.py:86} INFO - Output:
+[2026-03-17T02:47:23.362+0000] {subprocess.py:93} INFO - Ket noi database thanh cong
+[2026-03-17T02:47:23.363+0000] {subprocess.py:93} INFO - Tao bang report_revenue neu chua ton tai
+[2026-03-17T02:47:23.365+0000] {subprocess.py:93} INFO - Extract du lieu
+[2026-03-17T02:47:23.376+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-03-17T02:47:23.377+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/daily_revenue_etl.py", line 60, in run_etl
+[2026-03-17T02:47:23.378+0000] {subprocess.py:93} INFO -     cur.execute(query)
+[2026-03-17T02:47:23.378+0000] {subprocess.py:93} INFO - psycopg2.errors.UndefinedTable: relation "category" does not exist
+[2026-03-17T02:47:23.378+0000] {subprocess.py:93} INFO - LINE 5:         FROM category c
+[2026-03-17T02:47:23.379+0000] {subprocess.py:93} INFO -                      ^
+[2026-03-17T02:47:23.379+0000] {subprocess.py:93} INFO - 
+[2026-03-17T02:47:23.380+0000] {subprocess.py:93} INFO - 
+[2026-03-17T02:47:23.381+0000] {subprocess.py:93} INFO - During handling of the above exception, another exception occurred:
+[2026-03-17T02:47:23.382+0000] {subprocess.py:93} INFO - 
+[2026-03-17T02:47:23.382+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-03-17T02:47:23.383+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/daily_revenue_etl.py", line 94, in <module>
+[2026-03-17T02:47:23.383+0000] {subprocess.py:93} INFO -     run_etl()
+[2026-03-17T02:47:23.384+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/daily_revenue_etl.py", line 83, in run_etl
+[2026-03-17T02:47:23.385+0000] {subprocess.py:93} INFO -     raise Exception(f"ETL pipeline loi: {e}")
+[2026-03-17T02:47:23.385+0000] {subprocess.py:93} INFO - Exception: ETL pipeline loi: relation "category" does not exist
+[2026-03-17T02:47:23.386+0000] {subprocess.py:93} INFO - LINE 5:         FROM category c
+[2026-03-17T02:47:23.386+0000] {subprocess.py:93} INFO -                      ^
+[2026-03-17T02:47:23.387+0000] {subprocess.py:93} INFO - 
+[2026-03-17T02:47:23.390+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-03-17T02:47:23.413+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-03-17T02:47:23.420+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=daily_revenue_etl_dag, task_id=run_daily_revenue_etl, execution_date=20260316T000000, start_date=20260317T024722, end_date=20260317T024723
+[2026-03-17T02:47:23.448+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 5 for task run_daily_revenue_etl (Bash command failed. The command returned a non-zero exit code 1.; 202)
+[2026-03-17T02:47:23.495+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-03-17T02:47:23.539+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

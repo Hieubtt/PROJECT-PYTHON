@@ -1,0 +1,20 @@
+[2026-03-17T02:39:53.856+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_revenue_etl_dag.run_daily_revenue_etl manual__2026-03-17T02:39:51.677259+00:00 [queued]>
+[2026-03-17T02:39:53.866+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_revenue_etl_dag.run_daily_revenue_etl manual__2026-03-17T02:39:51.677259+00:00 [queued]>
+[2026-03-17T02:39:53.866+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-03-17T02:39:53.892+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_daily_revenue_etl> on 2026-03-17 02:39:51.677259+00:00
+[2026-03-17T02:39:53.907+0000] {standard_task_runner.py:60} INFO - Started process 197 to run task
+[2026-03-17T02:39:53.915+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'daily_revenue_etl_dag', 'run_daily_revenue_etl', 'manual__2026-03-17T02:39:51.677259+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/daily_revenue_etl_dag.py', '--cfg-path', '/tmp/tmpdjg684kw']
+[2026-03-17T02:39:53.922+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask run_daily_revenue_etl
+[2026-03-17T02:39:54.037+0000] {task_command.py:423} INFO - Running <TaskInstance: daily_revenue_etl_dag.run_daily_revenue_etl manual__2026-03-17T02:39:51.677259+00:00 [running]> on host dba15ab4cc17
+[2026-03-17T02:39:54.160+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_engineer_hieubtt' AIRFLOW_CTX_DAG_ID='daily_revenue_etl_dag' AIRFLOW_CTX_TASK_ID='run_daily_revenue_etl' AIRFLOW_CTX_EXECUTION_DATE='2026-03-17T02:39:51.677259+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-17T02:39:51.677259+00:00'
+[2026-03-17T02:39:54.162+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-17T02:39:54.165+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/scripts/daily_revenue_etl.py']
+[2026-03-17T02:39:54.178+0000] {subprocess.py:86} INFO - Output:
+[2026-03-17T02:39:55.760+0000] {subprocess.py:93} INFO - Tao bang report
+[2026-03-17T02:39:55.762+0000] {subprocess.py:93} INFO - Da co loi xay ra: duplicate key value violates unique constraint "pg_type_typname_nsp_index"
+[2026-03-17T02:39:55.762+0000] {subprocess.py:93} INFO - DETAIL:  Key (typname, typnamespace)=(report_revenue, 2200) already exists.
+[2026-03-17T02:39:55.763+0000] {subprocess.py:93} INFO - 
+[2026-03-17T02:39:55.944+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-03-17T02:39:55.981+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=daily_revenue_etl_dag, task_id=run_daily_revenue_etl, execution_date=20260317T023951, start_date=20260317T023953, end_date=20260317T023955
+[2026-03-17T02:39:56.024+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-03-17T02:39:56.058+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
