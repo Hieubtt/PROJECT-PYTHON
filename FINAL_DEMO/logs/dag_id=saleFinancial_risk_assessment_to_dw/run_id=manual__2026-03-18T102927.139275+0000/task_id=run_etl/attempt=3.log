@@ -1,0 +1,2 @@
+[2026-03-18T10:06:21.711+0000] {taskinstance.py:1946} INFO - Dependencies not met for <TaskInstance: saleFinancial_risk_assessment_to_dw.run_etl manual__2026-03-18T10:29:27.139275+00:00 [queued]>, dependency 'Execution Date' FAILED: Execution date 2026-03-18T10:29:27.139275+00:00 is in the future (the current date is 2026-03-18T10:06:21.711641+00:00).
+[2026-03-18T10:06:21.737+0000] {local_task_job_runner.py:160} INFO - Task is not able to be run

@@ -5397,3 +5397,65 @@ File Path                                   PID    Runtime      # DAGs    # Erro
 /opt/airflow/dags/daily_revenue_etl_dag.py                           1           0  0.13s           2026-03-17T07:47:52
 ================================================================================
 [2026-03-17T07:24:36.962+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2026-03-18T02:43:06.529+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2026-03-18T02:43:06.530+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2026-03-18T02:43:06.531+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-03-18T02:43:06.531+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-03-18T02:43:06.553+0000] {manager.py:741} INFO - There are 1 files in /opt/airflow/dags
+[2026-03-18T02:19:57.722+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/daily_revenue_etl_dag.py                           1           0  -1398.60s       2026-03-18T02:19:48
+================================================================================
+[2026-03-18T02:20:27.871+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/daily_revenue_etl_dag.py                           1           0  0.10s           2026-03-18T02:20:18
+================================================================================
+[2026-03-18T02:20:58.128+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/daily_revenue_etl_dag.py                           1           0  0.19s           2026-03-18T02:43:50
+================================================================================
+[2026-03-18T02:21:28.302+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/daily_revenue_etl_dag.py                           1           0  0.19s           2026-03-18T02:43:50
+================================================================================
+[2026-03-18T02:21:58.556+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/daily_revenue_etl_dag.py                           1           0  0.12s           2026-03-18T02:44:51
+================================================================================
+[2026-03-18T02:22:28.795+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/daily_revenue_etl_dag.py                           1           0  0.13s           2026-03-18T02:45:21
+================================================================================
+[2026-03-18T02:22:58.997+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/daily_revenue_etl_dag.py                           1           0  0.13s           2026-03-18T02:45:21
+================================================================================
+[2026-03-18T02:23:01.571+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15

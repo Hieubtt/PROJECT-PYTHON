@@ -1,10 +1,10 @@
-version: '3.8'
+# version: '3.8'
 
 x-airflow-common: &airflow-common
   image: apache/airflow:2.8.1
   environment: &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
-    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:admin@postgres_airflow/airflow
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://admin:admin@postgres_airflow/airflow_db # mai check lai cho nay
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__API__AUTH_BACKEND: airflow.api.auth.backend.basic_auth
@@ -12,6 +12,7 @@ x-airflow-common: &airflow-common
     - ./dags:/opt/airflow/dags
     - ./scripts:/opt/airflow/scripts
     - ./logs:/opt/airflow/logs
+    - ./data:/opt/airflow/data # đọc thư mục data lưu file csv
   user: "${AIRFLOW_UID:-50000}:0"
 
 services:
@@ -19,9 +20,9 @@ services:
   postgres_airflow:
     image: postgres:13
     environment:
-      POSTGRES_USER: postgres
+      POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
-      POSTGRES_DB: airflow
+      POSTGRES_DB: airflow_db
     ports:
       - "5435:5432"
     restart: always
