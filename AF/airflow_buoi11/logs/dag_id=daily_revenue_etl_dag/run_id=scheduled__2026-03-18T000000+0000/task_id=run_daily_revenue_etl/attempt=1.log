@@ -1,0 +1,32 @@
+[2026-03-19T02:07:03.155+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_revenue_etl_dag.run_daily_revenue_etl scheduled__2026-03-18T00:00:00+00:00 [queued]>
+[2026-03-19T02:07:03.171+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_revenue_etl_dag.run_daily_revenue_etl scheduled__2026-03-18T00:00:00+00:00 [queued]>
+[2026-03-19T02:07:03.171+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-03-19T02:07:03.193+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_daily_revenue_etl> on 2026-03-18 00:00:00+00:00
+[2026-03-19T02:07:03.203+0000] {standard_task_runner.py:60} INFO - Started process 181 to run task
+[2026-03-19T02:07:03.208+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'daily_revenue_etl_dag', 'run_daily_revenue_etl', 'scheduled__2026-03-18T00:00:00+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/daily_revenue_etl_dag.py', '--cfg-path', '/tmp/tmpko8v29h_']
+[2026-03-19T02:07:03.212+0000] {standard_task_runner.py:88} INFO - Job 11: Subtask run_daily_revenue_etl
+[2026-03-19T02:07:03.352+0000] {task_command.py:423} INFO - Running <TaskInstance: daily_revenue_etl_dag.run_daily_revenue_etl scheduled__2026-03-18T00:00:00+00:00 [running]> on host 7b2f29a9447f
+[2026-03-19T02:07:03.505+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_engineer_hieubtt' AIRFLOW_CTX_DAG_ID='daily_revenue_etl_dag' AIRFLOW_CTX_TASK_ID='run_daily_revenue_etl' AIRFLOW_CTX_EXECUTION_DATE='2026-03-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-03-18T00:00:00+00:00'
+[2026-03-19T02:07:03.506+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-19T02:07:03.508+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/scripts/daily_revenue_etl.py']
+[2026-03-19T02:07:03.522+0000] {subprocess.py:86} INFO - Output:
+[2026-03-19T02:07:18.493+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to up_for_retry. Terminating instance.
+[2026-03-19T02:07:18.509+0000] {process_utils.py:131} INFO - Sending 15 to group 181. PIDs of all processes in the group: [182, 181]
+[2026-03-19T02:07:18.515+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 181
+[2026-03-19T02:07:18.519+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-03-19T02:07:18.546+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2026-03-19T02:07:18.621+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 203, in execute
+    result = self.subprocess_hook.run_command(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/subprocess.py", line 91, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b""):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2452, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2026-03-19T02:07:18.655+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=daily_revenue_etl_dag, task_id=run_daily_revenue_etl, execution_date=20260318T000000, start_date=20260319T020703, end_date=20260319T020718
+[2026-03-19T02:07:18.733+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 11 for task run_daily_revenue_etl (Task received SIGTERM signal; 181)
+[2026-03-19T02:07:18.825+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=181, status='terminated', exitcode=1, started='02:07:02') (181) terminated with exit code 1
+[2026-03-19T02:07:18.839+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=182, status='terminated', started='02:07:02') (182) terminated with exit code None

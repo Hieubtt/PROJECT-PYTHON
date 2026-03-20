@@ -8,6 +8,7 @@ x-airflow-common: &airflow-common
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__API__AUTH_BACKEND: airflow.api.auth.backend.basic_auth
+    #DW_CONN_STRING: postgresql+psycopg2://user:password@postgres_dw:5432/fin_etl_db
   volumes:
     - ./dags:/opt/airflow/dags
     - ./scripts:/opt/airflow/scripts
@@ -24,7 +25,7 @@ services:
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: airflow_db
     ports:
-      - "5435:5432"
+      - "5436:5432" # đổi port local trên máy
     restart: always
 
   airflow-webserver:

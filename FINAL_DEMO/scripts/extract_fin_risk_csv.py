@@ -17,20 +17,24 @@ def env(name: str, default: str | None = None) -> str:
         return default
     return v.strip()
 
-DB = {
-    "host": os.getenv("DB_HOST", "fin_risk_assessment_db"),
-    "port": os.getenv("DB_PORT", "5435"),
-    "database": os.getenv("DB_NAME", "fin_etl_db"),
-    "user": os.getenv("DB_USER", "admin"),
-    "password": os.getenv("DB_PASS", "admin"),
-}
+# DB = {
+#     host="postgres_airflow",
+#     port=5432,
+#     database="fin_etl_db",
+#     user="admin",
+#     password="admin"
+# }
 
 SQL_CREATE_DATABASE = '''
   CREATE DATABASE IF NOT EXISTS fin_etl_db;
   '''
 SQL_CREATE_TABLE_JOB = '''
-
-CREATE TABLE IF NOT EXISTS etl_log(run_id TEXT, step_name TEXT, status TEXT, message TEXT, message TEXT) ;
+CREATE TABLE IF NOT EXISTS etl_log (
+    run_id TEXT, 
+    step_name TEXT, 
+    status TEXT, 
+    message TEXT
+);
 '''
 
 
@@ -75,6 +79,53 @@ INSERT INTO fin_risk_assessment (
 )
 VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
 """
+
+SQL_ALTER_TABLE = '''
+DO $$
+BEGIN
+    -- Check column id
+    IF NOT EXISTS (
+        SELECT 1
+        FROM information_schema.columns
+        WHERE table_name = 'fin_risk_assessment'
+        AND column_name = 'id'
+    ) THEN
+        
+        ALTER TABLE fin_risk_assessment
+        ADD COLUMN id SERIAL;
+        
+    END IF;
+
+    -- Check primary key
+    IF NOT EXISTS (
+        SELECT 1
+        FROM information_schema.table_constraints
+        WHERE table_name = 'fin_risk_assessment'
+        AND constraint_type = 'PRIMARY KEY'
+    ) THEN
+        
+        ALTER TABLE fin_risk_assessment
+        ADD PRIMARY KEY (id);
+        
+    END IF;
+END $$;
+'''
+SQL_UPDATE_ID = '''
+DO $$
+BEGIN
+    -- Nếu có dòng nào id bị NULL thì mới update
+    IF EXISTS (
+        SELECT 1
+        FROM fin_risk_assessment
+        WHERE id IS NULL
+    ) THEN
+        
+        UPDATE fin_risk_assessment
+        SET id = nextval(pg_get_serial_sequence('fin_risk_assessment', 'id'))
+        WHERE id IS NULL;
+
+    END IF;
+END $$;'''
 # conn = psycopg2.connect(**DB)
 # conn.autocommit = False
 # cur = conn.cursor()
@@ -121,54 +172,57 @@ def log(cur, step: str, status: str, msg: str = ""):
     cur.execute(SQL_LOG, (RUN_ID, step, status, msg))
 
 def main():
-    conn = psycopg2.connect(**DB)
-    conn.autocommit = False
+    # BƯỚC 1: Kết nối tới database 'postgres' mặc định để tạo database mới
+    conn_init = psycopg2.connect(
+        host="postgres_airflow",
+        port=5432,
+        database="postgres", # Kết nối vào db mặc định
+        user="admin",
+        password="admin"
+    )
+    conn_init.autocommit = True # Bắt buộc phải có để chạy CREATE DATABASE
+    
+    with conn_init.cursor() as cur:
+        # Kiểm tra xem db đã tồn tại chưa (vì Postgres không có CREATE DATABASE IF NOT EXISTS)
+        cur.execute("SELECT 1 FROM pg_catalog.pg_database WHERE datname = 'fin_etl_db'")
+        exists = cur.fetchone() # -> 0 // 1 
+        if not exists:
+            cur.execute("CREATE DATABASE fin_etl_db")
+            print("Database 'fin_etl_db' created.")
+    
+    conn_init.close()
+
+    # BƯỚC 2: Bây giờ mới kết nối vào 'fin_etl_db' để làm việc
+    conn = psycopg2.connect(
+        host="postgres_airflow",
+        port=5432,
+        database="fin_etl_db",
+        user="admin",
+        password="admin"
+    )
+    conn.autocommit = False 
+    
     try:
         with conn.cursor() as cur:
-            cur.execute(SQL_CREATE_DATABASE)
+            #Step 1
             cur.execute(SQL_CREATE_TABLE_JOB)
-            log(cur,"PIPELINE","START","Transform + Load sales")
-            log(cur,"TRANSFORM","START","Build staging")
+            log(cur, "PIPELINE", "START", "Transform + Load sales")
+            
+            #Step 2
             cur.execute(SQL_BUILD_STAGING)
+            cur.execute(SQL_ALTER_TABLE)
+            cur.execute(SQL_UPDATE_ID)
+            data = [tuple(row) for _, row in pf.iterrows()]
+            cur.executemany(SQL_BUILD, data)
             
-            data = []
-
-            data = [tuple(row) for _, row in pf.iterrows()] # dung cho ten cot csv trung voi ten cot db
-            cur.executemany(SQL_BUILD, data)  # insert tung dòng data 
-            # cur.execute(SQL_CREATE_TABLE_LOG)
-            # log(cur,"TRANSFORM","SUCCESS","Staging built")
+            log(cur, "TRANSFORM", "SUCCESS", "Staging built")
+            conn.commit()
+            print(f"ETL PASSED | RUN_ID={RUN_ID}")
             
-            log(cur,"TRANSFORM","SUCCESS","Staging built")
-
-            # log(cur,"LOAD","START","Upsert to DW")
-            # cur.execute(SQL_UPSERT_DW)
-            # log(cur,"LOAD","SUCCESS","Upsert done")
-
-            # log(cur,"VALIDATE","START","Check duplicates + counts")
-            # cur.execute(SQL_VALIDATE_DUP)
-            # if cur.fetchall():
-            #     raise RuntimeError("Duplicate sale_id detected in dw.postgres")
-
-            # # cur.execute(SQL_COUNT)
-            # staging_cnt, dw_cnt = cur.fetchone()
-            # if staging_cnt <= 0:
-            #     raise RuntimeError("staging_cnt=0 (no valid rows after cleaning)")
-            # log(cur,"VALIDATE","SUCCESS",f"staging_cnt={staging_cnt}, dw_cnt={dw_cnt}")
-
-            # log(cur,"PIPELINE","SUCCESS","ETL finished")
-        conn.commit()
-        print(f"ETL PASSED | RUN_ID={RUN_ID}")
-        sys.exit(0)
     except Exception as e:
         conn.rollback()
-        try:
-            conn.autocommit = True
-            with conn.cursor() as cur:
-                log(cur,"PIPELINE","FAIL",str(e))
-        except Exception:
-            pass
+        # Logic log lỗi của bạn...
         print(f"ETL FAILED | RUN_ID={RUN_ID} | ERROR={e}")
-        sys.exit(1)
     finally:
         conn.close()
 
