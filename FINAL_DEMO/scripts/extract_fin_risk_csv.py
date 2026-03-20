@@ -83,7 +83,7 @@ VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, 
 SQL_ALTER_TABLE = '''
 DO $$
 BEGIN
-    -- Check column id
+    
     IF NOT EXISTS (
         SELECT 1
         FROM information_schema.columns
@@ -96,7 +96,7 @@ BEGIN
         
     END IF;
 
-    -- Check primary key
+    
     IF NOT EXISTS (
         SELECT 1
         FROM information_schema.table_constraints
@@ -113,7 +113,7 @@ END $$;
 SQL_UPDATE_ID = '''
 DO $$
 BEGIN
-    -- Nếu có dòng nào id bị NULL thì mới update
+    
     IF EXISTS (
         SELECT 1
         FROM fin_risk_assessment
@@ -192,7 +192,7 @@ def main():
     
     conn_init.close()
 
-    # BƯỚC 2: Bây giờ mới kết nối vào 'fin_etl_db' để làm việc
+    
     conn = psycopg2.connect(
         host="postgres_airflow",
         port=5432,
@@ -221,7 +221,6 @@ def main():
             
     except Exception as e:
         conn.rollback()
-        # Logic log lỗi của bạn...
         print(f"ETL FAILED | RUN_ID={RUN_ID} | ERROR={e}")
     finally:
         conn.close()
