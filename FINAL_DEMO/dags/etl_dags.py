@@ -8,11 +8,12 @@ from airflow.operators.empty import EmptyOperator
 from airflow.operators.bash import BashOperator
 from airflow.utils.dates import days_ago
 
-DAG_ID = "saleFinancial_risk_assessment_to_dw"
+DAG_ID = "Financial_risk_assessment_to_dw"
 
 # INGEST_SCRIPT = "/opt/airflow/dags/scripts/load_csv_to_postgres_raw.py"
 ETL_SCRIPT    = "/opt/airflow/scripts/extract_fin_risk_csv.py"
-TRANFORM_SCRIPT    = "/opt/airflow/scripts/clean_data_fin.py"
+TRANSFORM_SCRIPT    = "/opt/airflow/scripts/clean_data_fin.py"
+LOAD_SCRIPT = "/opt/airflow/scripts/load_data.py"
 # CHECK_SCRIPT  = "/opt/airflow/dags/scripts/post_run_check.py"
 
 PYTHON = "python"
@@ -45,11 +46,16 @@ with DAG(
     )
     clean_data = BashOperator(
         task_id="run_clean_data",
-        bash_command=f'{PYTHON} {TRANFORM_SCRIPT}',
+        bash_command=f'{PYTHON} {TRANSFORM_SCRIPT}',
         env=DB_ENV,
     )
-    etl >> clean_data
+    load_data = BashOperator(
+        task_id="run_load_data",
+        bash_command=f'{PYTHON} {LOAD_SCRIPT}',
+        env=DB_ENV,
+    )
+    
 
     end = EmptyOperator(task_id="end")
 
-    start >> etl >> clean_data >> end
+    start >> etl >> clean_data >> load_data >> end

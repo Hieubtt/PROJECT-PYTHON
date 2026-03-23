@@ -26,7 +26,7 @@ def env(name: str, default: str | None = None) -> str:
 # }
 
 SQL_CREATE_DATABASE = '''
-  CREATE DATABASE IF NOT EXISTS fin_etl_db;
+  CREATE DATABASE IF NOT EXISTS rawdata;
   '''
 SQL_CREATE_TABLE_JOB = '''
 CREATE TABLE IF NOT EXISTS etl_log (
@@ -42,9 +42,9 @@ CREATE TABLE IF NOT EXISTS etl_log (
 SQL_LOG = "INSERT INTO etl_log(run_id, step_name, status, message) VALUES (%s,%s,%s,%s);"
 
 SQL_BUILD_STAGING = r'''
-DROP TABLE IF EXISTS fin_risk_assessment;
+DROP TABLE IF EXISTS rawdata;
 
-CREATE TABLE fin_risk_assessment (
+CREATE TABLE rawdata (
 Age INT,
 Gender VARCHAR(50),
 Education_Level VARCHAR(50),
@@ -64,13 +64,15 @@ State VARCHAR(2) NULL,
 Country VARCHAR(250) NULL,
 Previous_Defaults FLOAT NULL, 
 Marital_Status_Change FLOAT NULL, 
-Risk_Rating VARCHAR(50) NULL
+Risk_Rating VARCHAR(50) NULL,
+ingested_at     TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+
 );
 '''
 # pf = pd.read_csv(r'C:\Users\TrungHieu\Documents\GitHub\PROJECT-PYTHON\FINAL_DEMO\data\Financial_risk_assessment.csv')
 pf = pd.read_csv('/opt/airflow/data/Financial_risk_assessment.csv')
 SQL_BUILD = """
-INSERT INTO fin_risk_assessment (
+INSERT INTO rawdata (
     Age, Gender, Education_Level, Marital_Status, Income, Credit_Score,
     Loan_Amount, Loan_Purpose, Employment_Status, Years_at_Current_Job,
     Payment_History, Debt_to_Income_Ratio, Assets_Value,
@@ -87,11 +89,11 @@ BEGIN
     IF NOT EXISTS (
         SELECT 1
         FROM information_schema.columns
-        WHERE table_name = 'fin_risk_assessment'
+        WHERE table_name = 'rawdata'
         AND column_name = 'id'
     ) THEN
         
-        ALTER TABLE fin_risk_assessment
+        ALTER TABLE rawdata
         ADD COLUMN id SERIAL;
         
     END IF;
@@ -100,11 +102,11 @@ BEGIN
     IF NOT EXISTS (
         SELECT 1
         FROM information_schema.table_constraints
-        WHERE table_name = 'fin_risk_assessment'
+        WHERE table_name = 'rawdata'
         AND constraint_type = 'PRIMARY KEY'
     ) THEN
         
-        ALTER TABLE fin_risk_assessment
+        ALTER TABLE rawdata
         ADD PRIMARY KEY (id);
         
     END IF;
@@ -116,12 +118,12 @@ BEGIN
     
     IF EXISTS (
         SELECT 1
-        FROM fin_risk_assessment
+        FROM rawdata
         WHERE id IS NULL
     ) THEN
         
-        UPDATE fin_risk_assessment
-        SET id = nextval(pg_get_serial_sequence('fin_risk_assessment', 'id'))
+        UPDATE rawdata
+        SET id = nextval(pg_get_serial_sequence('rawdata', 'id'))
         WHERE id IS NULL;
 
     END IF;
@@ -165,7 +167,7 @@ while i < len(pf):
 
   i += 1
 
-#SQL_VALIDATE_DUP = "SELECT sale_id, COUNT(*) FROM fin_risk_assessment" # chưa can su dung nen de vay
+#SQL_VALIDATE_DUP = "SELECT sale_id, COUNT(*) FROM rawdata" # chưa can su dung nen de vay
 #SQL_COUNT = "SELECT (SELECT COUNT(*) FROM etl.sales_staging_clean), (SELECT COUNT(*) FROM dw.sales_fact);"
 
 def log(cur, step: str, status: str, msg: str = ""):
