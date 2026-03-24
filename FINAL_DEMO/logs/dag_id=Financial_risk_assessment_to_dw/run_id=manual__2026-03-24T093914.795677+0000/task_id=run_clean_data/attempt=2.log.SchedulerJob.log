@@ -1,0 +1,1 @@
+[2026-03-24T09:19:03.136+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: Financial_risk_assessment_to_dw.run_clean_data manual__2026-03-24T09:39:14.795677+00:00 [queued]> finished (success) although the task says it's queued. (Info: None) Was the task killed externally?

@@ -14,6 +14,7 @@ DAG_ID = "Financial_risk_assessment_to_dw"
 ETL_SCRIPT    = "/opt/airflow/scripts/extract_fin_risk_csv.py"
 TRANSFORM_SCRIPT    = "/opt/airflow/scripts/clean_data_fin.py"
 LOAD_SCRIPT = "/opt/airflow/scripts/load_data.py"
+ML_SCIPRT = "/opt/airflow/scripts/train_risk_model.py"
 # CHECK_SCRIPT  = "/opt/airflow/dags/scripts/post_run_check.py"
 
 PYTHON = "python"
@@ -55,7 +56,12 @@ with DAG(
         env=DB_ENV,
     )
     
+    ml_risk_data = BashOperator(
+        task_id="run_ml_risk_data",
+        bash_command=f'{PYTHON} {ML_SCIPRT}',
+        env=DB_ENV,
+    )
 
     end = EmptyOperator(task_id="end")
 
-    start >> etl >> clean_data >> load_data >> end
+    start >> etl >> clean_data >> load_data >> ml_risk_data >> end

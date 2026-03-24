@@ -1,0 +1,28 @@
+[2026-03-24T07:26:04.764+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_ml_risk_data manual__2026-03-24T07:21:22.126726+00:00 [queued]>
+[2026-03-24T07:26:04.777+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_ml_risk_data manual__2026-03-24T07:21:22.126726+00:00 [queued]>
+[2026-03-24T07:26:04.778+0000] {taskinstance.py:2170} INFO - Starting attempt 3 of 3
+[2026-03-24T07:26:04.801+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_ml_risk_data> on 2026-03-24 07:21:22.126726+00:00
+[2026-03-24T07:26:04.809+0000] {standard_task_runner.py:60} INFO - Started process 2249 to run task
+[2026-03-24T07:26:04.814+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Financial_risk_assessment_to_dw', 'run_ml_risk_data', 'manual__2026-03-24T07:21:22.126726+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/etl_dags.py', '--cfg-path', '/tmp/tmp86pj4ty3']
+[2026-03-24T07:26:04.817+0000] {standard_task_runner.py:88} INFO - Job 36: Subtask run_ml_risk_data
+[2026-03-24T07:26:04.894+0000] {task_command.py:423} INFO - Running <TaskInstance: Financial_risk_assessment_to_dw.run_ml_risk_data manual__2026-03-24T07:21:22.126726+00:00 [running]> on host 4da2f79085cf
+[2026-03-24T07:26:04.977+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='hieubtt' AIRFLOW_CTX_DAG_ID='Financial_risk_assessment_to_dw' AIRFLOW_CTX_TASK_ID='run_ml_risk_data' AIRFLOW_CTX_EXECUTION_DATE='2026-03-24T07:21:22.126726+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-24T07:21:22.126726+00:00'
+[2026-03-24T07:26:04.978+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-24T07:26:04.980+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/scripts/train_risk_model.py']
+[2026-03-24T07:26:04.991+0000] {subprocess.py:86} INFO - Output:
+[2026-03-24T07:26:05.533+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-03-24T07:26:05.533+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/train_risk_model.py", line 5, in <module>
+[2026-03-24T07:26:05.534+0000] {subprocess.py:93} INFO -     from sklearn.ensemble import RandomForestRegressor
+[2026-03-24T07:26:05.534+0000] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'sklearn'
+[2026-03-24T07:26:05.645+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-03-24T07:26:05.656+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-03-24T07:26:05.660+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=Financial_risk_assessment_to_dw, task_id=run_ml_risk_data, execution_date=20260324T072122, start_date=20260324T072604, end_date=20260324T072605
+[2026-03-24T07:26:05.673+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 36 for task run_ml_risk_data (Bash command failed. The command returned a non-zero exit code 1.; 2249)
+[2026-03-24T07:26:05.714+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-03-24T07:26:05.741+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

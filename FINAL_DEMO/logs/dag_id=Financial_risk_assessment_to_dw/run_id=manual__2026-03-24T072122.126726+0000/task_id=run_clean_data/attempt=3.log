@@ -1,0 +1,12 @@
+[2026-03-24T07:24:18.186+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_clean_data manual__2026-03-24T07:21:22.126726+00:00 [queued]>
+[2026-03-24T07:24:18.196+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_clean_data manual__2026-03-24T07:21:22.126726+00:00 [queued]>
+[2026-03-24T07:24:18.196+0000] {taskinstance.py:2170} INFO - Starting attempt 3 of 5
+[2026-03-24T07:24:18.209+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_clean_data> on 2026-03-24 07:21:22.126726+00:00
+[2026-03-24T07:24:18.216+0000] {standard_task_runner.py:60} INFO - Started process 1753 to run task
+[2026-03-24T07:24:18.220+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Financial_risk_assessment_to_dw', 'run_clean_data', 'manual__2026-03-24T07:21:22.126726+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/etl_dags.py', '--cfg-path', '/tmp/tmpgeyyacxb']
+[2026-03-24T07:24:18.228+0000] {standard_task_runner.py:88} INFO - Job 17: Subtask run_clean_data
+[2026-03-24T07:24:28.343+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2026-03-24T07:24:28.345+0000] {process_utils.py:131} INFO - Sending 15 to group 1753. PIDs of all processes in the group: [1754, 1753]
+[2026-03-24T07:24:28.346+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 1753
+[2026-03-24T07:24:28.399+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=1753, status='terminated', exitcode=0, started='07:24:18') (1753) terminated with exit code 0
+[2026-03-24T07:24:28.401+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=1754, status='terminated', started='07:24:18') (1754) terminated with exit code None

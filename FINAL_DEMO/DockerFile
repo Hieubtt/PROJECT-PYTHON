@@ -5,3 +5,4 @@ RUN apt-get update && apt-get install -y libpq-dev gcc
 
 USER airflow
 RUN pip install --no-cache-dir psycop2-binary
+RUN pip install scikit-learn joblib

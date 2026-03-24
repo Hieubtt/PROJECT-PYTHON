@@ -1,0 +1,19 @@
+[2026-03-24T07:24:18.338+0000] {task_command.py:423} INFO - Running <TaskInstance: Financial_risk_assessment_to_dw.run_clean_data manual__2026-03-24T07:21:22.126726+00:00 [restarting]> on host 4da2f79085cf
+[2026-03-24T07:24:18.478+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='hieubtt' AIRFLOW_CTX_DAG_ID='Financial_risk_assessment_to_dw' AIRFLOW_CTX_TASK_ID='run_clean_data' AIRFLOW_CTX_EXECUTION_DATE='2026-03-24T07:21:22.126726+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-24T07:21:22.126726+00:00'
+[2026-03-24T07:24:18.480+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-24T07:24:18.482+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/scripts/clean_data_fin.py']
+[2026-03-24T07:24:18.501+0000] {subprocess.py:86} INFO - Output:
+[2026-03-24T07:24:28.346+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-03-24T07:24:28.347+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2026-03-24T07:24:34.629+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_clean_data manual__2026-03-24T07:21:22.126726+00:00 [queued]>
+[2026-03-24T07:24:34.644+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_clean_data manual__2026-03-24T07:21:22.126726+00:00 [queued]>
+[2026-03-24T07:24:34.645+0000] {taskinstance.py:2170} INFO - Starting attempt 4 of 6
+[2026-03-24T07:24:34.665+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_clean_data> on 2026-03-24 07:21:22.126726+00:00
+[2026-03-24T07:24:34.673+0000] {standard_task_runner.py:60} INFO - Started process 1795 to run task
+[2026-03-24T07:24:34.678+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Financial_risk_assessment_to_dw', 'run_clean_data', 'manual__2026-03-24T07:21:22.126726+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/etl_dags.py', '--cfg-path', '/tmp/tmp94d19b58']
+[2026-03-24T07:24:34.681+0000] {standard_task_runner.py:88} INFO - Job 21: Subtask run_clean_data
+[2026-03-24T07:24:44.778+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2026-03-24T07:24:44.782+0000] {process_utils.py:131} INFO - Sending 15 to group 1795. PIDs of all processes in the group: [1796, 1795]
+[2026-03-24T07:24:44.783+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 1795
+[2026-03-24T07:24:44.877+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=1796, status='terminated', started='07:24:34') (1796) terminated with exit code None
+[2026-03-24T07:24:44.879+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=1795, status='terminated', exitcode=1, started='07:24:34') (1795) terminated with exit code 1

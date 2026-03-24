@@ -1,0 +1,32 @@
+[2026-03-24T07:24:13.112+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_clean_data manual__2026-03-24T07:21:22.126726+00:00 [queued]>
+[2026-03-24T07:24:13.122+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_clean_data manual__2026-03-24T07:21:22.126726+00:00 [queued]>
+[2026-03-24T07:24:13.123+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 4
+[2026-03-24T07:24:13.137+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_clean_data> on 2026-03-24 07:21:22.126726+00:00
+[2026-03-24T07:24:13.142+0000] {standard_task_runner.py:60} INFO - Started process 1701 to run task
+[2026-03-24T07:24:13.146+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Financial_risk_assessment_to_dw', 'run_clean_data', 'manual__2026-03-24T07:21:22.126726+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/etl_dags.py', '--cfg-path', '/tmp/tmpjnfedn00']
+[2026-03-24T07:24:13.148+0000] {standard_task_runner.py:88} INFO - Job 16: Subtask run_clean_data
+[2026-03-24T07:24:13.222+0000] {task_command.py:423} INFO - Running <TaskInstance: Financial_risk_assessment_to_dw.run_clean_data manual__2026-03-24T07:21:22.126726+00:00 [running]> on host 4da2f79085cf
+[2026-03-24T07:24:13.300+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='hieubtt' AIRFLOW_CTX_DAG_ID='Financial_risk_assessment_to_dw' AIRFLOW_CTX_TASK_ID='run_clean_data' AIRFLOW_CTX_EXECUTION_DATE='2026-03-24T07:21:22.126726+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-24T07:21:22.126726+00:00'
+[2026-03-24T07:24:13.303+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-24T07:24:13.305+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/scripts/clean_data_fin.py']
+[2026-03-24T07:24:13.318+0000] {subprocess.py:86} INFO - Output:
+[2026-03-24T07:24:23.245+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2026-03-24T07:24:23.256+0000] {process_utils.py:131} INFO - Sending 15 to group 1701. PIDs of all processes in the group: [1707, 1701]
+[2026-03-24T07:24:23.258+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 1701
+[2026-03-24T07:24:23.260+0000] {taskinstance.py:2450} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-03-24T07:24:23.262+0000] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2026-03-24T07:24:23.299+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 203, in execute
+    result = self.subprocess_hook.run_command(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/subprocess.py", line 91, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b""):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2452, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2026-03-24T07:24:23.311+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Financial_risk_assessment_to_dw, task_id=run_clean_data, execution_date=20260324T072122, start_date=20260324T072418, end_date=20260324T072423
+[2026-03-24T07:24:23.362+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 16 for task run_clean_data (Task received SIGTERM signal; 1701)
+[2026-03-24T07:24:23.397+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=1701, status='terminated', exitcode=1, started='07:24:13') (1701) terminated with exit code 1
+[2026-03-24T07:24:23.401+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=1707, status='terminated', started='07:24:13') (1707) terminated with exit code None
