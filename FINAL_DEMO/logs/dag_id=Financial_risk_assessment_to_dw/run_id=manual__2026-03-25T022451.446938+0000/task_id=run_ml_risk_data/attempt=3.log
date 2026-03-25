@@ -1,0 +1,52 @@
+[2026-03-25T02:25:10.364+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_ml_risk_data manual__2026-03-25T02:24:51.446938+00:00 [queued]>
+[2026-03-25T02:25:10.378+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_ml_risk_data manual__2026-03-25T02:24:51.446938+00:00 [queued]>
+[2026-03-25T02:25:10.379+0000] {taskinstance.py:2170} INFO - Starting attempt 3 of 3
+[2026-03-25T02:25:10.404+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_ml_risk_data> on 2026-03-25 02:24:51.446938+00:00
+[2026-03-25T02:25:10.415+0000] {standard_task_runner.py:60} INFO - Started process 316 to run task
+[2026-03-25T02:25:10.421+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Financial_risk_assessment_to_dw', 'run_ml_risk_data', 'manual__2026-03-25T02:24:51.446938+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/etl_dags.py', '--cfg-path', '/tmp/tmphuevwm_8']
+[2026-03-25T02:25:10.425+0000] {standard_task_runner.py:88} INFO - Job 7: Subtask run_ml_risk_data
+[2026-03-25T02:25:10.507+0000] {task_command.py:423} INFO - Running <TaskInstance: Financial_risk_assessment_to_dw.run_ml_risk_data manual__2026-03-25T02:24:51.446938+00:00 [running]> on host 54e7eae0b1a8
+[2026-03-25T02:25:10.584+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='hieubtt' AIRFLOW_CTX_DAG_ID='Financial_risk_assessment_to_dw' AIRFLOW_CTX_TASK_ID='run_ml_risk_data' AIRFLOW_CTX_EXECUTION_DATE='2026-03-25T02:24:51.446938+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-25T02:24:51.446938+00:00'
+[2026-03-25T02:25:10.585+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-25T02:25:10.586+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/scripts/train_risk_model.py']
+[2026-03-25T02:25:10.596+0000] {subprocess.py:86} INFO - Output:
+[2026-03-25T02:25:11.789+0000] {subprocess.py:93} INFO - /opt/airflow/scripts/train_risk_model.py:30: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2026-03-25T02:25:11.790+0000] {subprocess.py:93} INFO -   df = pd.read_sql(query, conn)
+[2026-03-25T02:25:11.790+0000] {subprocess.py:93} INFO - Loading data from DB...
+[2026-03-25T02:25:11.791+0000] {subprocess.py:93} INFO - Creating label...
+[2026-03-25T02:25:11.791+0000] {subprocess.py:93} INFO - Training model...
+[2026-03-25T02:25:11.796+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-03-25T02:25:11.796+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/train_risk_model.py", line 159, in <module>
+[2026-03-25T02:25:11.796+0000] {subprocess.py:93} INFO -     main()
+[2026-03-25T02:25:11.797+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/train_risk_model.py", line 147, in main
+[2026-03-25T02:25:11.797+0000] {subprocess.py:93} INFO -     model = train_model(df)
+[2026-03-25T02:25:11.798+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/train_risk_model.py", line 74, in train_model
+[2026-03-25T02:25:11.798+0000] {subprocess.py:93} INFO -     model.fit(X_train, y_train)
+[2026-03-25T02:25:11.798+0000] {subprocess.py:93} INFO -   File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/base.py", line 1152, in wrapper
+[2026-03-25T02:25:11.799+0000] {subprocess.py:93} INFO -     return fit_method(estimator, *args, **kwargs)
+[2026-03-25T02:25:11.799+0000] {subprocess.py:93} INFO -   File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/ensemble/_forest.py", line 348, in fit
+[2026-03-25T02:25:11.800+0000] {subprocess.py:93} INFO -     X, y = self._validate_data(
+[2026-03-25T02:25:11.800+0000] {subprocess.py:93} INFO -   File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/base.py", line 622, in _validate_data
+[2026-03-25T02:25:11.800+0000] {subprocess.py:93} INFO -     X, y = check_X_y(X, y, **check_params)
+[2026-03-25T02:25:11.800+0000] {subprocess.py:93} INFO -   File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/utils/validation.py", line 1146, in check_X_y
+[2026-03-25T02:25:11.800+0000] {subprocess.py:93} INFO -     X = check_array(
+[2026-03-25T02:25:11.801+0000] {subprocess.py:93} INFO -   File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/utils/validation.py", line 957, in check_array
+[2026-03-25T02:25:11.801+0000] {subprocess.py:93} INFO -     _assert_all_finite(
+[2026-03-25T02:25:11.801+0000] {subprocess.py:93} INFO -   File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/utils/validation.py", line 122, in _assert_all_finite
+[2026-03-25T02:25:11.801+0000] {subprocess.py:93} INFO -     _assert_all_finite_element_wise(
+[2026-03-25T02:25:11.801+0000] {subprocess.py:93} INFO -   File "/home/airflow/.local/lib/python3.8/site-packages/sklearn/utils/validation.py", line 171, in _assert_all_finite_element_wise
+[2026-03-25T02:25:11.802+0000] {subprocess.py:93} INFO -     raise ValueError(msg_err)
+[2026-03-25T02:25:11.802+0000] {subprocess.py:93} INFO - ValueError: Input X contains NaN.
+[2026-03-25T02:25:11.802+0000] {subprocess.py:93} INFO - RandomForestRegressor does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values
+[2026-03-25T02:25:11.980+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-03-25T02:25:11.991+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-03-25T02:25:11.995+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=Financial_risk_assessment_to_dw, task_id=run_ml_risk_data, execution_date=20260325T022451, start_date=20260325T022510, end_date=20260325T022511
+[2026-03-25T02:25:12.007+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 7 for task run_ml_risk_data (Bash command failed. The command returned a non-zero exit code 1.; 316)
+[2026-03-25T02:25:12.048+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-03-25T02:25:12.076+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -30,6 +30,7 @@ def load_data():
     df = pd.read_sql(query, conn)
 
     conn.close()
+    df = df.dropna(subset=["credit_score", "loan_amount"])
     return df
 
 
@@ -54,13 +55,12 @@ def create_fake_label(df):
     return df
 
 
-# =========================
-# 3. TRAIN MODEL
-# =========================
 def train_model(df):
+    df = df.dropna(subset=["credit_score", "loan_amount", "risk_score"])
     X = df[["credit_score", "loan_amount"]]
     y = df["risk_score"]
-
+    if len(df) == 0:
+        raise ValueError("Dữ liệu sau khi lọc Null bị trống! Kiểm tra lại DB.")
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
@@ -75,10 +75,6 @@ def train_model(df):
 
     return model
 
-
-# =========================
-# 4. PREDICT
-# =========================
 def predict(df, model):
     X = df[["credit_score", "loan_amount"]]
 

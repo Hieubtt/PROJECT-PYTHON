@@ -1,7 +1,8 @@
 # version: '3.8'
 
 x-airflow-common: &airflow-common
-  image: apache/airflow:2.8.1
+  #image: apache/airflow:2.8.1
+  build: .
   environment: &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://admin:admin@postgres_airflow/airflow_db # mai check lai cho nay
@@ -9,6 +10,7 @@ x-airflow-common: &airflow-common
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__API__AUTH_BACKEND: airflow.api.auth.backend.basic_auth
     #DW_CONN_STRING: postgresql+psycopg2://user:password@postgres_dw:5432/fin_etl_db
+    #_PIP_ADDITIONAL_REQUIREMENTS: "scikit-learn pandas numpy psycopg2-binary"
   volumes:
     - ./dags:/opt/airflow/dags
     - ./scripts:/opt/airflow/scripts
