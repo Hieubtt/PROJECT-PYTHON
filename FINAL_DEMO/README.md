@@ -28,12 +28,11 @@ docker-compose up -d
 ```
 final_demo/
 ├── dags/                   # Airflow DAG definitions
-├── plugins/                # ETL modules
+├── scripts/                # ETL modules
 │   ├── extract_fin_risk_csv.py         # Data extraction
-│   ├── transform.py       # Processing & ML
+│   ├── train_risk_model.py       # Processing & ML
 │   └── load.py            # Database loading
 ├── scripts/               # Utility scripts
-├── logs/                  # Application logs
 ├── requirements.txt       # Pip requirements (fallback)
 ├── Dockerfile             # Container definition
 └── docker-compose.yaml    # Multi-service orchestration
