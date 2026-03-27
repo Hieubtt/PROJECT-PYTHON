@@ -4,4 +4,11 @@ USER root
 RUN apt-get update && apt-get install -y libpq-dev gcc
 
 USER airflow
-RUN pip install --no-cache-dir scikit-learn pandas numpy psycopg2-binary
+RUN pip install --no-cache-dir \
+    scikit-learn \
+    pandas \
+    numpy \
+    psycopg2-binary \
+    matplotlib \
+    seaborn \
+    python-pptx

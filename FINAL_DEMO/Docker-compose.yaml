@@ -11,6 +11,13 @@ x-airflow-common: &airflow-common
     AIRFLOW__API__AUTH_BACKEND: airflow.api.auth.backend.basic_auth
     #DW_CONN_STRING: postgresql+psycopg2://user:password@postgres_dw:5432/fin_etl_db
     #_PIP_ADDITIONAL_REQUIREMENTS: "scikit-learn pandas numpy psycopg2-binary"
+    AIRFLOW__SMTP__SMTP_HOST: smtp.gmail.com
+    AIRFLOW__SMTP__SMTP_STARTTLS: "True"
+    AIRFLOW__SMTP__SMTP_SSL: "False"
+    AIRFLOW__SMTP__SMTP_USER: "trunghieu17062001@gmail.com" # Email gửi đi
+    AIRFLOW__SMTP__SMTP_PASSWORD: "yhuv jixe bppf ivdj" # MẬT KHẨU ỨNG DỤNG (App Password)
+    AIRFLOW__SMTP__SMTP_PORT: 587
+    AIRFLOW__SMTP__SMTP_MAIL_FROM: "trunghieu17062001@gmail.com"
   volumes:
     - ./dags:/opt/airflow/dags
     - ./scripts:/opt/airflow/scripts

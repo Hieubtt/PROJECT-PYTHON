@@ -2,3 +2,5 @@ pandas
 scikit-learn
 psycopg2-binary
 joblib
+matplotlib
+seaborn

@@ -1,0 +1,28 @@
+[2026-03-27T02:50:49.945+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_mail_risk_data manual__2026-03-27T02:50:30.447354+00:00 [queued]>
+[2026-03-27T02:50:49.956+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_mail_risk_data manual__2026-03-27T02:50:30.447354+00:00 [queued]>
+[2026-03-27T02:50:49.957+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-03-27T02:50:49.972+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_mail_risk_data> on 2026-03-27 02:50:30.447354+00:00
+[2026-03-27T02:50:49.979+0000] {standard_task_runner.py:60} INFO - Started process 953 to run task
+[2026-03-27T02:50:49.982+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Financial_risk_assessment_to_dw', 'run_mail_risk_data', 'manual__2026-03-27T02:50:30.447354+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/etl_dags.py', '--cfg-path', '/tmp/tmpms2mqqt8']
+[2026-03-27T02:50:49.985+0000] {standard_task_runner.py:88} INFO - Job 6: Subtask run_mail_risk_data
+[2026-03-27T02:50:50.048+0000] {task_command.py:423} INFO - Running <TaskInstance: Financial_risk_assessment_to_dw.run_mail_risk_data manual__2026-03-27T02:50:30.447354+00:00 [running]> on host e979566831a0
+[2026-03-27T02:50:50.125+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='hieubtt' AIRFLOW_CTX_DAG_ID='Financial_risk_assessment_to_dw' AIRFLOW_CTX_TASK_ID='run_mail_risk_data' AIRFLOW_CTX_EXECUTION_DATE='2026-03-27T02:50:30.447354+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-27T02:50:30.447354+00:00'
+[2026-03-27T02:50:50.127+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-27T02:50:50.128+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/scripts/Mail_Risk_Score.py']
+[2026-03-27T02:50:50.140+0000] {subprocess.py:86} INFO - Output:
+[2026-03-27T02:50:50.184+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-03-27T02:50:50.185+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/Mail_Risk_Score.py", line 1, in <module>
+[2026-03-27T02:50:50.185+0000] {subprocess.py:93} INFO -     import matplotlib.pyplot as plt
+[2026-03-27T02:50:50.185+0000] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'matplotlib'
+[2026-03-27T02:50:50.187+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-03-27T02:50:50.196+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-03-27T02:50:50.200+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Financial_risk_assessment_to_dw, task_id=run_mail_risk_data, execution_date=20260327T025030, start_date=20260327T025049, end_date=20260327T025050
+[2026-03-27T02:50:50.220+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 6 for task run_mail_risk_data (Bash command failed. The command returned a non-zero exit code 1.; 953)
+[2026-03-27T02:50:50.236+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-03-27T02:50:50.278+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -15,6 +15,7 @@ ETL_SCRIPT    = "/opt/airflow/scripts/extract_fin_risk_csv.py"
 TRANSFORM_SCRIPT    = "/opt/airflow/scripts/clean_data_fin.py"
 LOAD_SCRIPT = "/opt/airflow/scripts/load_data.py"
 ML_SCIPRT = "/opt/airflow/scripts/train_risk_model.py"
+EMAIL_RISK_FIN = "/opt/airflow/scripts/Mail_Risk_Score.py"
 # CHECK_SCRIPT  = "/opt/airflow/dags/scripts/post_run_check.py"
 
 PYTHON = "python"
@@ -62,6 +63,11 @@ with DAG(
         env=DB_ENV,
     )
 
+    mail_risk_data = BashOperator(
+        task_id="run_mail_risk_data",
+        bash_command=f'{PYTHON} {EMAIL_RISK_FIN}',
+        env=DB_ENV,
+    )
     end = EmptyOperator(task_id="end")
 
-    start >> etl >> clean_data >> load_data >> ml_risk_data >> end
+    start >> etl >> clean_data >> load_data >> ml_risk_data >> mail_risk_data >> end
