@@ -29,3 +29,6 @@ Traceback (most recent call last):
 airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
 [2026-03-27T08:21:29.151+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Financial_risk_assessment_to_dw, task_id=run_mail_risk_data, execution_date=20260327T075709, start_date=20260327T082122, end_date=20260327T082129
 [2026-03-27T08:21:29.162+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 7 for task run_mail_risk_data (Bash command failed. The command returned a non-zero exit code 1.; 397)
+[2026-03-27T08:06:12.390+0000] {local_task_job_runner.py:121} ERROR - Received SIGTERM. Terminating subprocesses
+[2026-03-27T08:06:12.392+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 143
+[2026-03-27T08:06:12.418+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,136 @@
+[2026-03-31T02:33:38.683+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:33:38.685+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T02:33:38.686+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:33:38.686+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:33:38.713+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:33:38.903+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:33:38.903+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T02:33:38.926+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:33:38.925+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T02:33:38.963+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.283 seconds
+[2026-03-31T02:33:41.797+0000] {processor.py:161} INFO - Started process (PID=210) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:33:41.799+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T02:33:41.801+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:33:41.800+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:33:41.834+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:33:41.855+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:33:41.854+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T02:33:41.884+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:33:41.883+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T02:33:41.925+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.135 seconds
+[2026-03-31T02:34:07.478+0000] {processor.py:161} INFO - Started process (PID=205) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:34:07.480+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T02:34:07.482+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:34:07.481+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:34:07.517+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:34:07.548+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:34:07.547+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T02:34:07.565+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:34:07.564+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T02:34:07.585+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.111 seconds
+[2026-03-31T02:57:50.641+0000] {processor.py:161} INFO - Started process (PID=210) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:57:50.642+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T02:57:50.643+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:57:50.643+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:57:50.660+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:34:11.883+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:34:11.882+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T02:34:11.896+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:34:11.896+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T02:34:11.915+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.237 seconds
+[2026-03-31T02:57:55.674+0000] {processor.py:161} INFO - Started process (PID=215) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:57:55.675+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T02:57:55.676+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:57:55.676+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:57:55.693+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:57:55.704+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:57:55.704+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T02:57:55.716+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:57:55.716+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T02:57:55.735+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.065 seconds
+[2026-03-31T03:00:27.693+0000] {processor.py:161} INFO - Started process (PID=220) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:00:27.696+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T03:00:27.699+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:00:27.699+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:36:48.761+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:36:48.790+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:36:48.789+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T02:36:48.822+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:36:48.822+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T02:36:48.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.128 seconds
+[2026-03-31T03:00:30.878+0000] {processor.py:161} INFO - Started process (PID=225) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:00:30.879+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T03:00:30.881+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:00:30.880+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:00:30.911+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:00:30.958+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:00:30.958+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T03:00:30.976+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:00:30.976+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T03:00:31.004+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.130 seconds
+[2026-03-31T02:37:22.143+0000] {processor.py:161} INFO - Started process (PID=230) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:37:22.145+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T02:37:22.148+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:37:22.147+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:37:22.203+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:37:22.262+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:37:22.261+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T02:37:22.290+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:37:22.289+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T02:37:22.344+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.207 seconds
+[2026-03-31T03:01:27.590+0000] {processor.py:161} INFO - Started process (PID=235) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:01:27.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T03:01:27.593+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:01:27.593+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:01:27.622+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:01:27.662+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:01:27.661+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T03:01:27.677+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:01:27.677+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T03:01:27.703+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.120 seconds
+[2026-03-31T03:02:21.059+0000] {processor.py:161} INFO - Started process (PID=337) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:02:21.061+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T03:02:21.062+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:02:21.062+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:02:21.082+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:02:21.117+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:02:21.117+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T03:02:21.135+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:02:21.134+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T03:02:21.158+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.104 seconds
+[2026-03-31T03:02:27.659+0000] {processor.py:161} INFO - Started process (PID=379) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:02:27.660+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T03:02:27.662+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:02:27.662+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:02:27.705+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:38:48.823+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:38:48.822+0000] {taskinstance.py:2700} ERROR - {'DAG Id': 'Financial_risk_assessment_to_dw', 'Task Id': 'run_mail_risk_data', 'Run Id': 'manual__2026-03-31T02:38:14.333851+00:00', 'Hostname': 'c98c3409e32b'}
+[2026-03-31T02:38:48.855+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:38:48.854+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=Financial_risk_assessment_to_dw, task_id=run_mail_risk_data, execution_date=20260331T023814, start_date=20260331T023846, end_date=20260331T023848
+[2026-03-31T02:38:48.871+0000] {processor.py:791} INFO - Executed failure callback for <TaskInstance: Financial_risk_assessment_to_dw.run_mail_risk_data manual__2026-03-31T02:38:14.333851+00:00 [up_for_retry]> in state up_for_retry
+[2026-03-31T02:38:48.876+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:38:48.876+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T02:38:48.887+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:38:48.887+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T02:38:48.917+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.225 seconds
+[2026-03-31T02:39:19.153+0000] {processor.py:161} INFO - Started process (PID=399) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:39:19.155+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T02:39:19.156+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:39:19.155+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:39:19.177+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:39:19.191+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:39:19.191+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T02:39:19.205+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:39:19.204+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T02:39:19.223+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.074 seconds
+[2026-03-31T03:03:01.265+0000] {processor.py:161} INFO - Started process (PID=404) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:03:01.267+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T03:03:01.269+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:03:01.268+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:03:01.290+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:39:22.378+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:39:22.378+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T02:39:22.399+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:39:22.398+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T02:39:22.447+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.144 seconds
+[2026-03-31T03:03:06.300+0000] {processor.py:161} INFO - Started process (PID=409) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:03:06.301+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T03:03:06.302+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:03:06.302+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:03:06.320+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:03:06.351+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:03:06.350+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T02:39:27.408+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:39:27.407+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T02:39:27.447+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.121 seconds
+[2026-03-31T03:03:27.701+0000] {processor.py:161} INFO - Started process (PID=414) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:03:27.704+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T03:03:27.706+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:03:27.705+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:39:48.786+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:39:48.838+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:39:48.837+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T02:39:48.872+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:39:48.871+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T02:39:48.914+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.194 seconds
+[2026-03-31T02:40:19.270+0000] {processor.py:161} INFO - Started process (PID=419) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:40:19.273+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T02:40:19.279+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:40:19.278+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:40:19.332+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T02:40:19.363+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:40:19.363+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T02:40:19.413+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:40:19.411+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T02:40:19.473+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.217 seconds
+[2026-03-31T03:04:26.316+0000] {processor.py:161} INFO - Started process (PID=424) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:04:26.317+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T03:04:26.318+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:04:26.317+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:04:26.333+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:04:26.356+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:04:26.356+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T03:04:26.367+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:04:26.367+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T03:04:26.385+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.072 seconds
+[2026-03-31T03:04:56.510+0000] {processor.py:161} INFO - Started process (PID=429) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:04:56.512+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T03:04:56.513+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:04:56.512+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:04:56.531+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:04:56.556+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:04:56.556+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T02:41:17.596+0000] {logging_mixin.py:188} INFO - [2026-03-31T02:41:17.596+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T02:41:17.614+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.082 seconds
+[2026-03-31T03:04:57.622+0000] {processor.py:161} INFO - Started process (PID=434) to work on /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:04:57.623+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl_dags.py for tasks to queue
+[2026-03-31T03:04:57.624+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:04:57.624+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:04:57.639+0000] {processor.py:840} INFO - DAG(s) 'Financial_risk_assessment_to_dw' retrieved from /opt/airflow/dags/etl_dags.py
+[2026-03-31T03:04:57.665+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:04:57.665+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-03-31T03:04:57.675+0000] {logging_mixin.py:188} INFO - [2026-03-31T03:04:57.675+0000] {dag.py:3823} INFO - Setting next_dagrun for Financial_risk_assessment_to_dw to None, run_after=None
+[2026-03-31T03:04:57.691+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl_dags.py took 0.071 seconds

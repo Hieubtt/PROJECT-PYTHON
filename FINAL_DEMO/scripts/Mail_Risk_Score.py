@@ -31,8 +31,8 @@ def export_and_email_risk_report():
     plt.close()
     print(f"--- Đã lưu ảnh tại: {chart_path} ---")
 
-    sender_email = os.getenv("EMAIL_USER", "trunghieu170601@gmail.com")
-    app_password = os.getenv("EMAIL_APP_PASSWORD", "yhuvjixebppfivdj")
+    sender_email = os.getenv("EMAIL_USER", "trunghieu17062001@gmail.com")
+    app_password = os.getenv("EMAIL_APP_PASSWORD", "gylfcildsgleubrk")
     receiver_email = "trunghieu170601@gmail.com"
    
 
