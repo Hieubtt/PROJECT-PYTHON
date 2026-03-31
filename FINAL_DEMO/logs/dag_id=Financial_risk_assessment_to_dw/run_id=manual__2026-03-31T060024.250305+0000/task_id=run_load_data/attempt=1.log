@@ -1,0 +1,17 @@
+[2026-03-31T06:00:43.436+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_load_data manual__2026-03-31T06:00:24.250305+00:00 [queued]>
+[2026-03-31T06:00:43.444+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_load_data manual__2026-03-31T06:00:24.250305+00:00 [queued]>
+[2026-03-31T06:00:43.445+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-03-31T06:00:43.458+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_load_data> on 2026-03-31 06:00:24.250305+00:00
+[2026-03-31T06:00:43.464+0000] {standard_task_runner.py:60} INFO - Started process 655 to run task
+[2026-03-31T06:00:43.468+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Financial_risk_assessment_to_dw', 'run_load_data', 'manual__2026-03-31T06:00:24.250305+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/etl_dags.py', '--cfg-path', '/tmp/tmp_7jxirvx']
+[2026-03-31T06:00:43.470+0000] {standard_task_runner.py:88} INFO - Job 14: Subtask run_load_data
+[2026-03-31T06:00:43.536+0000] {task_command.py:423} INFO - Running <TaskInstance: Financial_risk_assessment_to_dw.run_load_data manual__2026-03-31T06:00:24.250305+00:00 [running]> on host d96761ba82ac
+[2026-03-31T06:00:43.612+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='hieubtt' AIRFLOW_CTX_DAG_ID='Financial_risk_assessment_to_dw' AIRFLOW_CTX_TASK_ID='run_load_data' AIRFLOW_CTX_EXECUTION_DATE='2026-03-31T06:00:24.250305+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-31T06:00:24.250305+00:00'
+[2026-03-31T06:00:43.614+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-31T06:00:43.615+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/scripts/load_data.py']
+[2026-03-31T06:00:43.626+0000] {subprocess.py:86} INFO - Output:
+[2026-03-31T06:00:44.112+0000] {subprocess.py:93} INFO - ETL PASSED | RUN_ID=RUN_0cbb0ce0
+[2026-03-31T06:00:44.167+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-03-31T06:00:44.191+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=Financial_risk_assessment_to_dw, task_id=run_load_data, execution_date=20260331T060024, start_date=20260331T060043, end_date=20260331T060044
+[2026-03-31T06:00:44.243+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-03-31T06:00:44.267+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

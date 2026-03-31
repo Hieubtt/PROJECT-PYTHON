@@ -1,0 +1,25 @@
+[2026-03-31T05:42:54.107+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_mail_risk_data manual__2026-03-31T05:42:35.882449+00:00 [queued]>
+[2026-03-31T05:42:54.130+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_mail_risk_data manual__2026-03-31T05:42:35.882449+00:00 [queued]>
+[2026-03-31T05:42:54.132+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-03-31T05:42:54.160+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_mail_risk_data> on 2026-03-31 05:42:35.882449+00:00
+[2026-03-31T05:42:54.168+0000] {standard_task_runner.py:60} INFO - Started process 326 to run task
+[2026-03-31T05:42:54.173+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Financial_risk_assessment_to_dw', 'run_mail_risk_data', 'manual__2026-03-31T05:42:35.882449+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/etl_dags.py', '--cfg-path', '/tmp/tmpbqyvm6ud']
+[2026-03-31T05:42:54.176+0000] {standard_task_runner.py:88} INFO - Job 6: Subtask run_mail_risk_data
+[2026-03-31T05:42:54.264+0000] {task_command.py:423} INFO - Running <TaskInstance: Financial_risk_assessment_to_dw.run_mail_risk_data manual__2026-03-31T05:42:35.882449+00:00 [running]> on host 7d38510d89ad
+[2026-03-31T05:42:54.356+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='hieubtt' AIRFLOW_CTX_DAG_ID='Financial_risk_assessment_to_dw' AIRFLOW_CTX_TASK_ID='run_mail_risk_data' AIRFLOW_CTX_EXECUTION_DATE='2026-03-31T05:42:35.882449+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-31T05:42:35.882449+00:00'
+[2026-03-31T05:42:54.357+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-31T05:42:54.359+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/scripts/Mail_Risk_Score.py']
+[2026-03-31T05:42:54.378+0000] {subprocess.py:86} INFO - Output:
+[2026-03-31T05:43:00.959+0000] {subprocess.py:93} INFO - /opt/airflow/scripts/Mail_Risk_Score.py:50: FutureWarning:
+[2026-03-31T05:43:00.960+0000] {subprocess.py:93} INFO - 
+[2026-03-31T05:43:00.961+0000] {subprocess.py:93} INFO - Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+[2026-03-31T05:43:00.962+0000] {subprocess.py:93} INFO - 
+[2026-03-31T05:43:00.962+0000] {subprocess.py:93} INFO -   ax = sns.barplot(x='risk_score', y='id', data=df, palette='Reds_r')
+[2026-03-31T05:43:00.963+0000] {subprocess.py:93} INFO - --- Bắt đầu tiến trình kết nối Database ---
+[2026-03-31T05:43:00.963+0000] {subprocess.py:93} INFO - --- Đang thực thi query: SELECT id, risk_score FROM fin_risk_ml_result ---
+[2026-03-31T05:43:00.964+0000] {subprocess.py:93} INFO - --- Đang vẽ biểu đồ từ dữ liệu Database ---
+[2026-03-31T05:43:00.964+0000] {subprocess.py:93} INFO - --- EMAIL ĐÃ GỬI THÀNH CÔNG! ---
+[2026-03-31T05:43:01.102+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-03-31T05:43:01.125+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=Financial_risk_assessment_to_dw, task_id=run_mail_risk_data, execution_date=20260331T054235, start_date=20260331T054254, end_date=20260331T054301
+[2026-03-31T05:43:01.155+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-03-31T05:43:01.170+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
