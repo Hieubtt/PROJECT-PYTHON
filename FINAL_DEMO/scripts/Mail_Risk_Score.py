@@ -28,10 +28,8 @@ def export_and_email_risk_report():
 
     try:
         # 3. Thực thi truy vấn SQL lấy dữ liệu
-        query = "SELECT id, CAST(risk_score AS FLOAT) AS risk_score FROM fin_risk_ml_result"
+        query = "SELECT DISTINCT ON (risk_score) id, risk_score FROM public.fin_risk_ml_result ORDER BY risk_score DESC LIMIT 10"
         print(f"--- Đang thực thi query: {query} ---")
-        
-        # Dùng engine của SQLAlchemy để đọc SQL trực tiếp vào DataFrame
         df = pd.read_sql(query, engine)
         
         if df.empty:
@@ -46,31 +44,41 @@ def export_and_email_risk_report():
 
     # 4. Vẽ biểu đồ
     sns.set_theme(style="whitegrid")
-    fig, ax = plt.subplots(figsize=(14, 8)) # Tăng chiều rộng lên 14
-    sns.barplot(
-        x='risk_score', 
-        y='id', 
+    fig, ax = plt.subplots(figsize=(14, 8))
+
+    plot = sns.barplot(
+        x='id', 
+        y='risk_score', 
         data=df, 
-        palette='Reds', # Đã sửa: Màu đỏ đậm sẽ dành cho risk_score cao
+        palette='Reds', 
         hue='id', 
         legend=False,
         ax=ax
     )
 
-    # 3. Thêm số vào đầu cột
-    ax.bar_label(ax.containers[0], fmt='%.2f', padding=10, fontweight='bold')
+    # 5. CÁCH HIỂN THỊ 10 SỐ TRÊN ĐẦU CỘT (Sửa lại phần này)
+    # Duyệt qua từng "container" và từng "bar" để dán nhãn chính xác
+    for container in ax.containers:
+        ax.bar_label(
+            container, 
+            fmt='%.2f', 
+            padding=5, 
+            fontweight='bold', 
+            fontsize=11,
+            color='black'
+        )
 
-    # 4. TĂNG KHOẢNG TRỐNG BÊN TRÁI ĐỂ HIỆN ID
-    # Đây là dòng quan trọng nhất để không bị mất ID
-    plt.subplots_adjust(left=0.25) 
-
-    # 5. Tinh chỉnh tiêu đề
-    plt.title('BÁO CÁO CHỈ SỐ RỦI RO CHI TIẾT', fontsize=16, pad=20, fontweight='bold')
-    plt.xlabel('Điểm rủi ro', fontsize=12)
-    plt.ylabel('ID Khách hàng', fontsize=12)
+    # 6. Tinh chỉnh hiển thị
+    plt.xticks(rotation=45, ha='right')
+    plt.title('BÁO CÁO CHỈ SỐ RỦI RO CHI TIẾT (TOP 10)', fontsize=16, pad=25, fontweight='bold')
+    plt.xlabel('ID Khách hàng', fontsize=12, labelpad=10)
+    plt.ylabel('Điểm rủi ro', fontsize=12)
     
-    # Giới hạn trục X để không bị mất chữ bên phải
-    plt.xlim(0, 1.2) 
+    # Nới rộng trục Y một chút để con số không bị đè vào lề trên
+    max_score = df['risk_score'].max()
+    plt.ylim(0, max_score * 1.2) 
+
+    plt.tight_layout()
 
     chart_path = '/opt/airflow/data/daily_risk_chart.png'
     os.makedirs(os.path.dirname(chart_path), exist_ok=True)

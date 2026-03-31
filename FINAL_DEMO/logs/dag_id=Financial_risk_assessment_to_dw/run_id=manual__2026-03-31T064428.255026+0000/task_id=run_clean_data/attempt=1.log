@@ -1,0 +1,21 @@
+[2026-03-31T06:44:40.155+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_clean_data manual__2026-03-31T06:44:28.255026+00:00 [queued]>
+[2026-03-31T06:44:40.183+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_clean_data manual__2026-03-31T06:44:28.255026+00:00 [queued]>
+[2026-03-31T06:44:40.184+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-03-31T06:44:40.200+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_clean_data> on 2026-03-31 06:44:28.255026+00:00
+[2026-03-31T06:44:40.209+0000] {standard_task_runner.py:60} INFO - Started process 346 to run task
+[2026-03-31T06:44:40.214+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Financial_risk_assessment_to_dw', 'run_clean_data', 'manual__2026-03-31T06:44:28.255026+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/etl_dags.py', '--cfg-path', '/tmp/tmp1ab2h2vr']
+[2026-03-31T06:44:40.217+0000] {standard_task_runner.py:88} INFO - Job 9: Subtask run_clean_data
+[2026-03-31T06:44:40.296+0000] {task_command.py:423} INFO - Running <TaskInstance: Financial_risk_assessment_to_dw.run_clean_data manual__2026-03-31T06:44:28.255026+00:00 [running]> on host e98336345932
+[2026-03-31T06:44:40.396+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='hieubtt' AIRFLOW_CTX_DAG_ID='Financial_risk_assessment_to_dw' AIRFLOW_CTX_TASK_ID='run_clean_data' AIRFLOW_CTX_EXECUTION_DATE='2026-03-31T06:44:28.255026+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-31T06:44:28.255026+00:00'
+[2026-03-31T06:44:40.397+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-03-31T06:44:40.399+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/scripts/clean_data_fin.py']
+[2026-03-31T06:44:40.415+0000] {subprocess.py:86} INFO - Output:
+[2026-03-31T06:44:54.099+0000] {subprocess.py:93} INFO - /opt/airflow/scripts/clean_data_fin.py:32: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2026-03-31T06:44:54.100+0000] {subprocess.py:93} INFO -   df_errors = pd.read_sql(SQL_NULL_DATA, conn)
+[2026-03-31T06:44:54.101+0000] {subprocess.py:93} INFO - Số dòng cần xử lý: 4136
+[2026-03-31T06:44:54.101+0000] {subprocess.py:93} INFO - ETL PASSED | RUN_ID=RUN_d3a35381
+[2026-03-31T06:44:54.102+0000] {subprocess.py:93} INFO - Đã cập nhật thành công 4136 dòng về giá trị 0.
+[2026-03-31T06:44:54.231+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-03-31T06:44:54.255+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=Financial_risk_assessment_to_dw, task_id=run_clean_data, execution_date=20260331T064428, start_date=20260331T064440, end_date=20260331T064454
+[2026-03-31T06:44:54.277+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-03-31T06:44:54.308+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check
