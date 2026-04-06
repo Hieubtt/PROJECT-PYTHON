@@ -208,7 +208,7 @@ def main():
         with conn.cursor() as cur:
             #Step 1
             cur.execute(SQL_CREATE_TABLE_JOB)
-            log(cur, "PIPELINE", "START", "Transform + Load sales")
+            log(cur, "PIPELINE", "START", "Transform + Load data")
             
             #Step 2
             cur.execute(SQL_BUILD_STAGING)

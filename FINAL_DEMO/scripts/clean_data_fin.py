@@ -9,7 +9,7 @@ RUN_ID = f"RUN_{uuid.uuid4().hex[:8]}"
 
 
 SQL_NULL_DATA='''
-    select credit_score,loan_amount,id from fin_risk_assessment 
+    select credit_score,loan_amount,id from rawdata 
     where credit_score IS NULL OR loan_amount IS NULL 
     OR credit_score = 'NaN' OR loan_amount = 'NaN'
 '''
@@ -49,14 +49,13 @@ def main():
             ]
 
             SQL_UPDATE = """
-                UPDATE fin_risk_assessment 
+                UPDATE rawdata 
                 SET credit_score = %s, 
                     loan_amount = %s 
                 WHERE id = %s
             """
 
             with conn.cursor() as cur:
-                # Sử dụng execute_batch để update hàng loạt cho nhanh
                 execute_batch(cur, SQL_UPDATE, data_to_update, page_size=100)
                 log(cur, "PIPELINE", "START", "Transform + Clean data")
                 print(f"ETL PASSED | RUN_ID={RUN_ID}")
