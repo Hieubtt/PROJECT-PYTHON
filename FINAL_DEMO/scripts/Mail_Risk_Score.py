@@ -86,8 +86,8 @@ def export_and_email_risk_report():
     plt.close()
 
     # 5. Gửi Email
-    sender_email = os.getenv("EMAIL_USER", "trunghieu17062001@gmail.com")
-    app_password = os.getenv("EMAIL_APP_PASSWORD", "gylfcildsgleubrk")
+    sender_email = os.getenv("EMAIL_USER")
+    app_password = os.getenv("EMAIL_APP_PASSWORD")
     receiver_email = "trunghieu170601@gmail.com"
 
     msg = MIMEMultipart()
