@@ -1,0 +1,27 @@
+[2026-04-06T08:17:54.044+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_mail_risk_data manual__2026-04-06T08:15:56.645157+00:00 [queued]>
+[2026-04-06T08:17:54.051+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_mail_risk_data manual__2026-04-06T08:15:56.645157+00:00 [queued]>
+[2026-04-06T08:17:54.051+0000] {taskinstance.py:2170} INFO - Starting attempt 3 of 3
+[2026-04-06T08:17:54.060+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_mail_risk_data> on 2026-04-06 08:15:56.645157+00:00
+[2026-04-06T08:17:54.065+0000] {standard_task_runner.py:60} INFO - Started process 455 to run task
+[2026-04-06T08:17:54.068+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Financial_risk_assessment_to_dw', 'run_mail_risk_data', 'manual__2026-04-06T08:15:56.645157+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/etl_dags.py', '--cfg-path', '/tmp/tmpeo1024i0']
+[2026-04-06T08:17:54.070+0000] {standard_task_runner.py:88} INFO - Job 8: Subtask run_mail_risk_data
+[2026-04-06T08:17:54.118+0000] {task_command.py:423} INFO - Running <TaskInstance: Financial_risk_assessment_to_dw.run_mail_risk_data manual__2026-04-06T08:15:56.645157+00:00 [running]> on host 49f55d1dea4a
+[2026-04-06T08:17:54.182+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='hieubtt' AIRFLOW_CTX_DAG_ID='Financial_risk_assessment_to_dw' AIRFLOW_CTX_TASK_ID='run_mail_risk_data' AIRFLOW_CTX_EXECUTION_DATE='2026-04-06T08:15:56.645157+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-06T08:15:56.645157+00:00'
+[2026-04-06T08:17:54.184+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-04-06T08:17:54.185+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/scripts/Mail_Risk_Score.py']
+[2026-04-06T08:17:54.197+0000] {subprocess.py:86} INFO - Output:
+[2026-04-06T08:41:45.500+0000] {subprocess.py:93} INFO - --- Bắt đầu tiến trình kết nối Database ---
+[2026-04-06T08:41:45.504+0000] {subprocess.py:93} INFO - --- Đang thực thi query: SELECT DISTINCT ON (risk_score) id, risk_score FROM public.fin_risk_ml_result ORDER BY risk_score DESC LIMIT 10 ---
+[2026-04-06T08:41:45.506+0000] {subprocess.py:93} INFO - !!! LỖI GỬI MAIL: 'NoneType' object has no attribute 'encode'
+[2026-04-06T08:17:58.435+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-04-06T08:17:58.467+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-04-06T08:17:58.480+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=Financial_risk_assessment_to_dw, task_id=run_mail_risk_data, execution_date=20260406T081556, start_date=20260406T081754, end_date=20260406T081758
+[2026-04-06T08:17:58.513+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 8 for task run_mail_risk_data (Bash command failed. The command returned a non-zero exit code 1.; 455)
+[2026-04-06T08:17:58.546+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-04-06T08:17:58.574+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

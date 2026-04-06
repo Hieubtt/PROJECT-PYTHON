@@ -86,10 +86,13 @@ def export_and_email_risk_report():
     plt.close()
 
     # 5. Gửi Email
-    sender_email = os.getenv("EMAIL_USER")
-    app_password = os.getenv("EMAIL_APP_PASSWORD")
+    sender_email = os.getenv("EMAIL_USER","trunghieu17062001@gmail.com")
+    app_password = os.getenv("EMAIL_APP_PASSWORD","gylfcildsgleubrk")
     receiver_email = "trunghieu170601@gmail.com"
-
+    if sender_email is None:
+        raise ValueError("!!! LỖI: Container không có biến EMAIL_USER. Kiểm tra lại docker-compose và .env")
+    if app_password is None:
+        raise ValueError("!!! LỖI: Container không có biến EMAIL_APP_PASSWORD.")
     msg = MIMEMultipart()
     msg['From'] = sender_email
     msg['To'] = receiver_email

@@ -1,0 +1,1264 @@
+[2026-04-06T08:03:58.951+0000] {processor.py:161} INFO - Started process (PID=173) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:03:58.954+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:03:58.957+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:03:58.956+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:03:59.040+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:03:59.127+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:03:59.127+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:03:59.219+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:03:59.219+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-05 00:00:00+00:00, run_after=2026-04-06 00:00:00+00:00
+[2026-04-06T08:03:59.268+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.326 seconds
+[2026-04-06T08:04:01.420+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:04:01.426+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:04:01.429+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:04:01.428+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:04:01.479+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:04:01.534+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:04:01.533+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:04:01.632+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:04:01.630+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:04:01.690+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.283 seconds
+[2026-04-06T08:28:11.426+0000] {processor.py:161} INFO - Started process (PID=190) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:11.429+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:28:11.430+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:28:11.430+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:11.465+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:11.506+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:28:11.506+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:04:23.832+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:04:23.832+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:04:23.872+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.165 seconds
+[2026-04-06T08:28:39.048+0000] {processor.py:161} INFO - Started process (PID=195) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:39.051+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:28:39.053+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:28:39.053+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:39.090+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:39.136+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:28:39.136+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:28:39.181+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:28:39.180+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:04:51.504+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.185 seconds
+[2026-04-06T08:28:44.084+0000] {processor.py:161} INFO - Started process (PID=201) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:44.085+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:28:44.087+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:28:44.086+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:44.112+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:44.150+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:28:44.149+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:28:44.181+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:28:44.181+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:28:44.206+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.127 seconds
+[2026-04-06T08:05:26.625+0000] {processor.py:161} INFO - Started process (PID=212) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:05:26.632+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:05:26.637+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:05:26.636+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:05:26.687+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:05:26.747+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:05:26.746+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:05:26.815+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:05:26.814+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:05:26.904+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.300 seconds
+[2026-04-06T08:05:53.952+0000] {processor.py:161} INFO - Started process (PID=221) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:05:53.954+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:05:53.958+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:05:53.957+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:05:54.007+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:05:54.103+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:05:54.102+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:05:54.211+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:05:54.209+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:05:54.284+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.343 seconds
+[2026-04-06T08:29:49.258+0000] {processor.py:161} INFO - Started process (PID=226) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:49.260+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:29:49.263+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:29:49.262+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:49.304+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:49.359+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:29:49.359+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:29:49.420+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:29:49.419+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:06:01.733+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.252 seconds
+[2026-04-06T08:29:54.281+0000] {processor.py:161} INFO - Started process (PID=231) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:54.283+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:29:54.285+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:29:54.284+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:54.318+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:54.359+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:29:54.358+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:29:54.392+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:29:54.391+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:06:06.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.150 seconds
+[2026-04-06T08:29:59.330+0000] {processor.py:161} INFO - Started process (PID=236) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:59.332+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:29:59.333+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:29:59.333+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:59.368+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:59.420+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:29:59.420+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:06:11.717+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:06:11.716+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:06:11.785+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.231 seconds
+[2026-04-06T08:30:11.621+0000] {processor.py:161} INFO - Started process (PID=241) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:30:11.624+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:30:11.626+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:30:11.625+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:06:23.911+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:06:23.993+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:06:23.993+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:06:24.030+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:06:24.030+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:06:24.066+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.210 seconds
+[2026-04-06T08:06:54.197+0000] {processor.py:161} INFO - Started process (PID=246) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:06:54.200+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:06:54.201+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:06:54.201+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:06:54.226+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:06:54.262+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:06:54.262+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:06:54.295+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:06:54.294+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:06:54.345+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.153 seconds
+[2026-04-06T08:31:04.274+0000] {processor.py:161} INFO - Started process (PID=251) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:31:04.277+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:31:04.278+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:31:04.278+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:31:04.298+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:31:04.330+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:31:04.330+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:31:04.359+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:31:04.358+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:31:04.383+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.113 seconds
+[2026-04-06T08:31:34.446+0000] {processor.py:161} INFO - Started process (PID=256) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:31:34.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:31:34.448+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:31:34.448+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:31:34.465+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:31:34.487+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:31:34.487+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:31:34.505+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:31:34.505+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:31:34.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.076 seconds
+[2026-04-06T08:34:41.582+0000] {processor.py:161} INFO - Started process (PID=261) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:34:41.583+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:34:41.584+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:34:41.584+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:10:53.873+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:10:53.894+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:10:53.894+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:10:53.914+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:10:53.914+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:10:53.930+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.079 seconds
+[2026-04-06T08:34:44.701+0000] {processor.py:161} INFO - Started process (PID=266) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:34:44.702+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:34:44.703+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:34:44.703+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:34:44.718+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:34:44.742+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:34:44.741+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:34:44.764+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:34:44.763+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:34:44.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.083 seconds
+[2026-04-06T08:11:27.173+0000] {processor.py:161} INFO - Started process (PID=273) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:11:27.174+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:11:27.175+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:11:27.175+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:11:27.193+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:11:27.223+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:11:27.222+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:11:27.249+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:11:27.249+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:11:27.271+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.101 seconds
+[2026-04-06T08:11:57.442+0000] {processor.py:161} INFO - Started process (PID=278) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:11:57.443+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:11:57.443+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:11:57.443+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:11:57.459+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:11:57.480+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:11:57.479+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:11:57.500+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:11:57.500+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:11:57.517+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.078 seconds
+[2026-04-06T08:36:11.449+0000] {processor.py:161} INFO - Started process (PID=284) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:36:11.452+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:36:11.454+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:36:11.454+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:36:11.490+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:36:11.541+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:36:11.540+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:36:11.578+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:36:11.578+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:12:23.901+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.166 seconds
+[2026-04-06T08:36:41.623+0000] {processor.py:161} INFO - Started process (PID=290) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:36:41.624+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:36:41.626+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:36:41.625+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:12:53.945+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:12:53.994+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:12:53.993+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:12:54.025+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:12:54.025+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:12:54.048+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.134 seconds
+[2026-04-06T08:36:59.893+0000] {processor.py:161} INFO - Started process (PID=295) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:36:59.895+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:36:59.896+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:36:59.896+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:36:59.923+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:36:59.953+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:36:59.953+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:36:59.975+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:36:59.975+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:36:59.993+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.105 seconds
+[2026-04-06T08:37:30.098+0000] {processor.py:161} INFO - Started process (PID=300) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:37:30.099+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:37:30.100+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:37:30.100+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:13:42.405+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:13:42.429+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:13:42.428+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:13:42.449+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:13:42.448+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:13:42.464+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.081 seconds
+[2026-04-06T08:13:47.515+0000] {processor.py:161} INFO - Started process (PID=305) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:13:47.516+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:13:47.517+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:13:47.517+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:13:47.534+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:13:47.558+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:13:47.558+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:13:47.578+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:13:47.578+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:13:47.599+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.087 seconds
+[2026-04-06T08:14:17.861+0000] {processor.py:161} INFO - Started process (PID=310) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:14:17.862+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:14:17.864+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:14:17.863+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:14:17.891+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:14:17.921+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:14:17.921+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:14:17.945+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:14:17.945+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:14:17.970+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.114 seconds
+[2026-04-06T08:14:23.937+0000] {processor.py:161} INFO - Started process (PID=315) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:14:23.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:14:23.943+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:14:23.942+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:14:23.978+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:14:24.018+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:14:24.018+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:14:24.046+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:14:24.046+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:14:24.067+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.141 seconds
+[2026-04-06T08:14:54.269+0000] {processor.py:161} INFO - Started process (PID=320) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:14:54.270+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:14:54.272+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:14:54.271+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:14:54.297+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:14:54.326+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:14:54.326+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:14:54.349+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:14:54.349+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:14:54.376+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.111 seconds
+[2026-04-06T08:38:45.116+0000] {processor.py:161} INFO - Started process (PID=325) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:38:45.121+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:38:45.124+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:38:45.123+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:38:45.175+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:38:45.278+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:38:45.277+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:38:45.335+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:38:45.334+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:14:57.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.311 seconds
+[2026-04-06T08:38:50.281+0000] {processor.py:161} INFO - Started process (PID=330) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:38:50.283+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:38:50.285+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:38:50.284+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:38:50.319+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:38:50.356+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:38:50.355+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:15:02.633+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:15:02.633+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:15:02.663+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.145 seconds
+[2026-04-06T08:38:55.323+0000] {processor.py:161} INFO - Started process (PID=335) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:38:55.325+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:38:55.326+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:38:55.326+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:38:55.358+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:15:07.666+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:15:07.665+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:15:07.714+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:15:07.714+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:15:07.765+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.196 seconds
+[2026-04-06T08:39:11.646+0000] {processor.py:161} INFO - Started process (PID=340) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:39:11.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:39:11.652+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:39:11.651+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:15:23.972+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:15:24.041+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:15:24.040+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:15:24.092+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:15:24.090+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:15:24.140+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.246 seconds
+[2026-04-06T08:15:54.193+0000] {processor.py:161} INFO - Started process (PID=345) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:15:54.195+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:15:54.196+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:15:54.196+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:15:54.225+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:15:54.266+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:15:54.266+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:15:54.312+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:15:54.310+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:15:54.360+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.171 seconds
+[2026-04-06T08:40:05.229+0000] {processor.py:161} INFO - Started process (PID=350) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:40:05.230+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:40:05.231+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:40:05.231+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:40:05.250+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:40:05.276+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:40:05.276+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:40:05.300+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:40:05.300+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:40:05.320+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.095 seconds
+[2026-04-06T08:40:35.389+0000] {processor.py:161} INFO - Started process (PID=355) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:40:35.390+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:40:35.391+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:40:35.391+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:40:35.407+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:40:35.428+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:40:35.428+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:16:47.743+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:16:47.743+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:16:47.762+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.080 seconds
+[2026-04-06T08:40:41.505+0000] {processor.py:161} INFO - Started process (PID=360) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:40:41.506+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:40:41.507+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:40:41.506+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:40:41.524+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:40:41.545+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:40:41.544+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:40:41.566+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:40:41.566+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:40:41.584+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.083 seconds
+[2026-04-06T08:41:11.687+0000] {processor.py:161} INFO - Started process (PID=365) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:41:11.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:41:11.689+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:41:11.689+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:17:23.970+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:17:23.995+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:17:23.994+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:17:24.017+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:17:24.017+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:17:24.043+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.095 seconds
+[2026-04-06T08:17:54.208+0000] {processor.py:161} INFO - Started process (PID=370) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:17:54.210+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:17:54.212+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:17:54.211+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:17:54.233+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:17:54.259+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:17:54.259+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:17:54.297+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:17:54.296+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:17:54.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.139 seconds
+[2026-04-06T08:18:24.512+0000] {processor.py:161} INFO - Started process (PID=375) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:18:24.516+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:18:24.521+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:18:24.520+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:18:24.558+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:18:24.610+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:18:24.609+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:18:24.660+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:18:24.659+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:18:24.702+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.200 seconds
+[2026-04-06T08:42:15.516+0000] {processor.py:161} INFO - Started process (PID=380) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:42:15.519+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:42:15.521+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:42:15.521+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:42:15.554+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:42:15.595+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:42:15.595+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:42:15.633+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:42:15.632+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:42:15.671+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.161 seconds
+[2026-04-06T08:42:50.673+0000] {processor.py:161} INFO - Started process (PID=385) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:42:50.674+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:42:50.676+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:42:50.675+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:19:02.997+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:19:03.037+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:19:03.037+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:19:03.058+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:19:03.058+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:19:03.075+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.111 seconds
+[2026-04-06T08:19:08.003+0000] {processor.py:161} INFO - Started process (PID=390) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:19:08.004+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:19:08.005+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:19:08.005+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:19:08.032+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:19:08.064+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:19:08.064+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:19:08.094+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:19:08.093+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:19:08.117+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.121 seconds
+[2026-04-06T08:19:38.324+0000] {processor.py:161} INFO - Started process (PID=395) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:19:38.327+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:19:38.329+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:19:38.329+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:19:38.351+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:19:38.375+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:19:38.375+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:19:38.395+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:19:38.395+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:19:38.411+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.090 seconds
+[2026-04-06T08:20:08.554+0000] {processor.py:161} INFO - Started process (PID=400) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:20:08.556+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:20:08.558+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:20:08.557+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:20:08.594+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:20:08.644+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:20:08.643+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:20:08.689+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:20:08.687+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:20:08.734+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.185 seconds
+[2026-04-06T08:44:11.555+0000] {processor.py:161} INFO - Started process (PID=405) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:44:11.557+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:44:11.558+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:11.558+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:44:11.584+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:44:11.622+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:11.622+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:44:11.650+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:11.650+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:20:23.994+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.122 seconds
+[2026-04-06T08:44:15.775+0000] {processor.py:161} INFO - Started process (PID=410) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:44:15.777+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:44:15.778+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:15.778+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:44:15.804+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:20:28.139+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:20:28.139+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:20:28.162+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:20:28.162+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:20:28.179+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.103 seconds
+[2026-04-06T08:44:20.799+0000] {processor.py:161} INFO - Started process (PID=415) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:44:20.801+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:44:20.802+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:20.801+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:44:20.828+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:20:33.168+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:20:33.168+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:20:33.197+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:20:33.197+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:20:33.499+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.403 seconds
+[2026-04-06T08:21:03.655+0000] {processor.py:161} INFO - Started process (PID=420) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:21:03.656+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:21:03.657+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:21:03.657+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:21:03.677+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:21:03.702+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:21:03.701+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:21:03.723+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:21:03.723+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:21:03.740+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.087 seconds
+[2026-04-06T08:45:11.514+0000] {processor.py:161} INFO - Started process (PID=425) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:11.517+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:45:11.518+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:11.517+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:11.552+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:11.594+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:11.594+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:45:11.623+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:11.623+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:21:23.956+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.142 seconds
+[2026-04-06T08:45:35.818+0000] {processor.py:161} INFO - Started process (PID=430) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:35.820+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:45:35.821+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:35.821+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:35.855+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:35.892+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:35.891+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:45:35.923+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:35.922+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:21:48.261+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.142 seconds
+[2026-04-06T08:45:40.831+0000] {processor.py:161} INFO - Started process (PID=435) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:40.832+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:45:40.833+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:40.833+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:40.848+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:40.874+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:40.874+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:45:40.896+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:40.896+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:45:40.911+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.084 seconds
+[2026-04-06T08:22:23.315+0000] {processor.py:161} INFO - Started process (PID=440) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:22:23.316+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:22:23.317+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:22:23.317+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:22:23.336+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:22:23.361+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:22:23.361+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:22:23.383+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:22:23.383+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:22:23.400+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.089 seconds
+[2026-04-06T08:22:53.558+0000] {processor.py:161} INFO - Started process (PID=445) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:22:53.559+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:22:53.560+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:22:53.560+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:22:53.584+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:22:53.610+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:22:53.610+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:22:53.633+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:22:53.632+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:22:53.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.095 seconds
+[2026-04-06T08:47:11.445+0000] {processor.py:161} INFO - Started process (PID=450) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:47:11.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:47:11.449+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:47:11.449+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:47:11.478+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:23:53.975+0000] {processor.py:161} INFO - Started process (PID=453) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:23:53.978+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:23:53.979+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:23:53.979+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:23:54.017+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:23:54.059+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:23:54.058+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:23:54.090+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:23:54.089+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:23:54.111+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.145 seconds
+[2026-04-06T08:24:24.211+0000] {processor.py:161} INFO - Started process (PID=458) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:24:24.214+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:24:24.216+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:24:24.215+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:24:24.246+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:24:24.288+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:24:24.288+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:24:24.317+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:24:24.316+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:24:24.341+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.140 seconds
+[2026-04-06T08:48:16.099+0000] {processor.py:161} INFO - Started process (PID=463) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:48:16.100+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:48:16.101+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:48:16.101+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:48:16.119+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:48:16.145+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:48:16.144+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:48:16.165+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:48:16.165+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:48:16.182+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.087 seconds
+[2026-04-06T08:48:46.279+0000] {processor.py:161} INFO - Started process (PID=470) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:48:46.280+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:48:46.281+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:48:46.280+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:48:46.297+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:24:58.629+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:24:58.629+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:24:58.664+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:24:58.664+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:24:58.687+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.109 seconds
+[2026-04-06T08:49:11.498+0000] {processor.py:161} INFO - Started process (PID=475) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:49:11.499+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:49:11.500+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:49:11.500+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:49:11.521+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:49:11.553+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:49:11.553+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:49:11.580+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:49:11.580+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:49:11.602+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.109 seconds
+[2026-04-06T08:51:12.428+0000] {processor.py:161} INFO - Started process (PID=480) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:51:12.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:51:12.438+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:51:12.437+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:51:12.511+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:51:12.614+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:51:12.613+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:51:12.673+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:51:12.673+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:51:12.723+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.310 seconds
+[2026-04-06T08:51:46.601+0000] {processor.py:161} INFO - Started process (PID=485) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:51:46.602+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:51:46.603+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:51:46.603+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:27:58.929+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:27:58.968+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:27:58.968+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:27:58.994+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:27:58.994+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:27:59.013+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.110 seconds
+[2026-04-06T08:28:29.069+0000] {processor.py:161} INFO - Started process (PID=490) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:29.070+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:28:29.071+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:28:29.071+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:29.086+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:29.111+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:28:29.111+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:28:29.131+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:28:29.130+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:28:29.148+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.082 seconds
+[2026-04-06T08:28:59.342+0000] {processor.py:161} INFO - Started process (PID=495) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:59.343+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:28:59.344+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:28:59.344+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:59.364+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:28:59.390+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:28:59.390+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:28:59.415+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:28:59.415+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:28:59.430+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.091 seconds
+[2026-04-06T08:29:29.489+0000] {processor.py:161} INFO - Started process (PID=500) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:29.491+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:29:29.492+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:29:29.491+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:29.509+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:29.536+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:29:29.535+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:29:29.555+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:29:29.555+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:29:29.570+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.085 seconds
+[2026-04-06T08:29:59.761+0000] {processor.py:161} INFO - Started process (PID=511) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:59.763+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:29:59.765+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:29:59.764+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:59.790+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:29:59.821+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:29:59.820+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:29:59.849+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:29:59.848+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:29:59.868+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.111 seconds
+[2026-04-06T08:53:56.647+0000] {processor.py:161} INFO - Started process (PID=516) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:53:56.649+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:53:56.650+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:53:56.650+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:53:56.673+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:53:56.697+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:53:56.697+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:53:56.715+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:53:56.715+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:53:56.732+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.089 seconds
+[2026-04-06T08:54:26.848+0000] {processor.py:161} INFO - Started process (PID=521) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:54:26.850+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:54:26.851+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:54:26.851+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:54:26.873+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:54:26.903+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:54:26.903+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:30:39.204+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:30:39.203+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:30:39.233+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.113 seconds
+[2026-04-06T08:31:09.441+0000] {processor.py:161} INFO - Started process (PID=526) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:31:09.442+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:31:09.443+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:31:09.443+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:31:09.460+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:31:09.483+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:31:09.482+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:31:09.503+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:31:09.503+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:31:09.517+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.079 seconds
+[2026-04-06T08:31:39.649+0000] {processor.py:161} INFO - Started process (PID=531) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:31:39.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:31:39.652+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:31:39.651+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:31:39.668+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:31:39.691+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:31:39.691+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:31:39.716+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:31:39.716+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:31:39.737+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.091 seconds
+[2026-04-06T08:55:41.529+0000] {processor.py:161} INFO - Started process (PID=536) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:55:41.530+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:55:41.531+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:55:41.531+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:55:41.557+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:55:41.600+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:55:41.599+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:55:41.632+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:55:41.632+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:55:41.655+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.130 seconds
+[2026-04-06T08:56:26.935+0000] {processor.py:161} INFO - Started process (PID=541) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:56:26.938+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:56:26.940+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:56:26.939+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:56:26.972+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:56:27.023+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:56:27.022+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:56:27.053+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:56:27.053+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:56:27.081+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.150 seconds
+[2026-04-06T08:56:31.981+0000] {processor.py:161} INFO - Started process (PID=546) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:56:31.983+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:56:31.985+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:56:31.984+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:56:32.015+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:56:32.049+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:56:32.049+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:56:32.076+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:56:32.075+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:32:44.431+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.141 seconds
+[2026-04-06T08:33:14.653+0000] {processor.py:161} INFO - Started process (PID=551) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:33:14.655+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:33:14.656+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:33:14.656+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:33:14.679+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:33:14.713+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:33:14.713+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:33:14.739+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:33:14.739+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:33:14.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.114 seconds
+[2026-04-06T08:57:11.555+0000] {processor.py:161} INFO - Started process (PID=556) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:57:11.556+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:57:11.558+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:57:11.557+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:57:11.590+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:57:11.644+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:57:11.643+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:57:11.700+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:57:11.699+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:33:24.060+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.196 seconds
+[2026-04-06T08:57:42.034+0000] {processor.py:161} INFO - Started process (PID=561) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:57:42.036+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:57:42.039+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:57:42.038+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:57:42.090+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:57:42.129+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:57:42.128+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:57:42.161+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:57:42.160+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:57:42.188+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.166 seconds
+[2026-04-06T08:58:17.203+0000] {processor.py:161} INFO - Started process (PID=567) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:58:17.204+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:58:17.205+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:58:17.204+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:58:17.222+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:58:17.250+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:58:17.249+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:58:17.275+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:58:17.274+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:58:17.301+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.102 seconds
+[2026-04-06T08:58:22.233+0000] {processor.py:161} INFO - Started process (PID=572) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:58:22.234+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:58:22.235+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:58:22.235+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:58:22.251+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:58:22.274+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:58:22.273+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:58:22.291+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:58:22.291+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:58:22.307+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.077 seconds
+[2026-04-06T08:59:11.559+0000] {processor.py:161} INFO - Started process (PID=577) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:59:11.561+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:59:11.562+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:59:11.562+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:59:11.584+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:59:11.618+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:59:11.618+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:59:11.646+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:59:11.646+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:59:11.669+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.115 seconds
+[2026-04-06T09:01:12.416+0000] {processor.py:161} INFO - Started process (PID=583) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:01:12.417+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:01:12.418+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:01:12.417+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:01:12.439+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:01:12.470+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:01:12.470+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:01:12.491+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:01:12.491+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:01:12.508+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.096 seconds
+[2026-04-06T09:01:42.632+0000] {processor.py:161} INFO - Started process (PID=590) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:01:42.633+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:01:42.636+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:01:42.635+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:01:42.673+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:01:42.706+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:01:42.706+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:01:42.731+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:01:42.731+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:01:42.749+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.123 seconds
+[2026-04-06T09:03:41.576+0000] {processor.py:161} INFO - Started process (PID=596) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:03:41.578+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:03:41.579+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:03:41.578+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:03:41.597+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:03:41.624+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:03:41.623+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:03:41.644+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:03:41.643+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:03:41.659+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.087 seconds
+[2026-04-06T09:04:12.804+0000] {processor.py:161} INFO - Started process (PID=601) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:04:12.805+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:04:12.806+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:04:12.806+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:04:12.824+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:04:12.849+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:04:12.849+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:04:12.869+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:04:12.869+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:04:12.885+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.084 seconds
+[2026-04-06T09:05:12.275+0000] {processor.py:161} INFO - Started process (PID=608) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:05:12.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:05:12.278+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:05:12.278+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:05:12.309+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:05:12.356+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:05:12.355+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:05:12.398+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:05:12.397+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:05:12.447+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.176 seconds
+[2026-04-06T09:06:11.657+0000] {processor.py:161} INFO - Started process (PID=615) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:06:11.658+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:06:11.659+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:06:11.659+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:06:11.681+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:06:11.710+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:06:11.709+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:06:11.735+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:06:11.735+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:06:11.754+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.101 seconds
+[2026-04-06T08:42:54.170+0000] {processor.py:161} INFO - Started process (PID=620) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:42:54.172+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:42:54.173+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:42:54.173+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:42:54.201+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:42:54.239+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:42:54.238+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:42:54.324+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:42:54.323+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:42:54.400+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.235 seconds
+[2026-04-06T09:06:43.169+0000] {processor.py:161} INFO - Started process (PID=625) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:06:43.170+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:06:43.171+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:06:43.171+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:42:55.523+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:42:55.559+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:42:55.558+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:42:55.589+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:42:55.589+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:42:55.611+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.117 seconds
+[2026-04-06T08:43:00.533+0000] {processor.py:161} INFO - Started process (PID=630) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:43:00.535+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:43:00.537+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:43:00.536+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:43:00.582+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:43:00.618+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:43:00.618+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:43:00.641+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:43:00.641+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:43:00.658+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.129 seconds
+[2026-04-06T08:43:24.141+0000] {processor.py:161} INFO - Started process (PID=636) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:43:24.157+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:43:24.173+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:43:24.170+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:43:24.322+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:43:24.472+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:43:24.471+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:43:24.571+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:43:24.570+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:43:24.666+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.560 seconds
+[2026-04-06T09:07:41.648+0000] {processor.py:161} INFO - Started process (PID=642) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:07:41.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:07:41.652+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:07:41.651+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:07:41.683+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:07:41.727+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:07:41.726+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:07:41.761+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:07:41.761+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:43:54.111+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.148 seconds
+[2026-04-06T08:44:24.386+0000] {processor.py:161} INFO - Started process (PID=647) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:44:24.389+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:44:24.391+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:24.390+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:44:24.433+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:44:24.475+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:24.474+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:44:24.503+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:24.503+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:44:24.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.146 seconds
+[2026-04-06T09:08:13.243+0000] {processor.py:161} INFO - Started process (PID=652) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:08:13.245+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:08:13.247+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:08:13.246+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:08:13.274+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:08:13.330+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:08:13.329+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:44:25.704+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:25.704+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:44:25.745+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.174 seconds
+[2026-04-06T09:08:18.279+0000] {processor.py:161} INFO - Started process (PID=657) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:08:18.281+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:08:18.282+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:08:18.282+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:08:18.309+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:44:30.674+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:30.673+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:44:30.709+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:30.709+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:44:30.734+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.132 seconds
+[2026-04-06T09:08:23.318+0000] {processor.py:161} INFO - Started process (PID=662) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:08:23.321+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:08:23.322+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:08:23.322+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:08:23.344+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:44:35.708+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:35.708+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:44:35.734+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:35.733+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:44:35.752+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.111 seconds
+[2026-04-06T09:08:28.358+0000] {processor.py:161} INFO - Started process (PID=667) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:08:28.360+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:08:28.361+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:08:28.360+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:44:40.720+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:44:40.765+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:40.765+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:44:40.788+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:44:40.788+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:44:40.807+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.122 seconds
+[2026-04-06T08:45:11.154+0000] {processor.py:161} INFO - Started process (PID=672) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:11.158+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:45:11.161+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:11.160+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:11.204+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:11.253+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:11.253+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:45:11.303+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:11.303+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:45:11.341+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.200 seconds
+[2026-04-06T09:09:18.477+0000] {processor.py:161} INFO - Started process (PID=677) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:09:18.482+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:09:18.488+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:09:18.486+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:30.915+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:31.098+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:31.096+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:45:31.238+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:31.237+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:45:31.362+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.580 seconds
+[2026-04-06T08:45:35.971+0000] {processor.py:161} INFO - Started process (PID=682) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:35.977+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:45:35.981+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:35.980+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:36.047+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:36.145+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:36.144+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:45:36.246+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:36.245+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:45:36.370+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.421 seconds
+[2026-04-06T08:45:54.132+0000] {processor.py:161} INFO - Started process (PID=687) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:54.135+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:45:54.139+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:54.137+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:54.190+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:45:54.256+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:54.255+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:45:54.337+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:45:54.336+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:45:54.424+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.306 seconds
+[2026-04-06T09:09:43.835+0000] {processor.py:161} INFO - Started process (PID=692) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:09:43.839+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:09:43.842+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:09:43.842+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:09:43.888+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:09:43.960+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:09:43.958+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:09:44.039+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:09:44.038+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:09:44.115+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.292 seconds
+[2026-04-06T09:10:23.489+0000] {processor.py:161} INFO - Started process (PID=699) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:10:23.491+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:10:23.492+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:10:23.492+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:10:23.515+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:10:23.564+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:10:23.563+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:46:35.932+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:46:35.931+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:46:35.964+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.146 seconds
+[2026-04-06T09:10:28.521+0000] {processor.py:161} INFO - Started process (PID=704) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:10:28.523+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:10:28.525+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:10:28.524+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:10:28.549+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:10:28.579+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:10:28.578+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:10:28.602+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:10:28.602+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:46:40.959+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.114 seconds
+[2026-04-06T09:10:33.575+0000] {processor.py:161} INFO - Started process (PID=709) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:10:33.578+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:10:33.580+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:10:33.579+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:10:33.639+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:46:46.037+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:46:46.036+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:46:46.082+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:46:46.081+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:46:46.111+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.193 seconds
+[2026-04-06T09:10:41.748+0000] {processor.py:161} INFO - Started process (PID=714) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:10:41.749+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:10:41.751+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:10:41.750+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:10:41.771+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:46:54.150+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:46:54.150+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:46:54.188+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:46:54.187+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:46:54.215+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.136 seconds
+[2026-04-06T08:47:24.412+0000] {processor.py:161} INFO - Started process (PID=719) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:47:24.414+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:47:24.416+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:47:24.416+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:47:24.452+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:47:24.495+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:47:24.494+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:47:24.545+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:47:24.545+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:47:24.574+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.169 seconds
+[2026-04-06T08:47:54.731+0000] {processor.py:161} INFO - Started process (PID=724) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:47:54.732+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:47:54.734+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:47:54.734+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:47:54.762+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:47:54.799+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:47:54.799+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:47:54.831+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:47:54.831+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:47:54.867+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.143 seconds
+[2026-04-06T09:11:43.662+0000] {processor.py:161} INFO - Started process (PID=729) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:11:43.663+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:11:43.664+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:11:43.664+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:11:43.691+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:11:43.723+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:11:43.723+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:47:56.087+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:47:56.087+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:47:56.134+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.138 seconds
+[2026-04-06T09:11:48.712+0000] {processor.py:161} INFO - Started process (PID=734) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:11:48.715+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:11:48.718+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:11:48.717+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:11:48.744+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:48:01.118+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:48:01.117+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:48:01.159+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:48:01.158+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:48:01.192+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.152 seconds
+[2026-04-06T08:48:31.391+0000] {processor.py:161} INFO - Started process (PID=739) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:48:31.392+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:48:31.393+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:48:31.392+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:48:31.409+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:48:31.431+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:48:31.431+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:48:31.452+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:48:31.451+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:48:31.469+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.081 seconds
+[2026-04-06T08:49:01.586+0000] {processor.py:161} INFO - Started process (PID=744) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:49:01.588+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:49:01.589+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:49:01.589+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:49:01.620+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:49:01.662+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:49:01.661+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:49:01.697+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:49:01.696+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:49:01.723+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.142 seconds
+[2026-04-06T08:49:31.858+0000] {processor.py:161} INFO - Started process (PID=749) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:49:31.859+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:49:31.861+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:49:31.860+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:49:31.882+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:49:31.911+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:49:31.910+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:49:31.941+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:49:31.941+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:49:31.963+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.109 seconds
+[2026-04-06T09:13:33.799+0000] {processor.py:161} INFO - Started process (PID=754) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:13:33.804+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:13:33.806+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:13:33.806+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:13:33.856+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:13:33.922+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:13:33.921+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:49:46.314+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:49:46.312+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:49:46.526+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.406 seconds
+[2026-04-06T09:13:38.827+0000] {processor.py:161} INFO - Started process (PID=759) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:13:38.828+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:13:38.829+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:13:38.829+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:13:38.849+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:13:38.877+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:13:38.877+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:13:38.900+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:13:38.899+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:13:38.921+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.097 seconds
+[2026-04-06T09:14:09.024+0000] {processor.py:161} INFO - Started process (PID=764) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:50:21.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:50:21.349+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:50:21.349+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:50:21.370+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:50:21.395+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:50:21.395+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:50:21.416+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:50:21.416+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:50:21.577+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.233 seconds
+[2026-04-06T08:50:51.623+0000] {processor.py:161} INFO - Started process (PID=769) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:50:51.624+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:50:51.625+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:50:51.624+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:50:51.640+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:50:51.663+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:50:51.663+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:50:51.682+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:50:51.682+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:50:51.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.079 seconds
+[2026-04-06T08:51:21.775+0000] {processor.py:161} INFO - Started process (PID=774) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:51:21.776+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:51:21.777+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:51:21.776+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:51:21.792+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:51:21.814+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:51:21.813+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:51:21.835+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:51:21.835+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:51:21.852+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.081 seconds
+[2026-04-06T08:51:52.016+0000] {processor.py:161} INFO - Started process (PID=779) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:51:52.018+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:51:52.019+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:51:52.019+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:51:52.037+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:51:52.065+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:51:52.065+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:51:52.085+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:51:52.085+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:51:52.101+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.088 seconds
+[2026-04-06T09:15:41.695+0000] {processor.py:161} INFO - Started process (PID=785) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:15:41.696+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:15:41.697+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:15:41.697+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:15:41.714+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:15:41.734+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:15:41.734+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:15:41.754+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:15:41.754+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:15:41.771+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.079 seconds
+[2026-04-06T09:16:34.059+0000] {processor.py:161} INFO - Started process (PID=791) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:16:34.060+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:16:34.061+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:16:34.060+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:16:34.077+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:16:34.100+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:16:34.100+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:16:34.121+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:16:34.121+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:16:34.137+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.081 seconds
+[2026-04-06T09:17:04.243+0000] {processor.py:161} INFO - Started process (PID=796) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:17:04.244+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:17:04.245+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:17:04.245+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:17:04.261+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:17:04.286+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:17:04.286+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:17:04.317+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:17:04.317+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:53:16.705+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.102 seconds
+[2026-04-06T09:17:14.342+0000] {processor.py:161} INFO - Started process (PID=801) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:17:14.343+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:17:14.344+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:17:14.343+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:53:26.713+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:53:26.739+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:53:26.739+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:53:26.759+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:53:26.758+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:53:26.822+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.132 seconds
+[2026-04-06T08:53:56.930+0000] {processor.py:161} INFO - Started process (PID=806) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:53:56.932+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:53:56.934+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:53:56.934+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:53:56.960+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:53:56.991+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:53:56.991+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:53:57.017+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:53:57.017+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:53:57.035+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.116 seconds
+[2026-04-06T09:18:11.793+0000] {processor.py:161} INFO - Started process (PID=811) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:18:11.795+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:18:11.796+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:18:11.796+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:18:11.815+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:18:11.841+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:18:11.841+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:18:11.863+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:18:11.863+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:54:24.206+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.092 seconds
+[2026-04-06T08:54:54.332+0000] {processor.py:161} INFO - Started process (PID=816) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:54:54.333+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:54:54.334+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:54:54.334+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:54:54.350+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:54:54.372+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:54:54.372+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:54:54.393+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:54:54.393+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:54:54.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.190 seconds
+[2026-04-06T09:18:50.135+0000] {processor.py:161} INFO - Started process (PID=822) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:18:50.140+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:18:50.145+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:18:50.143+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:18:50.209+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:18:50.293+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:18:50.293+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:18:50.354+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:18:50.353+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:18:50.409+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.287 seconds
+[2026-04-06T09:19:24.450+0000] {processor.py:161} INFO - Started process (PID=827) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:19:24.451+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:19:24.452+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:19:24.452+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:19:24.471+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:19:24.497+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:19:24.497+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:19:24.517+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:19:24.517+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:19:24.534+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.088 seconds
+[2026-04-06T09:19:29.482+0000] {processor.py:161} INFO - Started process (PID=832) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:19:29.483+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:19:29.485+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:19:29.484+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:19:29.504+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:19:29.532+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:19:29.532+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:55:41.906+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:55:41.905+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:55:41.927+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.109 seconds
+[2026-04-06T09:19:39.559+0000] {processor.py:161} INFO - Started process (PID=837) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:19:39.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:19:39.561+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:19:39.561+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:55:51.915+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:55:51.941+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:55:51.941+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:55:51.962+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:55:51.962+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:55:51.977+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.087 seconds
+[2026-04-06T09:19:41.566+0000] {processor.py:161} INFO - Started process (PID=842) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:19:41.567+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:19:41.568+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:19:41.568+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:19:41.583+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:19:41.605+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:19:41.605+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:19:41.623+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:19:41.623+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:19:41.639+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.076 seconds
+[2026-04-06T09:20:11.716+0000] {processor.py:161} INFO - Started process (PID=847) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:20:11.718+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:20:11.719+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:20:11.718+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:20:11.743+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:56:24.113+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:56:24.112+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:56:24.153+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:56:24.153+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:56:24.185+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.145 seconds
+[2026-04-06T08:56:54.298+0000] {processor.py:161} INFO - Started process (PID=852) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:56:54.299+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:56:54.301+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:56:54.300+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:56:54.324+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:56:54.358+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:56:54.357+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:56:54.386+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:56:54.385+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:56:54.407+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.116 seconds
+[2026-04-06T08:57:25.363+0000] {processor.py:161} INFO - Started process (PID=857) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:57:25.364+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:57:25.365+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:57:25.365+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:57:25.383+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:57:25.406+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:57:25.406+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:57:25.426+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:57:25.426+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:57:25.441+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.082 seconds
+[2026-04-06T08:57:55.554+0000] {processor.py:161} INFO - Started process (PID=862) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:57:55.557+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:57:55.558+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:57:55.558+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:57:55.590+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:57:55.637+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:57:55.636+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:57:55.680+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:57:55.679+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:57:55.717+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.170 seconds
+[2026-04-06T09:22:11.406+0000] {processor.py:161} INFO - Started process (PID=867) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:22:11.407+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:22:11.408+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:22:11.408+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:22:11.427+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:22:11.455+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:22:11.454+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:22:11.475+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:22:11.474+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:22:11.494+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.090 seconds
+[2026-04-06T09:22:44.663+0000] {processor.py:161} INFO - Started process (PID=872) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:22:44.665+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:22:44.665+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:22:44.665+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:22:44.681+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:22:44.705+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:22:44.705+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:22:44.725+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:22:44.725+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:22:44.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.084 seconds
+[2026-04-06T09:23:14.835+0000] {processor.py:161} INFO - Started process (PID=877) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:23:14.836+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:23:14.837+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:23:14.837+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:23:14.857+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:23:14.892+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:23:14.891+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:59:27.256+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:59:27.256+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:59:27.280+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.110 seconds
+[2026-04-06T08:59:57.405+0000] {processor.py:161} INFO - Started process (PID=882) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:59:57.406+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T08:59:57.407+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:59:57.407+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:59:57.425+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T08:59:57.449+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:59:57.448+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T08:59:57.469+0000] {logging_mixin.py:188} INFO - [2026-04-06T08:59:57.469+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T08:59:57.484+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.083 seconds
+[2026-04-06T09:00:27.577+0000] {processor.py:161} INFO - Started process (PID=887) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:00:27.579+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:00:27.580+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:00:27.579+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:00:27.605+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:00:27.642+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:00:27.642+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:00:27.676+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:00:27.676+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:00:27.718+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.146 seconds
+[2026-04-06T09:24:41.465+0000] {processor.py:161} INFO - Started process (PID=892) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:24:41.466+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:24:41.468+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:24:41.468+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:24:41.489+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:00:53.871+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:00:53.870+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:00:53.898+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:00:53.898+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:00:53.919+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.107 seconds
+[2026-04-06T09:01:24.063+0000] {processor.py:161} INFO - Started process (PID=897) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:01:24.064+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:01:24.065+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:01:24.065+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:01:24.083+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:01:24.107+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:01:24.107+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:01:24.128+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:01:24.127+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:01:24.143+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.084 seconds
+[2026-04-06T09:01:54.208+0000] {processor.py:161} INFO - Started process (PID=902) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:01:54.209+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:01:54.210+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:01:54.210+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:01:54.227+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:01:54.252+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:01:54.252+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:01:54.273+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:01:54.272+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:01:54.289+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.085 seconds
+[2026-04-06T09:25:44.942+0000] {processor.py:161} INFO - Started process (PID=907) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:25:44.943+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:25:44.944+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:25:44.944+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:25:44.959+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:25:44.981+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:25:44.981+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:25:45.001+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:25:45.001+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:25:45.015+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.076 seconds
+[2026-04-06T09:26:20.011+0000] {processor.py:161} INFO - Started process (PID=914) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:26:20.013+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:26:20.014+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:26:20.014+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:26:20.033+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:26:20.066+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:26:20.066+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:26:20.103+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:26:20.103+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:26:20.124+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.116 seconds
+[2026-04-06T09:26:50.183+0000] {processor.py:161} INFO - Started process (PID=919) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:26:50.184+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:26:50.185+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:26:50.184+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:26:50.203+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:03:02.581+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:03:02.581+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:03:02.601+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:03:02.601+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:03:02.617+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.086 seconds
+[2026-04-06T09:03:32.778+0000] {processor.py:161} INFO - Started process (PID=924) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:03:32.779+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:03:32.780+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:03:32.780+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:03:32.798+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:03:32.819+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:03:32.819+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:03:32.839+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:03:32.839+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:03:32.855+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.081 seconds
+[2026-04-06T09:04:02.956+0000] {processor.py:161} INFO - Started process (PID=929) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:04:02.957+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:04:02.959+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:04:02.958+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:04:02.976+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:04:03.000+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:04:02.999+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:04:03.022+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:04:03.022+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:04:03.043+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.091 seconds
+[2026-04-06T09:04:33.172+0000] {processor.py:161} INFO - Started process (PID=935) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:04:33.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:04:33.174+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:04:33.174+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:04:33.191+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:04:33.215+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:04:33.215+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:04:33.235+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:04:33.234+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:04:33.252+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.082 seconds
+[2026-04-06T09:05:03.337+0000] {processor.py:161} INFO - Started process (PID=941) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:05:03.338+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:05:03.339+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:05:03.338+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:05:03.354+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:05:03.380+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:05:03.379+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:05:03.400+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:05:03.399+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:05:03.416+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.083 seconds
+[2026-04-06T09:29:11.191+0000] {processor.py:161} INFO - Started process (PID=946) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:29:11.193+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:29:11.194+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:29:11.193+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:29:11.218+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:29:11.249+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:29:11.249+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:29:11.274+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:29:11.274+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:29:11.298+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.112 seconds
+[2026-04-06T09:29:41.370+0000] {processor.py:161} INFO - Started process (PID=951) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:29:41.372+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:29:41.373+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:29:41.373+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:05:53.765+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:05:53.818+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:05:53.818+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:05:53.858+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:05:53.857+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:05:53.892+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.163 seconds
+[2026-04-06T09:29:45.496+0000] {processor.py:161} INFO - Started process (PID=956) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:29:45.497+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:29:45.498+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:29:45.498+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:29:45.513+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:05:57.890+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:05:57.890+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:05:57.910+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:05:57.909+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:05:57.928+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.081 seconds
+[2026-04-06T09:06:28.101+0000] {processor.py:161} INFO - Started process (PID=961) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:06:28.102+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:06:28.103+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:06:28.102+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:06:28.118+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:06:28.141+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:06:28.140+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:06:28.161+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:06:28.160+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:06:28.177+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.079 seconds
+[2026-04-06T09:06:58.260+0000] {processor.py:161} INFO - Started process (PID=966) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:06:58.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:06:58.262+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:06:58.262+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:06:58.278+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:06:58.305+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:06:58.305+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:06:58.325+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:06:58.325+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:06:58.349+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.092 seconds
+[2026-04-06T09:07:28.489+0000] {processor.py:161} INFO - Started process (PID=971) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:07:28.489+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:07:28.490+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:07:28.490+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:07:28.505+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:07:28.527+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:07:28.527+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:07:28.545+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:07:28.545+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:07:28.570+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.084 seconds
+[2026-04-06T09:31:41.277+0000] {processor.py:161} INFO - Started process (PID=976) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:31:41.278+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:31:41.279+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:31:41.278+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:31:41.295+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:31:41.319+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:31:41.319+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:31:41.338+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:31:41.338+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:31:41.354+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.080 seconds
+[2026-04-06T09:08:23.876+0000] {processor.py:161} INFO - Started process (PID=981) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:08:23.879+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:08:23.880+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:08:23.880+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:08:23.914+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:08:23.960+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:08:23.959+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:08:23.997+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:08:23.996+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:08:24.031+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.160 seconds
+[2026-04-06T09:32:15.739+0000] {processor.py:161} INFO - Started process (PID=986) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:32:15.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:32:15.741+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:32:15.741+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:32:15.761+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:08:28.146+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:08:28.146+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:08:28.168+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:08:28.168+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:08:28.184+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.095 seconds
+[2026-04-06T09:32:20.768+0000] {processor.py:161} INFO - Started process (PID=991) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:32:20.769+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:32:20.771+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:32:20.770+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:32:20.792+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:08:33.174+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:08:33.174+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:08:33.197+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:08:33.197+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:08:33.219+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.100 seconds
+[2026-04-06T09:09:03.401+0000] {processor.py:161} INFO - Started process (PID=996) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:09:03.403+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:09:03.404+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:09:03.403+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:09:03.421+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:09:03.442+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:09:03.442+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:09:03.461+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:09:03.461+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:09:03.487+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.094 seconds
+[2026-04-06T09:33:11.256+0000] {processor.py:161} INFO - Started process (PID=1002) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:33:11.257+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:33:11.258+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:33:11.258+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:33:11.275+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:33:11.302+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:33:11.302+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:33:11.323+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:33:11.322+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:33:11.351+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.098 seconds
+[2026-04-06T09:35:20.954+0000] {processor.py:161} INFO - Started process (PID=1008) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:35:20.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:35:20.956+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:35:20.956+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:35:20.973+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:35:20.994+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:35:20.994+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:35:21.012+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:35:21.012+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:35:21.026+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.075 seconds
+[2026-04-06T09:37:21.146+0000] {processor.py:161} INFO - Started process (PID=1015) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:37:21.148+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:37:21.149+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:37:21.149+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:37:21.176+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:37:21.211+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:37:21.211+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:37:21.235+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:37:21.235+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:37:21.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.114 seconds
+[2026-04-06T09:37:51.293+0000] {processor.py:161} INFO - Started process (PID=1020) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:37:51.294+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:37:51.295+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:37:51.294+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:37:51.311+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:37:51.333+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:37:51.332+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:37:51.350+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:37:51.350+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:37:51.365+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.075 seconds
+[2026-04-06T09:37:56.332+0000] {processor.py:161} INFO - Started process (PID=1025) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:37:56.334+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:37:56.335+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:37:56.334+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:37:56.351+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:37:56.373+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:37:56.373+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:37:56.391+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:37:56.391+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:14:08.763+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.080 seconds
+[2026-04-06T09:38:10.490+0000] {processor.py:161} INFO - Started process (PID=1030) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:38:10.491+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:38:10.492+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:38:10.492+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:38:10.508+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:38:10.530+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:38:10.530+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:38:10.551+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:38:10.550+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:38:10.569+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.081 seconds
+[2026-04-06T09:14:53.022+0000] {processor.py:161} INFO - Started process (PID=1035) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:14:53.024+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:14:53.024+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:14:53.024+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:14:53.042+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:14:53.067+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:14:53.066+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:14:53.085+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:14:53.084+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:14:53.099+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.081 seconds
+[2026-04-06T09:15:23.189+0000] {processor.py:161} INFO - Started process (PID=1040) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:15:23.190+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:15:23.191+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:15:23.191+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:15:23.208+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:15:23.230+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:15:23.229+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:15:23.246+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:15:23.246+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:15:23.273+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.087 seconds
+[2026-04-06T09:15:53.357+0000] {processor.py:161} INFO - Started process (PID=1045) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:15:53.358+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:15:53.358+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:15:53.358+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:15:53.374+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:15:53.395+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:15:53.395+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:15:53.413+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:15:53.413+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:15:53.439+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.087 seconds
+[2026-04-06T09:16:23.610+0000] {processor.py:161} INFO - Started process (PID=1050) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:16:23.611+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:16:23.612+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:16:23.612+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:16:23.627+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:16:23.650+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:16:23.649+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:16:23.667+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:16:23.667+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:40:11.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.087 seconds
+[2026-04-06T09:40:41.459+0000] {processor.py:161} INFO - Started process (PID=1055) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:40:41.461+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:40:41.462+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:40:41.462+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:40:41.477+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:40:41.600+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:40:41.599+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:40:41.615+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:40:41.615+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:40:41.630+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.174 seconds
+[2026-04-06T09:43:40.507+0000] {processor.py:161} INFO - Started process (PID=1060) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:43:40.508+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:43:40.509+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:43:40.508+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:43:40.525+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:43:40.544+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:43:40.544+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:43:40.562+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:43:40.562+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:43:40.579+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.074 seconds
+[2026-04-06T09:44:10.675+0000] {processor.py:161} INFO - Started process (PID=1065) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:44:10.676+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:44:10.677+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:44:10.677+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:44:10.694+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:44:10.719+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:44:10.718+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:44:10.740+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:44:10.740+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:44:10.757+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.084 seconds
+[2026-04-06T09:44:41.898+0000] {processor.py:161} INFO - Started process (PID=1070) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:44:41.899+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:44:41.900+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:44:41.900+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:44:41.917+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:44:41.938+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:44:41.938+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:44:41.955+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:44:41.955+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:44:41.971+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.076 seconds
+[2026-04-06T09:45:17.091+0000] {processor.py:161} INFO - Started process (PID=1075) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:45:17.092+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:45:17.093+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:45:17.093+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:45:17.110+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:45:17.136+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:45:17.136+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:21:29.485+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:21:29.484+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:21:29.500+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.083 seconds
+[2026-04-06T09:21:59.687+0000] {processor.py:161} INFO - Started process (PID=1080) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:21:59.689+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:21:59.690+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:21:59.690+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:21:59.710+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:21:59.723+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:21:59.722+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:21:59.752+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:21:59.751+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:21:59.773+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.089 seconds
+[2026-04-06T09:46:10.583+0000] {processor.py:161} INFO - Started process (PID=1085) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:46:10.586+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:46:10.591+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:46:10.589+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:46:10.625+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:46:10.671+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:46:10.671+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:46:10.703+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:46:10.702+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:22:23.078+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.147 seconds
+[2026-04-06T09:22:53.300+0000] {processor.py:161} INFO - Started process (PID=1090) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:22:53.304+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:22:53.306+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:22:53.305+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:22:53.335+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:22:53.355+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:22:53.355+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:22:53.398+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:22:53.397+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:22:53.428+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.138 seconds
+[2026-04-06T09:46:42.126+0000] {processor.py:161} INFO - Started process (PID=1095) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:46:42.128+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:46:42.130+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:46:42.129+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:46:42.160+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:46:42.198+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:46:42.198+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:22:54.610+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:22:54.610+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:22:54.641+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.144 seconds
+[2026-04-06T09:46:47.181+0000] {processor.py:161} INFO - Started process (PID=1100) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:46:47.185+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:46:47.187+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:46:47.186+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:22:59.603+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:22:59.636+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:22:59.635+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:22:59.669+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:22:59.669+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:22:59.691+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.146 seconds
+[2026-04-06T09:23:29.902+0000] {processor.py:161} INFO - Started process (PID=1105) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:23:29.903+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:23:29.904+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:23:29.904+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:23:29.923+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:23:29.933+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:23:29.933+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:23:29.958+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:23:29.957+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:23:29.978+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.079 seconds
+[2026-04-06T09:47:40.677+0000] {processor.py:161} INFO - Started process (PID=1112) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:47:40.678+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:47:40.679+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:47:40.679+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:23:53.081+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:23:53.103+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:23:53.102+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:23:53.143+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:23:53.142+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:23:53.179+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.135 seconds
+[2026-04-06T09:24:23.277+0000] {processor.py:161} INFO - Started process (PID=1117) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:24:23.278+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:24:23.279+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:24:23.279+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:24:23.301+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:24:23.316+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:24:23.315+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:24:23.340+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:24:23.340+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:24:23.363+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.089 seconds
+[2026-04-06T09:24:53.545+0000] {processor.py:161} INFO - Started process (PID=1122) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:24:53.548+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:24:53.550+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:24:53.550+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:24:53.587+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:24:53.617+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:24:53.616+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:24:53.665+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:24:53.665+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:24:53.702+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.163 seconds
+[2026-04-06T09:24:54.785+0000] {processor.py:161} INFO - Started process (PID=1127) to work on /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:24:54.787+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_revenue_etl_dag.py for tasks to queue
+[2026-04-06T09:24:54.790+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:24:54.789+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:24:54.822+0000] {processor.py:840} INFO - DAG(s) 'daily_revenue_etl_dag' retrieved from /opt/airflow/dags/daily_revenue_etl_dag.py
+[2026-04-06T09:24:54.841+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:24:54.840+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-06T09:24:54.871+0000] {logging_mixin.py:188} INFO - [2026-04-06T09:24:54.870+0000] {dag.py:3823} INFO - Setting next_dagrun for daily_revenue_etl_dag to 2026-04-06 00:00:00+00:00, run_after=2026-04-07 00:00:00+00:00
+[2026-04-06T09:24:54.890+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_revenue_etl_dag.py took 0.112 seconds

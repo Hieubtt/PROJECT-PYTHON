@@ -1,0 +1,24 @@
+[2026-04-06T08:30:15.122+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_ml_risk_data manual__2026-04-06T08:29:51.447895+00:00 [queued]>
+[2026-04-06T08:30:15.133+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Financial_risk_assessment_to_dw.run_ml_risk_data manual__2026-04-06T08:29:51.447895+00:00 [queued]>
+[2026-04-06T08:30:15.134+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-04-06T08:30:15.150+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_ml_risk_data> on 2026-04-06 08:29:51.447895+00:00
+[2026-04-06T08:30:15.156+0000] {standard_task_runner.py:60} INFO - Started process 296 to run task
+[2026-04-06T08:30:15.159+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'Financial_risk_assessment_to_dw', 'run_ml_risk_data', 'manual__2026-04-06T08:29:51.447895+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/etl_dags.py', '--cfg-path', '/tmp/tmpump85rf3']
+[2026-04-06T08:30:15.161+0000] {standard_task_runner.py:88} INFO - Job 5: Subtask run_ml_risk_data
+[2026-04-06T08:30:15.225+0000] {task_command.py:423} INFO - Running <TaskInstance: Financial_risk_assessment_to_dw.run_ml_risk_data manual__2026-04-06T08:29:51.447895+00:00 [running]> on host daca910135df
+[2026-04-06T08:30:15.285+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='hieubtt' AIRFLOW_CTX_DAG_ID='Financial_risk_assessment_to_dw' AIRFLOW_CTX_TASK_ID='run_ml_risk_data' AIRFLOW_CTX_EXECUTION_DATE='2026-04-06T08:29:51.447895+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-06T08:29:51.447895+00:00'
+[2026-04-06T08:30:15.286+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-04-06T08:30:15.287+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/scripts/train_risk_model.py']
+[2026-04-06T08:30:15.295+0000] {subprocess.py:86} INFO - Output:
+[2026-04-06T08:54:06.650+0000] {subprocess.py:93} INFO - /opt/airflow/scripts/train_risk_model.py:30: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2026-04-06T08:54:06.651+0000] {subprocess.py:93} INFO -   df = pd.read_sql(query, conn)
+[2026-04-06T08:54:06.651+0000] {subprocess.py:93} INFO - Loading data from DB...
+[2026-04-06T08:54:06.652+0000] {subprocess.py:93} INFO - Creating label...
+[2026-04-06T08:54:06.652+0000] {subprocess.py:93} INFO - Training model...
+[2026-04-06T08:54:06.652+0000] {subprocess.py:93} INFO - Predicting risk...
+[2026-04-06T08:54:06.653+0000] {subprocess.py:93} INFO - Saving to DB...
+[2026-04-06T08:54:06.653+0000] {subprocess.py:93} INFO - DONE!
+[2026-04-06T08:54:06.796+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-04-06T08:54:06.821+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=Financial_risk_assessment_to_dw, task_id=run_ml_risk_data, execution_date=20260406T082951, start_date=20260406T083015, end_date=20260406T085406
+[2026-04-06T08:54:06.845+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-04-06T08:54:06.869+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check
