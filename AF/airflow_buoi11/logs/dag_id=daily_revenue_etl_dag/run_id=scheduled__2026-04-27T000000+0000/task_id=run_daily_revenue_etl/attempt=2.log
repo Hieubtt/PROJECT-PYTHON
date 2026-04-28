@@ -1,0 +1,49 @@
+[2026-04-28T03:23:28.851+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_revenue_etl_dag.run_daily_revenue_etl scheduled__2026-04-27T00:00:00+00:00 [queued]>
+[2026-04-28T03:23:28.859+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_revenue_etl_dag.run_daily_revenue_etl scheduled__2026-04-27T00:00:00+00:00 [queued]>
+[2026-04-28T03:23:28.859+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 3
+[2026-04-28T03:23:28.873+0000] {taskinstance.py:2191} INFO - Executing <Task(BashOperator): run_daily_revenue_etl> on 2026-04-27 00:00:00+00:00
+[2026-04-28T02:59:07.351+0000] {standard_task_runner.py:60} INFO - Started process 193 to run task
+[2026-04-28T02:59:07.354+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'daily_revenue_etl_dag', 'run_daily_revenue_etl', 'scheduled__2026-04-27T00:00:00+00:00', '--job-id', '104', '--raw', '--subdir', 'DAGS_FOLDER/daily_revenue_etl_dag.py', '--cfg-path', '/tmp/tmpm8o9z3oo']
+[2026-04-28T02:59:07.357+0000] {standard_task_runner.py:88} INFO - Job 104: Subtask run_daily_revenue_etl
+[2026-04-28T02:59:07.414+0000] {task_command.py:423} INFO - Running <TaskInstance: daily_revenue_etl_dag.run_daily_revenue_etl scheduled__2026-04-27T00:00:00+00:00 [running]> on host 7b2f29a9447f
+[2026-04-28T02:59:07.484+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_engineer_hieubtt' AIRFLOW_CTX_DAG_ID='daily_revenue_etl_dag' AIRFLOW_CTX_TASK_ID='run_daily_revenue_etl' AIRFLOW_CTX_EXECUTION_DATE='2026-04-27T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-04-27T00:00:00+00:00'
+[2026-04-28T02:59:07.485+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-04-28T02:59:07.486+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/scripts/daily_revenue_etl.py']
+[2026-04-28T02:59:07.497+0000] {subprocess.py:86} INFO - Output:
+[2026-04-28T02:59:32.592+0000] {subprocess.py:93} INFO - Retry connect DB 1/5 ... connection to server at "postgres_airflow" (172.18.0.2), port 5432 failed: FATAL:  database "dvdrental" does not exist
+[2026-04-28T02:59:32.593+0000] {subprocess.py:93} INFO - 
+[2026-04-28T02:59:32.593+0000] {subprocess.py:93} INFO - Retry connect DB 2/5 ... connection to server at "postgres_airflow" (172.18.0.2), port 5432 failed: FATAL:  database "dvdrental" does not exist
+[2026-04-28T02:59:32.593+0000] {subprocess.py:93} INFO - 
+[2026-04-28T02:59:32.594+0000] {subprocess.py:93} INFO - Retry connect DB 3/5 ... connection to server at "postgres_airflow" (172.18.0.2), port 5432 failed: FATAL:  database "dvdrental" does not exist
+[2026-04-28T02:59:32.594+0000] {subprocess.py:93} INFO - 
+[2026-04-28T02:59:32.594+0000] {subprocess.py:93} INFO - Retry connect DB 4/5 ... connection to server at "postgres_airflow" (172.18.0.2), port 5432 failed: FATAL:  database "dvdrental" does not exist
+[2026-04-28T02:59:32.595+0000] {subprocess.py:93} INFO - 
+[2026-04-28T02:59:32.595+0000] {subprocess.py:93} INFO - Retry connect DB 5/5 ... connection to server at "postgres_airflow" (172.18.0.2), port 5432 failed: FATAL:  database "dvdrental" does not exist
+[2026-04-28T02:59:32.595+0000] {subprocess.py:93} INFO - 
+[2026-04-28T02:59:32.598+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-04-28T02:59:32.598+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/daily_revenue_etl.py", line 31, in run_etl
+[2026-04-28T02:59:32.598+0000] {subprocess.py:93} INFO -     conn = connect_db()
+[2026-04-28T02:59:32.599+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/daily_revenue_etl.py", line 22, in connect_db
+[2026-04-28T02:59:32.599+0000] {subprocess.py:93} INFO -     raise Exception("Khong the ket noi PostgreSQL")
+[2026-04-28T02:59:32.600+0000] {subprocess.py:93} INFO - Exception: Khong the ket noi PostgreSQL
+[2026-04-28T02:59:32.600+0000] {subprocess.py:93} INFO - 
+[2026-04-28T02:59:32.600+0000] {subprocess.py:93} INFO - During handling of the above exception, another exception occurred:
+[2026-04-28T02:59:32.601+0000] {subprocess.py:93} INFO - 
+[2026-04-28T02:59:32.601+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2026-04-28T02:59:32.602+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/daily_revenue_etl.py", line 94, in <module>
+[2026-04-28T02:59:32.602+0000] {subprocess.py:93} INFO -     run_etl()
+[2026-04-28T02:59:32.603+0000] {subprocess.py:93} INFO -   File "/opt/airflow/scripts/daily_revenue_etl.py", line 83, in run_etl
+[2026-04-28T02:59:32.603+0000] {subprocess.py:93} INFO -     raise Exception(f"ETL pipeline loi: {e}")
+[2026-04-28T02:59:32.603+0000] {subprocess.py:93} INFO - Exception: ETL pipeline loi: Khong the ket noi PostgreSQL
+[2026-04-28T02:59:32.606+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2026-04-28T02:59:32.618+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2026-04-28T02:59:32.622+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=daily_revenue_etl_dag, task_id=run_daily_revenue_etl, execution_date=20260427T000000, start_date=20260428T032328, end_date=20260428T025932
+[2026-04-28T02:59:32.638+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 104 for task run_daily_revenue_etl (Bash command failed. The command returned a non-zero exit code 1.; 193)
+[2026-04-28T03:23:33.938+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-04-28T03:23:33.970+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,82 @@
+name: mindx_delv3_project # Tên dự án
+# Gom nhóm cấu hình chung cho Spark
+x-spark-common: &spark-common
+  image: mindx-delv3:latest
+  volumes:
+    - ./data:/opt/spark-data
+  networks:
+    - spark-net
+services:
+  # ==========================================
+  # 1. TẦNG LƯU TRỮ: HADOOP HDFS
+  # ==========================================
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: mindx-namenode
+    networks:
+      - spark-net
+    ports:
+      - "9870:9870" # Giao diện Web UI của HDFS
+      - "9000:9000" # Cổng giao tiếp dữ liệu nội bộ
+    environment:
+      - CLUSTER_NAME=mindx-hdfs-cluster
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+      - HDFS_CONF_dfs_replication=1 # Chỉ dùng 1 datanode nên replication = 1
+    volumes:
+      - ./hdfs_data/namenode:/hadoop/dfs/name
+
+  datanode:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: mindx-datanode
+    networks:
+      - spark-net
+    depends_on:
+      - namenode
+    environment:
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:9000
+      - HDFS_CONF_dfs_replication=1
+    volumes:
+      - ./hdfs_data/datanode:/hadoop/dfs/data
+  # ==========================================
+  # 2. TẦNG TÍNH TOÁN: SPARK & JUPYTER
+  # ==========================================
+  spark-master:
+    <<: *spark-common
+    build: .
+    container_name: mindx-master
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
+    ports:
+      - "7077:7077"
+      - "8080:8080"
+  spark-worker-1:
+    <<: *spark-common
+    container_name: mindx-worker-1
+    depends_on:
+      - spark-master
+    ports:
+      - "8081:8081"
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://mindx-master:7077 -c 2 -m 2G
+  spark-worker-2:
+    <<: *spark-common
+    container_name: mindx-worker-2
+    depends_on:
+      - spark-master
+    ports:
+      - "8082:8081"
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://mindx-master:7077 -c 2 -m 2
+  jupyter:
+    <<: *spark-common 
+    container_name: mindx-delv3-jupyter
+    depends_on:
+      - spark-master
+    ports:
+      - "8888:8888"
+      - "4040:4040" 
+      - "4041:4041" 
+    volumes:
+      - ./notebook:/opt/spark-notebooks
+      - ./data:/opt/spark-data # Data local để map lên HDFS
+networks:
+  spark-net:
+    driver: bridge
+

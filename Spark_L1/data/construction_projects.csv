@@ -1,0 +1,1001 @@
+﻿Project_ID,Project_Name,Region,Project_Type,Start_Date,Expected_End_Date,Actual_End_Date,Total_Budget,Spent_Budget,Main_Contractor,Project_Manager,Current_Status,Total_Workers,Safety_Incidents,Material_Cost,Labor_Cost,Equipment_Cost,Risk_Level,Is_Green_Building,Client_Name
+PRJ-0001,Dự án Công nghiệp 1,Miền Trung,Công nghiệp,9/21/2020,5/9/2022,4/20/2022,406.63,406.63,Ricons,Nguyễn Văn A,Completed,1416,4,192.25,100.45,44.65,Low,FALSE,Nhà nước
+PRJ-0002,Dự án Dân dụng 2,Miền Bắc,Dân dụng,3/19/2018,11/26/2020,2/24/2021,645.26,645.26,Vinaconex,Nguyễn Văn A,Completed,1785,5,275.31,136.44,85.24,Low,TRUE,Phát Đạt
+PRJ-0003,Dự án Dân dụng 3,Miền Bắc,Dân dụng,11/23/2019,6/14/2022,,462.2,210.74,Delta,Hoàng Thị E,Suspended,12,2,87.06,44.55,22.29,Low,TRUE,SunGroup
+PRJ-0004,Dự án Dân dụng 4,Miền Trung,Dân dụng,5/13/2023,9/1/2024,,383.48,238.69,Coteccons,Hoàng Thị E,In Progress,1047,4,112.65,48.84,32.27,Medium,TRUE,Novaland
+PRJ-0005,Dự án Dân dụng 5,Miền Nam,Dân dụng,10/31/2019,5/27/2021,,1338.61,63.73,Coteccons,Lê Văn C,Planning,1,0,31.2,15.8,8.02,Low,TRUE,Đất Xanh
+PRJ-0006,Dự án Thương mại 6,Miền Bắc,Thương mại,6/22/2021,2/13/2024,,786.43,130.94,Delta,Phạm Văn D,Suspended,19,3,61.89,31.38,14.53,Medium,TRUE,VinGroup
+PRJ-0007,Dự án Dân dụng 7,Miền Trung,Dân dụng,4/29/2021,9/13/2022,,357.09,221.08,Hòa Bình,Phạm Văn D,Suspended,12,0,90.73,56.54,31.63,Medium,FALSE,VinGroup
+PRJ-0008,Dự án Dân dụng 8,Miền Nam,Dân dụng,2/28/2019,10/11/2021,,350.6,7.36,Hòa Bình,Trần Thị B,Planning,8,0,3.43,1.77,0.88,Low,FALSE,SunGroup
+PRJ-0009,Dự án Dân dụng 9,Miền Bắc,Dân dụng,2/16/2024,9/4/2026,,932.5,497.26,Delta,Nguyễn Văn A,Suspended,1,0,243.25,142.86,69.28,Medium,FALSE,Nhà nước
+PRJ-0010,Dự án Thương mại 10,Miền Bắc,Thương mại,5/25/2019,12/6/2020,11/15/2020,1462.79,1462.79,Ricons,Nguyễn Văn A,Completed,1356,3,695.04,412.94,192.85,Low,TRUE,SunGroup
+PRJ-0011,Dự án Thương mại 11,Miền Trung,Thương mại,6/4/2024,6/22/2025,,970.43,671.01,Ricons,Trần Thị B,Suspended,19,4,314.13,141.43,67.56,High,TRUE,SunGroup
+PRJ-0012,Dự án Công nghiệp 12,Miền Bắc,Công nghiệp,1/26/2024,5/9/2026,,1000.44,763.96,Fecon,Nguyễn Văn A,In Progress,670,5,360.87,154.33,107.74,Low,TRUE,Nhà nước
+PRJ-0013,Dự án Thương mại 13,Miền Trung,Thương mại,2/27/2018,7/17/2020,,1337.62,208.65,Hòa Bình,Nguyễn Văn A,In Progress,1147,5,91.04,55.48,23.98,Low,FALSE,Phát Đạt
+PRJ-0014,Dự án Hạ tầng 14,Miền Nam,Hạ tầng,6/12/2023,5/24/2024,,994.88,661.71,Hòa Bình,Lê Văn C,Suspended,18,0,276.01,193.44,98.95,Low,TRUE,Masterise
+PRJ-0015,Dự án Công nghiệp 15,Miền Nam,Công nghiệp,3/18/2022,5/24/2023,,145.93,56.89,Vinaconex,Nguyễn Văn A,Suspended,14,1,23.37,15.36,6.94,Medium,TRUE,VinGroup
+PRJ-0016,Dự án Hạ tầng 16,Miền Nam,Hạ tầng,5/31/2023,1/30/2025,,1327.38,50.23,Coteccons,Trần Thị B,Planning,13,0,21.7,14.78,7.44,High,TRUE,Phát Đạt
+PRJ-0017,Dự án Dân dụng 17,Miền Bắc,Dân dụng,7/24/2023,7/9/2025,6/11/2025,792.79,792.79,Vinaconex,Hoàng Thị E,Completed,283,2,380.49,207.48,87.27,High,TRUE,SunGroup
+PRJ-0018,Dự án Dân dụng 18,Miền Nam,Dân dụng,10/30/2024,4/2/2026,3/19/2026,638.45,638.45,Ricons,Lê Văn C,Completed,146,5,301.12,158.32,92.55,High,FALSE,BIM Group
+PRJ-0019,Dự án Hạ tầng 19,Miền Nam,Hạ tầng,5/26/2019,6/16/2021,5/31/2021,1468.43,1468.43,Fecon,Vũ Văn F,Completed,290,1,730.92,329.91,184.62,Low,TRUE,SunGroup
+PRJ-0020,Dự án Thương mại 20,Miền Nam,Thương mại,11/10/2018,12/12/2019,,1403.85,1023.96,Coteccons,Phạm Văn D,In Progress,895,4,415.61,305.39,130.05,High,TRUE,BIM Group
+PRJ-0021,Dự án Dân dụng 21,Miền Bắc,Dân dụng,9/23/2023,5/13/2026,8/6/2026,1276.79,1276.79,Ricons,Hoàng Thị E,Completed,1587,4,519.84,357.16,130.73,High,TRUE,Đất Xanh
+PRJ-0022,Dự án Dân dụng 22,Miền Nam,Dân dụng,9/23/2018,12/22/2019,,708.34,612.08,Hòa Bình,Phạm Văn D,In Progress,542,0,301.33,155.22,70.51,Low,TRUE,Masterise
+PRJ-0023,Dự án Thương mại 23,Miền Trung,Thương mại,2/10/2023,11/1/2023,,1419.03,794.35,Hòa Bình,Lê Văn C,In Progress,944,3,389.35,220.88,111.87,Low,TRUE,SunGroup
+PRJ-0024,Dự án Hạ tầng 24,Miền Trung,Hạ tầng,3/4/2023,9/13/2025,,1283.49,58.05,Delta,Lê Văn C,Planning,8,0,23.95,12.83,8.28,High,TRUE,Phát Đạt
+PRJ-0025,Dự án Hạ tầng 25,Miền Nam,Hạ tầng,9/14/2023,4/5/2024,6/27/2024,1096.87,1096.87,Conteccons,Vũ Văn F,Completed,143,4,441.61,295.72,147.81,Medium,FALSE,Nhà nước
+PRJ-0026,Dự án Hạ tầng 26,Miền Bắc,Hạ tầng,7/29/2024,5/14/2026,,454.08,317.74,Conteccons,Hoàng Thị E,Suspended,15,5,147.89,76.35,37.64,High,FALSE,Đất Xanh
+PRJ-0027,Dự án Dân dụng 27,Miền Bắc,Dân dụng,1/12/2023,7/3/2024,,1283.09,1122.49,Ricons,Lê Văn C,In Progress,1949,0,539,258.34,131.44,Low,TRUE,SunGroup
+PRJ-0028,Dự án Thương mại 28,Miền Trung,Thương mại,5/8/2024,10/15/2025,,250.31,98.76,Coteccons,Hoàng Thị E,Suspended,13,2,39.75,22.3,13.39,Medium,FALSE,BIM Group
+PRJ-0029,Dự án Công nghiệp 29,Miền Bắc,Công nghiệp,4/9/2019,9/14/2021,,1027.79,578.35,Coteccons,Phạm Văn D,Suspended,0,1,233.53,127.6,72.61,High,FALSE,Đất Xanh
+PRJ-0030,Dự án Công nghiệp 30,Miền Trung,Công nghiệp,12/27/2024,1/29/2027,,104.63,48.9,Hòa Bình,Lê Văn C,In Progress,680,5,22.29,9.84,6.16,High,FALSE,Phát Đạt
+PRJ-0031,Dự án Thương mại 31,Miền Trung,Thương mại,3/23/2024,9/16/2025,,409.89,244.31,Vinaconex,Vũ Văn F,In Progress,1334,1,120.99,65.56,27.22,High,TRUE,VinGroup
+PRJ-0032,Dự án Hạ tầng 32,Miền Nam,Hạ tầng,4/4/2018,11/26/2019,,1048.22,22.97,Delta,Vũ Văn F,Planning,9,0,11.13,6.07,2.68,High,FALSE,SunGroup
+PRJ-0033,Dự án Hạ tầng 33,Miền Bắc,Hạ tầng,8/31/2024,2/15/2026,2/6/2026,278.37,278.37,Fecon,Vũ Văn F,Completed,226,5,124.82,81.61,28.31,Low,TRUE,SunGroup
+PRJ-0034,Dự án Hạ tầng 34,Miền Bắc,Hạ tầng,4/15/2022,1/4/2024,,1295.13,57.63,Delta,Nguyễn Văn A,Planning,11,0,27.37,13.45,7.96,Medium,FALSE,Phát Đạt
+PRJ-0035,Dự án Công nghiệp 35,Miền Trung,Công nghiệp,11/11/2019,3/23/2021,3/23/2021,912.34,912.34,Fecon,Hoàng Thị E,Completed,472,2,411.6,272.44,129.75,High,TRUE,Phát Đạt
+PRJ-0036,Dự án Công nghiệp 36,Miền Bắc,Công nghiệp,8/1/2020,9/2/2022,10/14/2022,947.09,947.09,Hòa Bình,Trần Thị B,Completed,1194,5,380.04,196.87,131.04,Medium,TRUE,BIM Group
+PRJ-0037,Dự án Hạ tầng 37,Miền Trung,Hạ tầng,2/12/2022,12/22/2022,,1136.91,438.39,Ricons,Hoàng Thị E,Suspended,6,4,178.47,113.53,64.32,Medium,TRUE,Masterise
+PRJ-0038,Dự án Hạ tầng 38,Miền Bắc,Hạ tầng,6/18/2020,3/13/2021,5/2/2021,149.15,149.15,Ricons,Trần Thị B,Completed,593,2,67.24,37.13,21.81,High,TRUE,Masterise
+PRJ-0039,Dự án Công nghiệp 39,Miền Nam,Công nghiệp,5/14/2023,1/26/2026,1/3/2026,61.99,61.99,Vinaconex,Trần Thị B,Completed,828,5,30.34,14.07,6.81,Medium,FALSE,VinGroup
+PRJ-0040,Dự án Dân dụng 40,Miền Bắc,Dân dụng,1/13/2024,11/25/2024,,242.61,176.94,Hòa Bình,Trần Thị B,Suspended,19,3,84.01,37.35,23.42,High,TRUE,SunGroup
+PRJ-0041,Dự án Thương mại 41,Miền Nam,Thương mại,1/4/2019,12/23/2020,,1099.28,35.4,Ricons,Trần Thị B,Planning,19,0,15.2,9.9,4.38,Medium,FALSE,Masterise
+PRJ-0042,Dự án Công nghiệp 42,Miền Bắc,Công nghiệp,1/31/2022,8/17/2024,,688.52,281.8,Hòa Bình,Lê Văn C,Suspended,6,5,137.16,62.07,31.44,Low,FALSE,Đất Xanh
+PRJ-0043,Dự án Dân dụng 43,Miền Nam,Dân dụng,5/8/2021,8/10/2023,8/30/2023,63.44,63.44,Delta,Trần Thị B,Completed,186,0,26.55,12.88,8.82,Medium,TRUE,Nhà nước
+PRJ-0044,Dự án Dân dụng 44,Miền Trung,Dân dụng,7/19/2023,8/13/2025,,812.93,29.01,Hòa Bình,Lê Văn C,Planning,10,0,13.15,7.03,4.17,Low,TRUE,Đất Xanh
+PRJ-0045,Dự án Dân dụng 45,Miền Trung,Dân dụng,12/31/2020,11/18/2021,,697.21,353.24,Vinaconex,Hoàng Thị E,Suspended,19,4,168.33,86.84,52.49,High,TRUE,Nhà nước
+PRJ-0046,Dự án Dân dụng 46,Miền Trung,Dân dụng,2/14/2024,9/29/2026,,1175.5,272.81,Hòa Bình,Nguyễn Văn A,In Progress,1514,0,131.36,72.37,29.12,High,TRUE,Masterise
+PRJ-0047,Dự án Thương mại 47,Miền Nam,Thương mại,2/21/2023,12/24/2023,3/17/2024,337.33,337.33,Vinaconex,Hoàng Thị E,Completed,931,5,151.8,92.5,39.98,Low,FALSE,Nhà nước
+PRJ-0048,Dự án Thương mại 48,Miền Bắc,Thương mại,5/22/2020,1/13/2021,2/26/2021,628.32,628.32,Fecon,Phạm Văn D,Completed,1772,3,290.05,161.99,70.88,Low,TRUE,BIM Group
+PRJ-0049,Dự án Thương mại 49,Miền Bắc,Thương mại,3/18/2023,11/29/2024,,256.77,9.76,Fecon,Lê Văn C,Planning,4,0,4.13,2.13,1.29,Medium,FALSE,Phát Đạt
+PRJ-0050,Dự án Hạ tầng 50,Miền Trung,Hạ tầng,3/18/2023,2/1/2025,,811.93,674.22,Delta,Lê Văn C,In Progress,180,2,309.27,141.44,87.49,High,FALSE,Masterise
+PRJ-0051,Dự án Dân dụng 51,Miền Nam,Dân dụng,5/28/2020,9/30/2021,,217.96,110.09,Delta,Lê Văn C,In Progress,949,1,49.28,32.89,15.45,High,TRUE,Đất Xanh
+PRJ-0052,Dự án Dân dụng 52,Miền Bắc,Dân dụng,3/3/2024,9/11/2026,12/9/2026,329.24,329.24,Coteccons,Hoàng Thị E,Completed,290,3,144.73,70.25,34.72,Medium,TRUE,BIM Group
+PRJ-0053,Dự án Dân dụng 53,Miền Trung,Dân dụng,1/8/2022,1/8/2023,,1268.77,538.5,Delta,Lê Văn C,In Progress,507,5,263.71,120.93,57.98,Low,FALSE,SunGroup
+PRJ-0054,Dự án Hạ tầng 54,Miền Trung,Hạ tầng,10/15/2021,10/2/2022,,1178.25,51.14,Conteccons,Trần Thị B,Planning,15,0,24.05,10.32,6.66,High,FALSE,Phát Đạt
+PRJ-0055,Dự án Hạ tầng 55,Miền Nam,Hạ tầng,4/21/2022,3/11/2023,,1160.67,365.94,Vinaconex,Lê Văn C,Suspended,11,1,161.82,86.92,48.67,Low,TRUE,BIM Group
+PRJ-0056,Dự án Hạ tầng 56,Miền Trung,Hạ tầng,1/12/2020,12/17/2021,,1033.69,48.94,Coteccons,Lê Văn C,Planning,1,0,20.08,10.42,6.47,Medium,TRUE,Novaland
+PRJ-0057,Dự án Dân dụng 57,Miền Nam,Dân dụng,4/12/2023,7/19/2024,,683.21,22.83,Vinaconex,Vũ Văn F,Planning,8,0,10.97,4.94,2.55,High,TRUE,Phát Đạt
+PRJ-0058,Dự án Hạ tầng 58,Miền Nam,Hạ tầng,8/18/2020,5/5/2023,4/17/2023,1467.16,1467.16,Fecon,Lê Văn C,Completed,1116,1,700.32,369.96,187.72,High,FALSE,Đất Xanh
+PRJ-0059,Dự án Công nghiệp 59,Miền Trung,Công nghiệp,5/4/2020,6/1/2021,,1105.42,925.52,Ricons,Vũ Văn F,Suspended,20,1,441.3,272.11,131.31,High,FALSE,Masterise
+PRJ-0060,Dự án Thương mại 60,Miền Nam,Thương mại,5/14/2018,8/23/2019,,607.88,237.49,Delta,Nguyễn Văn A,Suspended,15,1,97.69,52.68,34.49,High,FALSE,SunGroup
+PRJ-0061,Dự án Hạ tầng 61,Miền Trung,Hạ tầng,10/26/2023,7/16/2025,,335.23,15.73,Coteccons,Lê Văn C,Planning,5,0,6.95,3.63,1.58,Low,TRUE,Novaland
+PRJ-0062,Dự án Công nghiệp 62,Miền Trung,Công nghiệp,3/26/2021,7/28/2022,,566.34,315.96,Hòa Bình,Nguyễn Văn A,In Progress,579,5,155.69,89.28,45.21,High,TRUE,Đất Xanh
+PRJ-0063,Dự án Dân dụng 63,Miền Bắc,Dân dụng,6/11/2018,10/26/2019,,341.97,7.57,Vinaconex,Nguyễn Văn A,Planning,10,0,3.56,2.05,1.08,High,FALSE,Phát Đạt
+PRJ-0064,Dự án Công nghiệp 64,Miền Trung,Công nghiệp,10/20/2024,7/22/2025,7/29/2025,770.11,770.11,Hòa Bình,Lê Văn C,Completed,1697,4,347.77,171.16,110.09,Medium,TRUE,Đất Xanh
+PRJ-0065,Dự án Công nghiệp 65,Miền Nam,Công nghiệp,3/13/2018,10/23/2020,,219.61,114.51,Hòa Bình,Lê Văn C,In Progress,1170,2,52.44,24.35,16.78,Medium,TRUE,SunGroup
+PRJ-0066,Dự án Công nghiệp 66,Miền Bắc,Công nghiệp,12/23/2024,3/26/2026,,809.9,589.46,Vinaconex,Vũ Văn F,In Progress,1864,4,262.62,130.19,75.39,Medium,TRUE,BIM Group
+PRJ-0067,Dự án Thương mại 67,Miền Trung,Thương mại,4/26/2024,8/19/2026,,1099.43,20.36,Delta,Phạm Văn D,Planning,10,0,10.01,5.7,2.52,Medium,FALSE,BIM Group
+PRJ-0068,Dự án Thương mại 68,Miền Nam,Thương mại,3/8/2023,6/11/2024,,150.83,110.85,Delta,Trần Thị B,In Progress,543,4,47.31,26.41,16.05,Low,FALSE,BIM Group
+PRJ-0069,Dự án Dân dụng 69,Miền Nam,Dân dụng,12/17/2022,11/30/2023,11/18/2023,1355.06,1355.06,Delta,Trần Thị B,Completed,807,2,557.58,371.88,150.89,High,TRUE,Novaland
+PRJ-0070,Dự án Thương mại 70,Miền Bắc,Thương mại,7/15/2022,1/17/2024,1/6/2024,1394.94,1394.94,Ricons,Vũ Văn F,Completed,1166,5,686.67,302.3,208.36,Low,TRUE,Nhà nước
+PRJ-0071,Dự án Dân dụng 71,Miền Trung,Dân dụng,12/31/2022,8/19/2024,,647.01,18.97,Vinaconex,Hoàng Thị E,Planning,10,0,8.33,4.46,2.48,High,FALSE,Phát Đạt
+PRJ-0072,Dự án Công nghiệp 72,Miền Bắc,Công nghiệp,2/24/2023,8/6/2024,,946.46,185.07,Vinaconex,Trần Thị B,In Progress,809,4,84.32,41.47,23.8,Low,TRUE,Nhà nước
+PRJ-0073,Dự án Dân dụng 73,Miền Nam,Dân dụng,9/15/2023,3/19/2024,,374.36,217.62,Vinaconex,Trần Thị B,Suspended,17,3,108.74,52.86,25.58,Low,FALSE,Novaland
+PRJ-0074,Dự án Hạ tầng 74,Miền Trung,Hạ tầng,10/30/2022,9/9/2024,,620.7,141.48,Fecon,Hoàng Thị E,In Progress,124,2,65.01,41.11,16.3,High,FALSE,Novaland
+PRJ-0075,Dự án Công nghiệp 75,Miền Nam,Công nghiệp,11/13/2018,4/20/2021,,734.4,230.57,Vinaconex,Vũ Văn F,In Progress,557,0,97.74,55.51,24.86,Low,TRUE,VinGroup
+PRJ-0076,Dự án Hạ tầng 76,Miền Trung,Hạ tầng,12/14/2020,10/2/2022,,520.19,20.61,Vinaconex,Phạm Văn D,Planning,2,0,9.15,4.94,2.43,High,TRUE,VinGroup
+PRJ-0077,Dự án Dân dụng 77,Miền Bắc,Dân dụng,2/4/2021,12/28/2021,,975,661.15,Vinaconex,Nguyễn Văn A,In Progress,1563,3,296.1,189.83,89.38,Medium,FALSE,VinGroup
+PRJ-0078,Dự án Hạ tầng 78,Miền Nam,Hạ tầng,5/7/2023,2/15/2025,,1392.08,926.66,Delta,Trần Thị B,In Progress,423,2,401.75,234.01,129.12,Low,TRUE,Đất Xanh
+PRJ-0079,Dự án Hạ tầng 79,Miền Bắc,Hạ tầng,11/14/2019,9/5/2021,,1411.65,831.9,Conteccons,Lê Văn C,In Progress,1765,0,359.9,231.17,106.94,Low,FALSE,Novaland
+PRJ-0080,Dự án Hạ tầng 80,Miền Bắc,Hạ tầng,7/13/2019,7/5/2020,9/10/2020,1334.34,1334.34,Fecon,Trần Thị B,Completed,739,3,575.98,293.85,198.02,High,FALSE,SunGroup
+PRJ-0081,Dự án Dân dụng 81,Miền Bắc,Dân dụng,7/22/2019,10/31/2020,,1174.4,572.86,Ricons,Vũ Văn F,Suspended,15,5,236.49,162.03,58.76,Low,FALSE,Novaland
+PRJ-0082,Dự án Hạ tầng 82,Miền Trung,Hạ tầng,2/7/2020,8/22/2020,11/14/2020,713.29,713.29,Coteccons,Lê Văn C,Completed,1958,3,333.89,155.05,92.11,High,TRUE,Đất Xanh
+PRJ-0083,Dự án Công nghiệp 83,Miền Nam,Công nghiệp,8/20/2020,4/22/2022,,723.41,94.24,Conteccons,Hoàng Thị E,In Progress,852,2,44.11,22.5,12.55,Low,TRUE,SunGroup
+PRJ-0084,Dự án Dân dụng 84,Miền Trung,Dân dụng,3/26/2018,10/11/2020,,1361.12,41.2,Delta,Lê Văn C,Planning,14,0,17.67,8.6,4.99,Low,FALSE,SunGroup
+PRJ-0085,Dự án Dân dụng 85,Miền Trung,Dân dụng,7/31/2024,11/19/2025,12/12/2025,1124.47,1124.47,Delta,Phạm Văn D,Completed,90,2,531.79,273.95,129.52,Medium,TRUE,VinGroup
+PRJ-0086,Dự án Hạ tầng 86,Miền Trung,Hạ tầng,9/3/2022,8/22/2023,,1448.56,1013.78,Conteccons,Hoàng Thị E,Suspended,10,0,499.88,283.05,150.52,Medium,FALSE,Phát Đạt
+PRJ-0087,Dự án Thương mại 87,Miền Trung,Thương mại,10/12/2020,1/10/2022,,677.5,26.39,Delta,Vũ Văn F,Planning,14,0,13.02,5.81,3.23,Low,FALSE,Masterise
+PRJ-0088,Dự án Dân dụng 88,Miền Bắc,Dân dụng,3/8/2022,3/28/2023,,885.39,13,Vinaconex,Hoàng Thị E,Planning,18,0,5.79,3.06,1.71,Low,FALSE,Novaland
+PRJ-0089,Dự án Công nghiệp 89,Miền Bắc,Công nghiệp,6/14/2019,10/3/2021,12/20/2021,606.33,606.33,Delta,Trần Thị B,Completed,743,5,258.42,175.68,86.42,Low,FALSE,Đất Xanh
+PRJ-0090,Dự án Công nghiệp 90,Miền Nam,Công nghiệp,8/24/2023,11/25/2024,,151.2,2.5,Delta,Phạm Văn D,Planning,2,0,1.1,0.54,0.27,High,TRUE,BIM Group
+PRJ-0091,Dự án Dân dụng 91,Miền Trung,Dân dụng,5/9/2020,8/31/2021,,722.34,341.29,Vinaconex,Vũ Văn F,In Progress,508,0,157.18,97.5,45.84,Low,FALSE,BIM Group
+PRJ-0092,Dự án Công nghiệp 92,Miền Bắc,Công nghiệp,4/7/2020,8/11/2022,,1230.64,972.36,Hòa Bình,Trần Thị B,In Progress,56,2,482.79,198.47,124.55,Medium,FALSE,Đất Xanh
+PRJ-0093,Dự án Dân dụng 93,Miền Bắc,Dân dụng,1/10/2022,7/20/2023,,786.01,20.45,Hòa Bình,Trần Thị B,Planning,5,0,9.44,6.01,2.38,High,FALSE,Novaland
+PRJ-0094,Dự án Thương mại 94,Miền Bắc,Thương mại,6/6/2023,6/29/2025,7/11/2025,1366.56,1366.56,Ricons,Trần Thị B,Completed,1793,4,556.58,385.19,152.9,High,FALSE,VinGroup
+PRJ-0095,Dự án Công nghiệp 95,Miền Nam,Công nghiệp,5/20/2021,11/24/2022,,1107.61,868.07,Coteccons,Lê Văn C,Suspended,11,1,374.73,179.42,102.15,Medium,FALSE,Đất Xanh
+PRJ-0096,Dự án Hạ tầng 96,Miền Bắc,Hạ tầng,9/18/2019,1/15/2021,12/25/2020,412.46,412.46,Conteccons,Nguyễn Văn A,Completed,1864,4,166.32,87.99,56.7,Medium,TRUE,Nhà nước
+PRJ-0097,Dự án Thương mại 97,Miền Nam,Thương mại,7/21/2018,3/6/2021,5/21/2021,512.24,512.24,Delta,Trần Thị B,Completed,927,2,210.03,108.92,72.77,High,FALSE,VinGroup
+PRJ-0098,Dự án Thương mại 98,Miền Trung,Thương mại,1/12/2024,8/21/2024,,1058.08,392.76,Conteccons,Phạm Văn D,In Progress,1255,1,171.88,96.94,56.1,High,TRUE,SunGroup
+PRJ-0099,Dự án Thương mại 99,Miền Trung,Thương mại,5/25/2019,1/7/2021,,1296.02,16.27,Delta,Vũ Văn F,Planning,20,0,6.87,3.72,1.95,High,TRUE,Masterise
+PRJ-0100,Dự án Dân dụng 100,Miền Trung,Dân dụng,9/27/2020,2/21/2022,,1334.46,54.87,Vinaconex,Hoàng Thị E,Planning,5,0,26.8,15.08,6.54,Medium,TRUE,Masterise
+PRJ-0101,Dự án Thương mại 101,Miền Nam,Thương mại,5/5/2023,1/10/2025,,244.26,11.95,Vinaconex,Lê Văn C,Planning,11,0,5.72,3.21,1.44,High,FALSE,Phát Đạt
+PRJ-0102,Dự án Dân dụng 102,Miền Bắc,Dân dụng,8/16/2018,4/3/2021,,720.17,303.36,Delta,Phạm Văn D,Suspended,1,3,148.87,72.31,40.46,High,FALSE,Đất Xanh
+PRJ-0103,Dự án Hạ tầng 103,Miền Bắc,Hạ tầng,7/13/2018,10/1/2020,,594.31,420.76,Ricons,Phạm Văn D,Suspended,19,3,200.56,88.4,62.37,Low,TRUE,Nhà nước
+PRJ-0104,Dự án Dân dụng 104,Miền Trung,Dân dụng,11/7/2021,6/29/2022,,961.41,29.6,Delta,Phạm Văn D,Planning,19,0,12.9,6.97,4.42,High,FALSE,Nhà nước
+PRJ-0105,Dự án Thương mại 105,Miền Nam,Thương mại,1/16/2018,9/1/2020,8/29/2020,863.68,863.68,Coteccons,Lê Văn C,Completed,1902,3,400.72,189.12,109.56,Medium,TRUE,Đất Xanh
+PRJ-0106,Dự án Dân dụng 106,Miền Bắc,Dân dụng,3/19/2018,9/22/2018,11/29/2018,504.68,504.68,Delta,Trần Thị B,Completed,135,5,244.46,144,66.23,Low,TRUE,BIM Group
+PRJ-0107,Dự án Hạ tầng 107,Miền Bắc,Hạ tầng,6/4/2020,7/30/2022,8/22/2022,682.53,682.53,Fecon,Nguyễn Văn A,Completed,1729,5,288.65,149.8,93.17,High,TRUE,Masterise
+PRJ-0108,Dự án Hạ tầng 108,Miền Trung,Hạ tầng,11/12/2019,6/8/2022,6/20/2022,1387.05,1387.05,Ricons,Vũ Văn F,Completed,225,0,631.61,414.57,181.27,Low,TRUE,Novaland
+PRJ-0109,Dự án Hạ tầng 109,Miền Bắc,Hạ tầng,11/26/2024,11/29/2025,,1290.82,430.89,Conteccons,Vũ Văn F,Suspended,2,4,208.38,86.36,44.09,High,TRUE,Nhà nước
+PRJ-0110,Dự án Thương mại 110,Miền Bắc,Thương mại,4/14/2022,10/20/2024,,511.98,16.61,Delta,Hoàng Thị E,Planning,10,0,7.37,3.68,2.07,Medium,TRUE,Masterise
+PRJ-0111,Dự án Hạ tầng 111,Miền Nam,Hạ tầng,9/20/2020,6/15/2022,7/18/2022,109.17,109.17,Hòa Bình,Trần Thị B,Completed,730,1,48.03,26.58,13.44,High,FALSE,Novaland
+PRJ-0112,Dự án Công nghiệp 112,Miền Trung,Công nghiệp,11/15/2024,6/26/2027,,853.67,186.03,Hòa Bình,Hoàng Thị E,In Progress,166,3,91.65,50.37,26.62,High,TRUE,SunGroup
+PRJ-0113,Dự án Hạ tầng 113,Miền Bắc,Hạ tầng,8/21/2024,10/20/2025,,1197.21,813.77,Fecon,Trần Thị B,In Progress,240,2,386.56,185.35,82,High,FALSE,Đất Xanh
+PRJ-0114,Dự án Hạ tầng 114,Miền Trung,Hạ tầng,3/12/2023,11/27/2023,,757.78,104.26,Ricons,Nguyễn Văn A,Suspended,0,2,46.86,26.49,10.43,High,FALSE,Masterise
+PRJ-0115,Dự án Dân dụng 115,Miền Bắc,Dân dụng,5/10/2021,8/15/2022,,1108.84,676.89,Vinaconex,Hoàng Thị E,Suspended,14,5,303.79,166.17,94.02,High,TRUE,Masterise
+PRJ-0116,Dự án Dân dụng 116,Miền Nam,Dân dụng,10/20/2021,11/14/2022,,750.24,516.46,Hòa Bình,Vũ Văn F,Suspended,14,2,236.91,124.01,74.17,Low,FALSE,Masterise
+PRJ-0117,Dự án Hạ tầng 117,Miền Bắc,Hạ tầng,12/24/2023,7/7/2025,,666.14,470.09,Vinaconex,Phạm Văn D,Suspended,0,0,208.94,128.58,50.85,Low,FALSE,BIM Group
+PRJ-0118,Dự án Dân dụng 118,Miền Bắc,Dân dụng,5/16/2019,6/4/2021,7/21/2021,288.38,288.38,Delta,Phạm Văn D,Completed,1354,1,136.16,72.14,41.42,Low,TRUE,Đất Xanh
+PRJ-0119,Dự án Công nghiệp 119,Miền Bắc,Công nghiệp,11/18/2019,7/21/2020,9/28/2020,480.29,480.29,Coteccons,Nguyễn Văn A,Completed,1871,0,193.94,99.27,57.03,Low,TRUE,VinGroup
+PRJ-0120,Dự án Dân dụng 120,Miền Bắc,Dân dụng,12/16/2020,12/19/2022,,1134.58,43.1,Vinaconex,Hoàng Thị E,Planning,2,0,20.3,10.01,6.39,High,FALSE,Nhà nước
+PRJ-0121,Dự án Thương mại 121,Miền Trung,Thương mại,1/13/2020,6/29/2021,,1170.26,788.69,Fecon,Phạm Văn D,Suspended,19,5,371.91,229.27,95.16,Medium,TRUE,Novaland
+PRJ-0122,Dự án Công nghiệp 122,Miền Bắc,Công nghiệp,9/19/2020,6/13/2023,,1249.53,31.69,Vinaconex,Nguyễn Văn A,Planning,2,0,14.95,7.31,3.87,Medium,TRUE,Đất Xanh
+PRJ-0123,Dự án Dân dụng 123,Miền Nam,Dân dụng,8/29/2024,1/2/2027,,534.53,5.79,Delta,Vũ Văn F,Planning,13,0,2.4,1.28,0.65,Low,FALSE,Masterise
+PRJ-0124,Dự án Dân dụng 124,Miền Nam,Dân dụng,7/1/2018,9/17/2019,,877.99,766.37,Fecon,Vũ Văn F,Suspended,3,3,323.44,209.8,97.59,Medium,FALSE,BIM Group
+PRJ-0125,Dự án Hạ tầng 125,Miền Bắc,Hạ tầng,7/28/2022,1/9/2024,1/17/2024,737.03,737.03,Hòa Bình,Vũ Văn F,Completed,639,5,304.48,197.47,104.33,High,FALSE,Masterise
+PRJ-0126,Dự án Hạ tầng 126,Miền Nam,Hạ tầng,3/8/2021,9/11/2021,,785.25,322.3,Conteccons,Lê Văn C,In Progress,1618,2,151.02,86.97,47.75,High,FALSE,Nhà nước
+PRJ-0127,Dự án Công nghiệp 127,Miền Bắc,Công nghiệp,11/3/2021,3/30/2024,,257.1,5.92,Delta,Trần Thị B,Planning,6,0,2.43,1.57,0.83,Medium,FALSE,SunGroup
+PRJ-0128,Dự án Hạ tầng 128,Miền Nam,Hạ tầng,5/12/2023,6/21/2024,,65.77,32.5,Conteccons,Hoàng Thị E,In Progress,139,1,14.32,9.59,4.37,High,FALSE,Novaland
+PRJ-0129,Dự án Hạ tầng 129,Miền Trung,Hạ tầng,2/5/2018,5/9/2019,,608.38,517.34,Hòa Bình,Nguyễn Văn A,Suspended,1,3,225.63,114.53,65.08,Medium,FALSE,Nhà nước
+PRJ-0130,Dự án Thương mại 130,Miền Trung,Thương mại,8/18/2023,2/18/2025,,164.81,127.71,Ricons,Trần Thị B,Suspended,4,0,59.77,26.9,16.84,Medium,FALSE,SunGroup
+PRJ-0131,Dự án Công nghiệp 131,Miền Bắc,Công nghiệp,1/11/2018,10/31/2018,11/25/2018,852.24,852.24,Hòa Bình,Phạm Văn D,Completed,84,1,406.96,201.47,127.02,Low,TRUE,VinGroup
+PRJ-0132,Dự án Hạ tầng 132,Miền Bắc,Hạ tầng,3/20/2020,5/29/2021,,864.29,431.02,Fecon,Lê Văn C,Suspended,1,3,195.24,95.49,53.69,Medium,FALSE,BIM Group
+PRJ-0133,Dự án Công nghiệp 133,Miền Nam,Công nghiệp,4/16/2024,7/29/2025,8/27/2025,932.71,932.71,Hòa Bình,Hoàng Thị E,Completed,1773,0,411.68,187.35,114.7,Medium,TRUE,Novaland
+PRJ-0134,Dự án Công nghiệp 134,Miền Nam,Công nghiệp,7/3/2018,5/3/2019,6/21/2019,1464.29,1464.29,Coteccons,Nguyễn Văn A,Completed,973,0,624.08,374.5,149.55,High,FALSE,Novaland
+PRJ-0135,Dự án Thương mại 135,Miền Trung,Thương mại,5/25/2018,8/27/2019,9/26/2019,270.66,270.66,Fecon,Phạm Văn D,Completed,1321,1,113.29,60.6,38.48,Low,TRUE,Novaland
+PRJ-0136,Dự án Thương mại 136,Miền Bắc,Thương mại,5/15/2021,12/4/2021,12/5/2021,1411.56,1411.56,Ricons,Hoàng Thị E,Completed,1063,2,607.29,312.34,141.5,Low,FALSE,Phát Đạt
+PRJ-0137,Dự án Hạ tầng 137,Miền Trung,Hạ tầng,5/9/2019,9/23/2020,,388.13,178.7,Fecon,Phạm Văn D,Suspended,14,3,84.87,43.18,21.32,Low,FALSE,SunGroup
+PRJ-0138,Dự án Hạ tầng 138,Miền Trung,Hạ tầng,12/1/2023,9/6/2025,,509.41,449.11,Hòa Bình,Hoàng Thị E,Suspended,20,2,204.06,97.13,51.39,High,TRUE,Masterise
+PRJ-0139,Dự án Dân dụng 139,Miền Bắc,Dân dụng,6/14/2024,12/4/2026,,972.79,678.23,Delta,Hoàng Thị E,In Progress,1695,1,305.35,170.77,69.9,High,FALSE,Masterise
+PRJ-0140,Dự án Công nghiệp 140,Miền Bắc,Công nghiệp,2/13/2024,12/28/2025,,495.21,117.29,Coteccons,Trần Thị B,Suspended,1,2,50.35,27.23,12.9,High,TRUE,VinGroup
+PRJ-0141,Dự án Công nghiệp 141,Miền Nam,Công nghiệp,4/3/2021,2/17/2023,,1238.68,502.86,Vinaconex,Hoàng Thị E,Suspended,19,0,240.74,134.38,55.55,Medium,FALSE,Phát Đạt
+PRJ-0142,Dự án Hạ tầng 142,Miền Trung,Hạ tầng,10/25/2023,5/7/2026,,1168.84,440.63,Delta,Trần Thị B,Suspended,11,5,212.68,115.76,47.16,Low,FALSE,Nhà nước
+PRJ-0143,Dự án Công nghiệp 143,Miền Nam,Công nghiệp,10/27/2019,3/22/2022,6/4/2022,1307.93,1307.93,Conteccons,Trần Thị B,Completed,451,1,585,282.12,181.44,High,TRUE,Đất Xanh
+PRJ-0144,Dự án Dân dụng 144,Miền Bắc,Dân dụng,4/2/2020,4/24/2022,,317.61,183.26,Vinaconex,Nguyễn Văn A,Suspended,1,4,76.74,43.53,20.24,Medium,FALSE,VinGroup
+PRJ-0145,Dự án Dân dụng 145,Miền Trung,Dân dụng,9/9/2023,6/10/2025,,1044.52,171.4,Delta,Phạm Văn D,Suspended,0,5,73.02,37.91,19.29,Low,TRUE,Novaland
+PRJ-0146,Dự án Công nghiệp 146,Miền Trung,Công nghiệp,7/18/2018,3/31/2021,4/29/2021,509.67,509.67,Hòa Bình,Nguyễn Văn A,Completed,1603,2,239.14,127.51,72.1,Medium,TRUE,Masterise
+PRJ-0147,Dự án Thương mại 147,Miền Nam,Thương mại,7/8/2018,12/17/2020,,1466.7,585.62,Ricons,Hoàng Thị E,Suspended,18,0,255.59,159.21,66.82,Low,FALSE,Masterise
+PRJ-0148,Dự án Thương mại 148,Miền Nam,Thương mại,9/3/2022,11/7/2023,,230.15,192.42,Ricons,Trần Thị B,Suspended,8,5,81.57,56.94,23.75,Low,FALSE,Nhà nước
+PRJ-0149,Dự án Thương mại 149,Miền Nam,Thương mại,2/27/2023,2/13/2025,,226.3,134.72,Coteccons,Vũ Văn F,Suspended,9,4,60.2,36.55,19.64,Low,FALSE,SunGroup
+PRJ-0150,Dự án Dân dụng 150,Miền Bắc,Dân dụng,10/16/2023,11/27/2025,1/17/2026,1311.47,1311.47,Fecon,Lê Văn C,Completed,801,0,603.69,390.21,187.38,Low,TRUE,Đất Xanh
+PRJ-0151,Dự án Hạ tầng 151,Miền Trung,Hạ tầng,5/29/2022,8/22/2023,8/9/2023,779.87,779.87,Ricons,Phạm Văn D,Completed,1381,3,368.61,196.45,85.52,Low,TRUE,SunGroup
+PRJ-0152,Dự án Hạ tầng 152,Miền Trung,Hạ tầng,1/18/2024,8/4/2025,,560.94,18.31,Delta,Vũ Văn F,Planning,0,0,7.66,4.85,2.67,Medium,TRUE,Đất Xanh
+PRJ-0153,Dự án Hạ tầng 153,Miền Bắc,Hạ tầng,5/24/2018,9/13/2020,,1413.38,446.09,Coteccons,Phạm Văn D,In Progress,1864,5,196.71,116.84,58.63,Medium,TRUE,BIM Group
+PRJ-0154,Dự án Dân dụng 154,Miền Bắc,Dân dụng,8/2/2020,8/20/2021,8/27/2021,679.32,679.32,Hòa Bình,Hoàng Thị E,Completed,1826,2,325.74,164.81,80.81,High,TRUE,Nhà nước
+PRJ-0155,Dự án Dân dụng 155,Miền Bắc,Dân dụng,8/31/2023,9/3/2025,,779.15,259.08,Delta,Lê Văn C,In Progress,904,5,119.64,59.39,33.01,High,TRUE,Đất Xanh
+PRJ-0156,Dự án Dân dụng 156,Miền Bắc,Dân dụng,10/3/2022,5/10/2024,,667.88,100.14,Conteccons,Lê Văn C,In Progress,1058,0,48.77,28.62,14.08,Low,FALSE,BIM Group
+PRJ-0157,Dự án Công nghiệp 157,Miền Bắc,Công nghiệp,5/4/2021,4/20/2022,4/12/2022,1050.06,1050.06,Coteccons,Lê Văn C,Completed,543,1,469.75,314.59,146.54,High,FALSE,BIM Group
+PRJ-0158,Dự án Dân dụng 158,Miền Trung,Dân dụng,3/22/2018,9/25/2020,,994.98,363.89,Conteccons,Vũ Văn F,In Progress,793,2,153.58,93.29,54.36,Medium,FALSE,Phát Đạt
+PRJ-0159,Dự án Dân dụng 159,Miền Trung,Dân dụng,10/28/2023,6/7/2024,,1016.22,461.63,Ricons,Lê Văn C,Suspended,20,1,210.71,117.4,58.58,Low,FALSE,Đất Xanh
+PRJ-0160,Dự án Thương mại 160,Miền Trung,Thương mại,9/15/2019,5/7/2022,5/9/2022,421.5,421.5,Vinaconex,Nguyễn Văn A,Completed,1739,5,204.51,117.34,55.65,Low,TRUE,VinGroup
+PRJ-0161,Dự án Dân dụng 161,Miền Trung,Dân dụng,8/14/2022,6/24/2023,,610.08,24.48,Vinaconex,Nguyễn Văn A,Planning,14,0,12.05,7.2,3.19,High,FALSE,Phát Đạt
+PRJ-0162,Dự án Thương mại 162,Miền Bắc,Thương mại,3/17/2022,11/13/2023,,588.48,24.08,Vinaconex,Lê Văn C,Planning,7,0,10.34,6,3.41,Low,TRUE,Masterise
+PRJ-0163,Dự án Thương mại 163,Miền Trung,Thương mại,11/10/2018,5/24/2019,8/7/2019,961.29,961.29,Ricons,Nguyễn Văn A,Completed,1312,1,460.12,213.37,125.29,High,FALSE,BIM Group
+PRJ-0164,Dự án Dân dụng 164,Miền Trung,Dân dụng,1/22/2022,3/15/2024,,844.45,377.41,Ricons,Lê Văn C,In Progress,1248,3,155.56,97.93,39.31,Medium,FALSE,VinGroup
+PRJ-0165,Dự án Thương mại 165,Miền Bắc,Thương mại,10/8/2023,8/10/2024,7/21/2024,168.12,168.12,Coteccons,Lê Văn C,Completed,1467,3,69.46,41.05,20.15,Low,FALSE,Novaland
+PRJ-0166,Dự án Dân dụng 166,Miền Trung,Dân dụng,2/29/2024,3/8/2026,,1346.76,374.58,Vinaconex,Phạm Văn D,Suspended,1,4,158.92,99.41,54.21,Medium,FALSE,Novaland
+PRJ-0167,Dự án Công nghiệp 167,Miền Bắc,Công nghiệp,7/5/2023,6/23/2024,,1489.81,707.52,Hòa Bình,Hoàng Thị E,Suspended,20,5,292.55,208.1,71.81,High,FALSE,VinGroup
+PRJ-0168,Dự án Hạ tầng 168,Miền Bắc,Hạ tầng,12/16/2019,5/24/2021,,168.75,6.89,Coteccons,Phạm Văn D,Planning,7,0,3.37,1.74,0.94,High,TRUE,BIM Group
+PRJ-0169,Dự án Thương mại 169,Miền Nam,Thương mại,4/11/2020,11/3/2020,,240,166.56,Conteccons,Lê Văn C,In Progress,1463,2,71.38,47.33,17.42,Medium,TRUE,VinGroup
+PRJ-0170,Dự án Thương mại 170,Miền Nam,Thương mại,7/9/2024,9/27/2025,,1228.9,930.58,Conteccons,Hoàng Thị E,In Progress,970,1,459.08,191.12,120.14,Low,FALSE,Nhà nước
+PRJ-0171,Dự án Thương mại 171,Miền Nam,Thương mại,6/7/2024,7/20/2025,,1339.21,41.92,Hòa Bình,Hoàng Thị E,Planning,15,0,18.71,8.52,6.24,High,TRUE,SunGroup
+PRJ-0172,Dự án Hạ tầng 172,Miền Trung,Hạ tầng,8/20/2022,1/25/2025,,403.53,19.76,Fecon,Trần Thị B,Planning,10,0,8.26,5.18,2.93,Medium,TRUE,VinGroup
+PRJ-0173,Dự án Dân dụng 173,Miền Nam,Dân dụng,11/29/2020,1/13/2022,,425.11,367.24,Fecon,Lê Văn C,Suspended,1,3,178.23,89.38,42.34,Low,FALSE,VinGroup
+PRJ-0174,Dự án Công nghiệp 174,Miền Bắc,Công nghiệp,5/26/2019,5/16/2020,8/2/2020,844.93,844.93,Ricons,Nguyễn Văn A,Completed,788,5,395.27,237.93,106.54,Low,FALSE,Nhà nước
+PRJ-0175,Dự án Hạ tầng 175,Miền Trung,Hạ tầng,4/24/2018,11/6/2020,,185.2,19.48,Hòa Bình,Phạm Văn D,In Progress,1718,0,9.57,4.76,2.26,Low,TRUE,Novaland
+PRJ-0176,Dự án Dân dụng 176,Miền Bắc,Dân dụng,10/16/2024,1/2/2027,1/19/2027,305.33,305.33,Delta,Phạm Văn D,Completed,1680,5,133.54,69.06,36.82,Low,TRUE,SunGroup
+PRJ-0177,Dự án Hạ tầng 177,Miền Nam,Hạ tầng,9/2/2024,8/15/2025,,1148.48,24.67,Vinaconex,Vũ Văn F,Planning,4,0,10.62,6.93,3.23,High,TRUE,VinGroup
+PRJ-0178,Dự án Thương mại 178,Miền Trung,Thương mại,1/25/2020,9/28/2021,,607.53,20.27,Conteccons,Lê Văn C,Planning,1,0,9.34,4.33,2.56,Medium,TRUE,Novaland
+PRJ-0179,Dự án Dân dụng 179,Miền Trung,Dân dụng,1/1/2018,3/11/2020,,921.81,240.58,Conteccons,Hoàng Thị E,Suspended,8,5,101.62,65.83,30.03,Low,FALSE,Masterise
+PRJ-0180,Dự án Dân dụng 180,Miền Trung,Dân dụng,5/29/2022,12/8/2023,,1085.48,29.28,Delta,Nguyễn Văn A,Planning,0,0,12.28,6.98,4.38,Medium,TRUE,SunGroup
+PRJ-0181,Dự án Thương mại 181,Miền Trung,Thương mại,7/10/2020,9/11/2022,,1400.3,567.27,Delta,Hoàng Thị E,In Progress,290,0,235.42,124.83,59.98,Low,FALSE,Phát Đạt
+PRJ-0182,Dự án Thương mại 182,Miền Bắc,Thương mại,8/21/2020,2/3/2022,,1025.8,12.81,Vinaconex,Nguyễn Văn A,Planning,20,0,5.6,3.5,1.81,High,FALSE,Nhà nước
+PRJ-0183,Dự án Dân dụng 183,Miền Bắc,Dân dụng,5/14/2018,11/12/2018,11/4/2018,513.03,513.03,Vinaconex,Nguyễn Văn A,Completed,1680,2,254.45,134.97,60.31,Medium,TRUE,Nhà nước
+PRJ-0184,Dự án Công nghiệp 184,Miền Nam,Công nghiệp,4/19/2020,8/5/2022,,393.88,160.59,Ricons,Vũ Văn F,In Progress,1931,3,78.63,38.51,22.67,Low,FALSE,Đất Xanh
+PRJ-0185,Dự án Thương mại 185,Miền Trung,Thương mại,5/31/2023,10/19/2025,,120.09,3.44,Fecon,Trần Thị B,Planning,3,0,1.55,0.87,0.38,High,TRUE,Đất Xanh
+PRJ-0186,Dự án Công nghiệp 186,Miền Trung,Công nghiệp,9/19/2023,11/2/2025,,1105.49,805.68,Delta,Vũ Văn F,In Progress,1633,1,368.18,228.93,110.59,High,TRUE,BIM Group
+PRJ-0187,Dự án Dân dụng 187,Miền Trung,Dân dụng,8/6/2021,5/28/2022,5/1/2022,964.47,964.47,Hòa Bình,Nguyễn Văn A,Completed,98,4,449.06,265.09,97.87,Low,FALSE,SunGroup
+PRJ-0188,Dự án Dân dụng 188,Miền Nam,Dân dụng,1/2/2022,6/4/2024,,887.97,15.6,Coteccons,Hoàng Thị E,Planning,20,0,7.09,4.55,2.13,Medium,FALSE,Phát Đạt
+PRJ-0189,Dự án Công nghiệp 189,Miền Bắc,Công nghiệp,2/9/2019,1/29/2021,,474.54,17.08,Hòa Bình,Nguyễn Văn A,Planning,18,0,7.9,3.74,2.38,High,FALSE,Nhà nước
+PRJ-0190,Dự án Công nghiệp 190,Miền Bắc,Công nghiệp,12/16/2020,7/22/2023,,1135.68,35.88,Vinaconex,Vũ Văn F,Planning,1,0,14.4,8.95,4.27,Medium,TRUE,BIM Group
+PRJ-0191,Dự án Dân dụng 191,Miền Nam,Dân dụng,6/29/2024,4/18/2025,,760.94,19.02,Vinaconex,Lê Văn C,Planning,2,0,7.73,4.42,2.73,High,FALSE,BIM Group
+PRJ-0192,Dự án Công nghiệp 192,Miền Bắc,Công nghiệp,1/24/2018,12/17/2019,,531.58,224.68,Conteccons,Vũ Văn F,Suspended,5,0,106.92,59.94,27.86,Medium,TRUE,BIM Group
+PRJ-0193,Dự án Dân dụng 193,Miền Bắc,Dân dụng,3/16/2022,9/22/2022,,452.96,9.18,Conteccons,Vũ Văn F,Planning,1,0,4.05,2.49,1.07,Low,FALSE,BIM Group
+PRJ-0194,Dự án Dân dụng 194,Miền Trung,Dân dụng,3/10/2024,7/13/2026,,352.56,7.44,Hòa Bình,Vũ Văn F,Planning,16,0,3.05,1.64,1.02,Low,TRUE,VinGroup
+PRJ-0195,Dự án Hạ tầng 195,Miền Nam,Hạ tầng,11/28/2019,9/6/2021,,1285.43,712.5,Conteccons,Nguyễn Văn A,Suspended,20,4,328.14,162.06,77.91,Medium,TRUE,Đất Xanh
+PRJ-0196,Dự án Dân dụng 196,Miền Nam,Dân dụng,8/9/2021,1/24/2024,,1359.47,801.51,Coteccons,Nguyễn Văn A,In Progress,973,5,349.34,166.77,115.92,High,TRUE,VinGroup
+PRJ-0197,Dự án Công nghiệp 197,Miền Bắc,Công nghiệp,12/12/2018,11/27/2020,11/23/2020,1299.98,1299.98,Conteccons,Trần Thị B,Completed,1603,1,528.99,281.62,155.55,Medium,FALSE,Novaland
+PRJ-0198,Dự án Công nghiệp 198,Miền Nam,Công nghiệp,6/27/2021,3/16/2024,,515.91,212.61,Vinaconex,Hoàng Thị E,In Progress,719,0,101.04,57.57,26.98,Medium,FALSE,Masterise
+PRJ-0199,Dự án Công nghiệp 199,Miền Nam,Công nghiệp,3/1/2020,11/29/2020,,916.41,272.44,Ricons,Trần Thị B,Suspended,13,5,113.92,54.8,29.98,Medium,FALSE,SunGroup
+PRJ-0200,Dự án Hạ tầng 200,Miền Nam,Hạ tầng,5/31/2021,10/13/2023,11/19/2023,974.43,974.43,Fecon,Vũ Văn F,Completed,390,3,409.89,214.33,102.1,Medium,TRUE,Đất Xanh
+PRJ-0201,Dự án Hạ tầng 201,Miền Nam,Hạ tầng,1/3/2019,9/2/2020,10/31/2020,767.7,767.7,Vinaconex,Phạm Văn D,Completed,638,5,343.86,183.47,112.25,High,TRUE,Masterise
+PRJ-0202,Dự án Công nghiệp 202,Miền Trung,Công nghiệp,6/20/2022,7/14/2023,9/21/2023,395.19,395.19,Ricons,Phạm Văn D,Completed,1619,5,193.33,94.32,53.89,Medium,TRUE,Nhà nước
+PRJ-0203,Dự án Thương mại 203,Miền Bắc,Thương mại,9/5/2021,7/12/2023,,159.07,39.86,Conteccons,Nguyễn Văn A,In Progress,55,5,16.68,10.76,5.36,Low,FALSE,Nhà nước
+PRJ-0204,Dự án Hạ tầng 204,Miền Bắc,Hạ tầng,7/6/2024,6/11/2026,,1292.28,27.65,Delta,Nguyễn Văn A,Planning,17,0,12.94,6.13,3.17,Low,FALSE,Novaland
+PRJ-0205,Dự án Dân dụng 205,Miền Nam,Dân dụng,9/9/2019,12/5/2021,,122.84,4.65,Fecon,Hoàng Thị E,Planning,11,0,2.01,1.15,0.69,High,FALSE,VinGroup
+PRJ-0206,Dự án Công nghiệp 206,Miền Trung,Công nghiệp,1/8/2022,7/24/2024,10/11/2024,1432.7,1432.7,Hòa Bình,Lê Văn C,Completed,1518,4,630.98,380.03,199.3,Medium,FALSE,SunGroup
+PRJ-0207,Dự án Thương mại 207,Miền Nam,Thương mại,9/27/2020,4/10/2023,6/16/2023,617.76,617.76,Fecon,Lê Văn C,Completed,832,3,293.7,165.92,83.17,High,TRUE,Đất Xanh
+PRJ-0208,Dự án Dân dụng 208,Miền Nam,Dân dụng,5/27/2024,9/6/2026,,411.2,170.82,Delta,Lê Văn C,In Progress,57,0,71.86,50.71,24.38,Medium,FALSE,SunGroup
+PRJ-0209,Dự án Thương mại 209,Miền Nam,Thương mại,11/5/2021,1/27/2023,,867.5,13.27,Ricons,Vũ Văn F,Planning,15,0,6.19,3.16,1.94,High,TRUE,Masterise
+PRJ-0210,Dự án Công nghiệp 210,Miền Nam,Công nghiệp,1/8/2020,10/23/2021,,989.88,730.66,Coteccons,Phạm Văn D,Suspended,20,4,352.63,169.22,84.37,Medium,TRUE,Đất Xanh
+PRJ-0211,Dự án Thương mại 211,Miền Bắc,Thương mại,1/29/2018,3/19/2019,,134.85,4.53,Delta,Vũ Văn F,Planning,13,0,2.24,0.91,0.46,Medium,FALSE,Nhà nước
+PRJ-0212,Dự án Thương mại 212,Miền Trung,Thương mại,5/12/2019,12/30/2020,1/7/2021,598.43,598.43,Fecon,Hoàng Thị E,Completed,624,5,266.65,172.68,69.08,Low,FALSE,Nhà nước
+PRJ-0213,Dự án Công nghiệp 213,Miền Trung,Công nghiệp,7/26/2019,2/9/2021,5/1/2021,1173.72,1173.72,Delta,Trần Thị B,Completed,1340,1,565.95,277.2,141.76,Low,TRUE,BIM Group
+PRJ-0214,Dự án Hạ tầng 214,Miền Bắc,Hạ tầng,2/13/2019,3/18/2021,,1422.54,1190.2,Ricons,Phạm Văn D,Suspended,14,1,565.87,324.11,149.55,High,TRUE,Nhà nước
+PRJ-0215,Dự án Công nghiệp 215,Miền Nam,Công nghiệp,6/2/2018,1/2/2021,,578.95,7.74,Conteccons,Nguyễn Văn A,Planning,11,0,3.84,2,1.1,Medium,FALSE,BIM Group
+PRJ-0216,Dự án Hạ tầng 216,Miền Bắc,Hạ tầng,9/6/2024,5/22/2026,,1050.94,40.37,Delta,Trần Thị B,Planning,14,0,17.79,8.6,4.53,Low,FALSE,BIM Group
+PRJ-0217,Dự án Công nghiệp 217,Miền Trung,Công nghiệp,10/16/2023,7/12/2026,6/23/2026,1209.41,1209.41,Hòa Bình,Lê Văn C,Completed,804,1,533.77,339.3,176.54,Low,TRUE,Nhà nước
+PRJ-0218,Dự án Thương mại 218,Miền Trung,Thương mại,7/18/2019,5/3/2021,,446.59,270.5,Vinaconex,Hoàng Thị E,In Progress,813,0,130.92,58.16,33.04,High,FALSE,SunGroup
+PRJ-0219,Dự án Công nghiệp 219,Miền Bắc,Công nghiệp,5/18/2023,8/9/2025,10/6/2025,1363.47,1363.47,Ricons,Vũ Văn F,Completed,506,1,644.77,310.67,183.68,High,TRUE,Phát Đạt
+PRJ-0220,Dự án Công nghiệp 220,Miền Nam,Công nghiệp,7/24/2018,11/20/2020,,417.1,5.52,Coteccons,Phạm Văn D,Planning,9,0,2.74,1.3,0.69,High,FALSE,Phát Đạt
+PRJ-0221,Dự án Dân dụng 221,Miền Trung,Dân dụng,9/7/2022,11/19/2024,,62.26,2.54,Fecon,Hoàng Thị E,Planning,4,0,1.06,0.57,0.3,High,FALSE,Masterise
+PRJ-0222,Dự án Dân dụng 222,Miền Bắc,Dân dụng,12/9/2022,2/5/2025,,593.65,28.26,Conteccons,Trần Thị B,Planning,14,0,11.55,7.27,3.47,High,TRUE,Masterise
+PRJ-0223,Dự án Thương mại 223,Miền Trung,Thương mại,4/25/2024,3/9/2025,,990.78,48.97,Vinaconex,Lê Văn C,Planning,6,0,23.28,11.05,5.46,High,FALSE,Masterise
+PRJ-0224,Dự án Công nghiệp 224,Miền Bắc,Công nghiệp,8/19/2019,11/3/2020,,619.89,12.76,Vinaconex,Nguyễn Văn A,Planning,0,0,5.58,2.87,1.65,Medium,TRUE,Nhà nước
+PRJ-0225,Dự án Dân dụng 225,Miền Nam,Dân dụng,5/31/2018,10/8/2020,12/12/2020,1101.29,1101.29,Conteccons,Vũ Văn F,Completed,1996,1,461.58,254.66,110.6,Low,FALSE,Phát Đạt
+PRJ-0226,Dự án Công nghiệp 226,Miền Trung,Công nghiệp,12/22/2020,10/19/2022,,191.56,72.95,Coteccons,Hoàng Thị E,Suspended,15,5,32.63,19.51,9.37,Medium,FALSE,BIM Group
+PRJ-0227,Dự án Thương mại 227,Miền Nam,Thương mại,5/9/2022,10/11/2024,,327.3,61.14,Hòa Bình,Nguyễn Văn A,In Progress,1739,1,29.49,17.83,8.42,High,TRUE,BIM Group
+PRJ-0228,Dự án Hạ tầng 228,Miền Nam,Hạ tầng,7/12/2023,7/30/2024,,1208.28,25.27,Delta,Trần Thị B,Planning,15,0,11.34,6.19,3.09,High,FALSE,Masterise
+PRJ-0229,Dự án Công nghiệp 229,Miền Bắc,Công nghiệp,5/2/2019,6/20/2021,,983.18,326.57,Ricons,Nguyễn Văn A,In Progress,488,0,136.41,74.06,33.3,Medium,TRUE,Đất Xanh
+PRJ-0230,Dự án Thương mại 230,Miền Nam,Thương mại,11/20/2020,7/16/2022,10/14/2022,533.48,533.48,Vinaconex,Lê Văn C,Completed,1522,4,238.78,107.36,77.22,Medium,TRUE,Phát Đạt
+PRJ-0231,Dự án Thương mại 231,Miền Nam,Thương mại,6/15/2018,1/31/2021,,78.8,1.97,Conteccons,Vũ Văn F,Planning,14,0,0.96,0.49,0.27,Medium,FALSE,Phát Đạt
+PRJ-0232,Dự án Thương mại 232,Miền Nam,Thương mại,1/13/2022,7/27/2023,,1215.87,689.56,Delta,Vũ Văn F,Suspended,5,0,283.37,194.71,95.66,Low,FALSE,Novaland
+PRJ-0233,Dự án Công nghiệp 233,Miền Nam,Công nghiệp,8/14/2018,10/11/2020,12/17/2020,848.66,848.66,Hòa Bình,Lê Văn C,Completed,1146,1,399.09,229.87,117.69,Low,TRUE,Novaland
+PRJ-0234,Dự án Thương mại 234,Miền Bắc,Thương mại,12/14/2020,1/13/2022,,302.3,179.52,Hòa Bình,Vũ Văn F,Suspended,14,2,88.83,37.43,23.03,High,FALSE,Phát Đạt
+PRJ-0235,Dự án Hạ tầng 235,Miền Nam,Hạ tầng,2/18/2024,9/26/2026,,801.75,488.29,Vinaconex,Hoàng Thị E,In Progress,914,1,215.72,135.38,64.99,Low,TRUE,Nhà nước
+PRJ-0236,Dự án Hạ tầng 236,Miền Bắc,Hạ tầng,8/16/2019,4/30/2020,,182,8.93,Vinaconex,Hoàng Thị E,Planning,9,0,4.24,2.09,0.9,High,FALSE,Phát Đạt
+PRJ-0237,Dự án Hạ tầng 237,Miền Trung,Hạ tầng,4/11/2023,6/28/2024,,492.68,125.31,Ricons,Phạm Văn D,Suspended,19,4,59.66,33.99,16.21,Low,TRUE,BIM Group
+PRJ-0238,Dự án Công nghiệp 238,Miền Nam,Công nghiệp,2/21/2022,3/13/2023,6/3/2023,985.66,985.66,Delta,Hoàng Thị E,Completed,1985,5,429.72,210.89,106.41,Low,TRUE,BIM Group
+PRJ-0239,Dự án Hạ tầng 239,Miền Bắc,Hạ tầng,8/28/2024,8/8/2025,9/7/2025,499.93,499.93,Vinaconex,Lê Văn C,Completed,1603,5,221.31,119.43,61.84,Low,FALSE,Nhà nước
+PRJ-0240,Dự án Dân dụng 240,Miền Trung,Dân dụng,2/7/2019,4/5/2021,,390.75,4.89,Vinaconex,Phạm Văn D,Planning,2,0,2.31,1.32,0.56,High,TRUE,Masterise
+PRJ-0241,Dự án Thương mại 241,Miền Bắc,Thương mại,2/15/2019,3/31/2021,,50.05,16.3,Coteccons,Phạm Văn D,Suspended,9,0,8.06,4.67,2.22,Low,FALSE,BIM Group
+PRJ-0242,Dự án Thương mại 242,Miền Bắc,Thương mại,5/11/2021,9/30/2023,12/12/2023,181.79,181.79,Coteccons,Nguyễn Văn A,Completed,446,0,76.88,40.72,19.92,Low,TRUE,VinGroup
+PRJ-0243,Dự án Công nghiệp 243,Miền Trung,Công nghiệp,5/21/2020,10/18/2021,,1493.64,1226.88,Coteccons,Vũ Văn F,In Progress,1994,0,613.2,315.26,181.06,High,TRUE,Nhà nước
+PRJ-0244,Dự án Công nghiệp 244,Miền Bắc,Công nghiệp,9/15/2021,10/17/2022,1/10/2023,856.11,856.11,Delta,Vũ Văn F,Completed,1937,4,350.79,181.12,111.28,High,TRUE,Masterise
+PRJ-0245,Dự án Hạ tầng 245,Miền Nam,Hạ tầng,7/7/2020,2/27/2021,,1450.88,62.23,Delta,Phạm Văn D,Planning,19,0,29.47,17.64,7.54,High,TRUE,SunGroup
+PRJ-0246,Dự án Công nghiệp 246,Miền Bắc,Công nghiệp,5/5/2024,10/24/2025,,1061.23,39.95,Conteccons,Trần Thị B,Planning,15,0,17.9,8.56,5.51,High,TRUE,Đất Xanh
+PRJ-0247,Dự án Dân dụng 247,Miền Nam,Dân dụng,3/8/2018,5/14/2019,6/2/2019,1496.01,1496.01,Ricons,Phạm Văn D,Completed,820,1,690.07,407.7,202.61,High,TRUE,Đất Xanh
+PRJ-0248,Dự án Dân dụng 248,Miền Trung,Dân dụng,11/18/2020,2/10/2023,,305.32,92.41,Coteccons,Lê Văn C,In Progress,288,1,44.18,26.6,13.19,Medium,FALSE,Đất Xanh
+PRJ-0249,Dự án Hạ tầng 249,Miền Trung,Hạ tầng,8/22/2019,7/5/2021,,882.8,39.08,Vinaconex,Nguyễn Văn A,Planning,17,0,17.07,8.57,4.95,Low,TRUE,Đất Xanh
+PRJ-0250,Dự án Công nghiệp 250,Miền Trung,Công nghiệp,2/12/2022,9/6/2023,,113.15,46.13,Fecon,Nguyễn Văn A,In Progress,1247,4,18.73,9.6,5.16,Medium,FALSE,Đất Xanh
+PRJ-0251,Dự án Dân dụng 251,Miền Bắc,Dân dụng,6/15/2018,2/18/2020,5/8/2020,67.92,67.92,Vinaconex,Trần Thị B,Completed,1039,4,30.75,15.86,7.2,Low,TRUE,Masterise
+PRJ-0252,Dự án Thương mại 252,Miền Bắc,Thương mại,7/4/2023,7/16/2025,9/18/2025,1483.91,1483.91,Vinaconex,Nguyễn Văn A,Completed,1642,3,696.75,394.78,209.81,Low,FALSE,Phát Đạt
+PRJ-0253,Dự án Hạ tầng 253,Miền Trung,Hạ tầng,11/27/2020,6/4/2021,,190.23,4.73,Fecon,Lê Văn C,Planning,0,0,2.12,0.97,0.65,High,TRUE,Nhà nước
+PRJ-0254,Dự án Thương mại 254,Miền Trung,Thương mại,9/10/2020,3/17/2023,,318.85,13.89,Coteccons,Hoàng Thị E,Planning,8,0,6.68,3.17,1.81,Medium,FALSE,Nhà nước
+PRJ-0255,Dự án Dân dụng 255,Miền Nam,Dân dụng,2/23/2019,12/6/2020,11/26/2020,1355.08,1355.08,Delta,Trần Thị B,Completed,387,0,623.14,358.57,189.2,Low,TRUE,SunGroup
+PRJ-0256,Dự án Công nghiệp 256,Miền Nam,Công nghiệp,6/5/2022,8/7/2024,,775.68,266.29,Vinaconex,Vũ Văn F,In Progress,198,4,125.94,65.4,38.54,Low,TRUE,Nhà nước
+PRJ-0257,Dự án Công nghiệp 257,Miền Nam,Công nghiệp,8/16/2023,7/18/2024,,828.36,529.67,Delta,Nguyễn Văn A,In Progress,1084,3,239.63,146.56,68.17,High,FALSE,SunGroup
+PRJ-0258,Dự án Thương mại 258,Miền Nam,Thương mại,1/12/2024,12/21/2024,12/18/2024,1053.51,1053.51,Ricons,Nguyễn Văn A,Completed,1871,0,523.64,245.33,117.41,Medium,TRUE,Đất Xanh
+PRJ-0259,Dự án Thương mại 259,Miền Nam,Thương mại,11/2/2021,8/14/2022,,548.27,356.95,Vinaconex,Phạm Văn D,Suspended,10,2,170.55,76.03,36.49,High,TRUE,Phát Đạt
+PRJ-0260,Dự án Hạ tầng 260,Miền Bắc,Hạ tầng,10/20/2018,9/8/2020,,684.83,434.63,Fecon,Lê Văn C,Suspended,2,4,178.72,106.34,47.7,Medium,FALSE,Nhà nước
+PRJ-0261,Dự án Dân dụng 261,Miền Bắc,Dân dụng,1/14/2018,10/23/2018,,948.74,38.62,Ricons,Lê Văn C,Planning,16,0,16.94,8.88,4.78,High,TRUE,SunGroup
+PRJ-0262,Dự án Thương mại 262,Miền Trung,Thương mại,8/5/2023,10/30/2025,,642.68,149.22,Vinaconex,Nguyễn Văn A,Suspended,13,0,66.75,41.21,20.16,Low,FALSE,Novaland
+PRJ-0263,Dự án Dân dụng 263,Miền Bắc,Dân dụng,8/20/2020,6/27/2022,,1220.96,20.71,Fecon,Hoàng Thị E,Planning,12,0,8.7,5.35,2.9,High,FALSE,Đất Xanh
+PRJ-0264,Dự án Thương mại 264,Miền Bắc,Thương mại,5/7/2018,1/17/2020,,150.08,119.25,Conteccons,Vũ Văn F,Suspended,2,5,52.45,24.57,15.21,Medium,TRUE,Masterise
+PRJ-0265,Dự án Dân dụng 265,Miền Trung,Dân dụng,10/1/2018,5/26/2021,,325.08,164.68,Ricons,Hoàng Thị E,Suspended,14,1,82.25,35.81,17.65,Medium,TRUE,VinGroup
+PRJ-0266,Dự án Công nghiệp 266,Miền Nam,Công nghiệp,8/27/2019,7/21/2020,,1264.34,59.75,Fecon,Phạm Văn D,Planning,20,0,27.34,17.73,7.94,Medium,FALSE,Nhà nước
+PRJ-0267,Dự án Hạ tầng 267,Miền Nam,Hạ tầng,9/8/2024,3/21/2027,,258.12,9.3,Hòa Bình,Vũ Văn F,Planning,19,0,3.83,1.92,1.26,Medium,TRUE,SunGroup
+PRJ-0268,Dự án Hạ tầng 268,Miền Nam,Hạ tầng,10/26/2024,7/2/2027,,1029.37,11.49,Fecon,Nguyễn Văn A,Planning,3,0,5.2,3.37,1.72,Low,FALSE,Nhà nước
+PRJ-0269,Dự án Thương mại 269,Miền Nam,Thương mại,12/1/2022,5/20/2024,,240.16,10.84,Delta,Phạm Văn D,Planning,4,0,4.85,2.2,1.54,Medium,TRUE,Phát Đạt
+PRJ-0270,Dự án Dân dụng 270,Miền Bắc,Dân dụng,1/2/2021,2/14/2023,,1155.92,878.01,Fecon,Trần Thị B,Suspended,8,2,365.81,189.67,116.63,Medium,TRUE,Đất Xanh
+PRJ-0271,Dự án Dân dụng 271,Miền Bắc,Dân dụng,3/29/2018,9/15/2020,,1393.48,51.11,Coteccons,Trần Thị B,Planning,18,0,24.74,14.85,5.58,High,TRUE,Masterise
+PRJ-0272,Dự án Hạ tầng 272,Miền Bắc,Hạ tầng,6/17/2022,3/2/2024,,856.94,19.06,Hòa Bình,Hoàng Thị E,Planning,1,0,9.35,4.09,2.39,Medium,TRUE,Phát Đạt
+PRJ-0273,Dự án Công nghiệp 273,Miền Trung,Công nghiệp,9/30/2020,2/17/2023,,222.11,105.71,Vinaconex,Vũ Văn F,In Progress,888,0,48.07,28.27,15.02,High,TRUE,Novaland
+PRJ-0274,Dự án Công nghiệp 274,Miền Trung,Công nghiệp,12/1/2022,8/19/2023,9/25/2023,545.84,545.84,Conteccons,Phạm Văn D,Completed,1125,5,223.07,158.37,63.83,Medium,TRUE,Masterise
+PRJ-0275,Dự án Công nghiệp 275,Miền Nam,Công nghiệp,3/13/2023,5/30/2024,,710.72,520.19,Conteccons,Hoàng Thị E,Suspended,9,0,252.28,133.75,68.13,Medium,TRUE,Nhà nước
+PRJ-0276,Dự án Dân dụng 276,Miền Bắc,Dân dụng,4/28/2021,10/31/2021,12/14/2021,1292.36,1292.36,Conteccons,Lê Văn C,Completed,260,5,539.83,370.9,158.75,High,FALSE,Phát Đạt
+PRJ-0277,Dự án Dân dụng 277,Miền Trung,Dân dụng,11/17/2020,5/2/2023,7/1/2023,1312.71,1312.71,Conteccons,Phạm Văn D,Completed,523,3,622.71,306.14,154.65,Medium,TRUE,Phát Đạt
+PRJ-0278,Dự án Công nghiệp 278,Miền Trung,Công nghiệp,2/8/2022,5/29/2023,,185.78,2.94,Delta,Vũ Văn F,Planning,2,0,1.39,0.82,0.41,Low,FALSE,Phát Đạt
+PRJ-0279,Dự án Hạ tầng 279,Miền Nam,Hạ tầng,11/13/2019,7/6/2020,,718.3,209.48,Ricons,Phạm Văn D,Suspended,19,4,84.96,62.48,31.28,High,TRUE,Nhà nước
+PRJ-0280,Dự án Dân dụng 280,Miền Bắc,Dân dụng,11/23/2018,8/1/2020,8/5/2020,1151.44,1151.44,Conteccons,Lê Văn C,Completed,537,5,534.51,322.6,135.42,Medium,FALSE,Phát Đạt
+PRJ-0281,Dự án Công nghiệp 281,Miền Nam,Công nghiệp,1/1/2019,2/26/2021,,1432.04,377.38,Hòa Bình,Vũ Văn F,Suspended,6,5,154.19,107.49,51.2,Medium,FALSE,VinGroup
+PRJ-0282,Dự án Công nghiệp 282,Miền Bắc,Công nghiệp,3/22/2021,9/3/2022,,120.48,3,Conteccons,Trần Thị B,Planning,11,0,1.25,0.72,0.37,High,FALSE,Nhà nước
+PRJ-0283,Dự án Thương mại 283,Miền Nam,Thương mại,3/1/2023,7/27/2025,,632.7,388.75,Hòa Bình,Hoàng Thị E,Suspended,10,4,190.47,80.45,53.25,High,TRUE,Nhà nước
+PRJ-0284,Dự án Hạ tầng 284,Miền Trung,Hạ tầng,10/26/2021,7/14/2023,8/5/2023,1455.54,1455.54,Coteccons,Lê Văn C,Completed,1895,2,722.18,294.64,199.49,Medium,TRUE,Phát Đạt
+PRJ-0285,Dự án Công nghiệp 285,Miền Trung,Công nghiệp,10/2/2020,9/10/2021,9/29/2021,517.69,517.69,Fecon,Vũ Văn F,Completed,1644,5,214.57,105.45,52.39,High,FALSE,Novaland
+PRJ-0286,Dự án Hạ tầng 286,Miền Trung,Hạ tầng,8/7/2019,12/26/2021,,683.74,168.6,Delta,Nguyễn Văn A,Suspended,4,2,71.5,36.47,21.76,Medium,TRUE,Đất Xanh
+PRJ-0287,Dự án Hạ tầng 287,Miền Bắc,Hạ tầng,8/18/2020,4/11/2022,6/25/2022,96.71,96.71,Ricons,Nguyễn Văn A,Completed,1738,4,46.92,24.96,13.9,Medium,TRUE,Đất Xanh
+PRJ-0288,Dự án Thương mại 288,Miền Bắc,Thương mại,3/19/2021,7/1/2023,,1220.13,46.15,Delta,Nguyễn Văn A,Planning,20,0,21.17,11.97,4.73,Medium,TRUE,Novaland
+PRJ-0289,Dự án Công nghiệp 289,Miền Bắc,Công nghiệp,9/28/2018,12/24/2019,,568.79,25.44,Ricons,Nguyễn Văn A,Planning,18,0,12.05,5.55,2.97,Medium,FALSE,BIM Group
+PRJ-0290,Dự án Dân dụng 290,Miền Trung,Dân dụng,9/30/2020,4/18/2021,,483.13,249.03,Fecon,Nguyễn Văn A,In Progress,1758,0,122.88,58.69,25.3,Low,FALSE,BIM Group
+PRJ-0291,Dự án Dân dụng 291,Miền Bắc,Dân dụng,12/13/2020,11/19/2021,,607.39,447.99,Ricons,Nguyễn Văn A,In Progress,295,4,180.15,127.27,59.36,Low,TRUE,Masterise
+PRJ-0292,Dự án Thương mại 292,Miền Bắc,Thương mại,10/26/2020,3/29/2022,,565.41,7.49,Vinaconex,Trần Thị B,Planning,17,0,3.56,2.01,0.89,High,FALSE,Novaland
+PRJ-0293,Dự án Hạ tầng 293,Miền Nam,Hạ tầng,10/30/2020,6/5/2021,,830.41,404.54,Hòa Bình,Trần Thị B,Suspended,1,0,181.26,107.95,54.83,High,FALSE,Phát Đạt
+PRJ-0294,Dự án Hạ tầng 294,Miền Bắc,Hạ tầng,3/11/2018,9/5/2019,10/18/2019,1265.48,1265.48,Conteccons,Vũ Văn F,Completed,292,4,565.01,343.67,139.98,Low,TRUE,Nhà nước
+PRJ-0295,Dự án Dân dụng 295,Miền Nam,Dân dụng,7/24/2019,2/19/2022,,891.49,578.78,Hòa Bình,Vũ Văn F,In Progress,553,2,273.42,136.52,75.67,Low,TRUE,Novaland
+PRJ-0296,Dự án Công nghiệp 296,Miền Trung,Công nghiệp,8/9/2018,11/16/2020,,425.57,14.17,Delta,Vũ Văn F,Planning,4,0,6.87,3.86,1.65,Medium,FALSE,Phát Đạt
+PRJ-0297,Dự án Hạ tầng 297,Miền Nam,Hạ tầng,1/8/2024,5/8/2025,,1351.57,33.53,Fecon,Nguyễn Văn A,Planning,15,0,15.81,9.26,4.04,High,FALSE,Phát Đạt
+PRJ-0298,Dự án Công nghiệp 298,Miền Bắc,Công nghiệp,10/12/2018,4/16/2021,,302.84,110.9,Ricons,Nguyễn Văn A,In Progress,690,1,55.22,31.54,15.09,Low,TRUE,Đất Xanh
+PRJ-0299,Dự án Dân dụng 299,Miền Bắc,Dân dụng,11/24/2018,4/9/2021,,756.06,25.56,Hòa Bình,Phạm Văn D,Planning,3,0,12.3,6.36,2.8,Medium,FALSE,Phát Đạt
+PRJ-0300,Dự án Dân dụng 300,Miền Nam,Dân dụng,8/4/2019,10/5/2020,,570.27,27.53,Hòa Bình,Lê Văn C,Planning,2,0,11.94,8.12,3.59,Medium,TRUE,Đất Xanh
+PRJ-0301,Dự án Hạ tầng 301,Miền Bắc,Hạ tầng,11/4/2024,12/11/2025,12/28/2025,1228.91,1228.91,Delta,Hoàng Thị E,Completed,1674,0,549.81,307.9,142.63,High,TRUE,Nhà nước
+PRJ-0302,Dự án Hạ tầng 302,Miền Nam,Hạ tầng,7/2/2024,8/18/2025,,543.77,269.23,Coteccons,Trần Thị B,Suspended,6,2,123.89,76.4,27.65,High,TRUE,Phát Đạt
+PRJ-0303,Dự án Công nghiệp 303,Miền Bắc,Công nghiệp,7/11/2021,2/17/2023,4/18/2023,997.26,997.26,Fecon,Hoàng Thị E,Completed,1894,2,445.2,223.03,114.98,Low,TRUE,SunGroup
+PRJ-0304,Dự án Dân dụng 304,Miền Bắc,Dân dụng,12/22/2022,9/10/2023,,971,123.21,Fecon,Trần Thị B,In Progress,1768,3,57.12,30.78,13.25,Medium,FALSE,BIM Group
+PRJ-0305,Dự án Công nghiệp 305,Miền Nam,Công nghiệp,3/18/2022,1/17/2023,3/1/2023,1229.7,1229.7,Coteccons,Vũ Văn F,Completed,962,5,545.36,343.59,171,High,FALSE,SunGroup
+PRJ-0306,Dự án Dân dụng 306,Miền Bắc,Dân dụng,7/13/2018,8/7/2019,8/5/2019,199.14,199.14,Hòa Bình,Hoàng Thị E,Completed,1911,2,88.92,54.64,28.94,Medium,TRUE,Đất Xanh
+PRJ-0307,Dự án Hạ tầng 307,Miền Bắc,Hạ tầng,2/18/2024,1/11/2026,,460.82,10.07,Ricons,Vũ Văn F,Planning,17,0,4.97,2.52,1.3,High,FALSE,BIM Group
+PRJ-0308,Dự án Thương mại 308,Miền Nam,Thương mại,3/13/2018,4/16/2020,4/27/2020,358.41,358.41,Ricons,Lê Văn C,Completed,92,1,152.08,77.22,53.29,High,TRUE,Masterise
+PRJ-0309,Dự án Công nghiệp 309,Miền Trung,Công nghiệp,3/24/2024,12/18/2024,1/25/2025,365.79,365.79,Conteccons,Trần Thị B,Completed,1926,2,170.75,81.78,52.09,Low,FALSE,SunGroup
+PRJ-0310,Dự án Thương mại 310,Miền Bắc,Thương mại,2/22/2020,11/22/2021,,643.57,29.95,Delta,Vũ Văn F,Planning,17,0,14.21,6.59,3.53,High,TRUE,VinGroup
+PRJ-0311,Dự án Công nghiệp 311,Miền Nam,Công nghiệp,5/28/2022,1/24/2023,,1001.09,698.62,Ricons,Lê Văn C,Suspended,12,4,314.98,173.98,103.25,Low,FALSE,Masterise
+PRJ-0312,Dự án Thương mại 312,Miền Trung,Thương mại,6/17/2023,12/20/2025,,1273.4,1079.74,Delta,Hoàng Thị E,Suspended,17,2,517.31,283.99,156.12,High,FALSE,Phát Đạt
+PRJ-0313,Dự án Công nghiệp 313,Miền Trung,Công nghiệp,1/4/2018,11/22/2019,,784,548.45,Conteccons,Phạm Văn D,In Progress,413,1,249.29,118.8,77.64,High,FALSE,Masterise
+PRJ-0314,Dự án Thương mại 314,Miền Nam,Thương mại,4/14/2023,10/27/2023,,202.41,3.8,Ricons,Lê Văn C,Planning,5,0,1.82,0.92,0.55,Medium,FALSE,SunGroup
+PRJ-0315,Dự án Công nghiệp 315,Miền Nam,Công nghiệp,7/19/2019,1/19/2021,2/13/2021,923.6,923.6,Coteccons,Vũ Văn F,Completed,1911,0,421.07,195.6,109.45,Medium,TRUE,VinGroup
+PRJ-0316,Dự án Dân dụng 316,Miền Nam,Dân dụng,1/26/2018,8/11/2020,9/26/2020,1056,1056,Vinaconex,Vũ Văn F,Completed,482,3,451.81,261.81,125.97,Medium,FALSE,BIM Group
+PRJ-0317,Dự án Dân dụng 317,Miền Nam,Dân dụng,9/14/2022,1/9/2025,,544.17,148.24,Ricons,Trần Thị B,Suspended,15,5,68.85,39.48,15.81,Medium,TRUE,BIM Group
+PRJ-0318,Dự án Thương mại 318,Miền Trung,Thương mại,4/4/2020,5/27/2022,,1268.7,1074.91,Hòa Bình,Nguyễn Văn A,In Progress,1437,0,474.01,241.17,150.07,Medium,TRUE,Nhà nước
+PRJ-0319,Dự án Hạ tầng 319,Miền Trung,Hạ tầng,2/28/2019,2/18/2020,,179.2,6.35,Delta,Phạm Văn D,Planning,1,0,2.92,1.79,0.78,High,FALSE,Masterise
+PRJ-0320,Dự án Thương mại 320,Miền Nam,Thương mại,8/1/2021,3/9/2022,,957.31,202.91,Delta,Phạm Văn D,Suspended,19,2,99.16,57.84,28.75,Medium,TRUE,VinGroup
+PRJ-0321,Dự án Dân dụng 321,Miền Bắc,Dân dụng,3/26/2020,6/29/2021,,543.62,24.15,Vinaconex,Trần Thị B,Planning,3,0,11.56,7.22,3.57,Medium,TRUE,VinGroup
+PRJ-0322,Dự án Dân dụng 322,Miền Bắc,Dân dụng,1/6/2020,9/14/2021,,369.94,268.29,Ricons,Lê Văn C,In Progress,1538,3,129.36,68.77,30.29,Low,TRUE,VinGroup
+PRJ-0323,Dự án Hạ tầng 323,Miền Nam,Hạ tầng,1/4/2024,9/9/2026,11/21/2026,264.37,264.37,Delta,Nguyễn Văn A,Completed,420,2,124.83,53.28,31.73,High,FALSE,VinGroup
+PRJ-0324,Dự án Hạ tầng 324,Miền Nam,Hạ tầng,10/18/2021,9/9/2023,,967.8,160.92,Vinaconex,Nguyễn Văn A,Suspended,10,3,78.85,32.68,20.84,Low,FALSE,BIM Group
+PRJ-0325,Dự án Hạ tầng 325,Miền Trung,Hạ tầng,9/23/2022,7/25/2024,,1289.5,571.3,Hòa Bình,Phạm Văn D,Suspended,17,1,256.85,140.7,71.32,Medium,TRUE,Nhà nước
+PRJ-0326,Dự án Công nghiệp 326,Miền Trung,Công nghiệp,6/29/2023,2/6/2024,,435.36,190.65,Ricons,Trần Thị B,Suspended,13,3,82.61,49.05,23.88,Medium,FALSE,BIM Group
+PRJ-0327,Dự án Hạ tầng 327,Miền Nam,Hạ tầng,11/1/2019,7/31/2021,10/25/2021,924.97,924.97,Conteccons,Phạm Văn D,Completed,1455,4,441.52,205.45,121.58,Low,TRUE,BIM Group
+PRJ-0328,Dự án Hạ tầng 328,Miền Trung,Hạ tầng,4/24/2023,10/25/2024,11/2/2024,605.83,605.83,Coteccons,Lê Văn C,Completed,460,5,293.67,152.73,89.05,Medium,TRUE,BIM Group
+PRJ-0329,Dự án Công nghiệp 329,Miền Bắc,Công nghiệp,7/2/2022,1/9/2023,,450.78,10.67,Fecon,Trần Thị B,Planning,2,0,4.63,2.17,1.12,Low,FALSE,Novaland
+PRJ-0330,Dự án Thương mại 330,Miền Bắc,Thương mại,5/27/2018,1/24/2019,,1209.98,42.92,Delta,Hoàng Thị E,Planning,14,0,19.74,9.54,4.46,Medium,TRUE,Đất Xanh
+PRJ-0331,Dự án Dân dụng 331,Miền Bắc,Dân dụng,7/29/2022,6/29/2023,,398.04,103.27,Ricons,Hoàng Thị E,In Progress,979,3,41.34,28.04,13.44,High,FALSE,VinGroup
+PRJ-0332,Dự án Dân dụng 332,Miền Nam,Dân dụng,5/30/2020,6/26/2022,,808.33,38.03,Coteccons,Trần Thị B,Planning,15,0,16.65,9.88,5.04,High,FALSE,Phát Đạt
+PRJ-0333,Dự án Dân dụng 333,Miền Trung,Dân dụng,6/23/2019,8/16/2021,7/27/2021,308.84,308.84,Coteccons,Phạm Văn D,Completed,333,4,138.46,87.41,36.67,Medium,TRUE,Phát Đạt
+PRJ-0334,Dự án Dân dụng 334,Miền Nam,Dân dụng,7/14/2023,4/27/2024,,1462.95,790.69,Coteccons,Hoàng Thị E,Suspended,9,3,350.27,194.34,80.99,High,TRUE,SunGroup
+PRJ-0335,Dự án Hạ tầng 335,Miền Nam,Hạ tầng,2/1/2020,12/17/2020,,446.97,299.77,Hòa Bình,Lê Văn C,Suspended,12,3,126.63,83.07,37.58,Low,TRUE,BIM Group
+PRJ-0336,Dự án Hạ tầng 336,Miền Trung,Hạ tầng,6/15/2022,1/17/2025,,1033.12,560.03,Coteccons,Hoàng Thị E,In Progress,1035,3,253.64,127.06,65.54,Medium,TRUE,SunGroup
+PRJ-0337,Dự án Công nghiệp 337,Miền Nam,Công nghiệp,5/28/2019,5/6/2021,7/31/2021,438.91,438.91,Fecon,Hoàng Thị E,Completed,1256,4,214.52,95.88,57.21,Low,TRUE,SunGroup
+PRJ-0338,Dự án Công nghiệp 338,Miền Trung,Công nghiệp,2/28/2018,1/25/2019,,1198.16,44.47,Ricons,Trần Thị B,Planning,5,0,18.2,10.39,5.7,Low,FALSE,BIM Group
+PRJ-0339,Dự án Thương mại 339,Miền Bắc,Thương mại,8/24/2018,7/4/2019,,241.44,143.26,Ricons,Hoàng Thị E,In Progress,1213,1,58.74,41.81,17.67,High,FALSE,Đất Xanh
+PRJ-0340,Dự án Hạ tầng 340,Miền Nam,Hạ tầng,11/11/2019,3/25/2021,,1493.55,1334.23,Conteccons,Phạm Văn D,In Progress,831,5,585.27,314.8,191.34,High,TRUE,Đất Xanh
+PRJ-0341,Dự án Hạ tầng 341,Miền Nam,Hạ tầng,1/22/2018,4/24/2020,,728.86,25.7,Vinaconex,Trần Thị B,Planning,15,0,11.39,6.55,3.48,High,TRUE,SunGroup
+PRJ-0342,Dự án Hạ tầng 342,Miền Nam,Hạ tầng,2/15/2018,8/21/2019,,1143.1,50.13,Coteccons,Vũ Văn F,Planning,10,0,20.91,11.18,6.64,High,TRUE,SunGroup
+PRJ-0343,Dự án Công nghiệp 343,Miền Bắc,Công nghiệp,7/28/2019,7/5/2020,,368.4,121.96,Coteccons,Nguyễn Văn A,Suspended,13,0,56.11,31.6,14.1,High,TRUE,VinGroup
+PRJ-0344,Dự án Công nghiệp 344,Miền Trung,Công nghiệp,3/29/2024,7/14/2025,7/17/2025,1008.89,1008.89,Fecon,Hoàng Thị E,Completed,101,5,420.96,210.96,135.62,Low,FALSE,BIM Group
+PRJ-0345,Dự án Hạ tầng 345,Miền Bắc,Hạ tầng,1/15/2024,9/13/2025,,396.07,273,Delta,Trần Thị B,In Progress,1529,1,119.12,61.69,31.52,Low,FALSE,Novaland
+PRJ-0346,Dự án Dân dụng 346,Miền Trung,Dân dụng,11/23/2018,8/9/2021,8/17/2021,769.18,769.18,Delta,Hoàng Thị E,Completed,1233,5,318.93,212.65,90.71,Low,TRUE,Nhà nước
+PRJ-0347,Dự án Thương mại 347,Miền Nam,Thương mại,8/25/2021,2/26/2024,5/2/2024,172.25,172.25,Coteccons,Trần Thị B,Completed,543,4,81.42,49.81,17.89,Low,FALSE,Nhà nước
+PRJ-0348,Dự án Dân dụng 348,Miền Nam,Dân dụng,6/7/2022,5/14/2023,,256.68,40.01,Conteccons,Phạm Văn D,Suspended,19,3,16.33,9.35,5.94,Low,FALSE,SunGroup
+PRJ-0349,Dự án Thương mại 349,Miền Trung,Thương mại,1/22/2019,6/27/2021,9/21/2021,1171.64,1171.64,Ricons,Hoàng Thị E,Completed,909,3,483.57,235.57,146.07,Low,TRUE,Masterise
+PRJ-0350,Dự án Hạ tầng 350,Miền Bắc,Hạ tầng,2/12/2022,6/20/2023,6/10/2023,1205.04,1205.04,Fecon,Nguyễn Văn A,Completed,1008,0,520.94,289.21,143.95,High,FALSE,VinGroup
+PRJ-0351,Dự án Công nghiệp 351,Miền Nam,Công nghiệp,10/25/2019,11/17/2021,11/14/2021,1057.89,1057.89,Conteccons,Vũ Văn F,Completed,1280,0,499.98,311.53,117.28,Medium,FALSE,Masterise
+PRJ-0352,Dự án Dân dụng 352,Miền Trung,Dân dụng,5/22/2023,3/11/2025,5/14/2025,226.38,226.38,Delta,Lê Văn C,Completed,1029,0,100.09,50.13,25.51,Medium,TRUE,Nhà nước
+PRJ-0353,Dự án Thương mại 353,Miền Trung,Thương mại,2/7/2022,11/28/2022,,896.05,275.02,Ricons,Hoàng Thị E,Suspended,9,1,118.04,61.26,37.91,Medium,TRUE,Nhà nước
+PRJ-0354,Dự án Công nghiệp 354,Miền Bắc,Công nghiệp,3/31/2021,4/16/2023,,1398.26,25.34,Coteccons,Trần Thị B,Planning,6,0,11.11,6.25,2.83,Low,TRUE,Novaland
+PRJ-0355,Dự án Dân dụng 355,Miền Nam,Dân dụng,1/11/2024,10/11/2024,,793.73,427.94,Hòa Bình,Lê Văn C,Suspended,17,4,186.39,118.92,58.46,Medium,TRUE,Masterise
+PRJ-0356,Dự án Dân dụng 356,Miền Trung,Dân dụng,7/12/2018,3/28/2019,6/22/2019,395.96,395.96,Ricons,Vũ Văn F,Completed,1600,5,177.23,86.21,43.64,High,FALSE,Masterise
+PRJ-0357,Dự án Dân dụng 357,Miền Nam,Dân dụng,12/11/2020,7/15/2022,,250.46,163.53,Vinaconex,Nguyễn Văn A,Suspended,7,1,72.33,40.35,18.55,Medium,TRUE,Masterise
+PRJ-0358,Dự án Dân dụng 358,Miền Bắc,Dân dụng,2/11/2023,3/22/2025,,1177.75,374.97,Delta,Lê Văn C,In Progress,599,0,154.72,104.35,38.08,High,FALSE,Nhà nước
+PRJ-0359,Dự án Dân dụng 359,Miền Bắc,Dân dụng,7/31/2021,10/6/2022,,1334.8,1037.94,Hòa Bình,Vũ Văn F,In Progress,718,1,442.37,248.38,105.21,High,FALSE,BIM Group
+PRJ-0360,Dự án Công nghiệp 360,Miền Bắc,Công nghiệp,5/18/2018,9/21/2019,,1390.83,737.24,Conteccons,Nguyễn Văn A,In Progress,1256,0,340.4,149.74,75.14,High,FALSE,BIM Group
+PRJ-0361,Dự án Hạ tầng 361,Miền Nam,Hạ tầng,9/30/2019,6/25/2021,,1337.98,66.85,Delta,Hoàng Thị E,Planning,10,0,30.22,18.8,7.86,High,FALSE,Novaland
+PRJ-0362,Dự án Hạ tầng 362,Miền Bắc,Hạ tầng,8/14/2022,7/27/2023,,342.57,7.71,Conteccons,Trần Thị B,Planning,7,0,3.5,1.69,1.13,Medium,FALSE,Nhà nước
+PRJ-0363,Dự án Công nghiệp 363,Miền Trung,Công nghiệp,6/18/2022,5/27/2023,,1453.92,696.55,Coteccons,Phạm Văn D,Suspended,9,5,340.88,179.21,85.23,High,FALSE,Nhà nước
+PRJ-0364,Dự án Hạ tầng 364,Miền Bắc,Hạ tầng,1/23/2023,8/21/2023,,1098.09,128.86,Hòa Bình,Hoàng Thị E,Suspended,14,0,58.1,36.06,17.49,High,TRUE,BIM Group
+PRJ-0365,Dự án Công nghiệp 365,Miền Nam,Công nghiệp,1/2/2023,2/27/2024,,1342.47,16.72,Vinaconex,Trần Thị B,Planning,4,0,8.25,3.93,1.7,Low,FALSE,VinGroup
+PRJ-0366,Dự án Hạ tầng 366,Miền Bắc,Hạ tầng,3/30/2019,7/29/2021,,1094,13.88,Vinaconex,Trần Thị B,Planning,12,0,5.65,3.38,1.99,Low,TRUE,Phát Đạt
+PRJ-0367,Dự án Công nghiệp 367,Miền Bắc,Công nghiệp,9/7/2019,9/3/2021,8/7/2021,1478.25,1478.25,Conteccons,Trần Thị B,Completed,274,2,724.01,341.89,161.44,Medium,FALSE,Phát Đạt
+PRJ-0368,Dự án Dân dụng 368,Miền Nam,Dân dụng,11/9/2023,6/10/2025,,1208.77,272.87,Delta,Hoàng Thị E,In Progress,559,4,111.42,61.43,38.83,Medium,TRUE,Phát Đạt
+PRJ-0369,Dự án Công nghiệp 369,Miền Bắc,Công nghiệp,12/24/2023,1/18/2025,1/10/2025,297.58,297.58,Hòa Bình,Lê Văn C,Completed,1001,5,132.21,74.33,41.62,Medium,FALSE,Phát Đạt
+PRJ-0370,Dự án Thương mại 370,Miền Nam,Thương mại,8/30/2019,10/20/2020,,302.25,240.67,Vinaconex,Lê Văn C,In Progress,193,4,118.45,67.49,26.56,Medium,FALSE,Masterise
+PRJ-0371,Dự án Hạ tầng 371,Miền Bắc,Hạ tầng,6/2/2018,6/20/2020,,517.34,121.3,Vinaconex,Vũ Văn F,In Progress,1128,5,51.17,34.72,14.64,High,TRUE,BIM Group
+PRJ-0372,Dự án Thương mại 372,Miền Trung,Thương mại,7/12/2023,4/17/2024,4/9/2024,1098.57,1098.57,Conteccons,Lê Văn C,Completed,541,4,465.57,308.36,129.85,Low,TRUE,Novaland
+PRJ-0373,Dự án Công nghiệp 373,Miền Trung,Công nghiệp,9/6/2021,8/15/2022,8/5/2022,396.76,396.76,Hòa Bình,Lê Văn C,Completed,1029,4,184.72,92.47,47.3,Medium,TRUE,Phát Đạt
+PRJ-0374,Dự án Thương mại 374,Miền Trung,Thương mại,5/29/2024,7/10/2026,,865.08,651.82,Fecon,Hoàng Thị E,Suspended,8,0,285.11,192.49,71.71,Low,FALSE,SunGroup
+PRJ-0375,Dự án Dân dụng 375,Miền Bắc,Dân dụng,1/14/2023,9/7/2024,9/26/2024,1064.75,1064.75,Hòa Bình,Trần Thị B,Completed,664,0,522.17,216.6,109.22,High,FALSE,SunGroup
+PRJ-0376,Dự án Công nghiệp 376,Miền Nam,Công nghiệp,7/28/2021,11/30/2023,,414.82,334.7,Fecon,Trần Thị B,Suspended,20,5,165.92,74.41,39.45,Medium,FALSE,SunGroup
+PRJ-0377,Dự án Hạ tầng 377,Miền Nam,Hạ tầng,1/2/2023,10/29/2023,,221.77,120.01,Hòa Bình,Vũ Văn F,In Progress,1378,2,50.02,31.23,16.55,Medium,FALSE,Nhà nước
+PRJ-0378,Dự án Thương mại 378,Miền Trung,Thương mại,11/16/2022,5/8/2024,4/16/2024,63.74,63.74,Fecon,Nguyễn Văn A,Completed,837,0,26.97,13.69,9.24,Low,FALSE,Novaland
+PRJ-0379,Dự án Hạ tầng 379,Miền Nam,Hạ tầng,1/23/2023,1/19/2025,,188.57,113.14,Hòa Bình,Nguyễn Văn A,In Progress,595,4,50.86,23.18,13.75,Medium,TRUE,VinGroup
+PRJ-0380,Dự án Hạ tầng 380,Miền Nam,Hạ tầng,10/13/2020,3/1/2023,3/3/2023,1256.92,1256.92,Hòa Bình,Lê Văn C,Completed,818,3,556.35,260.88,156.1,High,FALSE,Phát Đạt
+PRJ-0381,Dự án Công nghiệp 381,Miền Nam,Công nghiệp,1/1/2022,10/26/2022,,1309.91,58.98,Fecon,Hoàng Thị E,Planning,7,0,26.01,16.24,7.25,Medium,FALSE,Nhà nước
+PRJ-0382,Dự án Dân dụng 382,Miền Bắc,Dân dụng,7/1/2020,4/8/2022,,1097.03,799.58,Vinaconex,Lê Văn C,Suspended,1,0,322.97,227.17,101.23,Medium,TRUE,Novaland
+PRJ-0383,Dự án Thương mại 383,Miền Nam,Thương mại,10/11/2019,3/30/2021,,812.39,37.98,Ricons,Lê Văn C,Planning,18,0,16.27,8.73,5.33,Low,TRUE,SunGroup
+PRJ-0384,Dự án Thương mại 384,Miền Nam,Thương mại,5/3/2019,1/14/2020,4/9/2020,1089.29,1089.29,Fecon,Nguyễn Văn A,Completed,1884,4,494.19,293.9,131.58,High,FALSE,BIM Group
+PRJ-0385,Dự án Công nghiệp 385,Miền Nam,Công nghiệp,2/29/2020,10/1/2022,,51.72,1.59,Fecon,Vũ Văn F,Planning,5,0,0.67,0.43,0.2,Medium,TRUE,Phát Đạt
+PRJ-0386,Dự án Thương mại 386,Miền Trung,Thương mại,7/24/2023,1/24/2024,,137.51,110.61,Coteccons,Vũ Văn F,Suspended,11,2,55.28,32.21,15.37,High,TRUE,Nhà nước
+PRJ-0387,Dự án Dân dụng 387,Miền Trung,Dân dụng,6/18/2021,7/31/2022,,115.35,14.01,Vinaconex,Vũ Văn F,Suspended,5,5,6.29,3.08,1.64,Medium,TRUE,Nhà nước
+PRJ-0388,Dự án Hạ tầng 388,Miền Nam,Hạ tầng,7/23/2020,3/23/2022,,140.33,5.78,Delta,Vũ Văn F,Planning,15,0,2.73,1.6,0.59,Medium,TRUE,Phát Đạt
+PRJ-0389,Dự án Công nghiệp 389,Miền Trung,Công nghiệp,6/14/2022,8/27/2024,,53.35,33,Vinaconex,Hoàng Thị E,Suspended,8,0,15.21,7.98,4.04,Medium,TRUE,Phát Đạt
+PRJ-0390,Dự án Công nghiệp 390,Miền Trung,Công nghiệp,7/11/2018,12/20/2020,,293.95,192.28,Fecon,Trần Thị B,Suspended,3,2,89.3,53.54,21.18,High,TRUE,Novaland
+PRJ-0391,Dự án Dân dụng 391,Miền Nam,Dân dụng,1/26/2020,12/16/2020,,443.49,56.79,Coteccons,Trần Thị B,In Progress,987,1,22.72,16.16,7.5,Low,TRUE,Nhà nước
+PRJ-0392,Dự án Hạ tầng 392,Miền Bắc,Hạ tầng,10/11/2020,1/22/2023,,1243.67,499.75,Fecon,Hoàng Thị E,In Progress,1960,4,219.78,144.4,63.53,Medium,FALSE,BIM Group
+PRJ-0393,Dự án Hạ tầng 393,Miền Nam,Hạ tầng,5/22/2021,4/25/2022,,417.01,11.26,Coteccons,Vũ Văn F,Planning,2,0,4.9,3.32,1.53,High,TRUE,Masterise
+PRJ-0394,Dự án Thương mại 394,Miền Trung,Thương mại,12/7/2018,3/23/2020,,985.19,516.88,Coteccons,Vũ Văn F,In Progress,841,0,246.81,117.84,52.11,Low,TRUE,VinGroup
+PRJ-0395,Dự án Hạ tầng 395,Miền Bắc,Hạ tầng,2/10/2021,9/1/2023,,747.02,387.94,Coteccons,Phạm Văn D,Suspended,17,1,171.69,95.87,41.23,Medium,FALSE,Nhà nước
+PRJ-0396,Dự án Thương mại 396,Miền Nam,Thương mại,7/19/2022,6/3/2023,,448.22,174.2,Delta,Trần Thị B,Suspended,1,4,87.04,45.51,19.97,Low,TRUE,Nhà nước
+PRJ-0397,Dự án Công nghiệp 397,Miền Trung,Công nghiệp,5/12/2023,7/8/2025,9/8/2025,1217.47,1217.47,Hòa Bình,Lê Văn C,Completed,1067,3,564.3,294.77,169.28,Low,TRUE,Masterise
+PRJ-0398,Dự án Thương mại 398,Miền Nam,Thương mại,12/25/2022,3/29/2025,,1103.28,925.44,Ricons,Hoàng Thị E,In Progress,1235,5,459.3,259.57,138.05,High,FALSE,BIM Group
+PRJ-0399,Dự án Công nghiệp 399,Miền Nam,Công nghiệp,5/22/2020,6/1/2022,,970.48,9.92,Fecon,Vũ Văn F,Planning,7,0,4.86,2.82,1.23,Medium,FALSE,Novaland
+PRJ-0400,Dự án Công nghiệp 400,Miền Nam,Công nghiệp,1/27/2018,9/16/2019,,1077.29,33.56,Conteccons,Lê Văn C,Planning,5,0,14.41,7.64,4.64,Low,FALSE,SunGroup
+PRJ-0401,Dự án Hạ tầng 401,Miền Trung,Hạ tầng,11/11/2022,7/29/2024,,1227.94,49.5,Vinaconex,Vũ Văn F,Planning,0,0,23.32,13.93,7.33,Medium,FALSE,SunGroup
+PRJ-0402,Dự án Công nghiệp 402,Miền Trung,Công nghiệp,8/4/2023,7/30/2024,,1363.07,223.5,Coteccons,Hoàng Thị E,In Progress,1796,0,96.95,66.34,31.4,High,FALSE,SunGroup
+PRJ-0403,Dự án Thương mại 403,Miền Trung,Thương mại,10/12/2020,8/5/2022,9/30/2022,186.26,186.26,Ricons,Phạm Văn D,Completed,330,1,79.33,47.45,22.24,Low,FALSE,Đất Xanh
+PRJ-0404,Dự án Hạ tầng 404,Miền Bắc,Hạ tầng,6/21/2020,10/2/2021,,172.27,38.21,Hòa Bình,Trần Thị B,In Progress,1269,0,18.65,9.46,5.19,Medium,TRUE,VinGroup
+PRJ-0405,Dự án Hạ tầng 405,Miền Nam,Hạ tầng,3/12/2023,10/17/2025,,289.41,10.28,Delta,Phạm Văn D,Planning,5,0,4.84,2.39,1.42,Medium,TRUE,BIM Group
+PRJ-0406,Dự án Công nghiệp 406,Miền Bắc,Công nghiệp,6/2/2023,1/4/2024,,815.65,594.49,Coteccons,Nguyễn Văn A,Suspended,18,2,270.98,141.75,75.19,High,TRUE,VinGroup
+PRJ-0407,Dự án Dân dụng 407,Miền Nam,Dân dụng,9/2/2019,7/4/2021,,95.1,74.89,Ricons,Vũ Văn F,In Progress,222,2,34.93,15.41,10.25,High,FALSE,Phát Đạt
+PRJ-0408,Dự án Công nghiệp 408,Miền Trung,Công nghiệp,11/3/2020,5/7/2023,,1330.57,64.34,Ricons,Hoàng Thị E,Planning,16,0,26.4,16.69,9.15,Medium,TRUE,Novaland
+PRJ-0409,Dự án Công nghiệp 409,Miền Trung,Công nghiệp,6/11/2020,5/14/2022,6/3/2022,1096.56,1096.56,Ricons,Phạm Văn D,Completed,506,5,439.96,250.33,156.68,Medium,FALSE,Nhà nước
+PRJ-0410,Dự án Hạ tầng 410,Miền Bắc,Hạ tầng,3/16/2019,9/29/2020,,1439.77,25.36,Fecon,Lê Văn C,Planning,9,0,11.34,6.87,2.89,Medium,TRUE,SunGroup
+PRJ-0411,Dự án Thương mại 411,Miền Bắc,Thương mại,10/26/2022,11/14/2024,,860.98,343.48,Coteccons,Nguyễn Văn A,Suspended,7,5,138.75,77.88,43.39,High,TRUE,Phát Đạt
+PRJ-0412,Dự án Công nghiệp 412,Miền Nam,Công nghiệp,8/18/2020,11/12/2021,1/15/2022,762.85,762.85,Coteccons,Lê Văn C,Completed,1503,2,373.88,215.6,78.5,Low,TRUE,Masterise
+PRJ-0413,Dự án Dân dụng 413,Miền Nam,Dân dụng,4/23/2018,9/8/2019,11/17/2019,973.19,973.19,Coteccons,Phạm Văn D,Completed,420,1,461.72,204.72,99.29,Low,TRUE,Đất Xanh
+PRJ-0414,Dự án Hạ tầng 414,Miền Bắc,Hạ tầng,9/16/2020,4/24/2023,,603.29,220.99,Delta,Nguyễn Văn A,In Progress,360,0,102.78,60.61,31.88,Low,FALSE,SunGroup
+PRJ-0415,Dự án Hạ tầng 415,Miền Trung,Hạ tầng,10/1/2018,6/20/2021,,1108.1,17.15,Vinaconex,Hoàng Thị E,Planning,6,0,7.84,4.62,1.86,High,TRUE,BIM Group
+PRJ-0416,Dự án Dân dụng 416,Miền Nam,Dân dụng,12/11/2022,3/25/2025,,435.36,182.52,Conteccons,Vũ Văn F,Suspended,19,1,77.58,49.64,23.89,Low,FALSE,Masterise
+PRJ-0417,Dự án Thương mại 417,Miền Trung,Thương mại,1/28/2024,4/1/2025,,592.88,7.6,Coteccons,Vũ Văn F,Planning,6,0,3.32,1.63,1.04,High,FALSE,SunGroup
+PRJ-0418,Dự án Thương mại 418,Miền Nam,Thương mại,3/16/2023,2/20/2025,,265.61,91.22,Coteccons,Vũ Văn F,Suspended,8,1,37.02,19.29,12.63,High,FALSE,Nhà nước
+PRJ-0419,Dự án Hạ tầng 419,Miền Bắc,Hạ tầng,5/10/2018,11/17/2018,,1020.67,497.41,Coteccons,Hoàng Thị E,Suspended,19,5,211.26,118.03,62.56,High,TRUE,VinGroup
+PRJ-0420,Dự án Thương mại 420,Miền Trung,Thương mại,6/28/2024,3/24/2027,3/26/2027,695.33,695.33,Coteccons,Trần Thị B,Completed,155,5,285.06,162.64,78.77,Medium,TRUE,SunGroup
+PRJ-0421,Dự án Dân dụng 421,Miền Nam,Dân dụng,5/30/2023,11/1/2024,,908.31,254.53,Hòa Bình,Vũ Văn F,In Progress,1364,4,120.61,68.17,38,Low,FALSE,VinGroup
+PRJ-0422,Dự án Dân dụng 422,Miền Nam,Dân dụng,9/3/2024,1/25/2027,,173.06,7.69,Fecon,Trần Thị B,Planning,15,0,3.65,1.89,0.97,Medium,FALSE,SunGroup
+PRJ-0423,Dự án Hạ tầng 423,Miền Bắc,Hạ tầng,2/8/2018,10/9/2018,12/8/2018,627.56,627.56,Vinaconex,Phạm Văn D,Completed,1636,2,306.14,128.57,64.89,High,TRUE,VinGroup
+PRJ-0424,Dự án Công nghiệp 424,Miền Bắc,Công nghiệp,4/7/2024,3/5/2025,,169.27,3.7,Vinaconex,Trần Thị B,Planning,19,0,1.82,0.89,0.49,High,TRUE,Novaland
+PRJ-0425,Dự án Hạ tầng 425,Miền Nam,Hạ tầng,12/1/2024,2/8/2026,,1005.7,820.63,Conteccons,Lê Văn C,In Progress,1107,4,389.45,202.53,94.94,High,TRUE,Masterise
+PRJ-0426,Dự án Hạ tầng 426,Miền Nam,Hạ tầng,4/14/2018,11/3/2019,,558.45,267.48,Hòa Bình,Lê Văn C,In Progress,284,1,111.18,77.07,36.91,High,TRUE,SunGroup
+PRJ-0427,Dự án Công nghiệp 427,Miền Trung,Công nghiệp,10/27/2023,7/27/2025,8/15/2025,264.94,264.94,Delta,Nguyễn Văn A,Completed,1604,1,128.47,65.29,33.89,Low,TRUE,Novaland
+PRJ-0428,Dự án Hạ tầng 428,Miền Trung,Hạ tầng,4/30/2019,1/27/2020,,1390.54,19.81,Fecon,Lê Văn C,Planning,18,0,9,4.52,2.53,High,FALSE,BIM Group
+PRJ-0429,Dự án Hạ tầng 429,Miền Bắc,Hạ tầng,9/1/2019,7/6/2021,9/24/2021,989.68,989.68,Hòa Bình,Phạm Văn D,Completed,1647,0,448.9,285.05,133.3,Low,TRUE,Masterise
+PRJ-0430,Dự án Thương mại 430,Miền Nam,Thương mại,1/20/2019,8/14/2021,,407.88,20.17,Fecon,Phạm Văn D,Planning,10,0,8.83,4.79,2.03,Low,TRUE,Novaland
+PRJ-0431,Dự án Thương mại 431,Miền Bắc,Thương mại,2/11/2023,10/1/2024,11/21/2024,1153.8,1153.8,Delta,Lê Văn C,Completed,1526,2,540.96,326.83,143.76,Low,TRUE,Novaland
+PRJ-0432,Dự án Hạ tầng 432,Miền Bắc,Hạ tầng,8/12/2020,8/10/2021,,878.32,652.26,Fecon,Phạm Văn D,In Progress,298,1,293.98,141.26,92.33,High,FALSE,Nhà nước
+PRJ-0433,Dự án Công nghiệp 433,Miền Nam,Công nghiệp,11/15/2021,3/28/2023,,884.51,166,Ricons,Trần Thị B,Suspended,3,0,69.18,40.1,19.54,High,TRUE,Nhà nước
+PRJ-0434,Dự án Thương mại 434,Miền Trung,Thương mại,1/19/2023,10/13/2025,10/8/2025,1257.89,1257.89,Fecon,Trần Thị B,Completed,404,4,550.54,297.69,150.89,High,FALSE,VinGroup
+PRJ-0435,Dự án Thương mại 435,Miền Trung,Thương mại,10/23/2018,5/6/2021,7/21/2021,952.44,952.44,Delta,Nguyễn Văn A,Completed,149,0,474.31,207.57,109.57,Low,FALSE,Masterise
+PRJ-0436,Dự án Hạ tầng 436,Miền Trung,Hạ tầng,2/11/2020,3/29/2021,,1237.04,61.21,Hòa Bình,Trần Thị B,Planning,0,0,30.07,18.09,7.99,Low,TRUE,Nhà nước
+PRJ-0437,Dự án Hạ tầng 437,Miền Trung,Hạ tầng,1/7/2018,11/11/2019,,1068.01,43.46,Vinaconex,Vũ Văn F,Planning,14,0,20.27,8.84,6.22,Low,TRUE,Masterise
+PRJ-0438,Dự án Dân dụng 438,Miền Nam,Dân dụng,2/4/2022,4/22/2023,,1355.96,540.84,Hòa Bình,Lê Văn C,Suspended,16,2,218.76,151.58,69.63,Low,FALSE,BIM Group
+PRJ-0439,Dự án Dân dụng 439,Miền Nam,Dân dụng,3/25/2018,9/28/2018,,457.9,15.11,Delta,Trần Thị B,Planning,0,0,7.02,3.27,2.1,Low,FALSE,BIM Group
+PRJ-0440,Dự án Công nghiệp 440,Miền Trung,Công nghiệp,10/25/2019,10/6/2021,,599.05,304.44,Fecon,Vũ Văn F,Suspended,10,2,132.17,91.05,40.92,High,TRUE,Đất Xanh
+PRJ-0441,Dự án Công nghiệp 441,Miền Nam,Công nghiệp,1/12/2021,1/29/2022,3/5/2022,1253.03,1253.03,Fecon,Phạm Văn D,Completed,1434,4,542.77,298.14,168.02,Low,FALSE,BIM Group
+PRJ-0442,Dự án Thương mại 442,Miền Trung,Thương mại,3/1/2021,11/28/2022,11/11/2022,67.47,67.47,Ricons,Vũ Văn F,Completed,202,3,32.28,18.12,8.33,Low,TRUE,Masterise
+PRJ-0443,Dự án Thương mại 443,Miền Nam,Thương mại,8/4/2018,3/22/2019,,1494.3,1193.64,Hòa Bình,Trần Thị B,In Progress,1929,0,483.85,352.62,150.17,Low,FALSE,Nhà nước
+PRJ-0444,Dự án Công nghiệp 444,Miền Nam,Công nghiệp,7/27/2022,8/16/2023,,1264.66,981.98,Vinaconex,Lê Văn C,In Progress,1730,3,436.04,206.54,120.83,High,TRUE,BIM Group
+PRJ-0445,Dự án Công nghiệp 445,Miền Nam,Công nghiệp,6/12/2018,2/3/2020,,828.67,602.29,Coteccons,Vũ Văn F,In Progress,1217,5,264.27,135.11,63.18,High,FALSE,VinGroup
+PRJ-0446,Dự án Thương mại 446,Miền Bắc,Thương mại,11/27/2020,11/14/2021,,1130.15,46.33,Ricons,Trần Thị B,Planning,4,0,19.28,12.97,6.76,Low,TRUE,SunGroup
+PRJ-0447,Dự án Công nghiệp 447,Miền Trung,Công nghiệp,1/31/2019,10/16/2019,,457.92,54.6,Fecon,Nguyễn Văn A,Suspended,5,1,26.56,14.81,8.17,Medium,TRUE,Đất Xanh
+PRJ-0448,Dự án Dân dụng 448,Miền Nam,Dân dụng,1/26/2022,11/12/2023,1/6/2024,177.57,177.57,Ricons,Nguyễn Văn A,Completed,1450,0,88.1,37.26,21.86,High,TRUE,Masterise
+PRJ-0449,Dự án Công nghiệp 449,Miền Trung,Công nghiệp,7/5/2019,3/8/2022,4/13/2022,844.96,844.96,Conteccons,Trần Thị B,Completed,1234,3,350.41,169.02,94.21,High,FALSE,SunGroup
+PRJ-0450,Dự án Thương mại 450,Miền Trung,Thương mại,2/18/2022,5/30/2023,,192.49,7.97,Delta,Lê Văn C,Planning,17,0,3.65,2.33,1.03,High,FALSE,Nhà nước
+PRJ-0451,Dự án Thương mại 451,Miền Bắc,Thương mại,9/13/2022,11/21/2024,,1348.37,869.94,Delta,Vũ Văn F,Suspended,17,2,351.19,215.44,93.73,High,TRUE,BIM Group
+PRJ-0452,Dự án Thương mại 452,Miền Bắc,Thương mại,5/2/2020,7/20/2021,,1051,748.56,Conteccons,Vũ Văn F,Suspended,19,1,345.1,224.48,105.68,Medium,FALSE,Nhà nước
+PRJ-0453,Dự án Công nghiệp 453,Miền Nam,Công nghiệp,3/16/2018,5/29/2020,,112.09,3.42,Coteccons,Trần Thị B,Planning,16,0,1.51,0.84,0.45,Low,FALSE,BIM Group
+PRJ-0454,Dự án Công nghiệp 454,Miền Bắc,Công nghiệp,5/12/2018,11/10/2020,,1458.59,192.58,Vinaconex,Hoàng Thị E,Suspended,0,3,84.11,56.52,26.84,Medium,TRUE,Novaland
+PRJ-0455,Dự án Công nghiệp 455,Miền Nam,Công nghiệp,7/24/2019,5/13/2021,7/12/2021,1457.35,1457.35,Vinaconex,Lê Văn C,Completed,1224,4,591.45,329.42,165.79,High,FALSE,Nhà nước
+PRJ-0456,Dự án Dân dụng 456,Miền Trung,Dân dụng,3/13/2024,9/17/2026,,355.74,38.16,Hòa Bình,Vũ Văn F,In Progress,617,1,19,10.57,4.53,Low,FALSE,Đất Xanh
+PRJ-0457,Dự án Dân dụng 457,Miền Trung,Dân dụng,6/19/2022,4/19/2024,,238.65,10.8,Ricons,Lê Văn C,Planning,18,0,4.96,2.77,1.14,Low,FALSE,Masterise
+PRJ-0458,Dự án Thương mại 458,Miền Nam,Thương mại,12/24/2024,7/24/2027,9/22/2027,283.47,283.47,Conteccons,Phạm Văn D,Completed,211,4,121.86,82.53,37.69,Low,FALSE,SunGroup
+PRJ-0459,Dự án Công nghiệp 459,Miền Trung,Công nghiệp,6/17/2022,9/8/2023,9/10/2023,1358.64,1358.64,Hòa Bình,Lê Văn C,Completed,1478,2,546.86,358.11,187.88,High,TRUE,BIM Group
+PRJ-0460,Dự án Dân dụng 460,Miền Bắc,Dân dụng,11/9/2023,12/24/2024,,815.3,518.33,Delta,Trần Thị B,In Progress,1580,3,227.28,136.61,61.57,High,FALSE,Phát Đạt
+PRJ-0461,Dự án Hạ tầng 461,Miền Nam,Hạ tầng,3/23/2021,2/21/2023,,1316.51,1012.09,Hòa Bình,Lê Văn C,In Progress,740,1,440.6,294.7,110.9,High,FALSE,SunGroup
+PRJ-0462,Dự án Hạ tầng 462,Miền Nam,Hạ tầng,11/18/2024,7/29/2027,,1354.3,54.05,Conteccons,Trần Thị B,Planning,13,0,26.15,11.42,6.71,Low,FALSE,SunGroup
+PRJ-0463,Dự án Hạ tầng 463,Miền Bắc,Hạ tầng,4/20/2022,3/4/2023,5/7/2023,290.18,290.18,Coteccons,Trần Thị B,Completed,1390,3,141.35,62.67,32.95,High,FALSE,Novaland
+PRJ-0464,Dự án Dân dụng 464,Miền Nam,Dân dụng,3/1/2021,8/4/2022,,914.48,789.54,Conteccons,Vũ Văn F,In Progress,585,0,335.24,223.44,90.23,Low,TRUE,VinGroup
+PRJ-0465,Dự án Hạ tầng 465,Miền Trung,Hạ tầng,8/31/2018,3/7/2021,,424.07,19.26,Conteccons,Vũ Văn F,Planning,4,0,8.48,5.24,2.08,Low,FALSE,Phát Đạt
+PRJ-0466,Dự án Thương mại 466,Miền Trung,Thương mại,8/11/2020,6/10/2021,5/20/2021,1118.97,1118.97,Coteccons,Vũ Văn F,Completed,1507,0,515.93,307.04,147.18,Low,FALSE,Phát Đạt
+PRJ-0467,Dự án Thương mại 467,Miền Trung,Thương mại,9/25/2018,12/4/2020,,80.21,36.34,Coteccons,Lê Văn C,In Progress,1060,2,16.01,7.33,5.33,High,FALSE,VinGroup
+PRJ-0468,Dự án Dân dụng 468,Miền Trung,Dân dụng,3/6/2018,2/6/2019,,475.22,289.72,Conteccons,Hoàng Thị E,Suspended,6,3,142.13,76.82,33.72,High,TRUE,Novaland
+PRJ-0469,Dự án Thương mại 469,Miền Nam,Thương mại,7/3/2024,2/22/2027,,1280.04,186.67,Hòa Bình,Nguyễn Văn A,Suspended,8,5,89.84,53.51,22.26,Low,FALSE,VinGroup
+PRJ-0470,Dự án Thương mại 470,Miền Nam,Thương mại,7/13/2018,9/6/2019,,1217.11,60.78,Coteccons,Nguyễn Văn A,Planning,8,0,26.63,14.8,6.44,Low,TRUE,Novaland
+PRJ-0471,Dự án Công nghiệp 471,Miền Bắc,Công nghiệp,12/31/2021,3/20/2023,5/24/2023,1250.17,1250.17,Fecon,Vũ Văn F,Completed,1022,2,518.31,362.72,180.91,Medium,FALSE,Nhà nước
+PRJ-0472,Dự án Thương mại 472,Miền Trung,Thương mại,3/7/2018,6/1/2019,6/15/2019,1072.3,1072.3,Vinaconex,Phạm Văn D,Completed,1114,0,467.29,278.02,114.22,High,FALSE,VinGroup
+PRJ-0473,Dự án Công nghiệp 473,Miền Trung,Công nghiệp,9/15/2020,12/21/2021,1/9/2022,1206.89,1206.89,Ricons,Lê Văn C,Completed,750,2,535.37,280.98,172.56,Medium,FALSE,Nhà nước
+PRJ-0474,Dự án Hạ tầng 474,Miền Bắc,Hạ tầng,12/19/2019,12/23/2020,1/4/2021,282.82,282.82,Ricons,Hoàng Thị E,Completed,117,4,114.74,59.53,33.24,Medium,TRUE,Phát Đạt
+PRJ-0475,Dự án Thương mại 475,Miền Bắc,Thương mại,8/28/2023,10/7/2024,,515.55,5.88,Conteccons,Lê Văn C,Planning,3,0,2.71,1.58,0.6,High,FALSE,BIM Group
+PRJ-0476,Dự án Thương mại 476,Miền Bắc,Thương mại,6/7/2019,8/26/2020,,456.22,11.87,Vinaconex,Trần Thị B,Planning,13,0,5.74,2.82,1.32,Medium,TRUE,BIM Group
+PRJ-0477,Dự án Thương mại 477,Miền Nam,Thương mại,5/30/2021,5/25/2023,,1172.45,515.24,Ricons,Vũ Văn F,In Progress,1353,3,241.43,137.32,53.11,High,TRUE,BIM Group
+PRJ-0478,Dự án Hạ tầng 478,Miền Bắc,Hạ tầng,9/12/2024,7/12/2025,9/24/2025,1089.08,1089.08,Vinaconex,Phạm Văn D,Completed,1612,4,493.61,300.86,127.92,Medium,FALSE,SunGroup
+PRJ-0479,Dự án Hạ tầng 479,Miền Bắc,Hạ tầng,10/1/2020,10/28/2021,,1446.9,688.21,Fecon,Vũ Văn F,Suspended,19,0,276.77,179.89,74.41,Medium,TRUE,Nhà nước
+PRJ-0480,Dự án Dân dụng 480,Miền Trung,Dân dụng,9/25/2023,9/18/2024,,1087.24,12.5,Conteccons,Trần Thị B,Planning,20,0,5.72,3.26,1.67,Medium,FALSE,SunGroup
+PRJ-0481,Dự án Công nghiệp 481,Miền Trung,Công nghiệp,9/23/2020,10/26/2022,,900.33,580.3,Conteccons,Nguyễn Văn A,Suspended,3,2,234.14,172.99,64.08,High,FALSE,Đất Xanh
+PRJ-0482,Dự án Công nghiệp 482,Miền Trung,Công nghiệp,5/10/2021,5/20/2022,,699.26,8.63,Conteccons,Phạm Văn D,Planning,13,0,4.19,1.73,1.28,Medium,FALSE,BIM Group
+PRJ-0483,Dự án Dân dụng 483,Miền Nam,Dân dụng,1/21/2022,8/23/2022,,626.4,504.94,Conteccons,Hoàng Thị E,Suspended,1,2,209.9,115.92,70.56,Low,FALSE,BIM Group
+PRJ-0484,Dự án Hạ tầng 484,Miền Bắc,Hạ tầng,3/19/2020,8/11/2021,7/18/2021,120.97,120.97,Coteccons,Vũ Văn F,Completed,1406,1,53.19,33.85,13.52,Low,TRUE,BIM Group
+PRJ-0485,Dự án Dân dụng 485,Miền Trung,Dân dụng,11/3/2019,7/23/2022,,1091.14,306.89,Coteccons,Trần Thị B,In Progress,1240,0,131.48,76.86,36.4,High,FALSE,SunGroup
+PRJ-0486,Dự án Dân dụng 486,Miền Trung,Dân dụng,5/22/2019,10/21/2020,9/30/2020,130.88,130.88,Vinaconex,Hoàng Thị E,Completed,397,3,58,27.62,15.43,Medium,TRUE,BIM Group
+PRJ-0487,Dự án Thương mại 487,Miền Trung,Thương mại,10/15/2024,7/11/2025,,1090.06,619.04,Hòa Bình,Trần Thị B,Suspended,5,5,275.54,182.04,80.04,Medium,TRUE,SunGroup
+PRJ-0488,Dự án Dân dụng 488,Miền Trung,Dân dụng,2/20/2022,5/29/2023,6/27/2023,1469.06,1469.06,Delta,Vũ Văn F,Completed,1051,3,707.13,380.16,210.35,High,FALSE,Nhà nước
+PRJ-0489,Dự án Hạ tầng 489,Miền Nam,Hạ tầng,3/13/2021,11/1/2022,,882.52,744.44,Coteccons,Vũ Văn F,In Progress,643,0,336.43,159,101.27,Medium,FALSE,BIM Group
+PRJ-0490,Dự án Thương mại 490,Miền Bắc,Thương mại,5/3/2024,4/10/2025,7/4/2025,621.76,621.76,Vinaconex,Trần Thị B,Completed,1715,2,280.24,132.82,73.51,High,TRUE,Đất Xanh
+PRJ-0491,Dự án Công nghiệp 491,Miền Trung,Công nghiệp,8/18/2021,3/6/2023,,1015.03,351.58,Fecon,Trần Thị B,Suspended,7,3,146.93,78.02,41.03,Medium,FALSE,VinGroup
+PRJ-0492,Dự án Dân dụng 492,Miền Bắc,Dân dụng,11/8/2020,7/26/2023,,1485.65,683.86,Conteccons,Nguyễn Văn A,Suspended,14,4,287.13,164.1,72.49,Medium,TRUE,Nhà nước
+PRJ-0493,Dự án Dân dụng 493,Miền Trung,Dân dụng,1/24/2018,4/8/2019,4/3/2019,561.78,561.78,Fecon,Vũ Văn F,Completed,1945,5,243.74,119.36,66.98,High,TRUE,SunGroup
+PRJ-0494,Dự án Công nghiệp 494,Miền Trung,Công nghiệp,7/13/2019,9/15/2021,,1113.19,729,Vinaconex,Lê Văn C,Suspended,5,5,325.55,197.49,78.73,High,FALSE,Phát Đạt
+PRJ-0495,Dự án Dân dụng 495,Miền Bắc,Dân dụng,12/11/2019,3/30/2022,,1377.24,46.61,Fecon,Vũ Văn F,Planning,10,0,19.29,12.55,6.09,High,TRUE,Novaland
+PRJ-0496,Dự án Dân dụng 496,Miền Nam,Dân dụng,9/2/2024,3/27/2026,,1352.02,901.24,Fecon,Hoàng Thị E,In Progress,298,5,428.92,213.61,102.58,Medium,TRUE,VinGroup
+PRJ-0497,Dự án Dân dụng 497,Miền Nam,Dân dụng,3/6/2018,5/1/2020,5/10/2020,810.51,810.51,Delta,Lê Văn C,Completed,463,0,373.23,164.21,117.88,Medium,FALSE,Phát Đạt
+PRJ-0498,Dự án Dân dụng 498,Miền Trung,Dân dụng,1/15/2020,3/31/2022,,758.24,425.7,Delta,Lê Văn C,Suspended,1,5,198.14,97.34,53.77,High,TRUE,Phát Đạt
+PRJ-0499,Dự án Thương mại 499,Miền Trung,Thương mại,3/13/2019,12/2/2021,,1463.55,1018.43,Coteccons,Hoàng Thị E,Suspended,3,2,461.77,303.38,137.35,Medium,FALSE,Phát Đạt
+PRJ-0500,Dự án Thương mại 500,Miền Nam,Thương mại,7/10/2023,7/9/2024,9/16/2024,77.67,77.67,Delta,Hoàng Thị E,Completed,1796,2,38.65,22.38,10.83,Low,TRUE,VinGroup
+PRJ-0501,Dự án Công nghiệp 501,Miền Nam,Công nghiệp,4/4/2020,12/31/2021,3/7/2022,787.38,787.38,Coteccons,Nguyễn Văn A,Completed,1467,4,341.64,158.19,103.3,Medium,TRUE,VinGroup
+PRJ-0502,Dự án Công nghiệp 502,Miền Bắc,Công nghiệp,8/8/2019,6/22/2021,,629.77,430.86,Vinaconex,Hoàng Thị E,Suspended,9,0,200.97,99.84,62.76,Low,TRUE,Phát Đạt
+PRJ-0503,Dự án Dân dụng 503,Miền Bắc,Dân dụng,9/19/2020,12/9/2021,,385.03,52.76,Coteccons,Trần Thị B,In Progress,984,2,26.31,11.79,5.42,Medium,FALSE,Masterise
+PRJ-0504,Dự án Dân dụng 504,Miền Bắc,Dân dụng,4/14/2021,9/3/2023,,565.29,229.33,Hòa Bình,Trần Thị B,Suspended,11,2,101.71,51.94,25.34,Low,TRUE,Masterise
+PRJ-0505,Dự án Dân dụng 505,Miền Bắc,Dân dụng,6/4/2021,12/8/2023,,207.99,2.26,Vinaconex,Lê Văn C,Planning,13,0,0.92,0.46,0.24,High,FALSE,VinGroup
+PRJ-0506,Dự án Dân dụng 506,Miền Bắc,Dân dụng,11/16/2020,7/6/2023,,179.87,46.06,Ricons,Nguyễn Văn A,Suspended,9,3,22.67,12.09,5.23,Low,FALSE,Nhà nước
+PRJ-0507,Dự án Hạ tầng 507,Miền Nam,Hạ tầng,4/15/2020,4/12/2022,,797.44,31.8,Delta,Vũ Văn F,Planning,3,0,14.92,6.96,3.76,High,TRUE,Phát Đạt
+PRJ-0508,Dự án Công nghiệp 508,Miền Bắc,Công nghiệp,8/29/2023,8/28/2024,,406.08,220.24,Fecon,Lê Văn C,Suspended,5,1,101.21,51.61,32.3,Medium,FALSE,BIM Group
+PRJ-0509,Dự án Dân dụng 509,Miền Trung,Dân dụng,12/4/2019,6/20/2022,,904,465.37,Ricons,Vũ Văn F,Suspended,2,5,192.4,134.96,49.34,Medium,FALSE,Novaland
+PRJ-0510,Dự án Dân dụng 510,Miền Nam,Dân dụng,10/11/2024,12/29/2025,,141.65,20.94,Delta,Vũ Văn F,Suspended,16,0,10.43,4.23,3.06,Low,TRUE,Nhà nước
+PRJ-0511,Dự án Hạ tầng 511,Miền Nam,Hạ tầng,5/3/2020,4/10/2021,,889.2,334.75,Fecon,Hoàng Thị E,Suspended,7,0,147.04,90.35,35.48,Low,FALSE,VinGroup
+PRJ-0512,Dự án Thương mại 512,Miền Trung,Thương mại,10/5/2021,6/23/2023,,261.81,10.72,Conteccons,Phạm Văn D,Planning,7,0,4.88,2.61,1.33,Medium,TRUE,Novaland
+PRJ-0513,Dự án Công nghiệp 513,Miền Bắc,Công nghiệp,4/28/2023,11/23/2023,,359.74,235.65,Fecon,Trần Thị B,Suspended,10,2,107.04,66.15,30.76,Low,TRUE,VinGroup
+PRJ-0514,Dự án Công nghiệp 514,Miền Trung,Công nghiệp,4/21/2018,7/13/2019,,137.16,111.51,Ricons,Lê Văn C,In Progress,285,0,50.98,25.17,14.51,Medium,TRUE,Novaland
+PRJ-0515,Dự án Hạ tầng 515,Miền Trung,Hạ tầng,5/11/2020,4/22/2022,,415.01,158.22,Conteccons,Hoàng Thị E,In Progress,882,4,77.58,43.71,19.72,High,FALSE,Novaland
+PRJ-0516,Dự án Hạ tầng 516,Miền Trung,Hạ tầng,12/15/2020,10/12/2022,,1038.45,559.32,Vinaconex,Phạm Văn D,In Progress,585,4,266.71,116.82,71.97,Medium,FALSE,SunGroup
+PRJ-0517,Dự án Thương mại 517,Miền Bắc,Thương mại,7/9/2019,10/11/2021,,415.64,116.73,Fecon,Phạm Văn D,In Progress,930,4,56.98,32.13,13.33,Medium,TRUE,SunGroup
+PRJ-0518,Dự án Công nghiệp 518,Miền Bắc,Công nghiệp,12/27/2021,5/31/2024,,1119.46,683.28,Ricons,Hoàng Thị E,Suspended,14,2,309.73,138.19,93.63,Low,FALSE,Phát Đạt
+PRJ-0519,Dự án Hạ tầng 519,Miền Nam,Hạ tầng,8/13/2019,12/22/2020,,1487.66,214.07,Conteccons,Vũ Văn F,Suspended,11,5,87.38,55.64,21.89,High,TRUE,SunGroup
+PRJ-0520,Dự án Công nghiệp 520,Miền Nam,Công nghiệp,3/7/2018,5/5/2020,7/15/2020,1026.46,1026.46,Conteccons,Hoàng Thị E,Completed,1518,4,456.3,296.85,126.42,Medium,TRUE,Masterise
+PRJ-0521,Dự án Dân dụng 521,Miền Nam,Dân dụng,1/30/2019,4/9/2021,,546.37,214.95,Coteccons,Lê Văn C,Suspended,17,3,99.09,57,26.79,High,TRUE,Masterise
+PRJ-0522,Dự án Hạ tầng 522,Miền Bắc,Hạ tầng,8/4/2019,5/15/2021,,1008,602.9,Vinaconex,Phạm Văn D,In Progress,643,3,244.28,136.52,76.13,High,TRUE,SunGroup
+PRJ-0523,Dự án Thương mại 523,Miền Bắc,Thương mại,5/18/2019,3/19/2020,,436.03,52.1,Hòa Bình,Trần Thị B,In Progress,1260,1,24.33,11.5,7.25,Medium,FALSE,BIM Group
+PRJ-0524,Dự án Thương mại 524,Miền Nam,Thương mại,2/13/2019,6/3/2020,,108.58,37.89,Delta,Lê Văn C,Suspended,0,4,17.11,10.49,4.84,High,TRUE,VinGroup
+PRJ-0525,Dự án Công nghiệp 525,Miền Bắc,Công nghiệp,11/15/2024,6/7/2025,,398.33,41.08,Vinaconex,Trần Thị B,In Progress,1987,3,19.64,10.45,4.63,High,TRUE,Novaland
+PRJ-0526,Dự án Thương mại 526,Miền Trung,Thương mại,7/28/2022,8/2/2024,,1017,149.36,Ricons,Phạm Văn D,In Progress,1581,3,73.31,31.51,20.34,Low,TRUE,VinGroup
+PRJ-0527,Dự án Dân dụng 527,Miền Bắc,Dân dụng,6/8/2020,6/9/2021,,182.94,7.17,Ricons,Vũ Văn F,Planning,0,0,3.22,2,0.79,High,TRUE,Novaland
+PRJ-0528,Dự án Dân dụng 528,Miền Bắc,Dân dụng,2/3/2021,7/27/2022,8/22/2022,110.66,110.66,Vinaconex,Phạm Văn D,Completed,578,2,47.81,23.85,13.43,Medium,TRUE,Masterise
+PRJ-0529,Dự án Hạ tầng 529,Miền Nam,Hạ tầng,4/6/2022,6/14/2024,,1444.69,870.95,Ricons,Lê Văn C,In Progress,1398,0,423.84,192.59,93.76,Low,TRUE,Nhà nước
+PRJ-0530,Dự án Thương mại 530,Miền Trung,Thương mại,4/27/2019,1/6/2021,,878.4,38.91,Vinaconex,Trần Thị B,Planning,16,0,19.34,11.17,4.86,High,FALSE,VinGroup
+PRJ-0531,Dự án Công nghiệp 531,Miền Trung,Công nghiệp,6/14/2019,1/15/2020,,1018.04,25.1,Hòa Bình,Vũ Văn F,Planning,1,0,11.15,7.29,3.06,High,FALSE,Đất Xanh
+PRJ-0532,Dự án Dân dụng 532,Miền Bắc,Dân dụng,1/16/2018,11/28/2019,,1081.98,16.27,Conteccons,Hoàng Thị E,Planning,11,0,6.74,4.48,2.25,Medium,TRUE,Đất Xanh
+PRJ-0533,Dự án Dân dụng 533,Miền Trung,Dân dụng,10/30/2024,12/10/2025,,364.81,11.27,Hòa Bình,Phạm Văn D,Planning,5,0,5.01,2.66,1.4,Low,FALSE,Nhà nước
+PRJ-0534,Dự án Hạ tầng 534,Miền Trung,Hạ tầng,7/7/2020,9/20/2021,,1326.78,1025.75,Fecon,Hoàng Thị E,Suspended,6,4,410.61,222.11,115.96,Medium,FALSE,Novaland
+PRJ-0535,Dự án Thương mại 535,Miền Trung,Thương mại,6/11/2018,3/22/2020,,604.39,522.25,Conteccons,Hoàng Thị E,In Progress,468,1,229.6,129.21,63.96,Medium,TRUE,Nhà nước
+PRJ-0536,Dự án Công nghiệp 536,Miền Trung,Công nghiệp,6/21/2020,4/23/2021,,511.46,199.29,Fecon,Phạm Văn D,Suspended,2,0,94.27,50.97,27.52,High,FALSE,Novaland
+PRJ-0537,Dự án Thương mại 537,Miền Bắc,Thương mại,5/2/2023,12/22/2024,,66.1,38.69,Ricons,Vũ Văn F,In Progress,654,2,17.23,11.46,5.28,Medium,FALSE,Novaland
+PRJ-0538,Dự án Dân dụng 538,Miền Nam,Dân dụng,11/19/2021,12/23/2023,,838.75,689.82,Hòa Bình,Hoàng Thị E,Suspended,10,4,304.15,159.34,79.75,Medium,FALSE,Phát Đạt
+PRJ-0539,Dự án Hạ tầng 539,Miền Nam,Hạ tầng,11/26/2024,7/2/2027,,775.65,37.56,Delta,Trần Thị B,Planning,10,0,15.36,8.6,4.96,High,FALSE,Novaland
+PRJ-0540,Dự án Dân dụng 540,Miền Trung,Dân dụng,6/12/2018,9/30/2019,,1164.69,733.12,Coteccons,Phạm Văn D,Suspended,11,4,320.1,202.4,98.96,High,FALSE,SunGroup
+PRJ-0541,Dự án Thương mại 541,Miền Bắc,Thương mại,3/11/2023,8/15/2024,,1386.01,797.66,Coteccons,Hoàng Thị E,In Progress,781,2,365.06,209.22,81.76,Low,FALSE,Phát Đạt
+PRJ-0542,Dự án Hạ tầng 542,Miền Bắc,Hạ tầng,7/15/2023,6/7/2025,,198.24,121.54,Fecon,Trần Thị B,In Progress,1210,5,55.69,33.89,17.81,High,TRUE,Phát Đạt
+PRJ-0543,Dự án Dân dụng 543,Miền Nam,Dân dụng,7/22/2023,4/11/2024,,1150.83,43.81,Conteccons,Nguyễn Văn A,Planning,5,0,17.59,10.66,6.23,Medium,FALSE,SunGroup
+PRJ-0544,Dự án Thương mại 544,Miền Bắc,Thương mại,9/20/2021,1/14/2024,,680.29,21.38,Ricons,Hoàng Thị E,Planning,11,0,9.52,5.55,2.46,High,FALSE,SunGroup
+PRJ-0545,Dự án Công nghiệp 545,Miền Nam,Công nghiệp,9/11/2020,3/14/2023,6/1/2023,363.71,363.71,Delta,Hoàng Thị E,Completed,1535,2,150.96,77.62,40.19,Medium,TRUE,Nhà nước
+PRJ-0546,Dự án Công nghiệp 546,Miền Nam,Công nghiệp,7/28/2022,2/9/2025,,386.62,332.64,Coteccons,Lê Văn C,In Progress,191,1,152.17,93.22,43.45,Low,TRUE,Nhà nước
+PRJ-0547,Dự án Dân dụng 547,Miền Bắc,Dân dụng,9/19/2019,4/4/2021,7/1/2021,968.76,968.76,Ricons,Nguyễn Văn A,Completed,1244,5,474.96,196.73,115.63,Medium,FALSE,Nhà nước
+PRJ-0548,Dự án Công nghiệp 548,Miền Trung,Công nghiệp,12/2/2024,3/26/2027,,1449.39,39.29,Ricons,Hoàng Thị E,Planning,9,0,18.63,8.45,4.41,Low,TRUE,Đất Xanh
+PRJ-0549,Dự án Công nghiệp 549,Miền Nam,Công nghiệp,3/3/2023,9/28/2025,,961.88,644.7,Vinaconex,Trần Thị B,Suspended,20,0,312.24,130.45,93.36,Low,FALSE,Nhà nước
+PRJ-0550,Dự án Dân dụng 550,Miền Nam,Dân dụng,8/2/2019,10/14/2020,,1150.39,51.72,Ricons,Trần Thị B,Planning,12,0,20.9,11.27,6.31,Medium,TRUE,Masterise
+PRJ-0551,Dự án Công nghiệp 551,Miền Bắc,Công nghiệp,6/22/2023,1/25/2026,,121.56,89.54,Fecon,Phạm Văn D,Suspended,9,0,41.01,21.46,9.19,Medium,TRUE,SunGroup
+PRJ-0552,Dự án Hạ tầng 552,Miền Trung,Hạ tầng,1/22/2018,4/4/2020,,76.23,3.02,Ricons,Nguyễn Văn A,Planning,20,0,1.34,0.63,0.36,Low,TRUE,SunGroup
+PRJ-0553,Dự án Công nghiệp 553,Miền Trung,Công nghiệp,4/30/2024,11/9/2025,11/16/2025,1427.09,1427.09,Hòa Bình,Phạm Văn D,Completed,1589,3,613.98,395.34,186.85,Medium,FALSE,Novaland
+PRJ-0554,Dự án Thương mại 554,Miền Trung,Thương mại,1/1/2021,3/12/2023,,1087.67,570.19,Fecon,Hoàng Thị E,In Progress,982,0,247.01,167.99,68.92,Low,TRUE,Đất Xanh
+PRJ-0555,Dự án Thương mại 555,Miền Bắc,Thương mại,1/16/2022,12/22/2023,,1362.8,40.86,Delta,Nguyễn Văn A,Planning,8,0,18.65,9.2,4.84,High,TRUE,Đất Xanh
+PRJ-0556,Dự án Dân dụng 556,Miền Trung,Dân dụng,4/9/2019,2/19/2020,,97.35,47.04,Vinaconex,Vũ Văn F,In Progress,1959,2,19.23,10.45,5.33,Medium,TRUE,VinGroup
+PRJ-0557,Dự án Thương mại 557,Miền Bắc,Thương mại,7/21/2022,3/11/2025,4/9/2025,555.89,555.89,Fecon,Phạm Văn D,Completed,1320,1,230.9,132.99,71.65,Medium,FALSE,Novaland
+PRJ-0558,Dự án Thương mại 558,Miền Trung,Thương mại,8/16/2018,10/9/2020,,1471.82,226.02,Conteccons,Hoàng Thị E,In Progress,1337,0,94.59,67.67,29.48,Medium,FALSE,VinGroup
+PRJ-0559,Dự án Dân dụng 559,Miền Bắc,Dân dụng,8/12/2021,5/25/2023,,243.38,10.86,Hòa Bình,Trần Thị B,Planning,4,0,4.82,3.13,1.15,Medium,FALSE,Nhà nước
+PRJ-0560,Dự án Dân dụng 560,Miền Nam,Dân dụng,6/11/2019,1/25/2020,,430.56,20.08,Ricons,Hoàng Thị E,Planning,0,0,8.46,4.92,2.35,High,TRUE,BIM Group
+PRJ-0561,Dự án Dân dụng 561,Miền Nam,Dân dụng,4/29/2022,7/20/2023,7/27/2023,739.18,739.18,Ricons,Trần Thị B,Completed,317,0,332.38,151.98,78.87,Low,TRUE,Đất Xanh
+PRJ-0562,Dự án Hạ tầng 562,Miền Nam,Hạ tầng,1/23/2018,3/8/2019,,1116.33,294.25,Ricons,Lê Văn C,Suspended,7,0,128.32,65.66,30.36,Low,FALSE,Đất Xanh
+PRJ-0563,Dự án Công nghiệp 563,Miền Nam,Công nghiệp,6/14/2022,4/8/2024,,1254.39,60.75,Coteccons,Lê Văn C,Planning,17,0,26.55,15.04,7.38,Low,TRUE,VinGroup
+PRJ-0564,Dự án Hạ tầng 564,Miền Bắc,Hạ tầng,7/30/2022,1/8/2024,,1237.48,889.88,Ricons,Lê Văn C,In Progress,1936,2,416.06,262.35,126.89,Medium,TRUE,Masterise
+PRJ-0565,Dự án Thương mại 565,Miền Trung,Thương mại,11/4/2024,9/10/2026,,969.61,32.68,Vinaconex,Trần Thị B,Planning,20,0,13.47,9.27,3.35,High,TRUE,Masterise
+PRJ-0566,Dự án Công nghiệp 566,Miền Nam,Công nghiệp,3/26/2024,11/6/2024,,400.41,306,Vinaconex,Phạm Văn D,Suspended,17,5,152.7,73.64,43.13,Low,TRUE,Đất Xanh
+PRJ-0567,Dự án Thương mại 567,Miền Trung,Thương mại,1/18/2024,10/6/2025,11/21/2025,121.57,121.57,Conteccons,Lê Văn C,Completed,1633,2,60.64,35.28,16.17,High,TRUE,SunGroup
+PRJ-0568,Dự án Thương mại 568,Miền Nam,Thương mại,9/22/2022,9/27/2023,,208.52,127.35,Conteccons,Nguyễn Văn A,In Progress,484,4,51.41,27.18,16.16,High,FALSE,Đất Xanh
+PRJ-0569,Dự án Dân dụng 569,Miền Nam,Dân dụng,7/20/2020,9/30/2022,,927.99,19.28,Fecon,Trần Thị B,Planning,12,0,9.44,3.92,2.89,High,FALSE,BIM Group
+PRJ-0570,Dự án Công nghiệp 570,Miền Trung,Công nghiệp,7/22/2018,3/13/2021,,634.94,8.23,Fecon,Phạm Văn D,Planning,5,0,3.53,2,1.18,Low,TRUE,SunGroup
+PRJ-0571,Dự án Dân dụng 571,Miền Nam,Dân dụng,7/3/2023,12/21/2024,,1016.21,688.94,Ricons,Nguyễn Văn A,Suspended,1,2,277.4,175.9,73.93,Medium,TRUE,SunGroup
+PRJ-0572,Dự án Dân dụng 572,Miền Trung,Dân dụng,9/1/2021,5/11/2022,,1441.09,760.72,Ricons,Hoàng Thị E,Suspended,8,1,344.12,193.04,98.7,High,FALSE,Masterise
+PRJ-0573,Dự án Công nghiệp 573,Miền Trung,Công nghiệp,1/2/2020,8/4/2020,,275.41,233.94,Ricons,Nguyễn Văn A,Suspended,6,5,97.88,68.77,31.82,High,FALSE,VinGroup
+PRJ-0574,Dự án Công nghiệp 574,Miền Nam,Công nghiệp,4/21/2023,1/15/2024,2/8/2024,87.83,87.83,Hòa Bình,Hoàng Thị E,Completed,317,4,38.76,20.92,12.4,Low,TRUE,SunGroup
+PRJ-0575,Dự án Hạ tầng 575,Miền Nam,Hạ tầng,3/21/2020,11/6/2021,,1038.08,40.55,Fecon,Vũ Văn F,Planning,14,0,20.13,11.07,5.28,Low,FALSE,VinGroup
+PRJ-0576,Dự án Hạ tầng 576,Miền Nam,Hạ tầng,10/17/2021,12/28/2023,,691.92,292.1,Fecon,Hoàng Thị E,Suspended,8,0,142.35,60.18,41.43,Low,FALSE,Đất Xanh
+PRJ-0577,Dự án Thương mại 577,Miền Bắc,Thương mại,9/22/2022,5/14/2024,,1426.21,513.11,Hòa Bình,Hoàng Thị E,In Progress,1403,5,205.72,123.74,59.39,High,FALSE,VinGroup
+PRJ-0578,Dự án Hạ tầng 578,Miền Trung,Hạ tầng,11/23/2024,4/13/2026,,732.21,32.26,Ricons,Phạm Văn D,Planning,15,0,15.34,9.35,3.93,Low,FALSE,Novaland
+PRJ-0579,Dự án Hạ tầng 579,Miền Nam,Hạ tầng,3/27/2024,3/6/2025,3/23/2025,324.01,324.01,Vinaconex,Vũ Văn F,Completed,1110,5,143.96,70.23,46,Medium,FALSE,Novaland
+PRJ-0580,Dự án Hạ tầng 580,Miền Bắc,Hạ tầng,9/20/2019,7/14/2021,,441.84,203.51,Vinaconex,Trần Thị B,In Progress,1692,4,98.26,59.28,23.66,High,FALSE,BIM Group
+PRJ-0581,Dự án Thương mại 581,Miền Trung,Thương mại,5/1/2023,12/29/2024,,886.52,42.03,Delta,Hoàng Thị E,Planning,0,0,18.22,10.34,4.46,High,FALSE,Đất Xanh
+PRJ-0582,Dự án Công nghiệp 582,Miền Trung,Công nghiệp,9/3/2021,5/14/2023,,1407.07,949.42,Delta,Hoàng Thị E,Suspended,15,3,424.86,257.31,128.84,Medium,TRUE,Đất Xanh
+PRJ-0583,Dự án Hạ tầng 583,Miền Trung,Hạ tầng,1/23/2018,10/30/2018,11/22/2018,1010.28,1010.28,Delta,Trần Thị B,Completed,472,3,446.84,226.12,113.56,Low,FALSE,Phát Đạt
+PRJ-0584,Dự án Công nghiệp 584,Miền Nam,Công nghiệp,3/28/2019,2/27/2020,,616.18,361.01,Delta,Vũ Văn F,Suspended,13,0,165.92,73.76,51.82,High,TRUE,Nhà nước
+PRJ-0585,Dự án Dân dụng 585,Miền Nam,Dân dụng,12/27/2023,7/25/2024,,1475.38,46.54,Vinaconex,Lê Văn C,Planning,4,0,19.91,11.78,6.05,Low,TRUE,VinGroup
+PRJ-0586,Dự án Thương mại 586,Miền Bắc,Thương mại,4/17/2019,12/25/2019,,771.34,590.41,Conteccons,Phạm Văn D,Suspended,6,4,236.91,159.15,65.57,Low,TRUE,BIM Group
+PRJ-0587,Dự án Công nghiệp 587,Miền Trung,Công nghiệp,1/26/2023,12/16/2023,,55.69,18.62,Coteccons,Trần Thị B,In Progress,219,5,8.63,5.36,2.31,High,FALSE,Masterise
+PRJ-0588,Dự án Hạ tầng 588,Miền Nam,Hạ tầng,3/1/2019,4/13/2020,,358.61,258.93,Conteccons,Hoàng Thị E,In Progress,1020,3,113.47,58.4,33.58,Medium,FALSE,Nhà nước
+PRJ-0589,Dự án Hạ tầng 589,Miền Trung,Hạ tầng,3/25/2021,1/23/2022,,151.67,86.77,Ricons,Nguyễn Văn A,Suspended,15,2,37.76,24.68,12.12,Low,TRUE,BIM Group
+PRJ-0590,Dự án Dân dụng 590,Miền Trung,Dân dụng,7/27/2024,5/19/2025,8/12/2025,978.89,978.89,Vinaconex,Trần Thị B,Completed,208,1,483.82,252.07,118.31,Low,FALSE,BIM Group
+PRJ-0591,Dự án Dân dụng 591,Miền Nam,Dân dụng,9/22/2024,3/22/2025,,1225.02,556.39,Fecon,Trần Thị B,Suspended,13,1,235.5,139.64,65.57,Medium,TRUE,Masterise
+PRJ-0592,Dự án Công nghiệp 592,Miền Trung,Công nghiệp,4/6/2019,11/11/2021,,847.95,12.37,Hòa Bình,Nguyễn Văn A,Planning,0,0,5.59,2.61,1.77,High,TRUE,Phát Đạt
+PRJ-0593,Dự án Thương mại 593,Miền Bắc,Thương mại,5/11/2021,4/6/2023,,1217.08,28.05,Fecon,Hoàng Thị E,Planning,1,0,12.15,8.39,3.26,High,FALSE,Masterise
+PRJ-0594,Dự án Hạ tầng 594,Miền Nam,Hạ tầng,1/20/2021,8/20/2021,,772.13,323.5,Fecon,Vũ Văn F,Suspended,16,3,129.71,66.61,47.88,Medium,TRUE,Đất Xanh
+PRJ-0595,Dự án Thương mại 595,Miền Bắc,Thương mại,12/5/2023,7/30/2026,,1053.08,36.61,Fecon,Trần Thị B,Planning,18,0,15.31,8.96,4.82,Low,TRUE,VinGroup
+PRJ-0596,Dự án Công nghiệp 596,Miền Bắc,Công nghiệp,3/31/2022,7/1/2024,,963.68,39.44,Hòa Bình,Trần Thị B,Planning,15,0,18.73,8.39,4.35,Medium,FALSE,Nhà nước
+PRJ-0597,Dự án Công nghiệp 597,Miền Nam,Công nghiệp,6/18/2023,5/27/2024,,982.36,744.04,Coteccons,Trần Thị B,In Progress,1976,2,312.1,173.96,103.99,Medium,TRUE,Nhà nước
+PRJ-0598,Dự án Công nghiệp 598,Miền Nam,Công nghiệp,2/25/2022,3/13/2023,4/29/2023,456.57,456.57,Coteccons,Hoàng Thị E,Completed,1804,4,209.53,111.66,47.5,Medium,TRUE,Novaland
+PRJ-0599,Dự án Thương mại 599,Miền Nam,Thương mại,7/10/2023,4/23/2024,,1471.8,681.98,Coteccons,Nguyễn Văn A,In Progress,588,4,329.22,199.69,72.72,Medium,TRUE,Nhà nước
+PRJ-0600,Dự án Dân dụng 600,Miền Bắc,Dân dụng,6/18/2019,12/2/2021,,632.05,23.69,Hòa Bình,Lê Văn C,Planning,18,0,11.61,5.23,2.89,Low,FALSE,Novaland
+PRJ-0601,Dự án Dân dụng 601,Miền Bắc,Dân dụng,8/2/2022,11/8/2023,,1353.93,469.05,Conteccons,Phạm Văn D,Suspended,17,1,191.57,121.58,68.01,Medium,TRUE,Nhà nước
+PRJ-0602,Dự án Thương mại 602,Miền Trung,Thương mại,5/20/2019,9/14/2020,,949.98,270.52,Hòa Bình,Hoàng Thị E,In Progress,1749,3,132.85,66.88,29.22,High,TRUE,VinGroup
+PRJ-0603,Dự án Công nghiệp 603,Miền Nam,Công nghiệp,4/4/2021,10/29/2021,,1157.99,888.06,Conteccons,Trần Thị B,In Progress,969,0,423.51,200.9,103.88,High,FALSE,Novaland
+PRJ-0604,Dự án Hạ tầng 604,Miền Bắc,Hạ tầng,4/15/2018,9/16/2019,9/21/2019,1394.74,1394.74,Conteccons,Lê Văn C,Completed,1880,0,668.21,347.19,187.82,Low,FALSE,Nhà nước
+PRJ-0605,Dự án Dân dụng 605,Miền Nam,Dân dụng,12/17/2018,7/20/2020,,269.41,141.25,Coteccons,Vũ Văn F,Suspended,19,2,65.72,34.45,16.76,Low,FALSE,SunGroup
+PRJ-0606,Dự án Hạ tầng 606,Miền Trung,Hạ tầng,3/6/2021,12/17/2022,,1200.73,299.75,Fecon,Phạm Văn D,In Progress,432,4,149.65,88.39,33.16,Medium,FALSE,BIM Group
+PRJ-0607,Dự án Hạ tầng 607,Miền Trung,Hạ tầng,3/20/2020,1/4/2022,,779.04,569.72,Delta,Vũ Văn F,In Progress,1040,3,279.9,125.59,76.75,Low,FALSE,Đất Xanh
+PRJ-0608,Dự án Thương mại 608,Miền Nam,Thương mại,3/2/2024,10/15/2025,,1043.78,373,Fecon,Lê Văn C,In Progress,409,0,160.91,92.01,53.89,Medium,TRUE,Novaland
+PRJ-0609,Dự án Công nghiệp 609,Miền Bắc,Công nghiệp,3/15/2024,8/2/2025,,453.85,239.39,Delta,Phạm Văn D,In Progress,164,5,116.63,59.17,29.39,High,FALSE,Novaland
+PRJ-0610,Dự án Thương mại 610,Miền Bắc,Thương mại,2/5/2024,10/3/2024,,1158.17,17.65,Conteccons,Nguyễn Văn A,Planning,9,0,8.58,4.46,2.59,Medium,FALSE,Novaland
+PRJ-0611,Dự án Hạ tầng 611,Miền Trung,Hạ tầng,6/23/2018,1/6/2020,,791.17,527.97,Hòa Bình,Lê Văn C,Suspended,19,5,239.88,125.92,76.79,High,TRUE,Novaland
+PRJ-0612,Dự án Công nghiệp 612,Miền Bắc,Công nghiệp,7/13/2021,8/29/2022,,628.32,230.24,Hòa Bình,Trần Thị B,In Progress,1641,1,99.4,58.99,24.18,Low,TRUE,Phát Đạt
+PRJ-0613,Dự án Công nghiệp 613,Miền Nam,Công nghiệp,12/6/2022,6/26/2023,,1150.09,859.66,Fecon,Vũ Văn F,In Progress,843,3,361.31,254.5,97.22,Medium,FALSE,Novaland
+PRJ-0614,Dự án Công nghiệp 614,Miền Trung,Công nghiệp,1/16/2023,3/1/2025,,134.99,40.1,Hòa Bình,Phạm Văn D,Suspended,7,3,19.53,10.44,5.94,Medium,TRUE,Nhà nước
+PRJ-0615,Dự án Dân dụng 615,Miền Nam,Dân dụng,8/31/2022,6/3/2024,8/27/2024,679.84,679.84,Hòa Bình,Trần Thị B,Completed,1175,1,271.97,175.12,87.74,High,TRUE,Masterise
+PRJ-0616,Dự án Công nghiệp 616,Miền Bắc,Công nghiệp,5/22/2022,11/14/2024,,837.57,137.85,Vinaconex,Nguyễn Văn A,In Progress,181,4,55.38,30.66,18.46,High,FALSE,Nhà nước
+PRJ-0617,Dự án Thương mại 617,Miền Nam,Thương mại,9/13/2023,2/28/2025,,1067.18,26.74,Vinaconex,Lê Văn C,Planning,4,0,12.5,7.18,2.95,Medium,FALSE,BIM Group
+PRJ-0618,Dự án Công nghiệp 618,Miền Trung,Công nghiệp,8/2/2020,8/27/2021,,654.95,475.04,Delta,Nguyễn Văn A,In Progress,994,5,215.69,106.37,48.4,High,TRUE,Đất Xanh
+PRJ-0619,Dự án Hạ tầng 619,Miền Bắc,Hạ tầng,5/15/2024,8/1/2025,,895.55,631.29,Hòa Bình,Phạm Văn D,Suspended,19,3,258.12,164.8,77.69,Medium,TRUE,Phát Đạt
+PRJ-0620,Dự án Hạ tầng 620,Miền Trung,Hạ tầng,10/7/2023,11/16/2025,2/11/2026,338.97,338.97,Vinaconex,Vũ Văn F,Completed,1426,4,149.25,83.11,48.58,Medium,FALSE,BIM Group
+PRJ-0621,Dự án Dân dụng 621,Miền Trung,Dân dụng,4/1/2021,11/2/2022,12/14/2022,72.29,72.29,Conteccons,Nguyễn Văn A,Completed,907,1,35.26,15.68,7.64,Low,TRUE,Nhà nước
+PRJ-0622,Dự án Dân dụng 622,Miền Bắc,Dân dụng,10/18/2020,10/6/2021,,922.66,15.63,Hòa Bình,Lê Văn C,Planning,17,0,6.96,4.33,1.58,Low,FALSE,SunGroup
+PRJ-0623,Dự án Dân dụng 623,Miền Nam,Dân dụng,2/11/2023,9/23/2025,9/21/2025,815.38,815.38,Delta,Lê Văn C,Completed,1455,2,347.31,225.18,85.26,High,TRUE,Novaland
+PRJ-0624,Dự án Hạ tầng 624,Miền Trung,Hạ tầng,3/24/2018,9/6/2020,10/19/2020,351.41,351.41,Coteccons,Phạm Văn D,Completed,1765,3,152.47,76.72,45.92,Medium,FALSE,Masterise
+PRJ-0625,Dự án Hạ tầng 625,Miền Trung,Hạ tầng,4/11/2019,11/27/2020,,867,641.01,Fecon,Phạm Văn D,Suspended,14,2,279.66,167.32,94.39,High,FALSE,Phát Đạt
+PRJ-0626,Dự án Công nghiệp 626,Miền Bắc,Công nghiệp,3/3/2024,9/1/2024,9/26/2024,948.73,948.73,Hòa Bình,Nguyễn Văn A,Completed,562,5,397.23,239.91,138.1,Low,FALSE,Nhà nước
+PRJ-0627,Dự án Thương mại 627,Miền Nam,Thương mại,2/17/2019,3/3/2021,,1148.27,49.32,Hòa Bình,Vũ Văn F,Planning,15,0,24.25,12.11,5.65,High,FALSE,Nhà nước
+PRJ-0628,Dự án Công nghiệp 628,Miền Bắc,Công nghiệp,12/11/2022,10/3/2024,11/26/2024,1413.25,1413.25,Vinaconex,Nguyễn Văn A,Completed,113,4,598.64,326.38,193.52,Medium,TRUE,BIM Group
+PRJ-0629,Dự án Công nghiệp 629,Miền Nam,Công nghiệp,10/21/2022,10/22/2023,11/5/2023,1230.34,1230.34,Delta,Phạm Văn D,Completed,1951,5,520.29,267.6,149.22,Low,FALSE,Phát Đạt
+PRJ-0630,Dự án Dân dụng 630,Miền Nam,Dân dụng,5/26/2023,12/4/2025,,305.5,74.28,Coteccons,Phạm Văn D,In Progress,193,1,33.07,21.12,8.85,High,FALSE,VinGroup
+PRJ-0631,Dự án Dân dụng 631,Miền Bắc,Dân dụng,3/25/2022,7/17/2023,,634.42,521.81,Vinaconex,Vũ Văn F,In Progress,1850,3,224.4,112.66,64.29,Medium,FALSE,Đất Xanh
+PRJ-0632,Dự án Thương mại 632,Miền Nam,Thương mại,11/2/2020,9/3/2021,,327.25,93.61,Conteccons,Hoàng Thị E,In Progress,1056,5,38.05,22.68,10.67,High,FALSE,Nhà nước
+PRJ-0633,Dự án Công nghiệp 633,Miền Bắc,Công nghiệp,8/4/2018,3/14/2020,,419.86,208.49,Hòa Bình,Lê Văn C,Suspended,18,5,98.99,47.7,30,Medium,TRUE,Phát Đạt
+PRJ-0634,Dự án Hạ tầng 634,Miền Bắc,Hạ tầng,6/24/2024,11/11/2026,,593.71,204.7,Fecon,Nguyễn Văn A,Suspended,13,1,93.23,52.53,27.84,Low,TRUE,Novaland
+PRJ-0635,Dự án Hạ tầng 635,Miền Nam,Hạ tầng,8/26/2022,9/12/2024,,564.99,89.54,Delta,Hoàng Thị E,Suspended,18,4,39.2,22.86,13,Medium,FALSE,SunGroup
+PRJ-0636,Dự án Hạ tầng 636,Miền Trung,Hạ tầng,3/14/2021,5/1/2022,,1194.92,15.52,Ricons,Lê Văn C,Planning,9,0,7.19,3.56,1.6,High,TRUE,Đất Xanh
+PRJ-0637,Dự án Công nghiệp 637,Miền Nam,Công nghiệp,6/26/2020,3/4/2021,,349.96,103.8,Ricons,Vũ Văn F,Suspended,4,0,43.32,27.62,13.7,Medium,FALSE,Nhà nước
+PRJ-0638,Dự án Hạ tầng 638,Miền Nam,Hạ tầng,12/14/2022,12/5/2023,,1104.05,667.26,Ricons,Lê Văn C,In Progress,890,4,300.16,160.39,97.63,Medium,TRUE,Novaland
+PRJ-0639,Dự án Công nghiệp 639,Miền Trung,Công nghiệp,8/18/2021,2/24/2022,,357.33,213.1,Delta,Vũ Văn F,Suspended,3,4,91.28,46.04,25.36,High,FALSE,VinGroup
+PRJ-0640,Dự án Dân dụng 640,Miền Bắc,Dân dụng,4/15/2022,7/5/2024,,1371.31,1168.69,Fecon,Vũ Văn F,In Progress,1546,0,481.4,277.69,119.22,Medium,FALSE,Nhà nước
+PRJ-0641,Dự án Thương mại 641,Miền Bắc,Thương mại,5/20/2019,9/29/2020,,706.99,322.48,Delta,Lê Văn C,In Progress,822,3,151.39,69.24,34.95,Medium,TRUE,Đất Xanh
+PRJ-0642,Dự án Hạ tầng 642,Miền Nam,Hạ tầng,5/28/2022,12/15/2023,2/26/2024,611.54,611.54,Conteccons,Hoàng Thị E,Completed,822,1,271.87,128.75,89.17,High,FALSE,Phát Đạt
+PRJ-0643,Dự án Thương mại 643,Miền Bắc,Thương mại,5/8/2024,2/28/2026,,1103.5,972.31,Vinaconex,Hoàng Thị E,In Progress,1632,2,464.91,238.63,132.1,Low,TRUE,Đất Xanh
+PRJ-0644,Dự án Công nghiệp 644,Miền Trung,Công nghiệp,5/18/2024,3/10/2025,,351.61,136.33,Delta,Vũ Văn F,In Progress,518,0,65,35.97,16.38,Medium,TRUE,Nhà nước
+PRJ-0645,Dự án Thương mại 645,Miền Trung,Thương mại,1/31/2019,5/11/2021,,295.5,228.06,Conteccons,Nguyễn Văn A,Suspended,10,4,92.88,45.97,32.46,Medium,FALSE,BIM Group
+PRJ-0646,Dự án Thương mại 646,Miền Nam,Thương mại,2/5/2021,8/24/2023,10/2/2023,1288.9,1288.9,Coteccons,Phạm Văn D,Completed,1992,5,528.29,303.15,152.63,Low,TRUE,SunGroup
+PRJ-0647,Dự án Công nghiệp 647,Miền Trung,Công nghiệp,5/14/2023,11/11/2023,,245.79,42.54,Vinaconex,Vũ Văn F,Suspended,12,1,19.33,9.2,4.66,High,FALSE,Đất Xanh
+PRJ-0648,Dự án Công nghiệp 648,Miền Bắc,Công nghiệp,4/16/2022,4/18/2023,,51.19,2.13,Delta,Trần Thị B,Planning,18,0,0.9,0.56,0.26,Low,FALSE,SunGroup
+PRJ-0649,Dự án Thương mại 649,Miền Trung,Thương mại,5/3/2021,9/15/2022,,681.93,274.57,Delta,Hoàng Thị E,Suspended,9,2,136.66,56.15,29.51,Low,FALSE,Phát Đạt
+PRJ-0650,Dự án Dân dụng 650,Miền Nam,Dân dụng,6/1/2020,2/16/2022,,1307.42,660.48,Delta,Vũ Văn F,In Progress,1148,1,306.09,150.98,87.16,Low,TRUE,VinGroup
+PRJ-0651,Dự án Hạ tầng 651,Miền Bắc,Hạ tầng,6/3/2021,3/2/2022,,1338.96,755.07,Delta,Vũ Văn F,In Progress,894,5,303.55,181.81,103.19,Medium,TRUE,SunGroup
+PRJ-0652,Dự án Dân dụng 652,Miền Bắc,Dân dụng,9/23/2022,10/8/2024,,237.85,79.65,Coteccons,Lê Văn C,In Progress,1404,5,37.62,21.7,10.29,High,TRUE,SunGroup
+PRJ-0653,Dự án Dân dụng 653,Miền Trung,Dân dụng,2/29/2024,7/25/2025,,530.75,329.28,Hòa Bình,Nguyễn Văn A,Suspended,14,0,132.01,94.32,34.55,Medium,TRUE,Đất Xanh
+PRJ-0654,Dự án Hạ tầng 654,Miền Bắc,Hạ tầng,8/5/2021,8/19/2022,11/9/2022,1115.4,1115.4,Coteccons,Trần Thị B,Completed,1292,1,509.78,260.9,138.74,Medium,FALSE,VinGroup
+PRJ-0655,Dự án Dân dụng 655,Miền Trung,Dân dụng,9/12/2018,4/7/2020,3/8/2020,1491.98,1491.98,Ricons,Trần Thị B,Completed,1595,0,609.21,364.15,219.86,Low,FALSE,Masterise
+PRJ-0656,Dự án Hạ tầng 656,Miền Bắc,Hạ tầng,11/5/2019,7/1/2022,,1435.32,941.63,Vinaconex,Hoàng Thị E,Suspended,15,1,462.95,201.63,99.71,Medium,FALSE,VinGroup
+PRJ-0657,Dự án Dân dụng 657,Miền Bắc,Dân dụng,8/2/2020,1/12/2023,,1386.14,768.24,Hòa Bình,Hoàng Thị E,In Progress,1657,4,316.56,196,79.45,Medium,FALSE,Phát Đạt
+PRJ-0658,Dự án Hạ tầng 658,Miền Bắc,Hạ tầng,2/14/2022,5/20/2023,7/8/2023,945.62,945.62,Hòa Bình,Hoàng Thị E,Completed,199,3,469.33,243.04,94.87,Medium,FALSE,Đất Xanh
+PRJ-0659,Dự án Công nghiệp 659,Miền Bắc,Công nghiệp,6/30/2023,7/22/2025,8/11/2025,922.17,922.17,Fecon,Phạm Văn D,Completed,914,5,369.27,225.33,128.22,Low,FALSE,Nhà nước
+PRJ-0660,Dự án Công nghiệp 660,Miền Trung,Công nghiệp,8/7/2020,1/29/2023,,578.31,10.13,Conteccons,Hoàng Thị E,Planning,9,0,4.98,2.79,1.27,High,TRUE,BIM Group
+PRJ-0661,Dự án Dân dụng 661,Miền Trung,Dân dụng,11/3/2023,7/30/2026,,1296.57,547.46,Hòa Bình,Trần Thị B,Suspended,14,5,223.16,148.24,79.62,High,FALSE,Đất Xanh
+PRJ-0662,Dự án Thương mại 662,Miền Nam,Thương mại,1/28/2021,6/28/2023,,440.95,234.56,Vinaconex,Hoàng Thị E,In Progress,529,1,99.61,65.35,23.51,High,TRUE,SunGroup
+PRJ-0663,Dự án Thương mại 663,Miền Nam,Thương mại,10/6/2018,12/18/2020,,162.79,72.18,Fecon,Phạm Văn D,In Progress,249,0,30.01,18.28,8.21,Low,FALSE,Nhà nước
+PRJ-0664,Dự án Công nghiệp 664,Miền Nam,Công nghiệp,6/8/2022,11/30/2024,,1008.02,47.1,Fecon,Nguyễn Văn A,Planning,6,0,19.62,11.51,6.93,Low,TRUE,BIM Group
+PRJ-0665,Dự án Thương mại 665,Miền Nam,Thương mại,7/4/2023,5/10/2025,,507.58,132.27,Hòa Bình,Phạm Văn D,In Progress,1418,3,59.56,26.84,17.26,Low,TRUE,Đất Xanh
+PRJ-0666,Dự án Công nghiệp 666,Miền Bắc,Công nghiệp,2/28/2022,11/22/2024,,64.38,3.19,Vinaconex,Vũ Văn F,Planning,3,0,1.38,0.69,0.4,High,TRUE,Novaland
+PRJ-0667,Dự án Dân dụng 667,Miền Trung,Dân dụng,8/9/2019,9/3/2021,,1149.79,658.48,Ricons,Vũ Văn F,In Progress,568,5,264.6,138.39,98.77,Medium,TRUE,Phát Đạt
+PRJ-0668,Dự án Dân dụng 668,Miền Nam,Dân dụng,12/10/2020,1/7/2022,3/12/2022,137.3,137.3,Ricons,Trần Thị B,Completed,1172,2,59.18,33.52,15.68,High,FALSE,Đất Xanh
+PRJ-0669,Dự án Thương mại 669,Miền Trung,Thương mại,8/7/2019,12/30/2021,,471.95,240.27,Delta,Nguyễn Văn A,In Progress,1125,0,97.66,57.52,34.93,Low,TRUE,Phát Đạt
+PRJ-0670,Dự án Thương mại 670,Miền Nam,Thương mại,11/23/2019,7/30/2022,,433,369.74,Conteccons,Vũ Văn F,Suspended,15,0,149.25,94.37,49.44,Low,FALSE,Novaland
+PRJ-0671,Dự án Thương mại 671,Miền Trung,Thương mại,8/18/2024,3/9/2025,,1329.08,1191.62,Fecon,Vũ Văn F,In Progress,793,3,539.64,298.57,155.2,Low,FALSE,VinGroup
+PRJ-0672,Dự án Dân dụng 672,Miền Trung,Dân dụng,3/6/2023,2/28/2024,,967.21,29.88,Vinaconex,Vũ Văn F,Planning,13,0,14.38,6.04,3.18,Low,FALSE,VinGroup
+PRJ-0673,Dự án Công nghiệp 673,Miền Nam,Công nghiệp,9/21/2021,7/26/2023,,102.49,3.78,Hòa Bình,Trần Thị B,Planning,19,0,1.74,0.76,0.5,Low,FALSE,BIM Group
+PRJ-0674,Dự án Dân dụng 674,Miền Nam,Dân dụng,12/1/2023,9/4/2024,10/4/2024,962.98,962.98,Hòa Bình,Hoàng Thị E,Completed,1376,2,392.83,245.05,133.64,Low,FALSE,VinGroup
+PRJ-0675,Dự án Công nghiệp 675,Miền Bắc,Công nghiệp,4/30/2023,5/6/2025,,558.66,17.88,Conteccons,Vũ Văn F,Planning,17,0,7.3,4.46,2.54,Low,FALSE,Nhà nước
+PRJ-0676,Dự án Công nghiệp 676,Miền Nam,Công nghiệp,3/1/2022,11/13/2023,,845.39,34.49,Vinaconex,Vũ Văn F,Planning,18,0,16.38,8.57,4.58,Low,TRUE,BIM Group
+PRJ-0677,Dự án Công nghiệp 677,Miền Bắc,Công nghiệp,9/12/2020,12/23/2022,,103.59,81.14,Conteccons,Nguyễn Văn A,Suspended,15,5,39.6,22.35,8.97,Low,FALSE,VinGroup
+PRJ-0678,Dự án Công nghiệp 678,Miền Nam,Công nghiệp,12/21/2021,9/2/2023,,441.03,95.03,Ricons,Hoàng Thị E,In Progress,826,3,43.9,25.08,12.4,High,FALSE,Masterise
+PRJ-0679,Dự án Thương mại 679,Miền Trung,Thương mại,10/31/2022,4/21/2025,,643.09,30.11,Coteccons,Vũ Văn F,Planning,18,0,13.75,8.68,3.99,Low,TRUE,Masterise
+PRJ-0680,Dự án Hạ tầng 680,Miền Trung,Hạ tầng,6/7/2018,3/2/2020,,89.08,0.91,Delta,Phạm Văn D,Planning,1,0,0.37,0.18,0.11,Low,TRUE,Đất Xanh
+PRJ-0681,Dự án Hạ tầng 681,Miền Bắc,Hạ tầng,2/28/2018,10/27/2018,,1292.58,436.18,Vinaconex,Vũ Văn F,Suspended,15,3,186.67,112.48,46.66,High,TRUE,VinGroup
+PRJ-0682,Dự án Công nghiệp 682,Miền Nam,Công nghiệp,9/4/2019,4/4/2022,6/17/2022,551.93,551.93,Vinaconex,Trần Thị B,Completed,1593,1,261.19,142.06,78.17,Low,FALSE,Novaland
+PRJ-0683,Dự án Dân dụng 683,Miền Bắc,Dân dụng,11/3/2022,11/6/2024,,1094.09,278.16,Hòa Bình,Vũ Văn F,In Progress,1716,1,135.05,75.7,29.47,High,TRUE,Novaland
+PRJ-0684,Dự án Dân dụng 684,Miền Bắc,Dân dụng,6/9/2023,1/1/2025,,1243.89,188.18,Conteccons,Trần Thị B,Suspended,7,5,89.66,45.97,22.29,Medium,FALSE,Nhà nước
+PRJ-0685,Dự án Hạ tầng 685,Miền Trung,Hạ tầng,8/18/2018,2/6/2020,,711.26,323.64,Conteccons,Nguyễn Văn A,Suspended,4,1,155.74,81.25,46.71,Medium,FALSE,BIM Group
+PRJ-0686,Dự án Dân dụng 686,Miền Bắc,Dân dụng,2/15/2024,8/24/2025,,56.82,33.64,Vinaconex,Trần Thị B,In Progress,1232,0,13.57,8.37,4.85,High,FALSE,Novaland
+PRJ-0687,Dự án Dân dụng 687,Miền Trung,Dân dụng,10/23/2022,1/27/2025,2/8/2025,424.62,424.62,Ricons,Phạm Văn D,Completed,426,3,211.7,105.99,56.22,Low,FALSE,BIM Group
+PRJ-0688,Dự án Dân dụng 688,Miền Nam,Dân dụng,8/6/2024,9/25/2026,,337.77,15.22,Vinaconex,Lê Văn C,Planning,20,0,6.97,4.47,2.24,High,TRUE,SunGroup
+PRJ-0689,Dự án Hạ tầng 689,Miền Bắc,Hạ tầng,7/6/2020,4/21/2022,4/8/2022,1172.65,1172.65,Fecon,Trần Thị B,Completed,1524,1,567.36,243.26,162.39,Low,TRUE,VinGroup
+PRJ-0690,Dự án Công nghiệp 690,Miền Nam,Công nghiệp,3/18/2024,4/20/2025,3/25/2025,323.95,323.95,Delta,Phạm Văn D,Completed,1051,4,161.87,76.85,37.98,Low,FALSE,BIM Group
+PRJ-0691,Dự án Dân dụng 691,Miền Nam,Dân dụng,7/22/2021,8/3/2022,,1312.19,660.15,Conteccons,Phạm Văn D,In Progress,1939,3,326.14,189.04,67.17,Medium,TRUE,BIM Group
+PRJ-0692,Dự án Thương mại 692,Miền Bắc,Thương mại,12/5/2020,6/22/2023,6/20/2023,452.45,452.45,Ricons,Trần Thị B,Completed,715,5,183.23,128.2,50.07,High,FALSE,SunGroup
+PRJ-0693,Dự án Công nghiệp 693,Miền Bắc,Công nghiệp,9/29/2020,2/11/2023,4/6/2023,172.04,172.04,Vinaconex,Nguyễn Văn A,Completed,1888,1,75.89,50.46,24.95,High,TRUE,BIM Group
+PRJ-0694,Dự án Hạ tầng 694,Miền Trung,Hạ tầng,5/8/2021,3/18/2023,6/4/2023,769.85,769.85,Conteccons,Trần Thị B,Completed,1730,1,355.86,181.2,108.87,Low,FALSE,Nhà nước
+PRJ-0695,Dự án Thương mại 695,Miền Nam,Thương mại,5/13/2022,11/2/2024,,1233.11,24.49,Ricons,Lê Văn C,Planning,0,0,11.63,7.2,2.99,High,FALSE,SunGroup
+PRJ-0696,Dự án Công nghiệp 696,Miền Bắc,Công nghiệp,7/2/2021,3/14/2023,,363.42,147.29,Vinaconex,Lê Văn C,In Progress,1726,0,66.61,43.92,15.06,High,TRUE,SunGroup
+PRJ-0697,Dự án Hạ tầng 697,Miền Bắc,Hạ tầng,9/27/2018,8/22/2020,,300.28,4.1,Conteccons,Trần Thị B,Planning,8,0,1.85,1.14,0.56,High,FALSE,VinGroup
+PRJ-0698,Dự án Thương mại 698,Miền Nam,Thương mại,9/19/2022,6/30/2024,,406.8,17.83,Delta,Trần Thị B,Planning,1,0,8.16,5.26,2.42,Low,FALSE,Phát Đạt
+PRJ-0699,Dự án Hạ tầng 699,Miền Bắc,Hạ tầng,12/3/2021,6/18/2023,,855.86,646.36,Coteccons,Vũ Văn F,In Progress,1384,2,281.2,177.32,84.81,High,TRUE,SunGroup
+PRJ-0700,Dự án Công nghiệp 700,Miền Trung,Công nghiệp,9/26/2018,2/1/2020,2/20/2020,416.97,416.97,Coteccons,Vũ Văn F,Completed,97,0,178.74,105.85,48.39,Low,FALSE,SunGroup
+PRJ-0701,Dự án Dân dụng 701,Miền Trung,Dân dụng,3/7/2022,2/2/2024,,471.07,112.66,Coteccons,Hoàng Thị E,Suspended,14,4,47.94,25.05,12.12,Medium,FALSE,Phát Đạt
+PRJ-0702,Dự án Dân dụng 702,Miền Bắc,Dân dụng,6/2/2023,11/30/2024,,357.53,174.03,Ricons,Phạm Văn D,In Progress,877,3,79,40.69,20.44,Medium,FALSE,Đất Xanh
+PRJ-0703,Dự án Thương mại 703,Miền Bắc,Thương mại,1/10/2022,11/27/2022,,955.82,18.03,Fecon,Lê Văn C,Planning,4,0,8.95,4.93,1.91,Medium,FALSE,Phát Đạt
+PRJ-0704,Dự án Hạ tầng 704,Miền Trung,Hạ tầng,6/11/2018,7/19/2019,7/27/2019,878.46,878.46,Hòa Bình,Nguyễn Văn A,Completed,1470,1,404.78,176.05,121.66,High,TRUE,Novaland
+PRJ-0705,Dự án Dân dụng 705,Miền Bắc,Dân dụng,4/24/2024,4/12/2025,,1016.53,166.12,Conteccons,Hoàng Thị E,In Progress,1252,1,68.99,49.66,20.49,Low,FALSE,SunGroup
+PRJ-0706,Dự án Hạ tầng 706,Miền Trung,Hạ tầng,3/22/2018,1/8/2020,,129.06,90.56,Vinaconex,Trần Thị B,Suspended,19,1,40.56,24.45,13.47,Medium,TRUE,Phát Đạt
+PRJ-0707,Dự án Thương mại 707,Miền Trung,Thương mại,3/31/2021,10/30/2023,,581.88,10.64,Conteccons,Lê Văn C,Planning,6,0,4.92,3.08,1.12,Medium,TRUE,Đất Xanh
+PRJ-0708,Dự án Thương mại 708,Miền Bắc,Thương mại,2/15/2018,5/14/2020,,1474.48,234.83,Coteccons,Phạm Văn D,Suspended,15,2,111.93,66.04,25.42,Low,FALSE,BIM Group
+PRJ-0709,Dự án Dân dụng 709,Miền Trung,Dân dụng,8/24/2022,5/28/2023,,608.18,69.67,Conteccons,Lê Văn C,Suspended,13,2,32.98,16.11,7.49,High,FALSE,Phát Đạt
+PRJ-0710,Dự án Hạ tầng 710,Miền Bắc,Hạ tầng,9/18/2023,7/11/2025,,1170.07,782.87,Fecon,Vũ Văn F,In Progress,702,5,371.68,167.37,91.28,Low,FALSE,BIM Group
+PRJ-0711,Dự án Hạ tầng 711,Miền Nam,Hạ tầng,8/30/2022,9/10/2023,,791.27,235.76,Ricons,Nguyễn Văn A,In Progress,471,3,105.28,59.64,27.79,High,TRUE,Phát Đạt
+PRJ-0712,Dự án Công nghiệp 712,Miền Trung,Công nghiệp,6/21/2021,7/17/2023,,230.8,120.41,Vinaconex,Phạm Văn D,In Progress,925,1,57.36,32.21,14.7,High,FALSE,Nhà nước
+PRJ-0713,Dự án Dân dụng 713,Miền Trung,Dân dụng,10/10/2020,6/28/2021,,154.76,86,Fecon,Phạm Văn D,Suspended,7,5,37.45,24.05,9.09,Low,FALSE,Nhà nước
+PRJ-0714,Dự án Thương mại 714,Miền Trung,Thương mại,11/15/2022,6/9/2025,,1195.47,12.85,Vinaconex,Lê Văn C,Planning,15,0,6.04,2.67,1.32,Medium,FALSE,SunGroup
+PRJ-0715,Dự án Dân dụng 715,Miền Nam,Dân dụng,6/2/2021,12/11/2021,,972.78,32.22,Delta,Nguyễn Văn A,Planning,14,0,14.71,9.24,3.64,Medium,FALSE,SunGroup
+PRJ-0716,Dự án Hạ tầng 716,Miền Bắc,Hạ tầng,4/1/2020,2/12/2022,1/22/2022,788.63,788.63,Fecon,Trần Thị B,Completed,744,2,325.18,184.08,100.54,Low,FALSE,Masterise
+PRJ-0717,Dự án Dân dụng 717,Miền Bắc,Dân dụng,2/14/2023,10/4/2023,,742.66,472.39,Hòa Bình,Vũ Văn F,In Progress,822,2,193.98,137.67,68.3,Low,FALSE,Masterise
+PRJ-0718,Dự án Công nghiệp 718,Miền Trung,Công nghiệp,11/23/2020,7/23/2022,,836.84,698.76,Vinaconex,Nguyễn Văn A,Suspended,14,1,338.04,158.87,91.12,Low,TRUE,SunGroup
+PRJ-0719,Dự án Thương mại 719,Miền Bắc,Thương mại,4/4/2019,8/2/2020,,908.72,24.04,Coteccons,Phạm Văn D,Planning,18,0,9.93,6.77,3.04,Medium,FALSE,SunGroup
+PRJ-0720,Dự án Thương mại 720,Miền Bắc,Thương mại,2/19/2022,11/3/2023,,752.33,142.22,Fecon,Vũ Văn F,Suspended,20,1,65.92,38.42,18.06,Medium,TRUE,SunGroup
+PRJ-0721,Dự án Thương mại 721,Miền Bắc,Thương mại,4/26/2019,10/23/2019,11/12/2019,677.12,677.12,Hòa Bình,Phạm Văn D,Completed,744,2,290.74,163.74,73.32,Low,FALSE,VinGroup
+PRJ-0722,Dự án Thương mại 722,Miền Bắc,Thương mại,6/25/2022,2/16/2023,4/7/2023,1394.69,1394.69,Delta,Nguyễn Văn A,Completed,1301,1,693.96,320.76,142.41,High,TRUE,VinGroup
+PRJ-0723,Dự án Dân dụng 723,Miền Bắc,Dân dụng,10/20/2023,7/24/2025,,625.24,360.04,Fecon,Lê Văn C,Suspended,11,2,171.83,98.76,51.11,Low,TRUE,Đất Xanh
+PRJ-0724,Dự án Dân dụng 724,Miền Nam,Dân dụng,7/1/2020,1/13/2022,,348.51,211.06,Fecon,Vũ Văn F,Suspended,20,0,91.81,42.67,22.5,Low,TRUE,Novaland
+PRJ-0725,Dự án Thương mại 725,Miền Nam,Thương mại,10/15/2023,10/25/2024,,87.86,72.49,Vinaconex,Lê Văn C,In Progress,651,5,29.95,19.99,10.01,Low,FALSE,BIM Group
+PRJ-0726,Dự án Công nghiệp 726,Miền Nam,Công nghiệp,11/25/2020,12/15/2021,,1055.72,342.07,Vinaconex,Lê Văn C,In Progress,1829,1,146.39,90.93,41.57,Medium,FALSE,Novaland
+PRJ-0727,Dự án Dân dụng 727,Miền Bắc,Dân dụng,6/15/2023,9/15/2025,,1176.17,245.38,Vinaconex,Hoàng Thị E,Suspended,16,0,106.77,55.61,26.46,Medium,TRUE,Novaland
+PRJ-0728,Dự án Thương mại 728,Miền Nam,Thương mại,11/3/2022,7/5/2023,6/16/2023,1458.92,1458.92,Conteccons,Phạm Văn D,Completed,1259,2,610.55,295.93,212.88,High,FALSE,SunGroup
+PRJ-0729,Dự án Hạ tầng 729,Miền Trung,Hạ tầng,6/13/2020,8/21/2021,,1420.47,22.13,Hòa Bình,Phạm Văn D,Planning,5,0,9.96,5.42,3.27,Low,FALSE,Phát Đạt
+PRJ-0730,Dự án Hạ tầng 730,Miền Trung,Hạ tầng,12/20/2022,11/13/2023,1/29/2024,147.73,147.73,Hòa Bình,Trần Thị B,Completed,1781,1,66.23,32.74,19.88,Medium,TRUE,Đất Xanh
+PRJ-0731,Dự án Công nghiệp 731,Miền Bắc,Công nghiệp,5/25/2018,4/6/2019,,1089.62,960.59,Ricons,Vũ Văn F,In Progress,546,5,458.65,204.98,129.38,Low,TRUE,BIM Group
+PRJ-0732,Dự án Thương mại 732,Miền Trung,Thương mại,6/11/2022,5/15/2023,,833.64,9.82,Delta,Trần Thị B,Planning,2,0,4.49,2.4,1.11,Low,FALSE,Nhà nước
+PRJ-0733,Dự án Dân dụng 733,Miền Bắc,Dân dụng,8/28/2020,1/23/2022,,293.23,173.92,Vinaconex,Trần Thị B,Suspended,20,0,71.94,48.12,24.82,High,TRUE,VinGroup
+PRJ-0734,Dự án Dân dụng 734,Miền Bắc,Dân dụng,3/14/2020,5/26/2021,5/17/2021,207.48,207.48,Hòa Bình,Lê Văn C,Completed,1242,3,83.8,55.62,23.25,Medium,FALSE,Novaland
+PRJ-0735,Dự án Công nghiệp 735,Miền Nam,Công nghiệp,12/15/2018,6/24/2019,7/31/2019,1050.22,1050.22,Vinaconex,Lê Văn C,Completed,349,4,429.18,291.45,111.76,Low,FALSE,Đất Xanh
+PRJ-0736,Dự án Thương mại 736,Miền Bắc,Thương mại,6/30/2020,4/8/2022,,1240.37,1097.96,Vinaconex,Trần Thị B,In Progress,543,0,446.08,302.01,164.25,Low,FALSE,Novaland
+PRJ-0737,Dự án Thương mại 737,Miền Nam,Thương mại,4/22/2018,9/22/2020,10/13/2020,165.55,165.55,Ricons,Trần Thị B,Completed,230,0,67.18,45.87,19.34,Medium,FALSE,VinGroup
+PRJ-0738,Dự án Dân dụng 738,Miền Trung,Dân dụng,7/4/2022,2/18/2023,3/1/2023,1233.69,1233.69,Ricons,Vũ Văn F,Completed,1714,3,566.99,247.02,143.29,Medium,TRUE,Masterise
+PRJ-0739,Dự án Hạ tầng 739,Miền Nam,Hạ tầng,2/8/2022,8/7/2022,,1478.2,63.56,Conteccons,Phạm Văn D,Planning,10,0,26.99,15.76,7.62,High,TRUE,Masterise
+PRJ-0740,Dự án Thương mại 740,Miền Trung,Thương mại,4/10/2018,8/12/2020,,70.25,61.85,Vinaconex,Trần Thị B,Suspended,3,0,25.41,15.59,8.66,Low,FALSE,Đất Xanh
+PRJ-0741,Dự án Thương mại 741,Miền Bắc,Thương mại,12/2/2024,10/31/2025,,984.62,419.19,Coteccons,Vũ Văn F,Suspended,1,5,175.43,104.94,54.32,Medium,FALSE,VinGroup
+PRJ-0742,Dự án Dân dụng 742,Miền Trung,Dân dụng,6/18/2018,4/27/2020,,697.73,369.68,Delta,Phạm Văn D,Suspended,1,1,177.55,102.6,42.43,High,FALSE,Phát Đạt
+PRJ-0743,Dự án Dân dụng 743,Miền Nam,Dân dụng,6/18/2024,6/21/2026,,594.11,11.63,Ricons,Vũ Văn F,Planning,3,0,5.08,2.95,1.68,Low,FALSE,VinGroup
+PRJ-0744,Dự án Dân dụng 744,Miền Nam,Dân dụng,3/9/2022,7/13/2023,,980.32,18.95,Hòa Bình,Vũ Văn F,Planning,2,0,8.21,4.39,2.8,High,FALSE,Phát Đạt
+PRJ-0745,Dự án Dân dụng 745,Miền Trung,Dân dụng,8/13/2022,2/21/2024,,1133.98,570.57,Hòa Bình,Nguyễn Văn A,Suspended,11,4,255.85,135.46,67.82,High,FALSE,VinGroup
+PRJ-0746,Dự án Công nghiệp 746,Miền Nam,Công nghiệp,1/2/2022,7/4/2023,,791.18,8.75,Coteccons,Vũ Văn F,Planning,19,0,3.93,2.59,1.13,Low,TRUE,Novaland
+PRJ-0747,Dự án Thương mại 747,Miền Bắc,Thương mại,8/5/2021,1/10/2023,,1362.38,399.52,Coteccons,Vũ Văn F,In Progress,1253,5,171.31,94.32,58.03,Medium,TRUE,VinGroup
+PRJ-0748,Dự án Công nghiệp 748,Miền Trung,Công nghiệp,12/8/2023,7/3/2026,,94.2,2.09,Vinaconex,Lê Văn C,Planning,20,0,1.01,0.45,0.3,Medium,FALSE,VinGroup
+PRJ-0749,Dự án Dân dụng 749,Miền Bắc,Dân dụng,9/7/2019,5/4/2022,,108.67,83.61,Hòa Bình,Nguyễn Văn A,In Progress,1920,4,41.06,23.61,10.5,High,TRUE,Phát Đạt
+PRJ-0750,Dự án Hạ tầng 750,Miền Trung,Hạ tầng,3/30/2021,4/12/2023,,920.89,426.92,Coteccons,Lê Văn C,In Progress,489,0,203.7,110.82,49.47,High,FALSE,SunGroup
+PRJ-0751,Dự án Dân dụng 751,Miền Nam,Dân dụng,5/6/2022,7/8/2024,,1112.77,49.1,Vinaconex,Hoàng Thị E,Planning,19,0,21.87,10.65,6.2,High,FALSE,VinGroup
+PRJ-0752,Dự án Công nghiệp 752,Miền Bắc,Công nghiệp,4/23/2020,7/5/2021,7/20/2021,739.42,739.42,Coteccons,Vũ Văn F,Completed,790,4,350.62,177.82,97.36,Medium,TRUE,Đất Xanh
+PRJ-0753,Dự án Công nghiệp 753,Miền Nam,Công nghiệp,12/28/2022,7/14/2023,,476.17,106.5,Conteccons,Trần Thị B,Suspended,1,1,43.87,22.11,14.33,High,FALSE,Masterise
+PRJ-0754,Dự án Thương mại 754,Miền Bắc,Thương mại,7/9/2021,8/8/2023,8/22/2023,1414.75,1414.75,Coteccons,Lê Văn C,Completed,645,1,626.54,328.29,201.46,High,TRUE,Nhà nước
+PRJ-0755,Dự án Dân dụng 755,Miền Nam,Dân dụng,2/16/2019,9/29/2021,,717.32,82.56,Ricons,Nguyễn Văn A,Suspended,13,5,33.92,21.64,10.83,High,FALSE,VinGroup
+PRJ-0756,Dự án Dân dụng 756,Miền Trung,Dân dụng,1/27/2024,10/14/2026,,494.64,365.65,Vinaconex,Hoàng Thị E,Suspended,4,1,171.28,105.5,48.33,Medium,FALSE,Masterise
+PRJ-0757,Dự án Công nghiệp 757,Miền Bắc,Công nghiệp,3/19/2024,3/14/2026,,794.94,700.49,Hòa Bình,Hoàng Thị E,In Progress,724,3,337.88,171.27,76.97,Low,FALSE,Masterise
+PRJ-0758,Dự án Thương mại 758,Miền Nam,Thương mại,9/29/2024,10/26/2026,,541.85,15.79,Vinaconex,Hoàng Thị E,Planning,16,0,7.62,4.07,2.33,Medium,TRUE,Đất Xanh
+PRJ-0759,Dự án Hạ tầng 759,Miền Trung,Hạ tầng,2/7/2021,2/28/2022,3/1/2022,1158.91,1158.91,Hòa Bình,Hoàng Thị E,Completed,1675,0,466.58,322.13,163.32,High,TRUE,Nhà nước
+PRJ-0760,Dự án Thương mại 760,Miền Nam,Thương mại,3/28/2019,3/29/2020,,849.66,420.1,Coteccons,Lê Văn C,In Progress,737,4,188.59,119.92,57.79,High,FALSE,BIM Group
+PRJ-0761,Dự án Hạ tầng 761,Miền Trung,Hạ tầng,1/17/2022,8/13/2023,11/3/2023,673.89,673.89,Delta,Nguyễn Văn A,Completed,1734,5,314.2,197.97,83.17,Low,TRUE,Nhà nước
+PRJ-0762,Dự án Dân dụng 762,Miền Trung,Dân dụng,4/25/2020,11/14/2020,,807.98,29.75,Delta,Hoàng Thị E,Planning,13,0,13.73,6.04,3.15,Medium,TRUE,VinGroup
+PRJ-0763,Dự án Dân dụng 763,Miền Nam,Dân dụng,6/13/2018,2/8/2021,,521.01,22,Hòa Bình,Phạm Văn D,Planning,20,0,10.54,4.51,2.58,Low,TRUE,Đất Xanh
+PRJ-0764,Dự án Thương mại 764,Miền Trung,Thương mại,3/22/2021,10/2/2022,,1442.19,21.89,Hòa Bình,Nguyễn Văn A,Planning,2,0,10.12,5.89,2.98,Low,TRUE,Novaland
+PRJ-0765,Dự án Hạ tầng 765,Miền Trung,Hạ tầng,1/14/2019,2/12/2021,,1210.39,57.21,Fecon,Lê Văn C,Planning,6,0,27.19,13.78,8.37,High,FALSE,VinGroup
+PRJ-0766,Dự án Hạ tầng 766,Miền Nam,Hạ tầng,3/27/2024,12/31/2025,,552.71,78.6,Hòa Bình,Vũ Văn F,In Progress,1774,4,35.67,21.67,10.57,Low,FALSE,Masterise
+PRJ-0767,Dự án Dân dụng 767,Miền Bắc,Dân dụng,7/15/2020,11/4/2022,11/16/2022,683.64,683.64,Vinaconex,Hoàng Thị E,Completed,819,5,288.93,189.58,83.02,Medium,TRUE,Đất Xanh
+PRJ-0768,Dự án Công nghiệp 768,Miền Bắc,Công nghiệp,8/11/2019,7/6/2020,,1497.6,833.07,Fecon,Vũ Văn F,In Progress,478,5,403.15,237,100.63,Low,TRUE,SunGroup
+PRJ-0769,Dự án Hạ tầng 769,Miền Trung,Hạ tầng,11/26/2024,12/26/2025,12/2/2025,1406.69,1406.69,Vinaconex,Vũ Văn F,Completed,1149,4,699.67,330.95,176.35,Low,FALSE,SunGroup
+PRJ-0770,Dự án Công nghiệp 770,Miền Trung,Công nghiệp,3/26/2019,12/11/2021,,54.51,40.08,Ricons,Nguyễn Văn A,Suspended,4,0,18.76,8.74,5.28,Low,FALSE,BIM Group
+PRJ-0771,Dự án Công nghiệp 771,Miền Nam,Công nghiệp,9/19/2023,9/15/2025,,292.45,97,Hòa Bình,Lê Văn C,In Progress,95,4,46.17,24.63,13.04,Low,TRUE,Masterise
+PRJ-0772,Dự án Dân dụng 772,Miền Trung,Dân dụng,8/17/2023,1/23/2025,,1044.43,369.01,Hòa Bình,Hoàng Thị E,Suspended,5,4,162.59,95.35,54.79,Medium,FALSE,VinGroup
+PRJ-0773,Dự án Thương mại 773,Miền Bắc,Thương mại,1/28/2021,11/5/2021,,579.55,310.84,Conteccons,Nguyễn Văn A,Suspended,12,0,136.07,89.66,45.83,Low,TRUE,VinGroup
+PRJ-0774,Dự án Thương mại 774,Miền Bắc,Thương mại,5/6/2020,4/12/2021,,941.41,98.71,Conteccons,Nguyễn Văn A,In Progress,760,3,49.24,27.97,11.72,Medium,FALSE,Masterise
+PRJ-0775,Dự án Công nghiệp 775,Miền Nam,Công nghiệp,11/1/2020,11/1/2022,,75.52,0.91,Vinaconex,Hoàng Thị E,Planning,2,0,0.38,0.23,0.12,Medium,TRUE,Phát Đạt
+PRJ-0776,Dự án Dân dụng 776,Miền Trung,Dân dụng,7/18/2018,9/25/2020,12/15/2020,1259.82,1259.82,Conteccons,Phạm Văn D,Completed,1086,3,609.54,368.91,157.89,High,TRUE,Đất Xanh
+PRJ-0777,Dự án Dân dụng 777,Miền Nam,Dân dụng,6/18/2018,7/17/2019,,138.88,1.48,Fecon,Lê Văn C,Planning,14,0,0.65,0.35,0.19,High,FALSE,VinGroup
+PRJ-0778,Dự án Hạ tầng 778,Miền Bắc,Hạ tầng,10/24/2020,4/6/2023,,741.48,23.21,Delta,Hoàng Thị E,Planning,13,0,11.45,6.03,2.67,Medium,FALSE,Masterise
+PRJ-0779,Dự án Hạ tầng 779,Miền Bắc,Hạ tầng,4/12/2019,7/21/2021,,911.99,26.28,Hòa Bình,Nguyễn Văn A,Planning,9,0,11.25,7.54,3.89,Low,FALSE,BIM Group
+PRJ-0780,Dự án Hạ tầng 780,Miền Trung,Hạ tầng,3/10/2018,10/5/2019,,565.94,25.08,Coteccons,Trần Thị B,Planning,5,0,10.71,6.11,3.67,Low,TRUE,Nhà nước
+PRJ-0781,Dự án Thương mại 781,Miền Trung,Thương mại,10/7/2023,6/25/2024,,1234.22,31,Ricons,Vũ Văn F,Planning,9,0,15.34,6.71,4.36,Low,FALSE,Novaland
+PRJ-0782,Dự án Thương mại 782,Miền Bắc,Thương mại,8/4/2019,2/12/2022,2/22/2022,72.17,72.17,Delta,Trần Thị B,Completed,1156,0,35.29,20.45,9.92,Low,TRUE,SunGroup
+PRJ-0783,Dự án Công nghiệp 783,Miền Bắc,Công nghiệp,8/7/2020,6/12/2022,,450.71,97.12,Fecon,Trần Thị B,Suspended,12,2,39.19,20.27,14.34,Low,TRUE,Masterise
+PRJ-0784,Dự án Hạ tầng 784,Miền Nam,Hạ tầng,12/6/2018,4/21/2020,,823.98,448.1,Coteccons,Lê Văn C,Suspended,20,1,219.57,96.3,59.76,Low,FALSE,Masterise
+PRJ-0785,Dự án Công nghiệp 785,Miền Nam,Công nghiệp,3/9/2022,6/2/2023,,690.45,271.06,Fecon,Nguyễn Văn A,In Progress,80,5,109.52,79.75,39.37,High,TRUE,Đất Xanh
+PRJ-0786,Dự án Công nghiệp 786,Miền Nam,Công nghiệp,12/11/2022,12/9/2023,,134.17,3.13,Ricons,Vũ Văn F,Planning,7,0,1.26,0.71,0.38,Medium,TRUE,Novaland
+PRJ-0787,Dự án Thương mại 787,Miền Bắc,Thương mại,3/3/2020,9/24/2022,10/13/2022,277.81,277.81,Ricons,Trần Thị B,Completed,1197,3,135.54,56.95,29.52,Medium,FALSE,Masterise
+PRJ-0788,Dự án Hạ tầng 788,Miền Trung,Hạ tầng,3/27/2020,5/15/2021,,1335.6,1020.61,Hòa Bình,Nguyễn Văn A,In Progress,630,5,497.05,222.81,144.57,Low,TRUE,Đất Xanh
+PRJ-0789,Dự án Hạ tầng 789,Miền Trung,Hạ tầng,10/5/2019,2/2/2022,,1418.17,1200.58,Fecon,Phạm Văn D,In Progress,959,4,522.51,306,138.61,Low,TRUE,Nhà nước
+PRJ-0790,Dự án Thương mại 790,Miền Nam,Thương mại,11/21/2022,10/1/2024,,565.97,303.13,Delta,Trần Thị B,Suspended,10,5,149.84,64.62,35.17,Low,TRUE,Nhà nước
+PRJ-0791,Dự án Thương mại 791,Miền Nam,Thương mại,11/21/2022,6/27/2025,,932.61,592.22,Hòa Bình,Hoàng Thị E,In Progress,293,3,261.74,148.17,66.06,Low,TRUE,VinGroup
+PRJ-0792,Dự án Dân dụng 792,Miền Bắc,Dân dụng,1/30/2021,9/7/2021,,1111.05,680.77,Coteccons,Phạm Văn D,Suspended,17,0,291.4,170.43,94.34,High,TRUE,Phát Đạt
+PRJ-0793,Dự án Thương mại 793,Miền Bắc,Thương mại,1/20/2021,8/18/2023,,1266.17,293.29,Hòa Bình,Trần Thị B,Suspended,4,2,137.57,74.85,36.95,Medium,FALSE,BIM Group
+PRJ-0794,Dự án Dân dụng 794,Miền Bắc,Dân dụng,2/27/2019,9/29/2021,9/9/2021,757.09,757.09,Vinaconex,Vũ Văn F,Completed,475,5,319.73,157.72,84.23,Low,FALSE,Masterise
+PRJ-0795,Dự án Dân dụng 795,Miền Nam,Dân dụng,9/16/2024,11/19/2026,1/27/2027,1131.07,1131.07,Delta,Trần Thị B,Completed,811,1,539.46,321.44,163.46,High,FALSE,Đất Xanh
+PRJ-0796,Dự án Thương mại 796,Miền Bắc,Thương mại,2/20/2022,1/1/2024,2/27/2024,256.72,256.72,Fecon,Hoàng Thị E,Completed,443,3,127.89,73.51,35.45,Low,TRUE,BIM Group
+PRJ-0797,Dự án Công nghiệp 797,Miền Nam,Công nghiệp,1/14/2018,12/20/2019,12/4/2019,1289.6,1289.6,Conteccons,Nguyễn Văn A,Completed,123,2,627.46,320.03,188.65,High,FALSE,Phát Đạt
+PRJ-0798,Dự án Công nghiệp 798,Miền Trung,Công nghiệp,10/6/2022,5/24/2023,,802.58,27.88,Ricons,Trần Thị B,Planning,13,0,11.21,7.8,4.02,Low,TRUE,VinGroup
+PRJ-0799,Dự án Dân dụng 799,Miền Trung,Dân dụng,3/8/2021,3/10/2022,2/23/2022,1494.17,1494.17,Fecon,Hoàng Thị E,Completed,578,1,607.31,394.56,220.08,Low,TRUE,Phát Đạt
+PRJ-0800,Dự án Hạ tầng 800,Miền Trung,Hạ tầng,9/8/2019,5/13/2021,4/22/2021,321.47,321.47,Delta,Nguyễn Văn A,Completed,271,3,159.78,65.01,42.12,Medium,FALSE,Novaland
+PRJ-0801,Dự án Dân dụng 801,Miền Nam,Dân dụng,4/1/2020,12/16/2020,,568.39,461.95,Conteccons,Hoàng Thị E,Suspended,16,5,220.48,122.01,64.05,Medium,FALSE,BIM Group
+PRJ-0802,Dự án Thương mại 802,Miền Nam,Thương mại,7/16/2020,5/17/2021,7/10/2021,1211.12,1211.12,Ricons,Vũ Văn F,Completed,574,5,594.71,358.63,130.03,Medium,TRUE,SunGroup
+PRJ-0803,Dự án Hạ tầng 803,Miền Trung,Hạ tầng,10/16/2024,10/27/2026,,706.88,23.22,Fecon,Nguyễn Văn A,Planning,9,0,10.71,4.68,3.18,High,TRUE,VinGroup
+PRJ-0804,Dự án Thương mại 804,Miền Trung,Thương mại,3/18/2021,10/22/2022,,988.46,461.73,Ricons,Nguyễn Văn A,In Progress,1299,4,205.57,135.82,46.68,Medium,TRUE,Novaland
+PRJ-0805,Dự án Công nghiệp 805,Miền Trung,Công nghiệp,8/8/2021,9/23/2022,,1299.25,39.33,Ricons,Vũ Văn F,Planning,10,0,18.78,9.84,5.51,Low,FALSE,Nhà nước
+PRJ-0806,Dự án Hạ tầng 806,Miền Bắc,Hạ tầng,7/13/2019,10/6/2020,,1335.74,702.63,Delta,Nguyễn Văn A,In Progress,1554,5,292.08,140.66,76.6,High,TRUE,Novaland
+PRJ-0807,Dự án Hạ tầng 807,Miền Trung,Hạ tầng,10/24/2019,12/16/2020,,775.36,29.92,Conteccons,Nguyễn Văn A,Planning,2,0,14.49,8.82,3.74,Low,FALSE,VinGroup
+PRJ-0808,Dự án Công nghiệp 808,Miền Bắc,Công nghiệp,8/14/2018,3/23/2020,,1224.46,710.18,Fecon,Nguyễn Văn A,Suspended,9,5,287.01,178.17,88.78,Low,FALSE,BIM Group
+PRJ-0809,Dự án Dân dụng 809,Miền Trung,Dân dụng,4/6/2021,5/28/2022,,379.69,6.72,Delta,Trần Thị B,Planning,13,0,2.9,1.85,0.83,Medium,TRUE,BIM Group
+PRJ-0810,Dự án Hạ tầng 810,Miền Nam,Hạ tầng,7/14/2023,5/14/2025,,1152.42,937.88,Fecon,Nguyễn Văn A,In Progress,1062,1,443.45,215.92,112,Low,FALSE,Đất Xanh
+PRJ-0811,Dự án Thương mại 811,Miền Nam,Thương mại,5/17/2018,3/6/2019,,666.09,16.94,Fecon,Phạm Văn D,Planning,14,0,7.66,3.69,2.51,Medium,TRUE,Nhà nước
+PRJ-0812,Dự án Dân dụng 812,Miền Nam,Dân dụng,3/8/2024,9/24/2024,11/19/2024,450.15,450.15,Coteccons,Lê Văn C,Completed,917,3,183.55,105.13,65.29,Medium,TRUE,BIM Group
+PRJ-0813,Dự án Dân dụng 813,Miền Trung,Dân dụng,7/13/2024,12/29/2026,,553.35,203.59,Vinaconex,Lê Văn C,Suspended,19,4,98.68,47.92,22.44,Low,TRUE,SunGroup
+PRJ-0814,Dự án Công nghiệp 814,Miền Bắc,Công nghiệp,9/30/2024,7/29/2026,,697.44,25.19,Delta,Vũ Văn F,Planning,2,0,11.3,5.85,3.4,Medium,TRUE,Phát Đạt
+PRJ-0815,Dự án Công nghiệp 815,Miền Trung,Công nghiệp,5/2/2023,4/1/2024,,98.29,46.9,Coteccons,Trần Thị B,In Progress,178,2,19.25,11.36,4.97,Medium,FALSE,BIM Group
+PRJ-0816,Dự án Dân dụng 816,Miền Nam,Dân dụng,10/27/2022,4/17/2024,,1226.98,15.45,Hòa Bình,Vũ Văn F,Planning,9,0,7.58,3.97,2.04,Low,FALSE,SunGroup
+PRJ-0817,Dự án Hạ tầng 817,Miền Nam,Hạ tầng,4/11/2019,12/8/2021,2/18/2022,388.25,388.25,Ricons,Lê Văn C,Completed,1598,1,184,113.07,55.58,Low,TRUE,Phát Đạt
+PRJ-0818,Dự án Dân dụng 818,Miền Bắc,Dân dụng,7/12/2021,3/9/2022,3/16/2022,356.77,356.77,Conteccons,Hoàng Thị E,Completed,1130,4,167.25,83.76,35.71,Low,TRUE,Nhà nước
+PRJ-0819,Dự án Hạ tầng 819,Miền Bắc,Hạ tầng,4/4/2024,10/8/2025,,744.89,414.75,Vinaconex,Trần Thị B,Suspended,1,5,183.24,119.72,61.39,High,FALSE,SunGroup
+PRJ-0820,Dự án Hạ tầng 820,Miền Trung,Hạ tầng,3/29/2024,7/28/2025,,142.17,56.05,Coteccons,Nguyễn Văn A,In Progress,585,3,26.3,15.11,7.44,Low,FALSE,BIM Group
+PRJ-0821,Dự án Hạ tầng 821,Miền Nam,Hạ tầng,1/20/2024,12/14/2025,,333.12,250.71,Fecon,Phạm Văn D,Suspended,14,3,103.17,60.22,32.74,High,FALSE,Phát Đạt
+PRJ-0822,Dự án Công nghiệp 822,Miền Bắc,Công nghiệp,3/8/2022,11/16/2023,,142.91,6.88,Vinaconex,Hoàng Thị E,Planning,16,0,2.77,1.68,0.69,Medium,FALSE,Nhà nước
+PRJ-0823,Dự án Công nghiệp 823,Miền Bắc,Công nghiệp,11/9/2024,7/21/2025,,443.68,149.43,Hòa Bình,Nguyễn Văn A,In Progress,1512,2,60.08,30.22,19.92,Medium,FALSE,Masterise
+PRJ-0824,Dự án Dân dụng 824,Miền Bắc,Dân dụng,9/16/2024,2/11/2027,,483.75,309.16,Conteccons,Nguyễn Văn A,Suspended,11,5,137.1,83.18,34.43,High,FALSE,Masterise
+PRJ-0825,Dự án Hạ tầng 825,Miền Nam,Hạ tầng,4/12/2022,3/17/2024,,480.68,341.55,Hòa Bình,Nguyễn Văn A,Suspended,10,2,146.41,90.79,38.79,High,TRUE,Masterise
+PRJ-0826,Dự án Hạ tầng 826,Miền Nam,Hạ tầng,6/20/2024,12/16/2026,,583.11,27.14,Hòa Bình,Nguyễn Văn A,Planning,16,0,12.23,6.31,2.93,Low,FALSE,Nhà nước
+PRJ-0827,Dự án Công nghiệp 827,Miền Bắc,Công nghiệp,7/20/2023,5/10/2025,5/21/2025,1088.67,1088.67,Vinaconex,Phạm Văn D,Completed,407,1,472.81,305.78,116.66,Medium,FALSE,VinGroup
+PRJ-0828,Dự án Công nghiệp 828,Miền Trung,Công nghiệp,2/6/2020,8/8/2020,,396.28,18.82,Coteccons,Vũ Văn F,Planning,1,0,9.07,4.76,2.28,Low,FALSE,Masterise
+PRJ-0829,Dự án Dân dụng 829,Miền Trung,Dân dụng,7/21/2024,9/25/2025,,1220.29,39.5,Vinaconex,Nguyễn Văn A,Planning,19,0,19.45,11.3,4.04,Medium,TRUE,Novaland
+PRJ-0830,Dự án Thương mại 830,Miền Bắc,Thương mại,6/12/2018,4/6/2020,,530.22,328.03,Hòa Bình,Hoàng Thị E,In Progress,1542,5,143.47,92.49,47.41,Low,TRUE,BIM Group
+PRJ-0831,Dự án Dân dụng 831,Miền Trung,Dân dụng,7/19/2019,7/1/2020,,1065.21,26.77,Vinaconex,Hoàng Thị E,Planning,14,0,12.04,5.72,3.02,High,TRUE,BIM Group
+PRJ-0832,Dự án Dân dụng 832,Miền Nam,Dân dụng,9/15/2024,1/24/2026,,506.66,19.99,Ricons,Vũ Văn F,Planning,16,0,8.44,5.79,2.06,Medium,TRUE,Phát Đạt
+PRJ-0833,Dự án Hạ tầng 833,Miền Bắc,Hạ tầng,4/5/2022,5/25/2024,,255.22,31.06,Vinaconex,Trần Thị B,In Progress,1192,0,12.79,6.75,4.4,Low,FALSE,SunGroup
+PRJ-0834,Dự án Dân dụng 834,Miền Bắc,Dân dụng,1/31/2019,6/1/2021,6/14/2021,234.32,234.32,Delta,Phạm Văn D,Completed,1330,0,116.21,56.07,33.04,Medium,FALSE,VinGroup
+PRJ-0835,Dự án Hạ tầng 835,Miền Nam,Hạ tầng,1/12/2018,3/21/2019,3/4/2019,231.94,231.94,Conteccons,Nguyễn Văn A,Completed,805,0,101.02,49.67,32.92,Low,FALSE,Masterise
+PRJ-0836,Dự án Dân dụng 836,Miền Bắc,Dân dụng,10/11/2018,6/23/2019,6/22/2019,617.01,617.01,Ricons,Trần Thị B,Completed,1437,2,282.59,168.75,64.12,Low,TRUE,Phát Đạt
+PRJ-0837,Dự án Hạ tầng 837,Miền Nam,Hạ tầng,1/9/2022,11/8/2023,,378.7,15.2,Vinaconex,Vũ Văn F,Planning,7,0,6.84,3.26,2.04,High,TRUE,Nhà nước
+PRJ-0838,Dự án Dân dụng 838,Miền Bắc,Dân dụng,8/15/2023,3/3/2024,,255.48,115.66,Coteccons,Lê Văn C,In Progress,215,1,47.99,34.65,12.16,Medium,TRUE,Phát Đạt
+PRJ-0839,Dự án Thương mại 839,Miền Nam,Thương mại,9/19/2021,7/10/2023,,539.43,21.78,Fecon,Vũ Văn F,Planning,7,0,9.26,5.45,2.76,Medium,TRUE,Đất Xanh
+PRJ-0840,Dự án Công nghiệp 840,Miền Nam,Công nghiệp,9/22/2018,4/25/2019,,1393.54,1238.49,Coteccons,Nguyễn Văn A,Suspended,5,1,585.76,301.28,156.86,Low,FALSE,Masterise
+PRJ-0841,Dự án Công nghiệp 841,Miền Bắc,Công nghiệp,1/26/2020,10/10/2020,9/21/2020,530.99,530.99,Hòa Bình,Trần Thị B,Completed,921,0,250.33,131.62,60.09,High,TRUE,SunGroup
+PRJ-0842,Dự án Hạ tầng 842,Miền Bắc,Hạ tầng,6/22/2024,12/20/2026,,843.85,196.15,Fecon,Trần Thị B,Suspended,7,5,82.85,48.73,26.15,Medium,TRUE,Đất Xanh
+PRJ-0843,Dự án Công nghiệp 843,Miền Bắc,Công nghiệp,12/11/2021,7/31/2023,7/13/2023,1291.45,1291.45,Fecon,Trần Thị B,Completed,929,3,518.77,307.43,176.06,High,TRUE,Novaland
+PRJ-0844,Dự án Công nghiệp 844,Miền Bắc,Công nghiệp,2/12/2018,3/11/2020,,398.13,42.44,Vinaconex,Phạm Văn D,In Progress,1593,3,17.54,11.85,4.9,High,TRUE,BIM Group
+PRJ-0845,Dự án Hạ tầng 845,Miền Nam,Hạ tầng,5/22/2022,7/13/2023,,847.55,750.34,Vinaconex,Trần Thị B,In Progress,1977,1,340.38,157.16,77.09,High,FALSE,Đất Xanh
+PRJ-0846,Dự án Thương mại 846,Miền Nam,Thương mại,3/8/2019,6/3/2020,,516.09,20.52,Ricons,Phạm Văn D,Planning,8,0,10.22,5.09,2.13,High,TRUE,Novaland
+PRJ-0847,Dự án Công nghiệp 847,Miền Nam,Công nghiệp,12/2/2023,8/22/2025,,186.94,55.21,Conteccons,Lê Văn C,Suspended,8,2,26.32,13.5,6.59,High,FALSE,Novaland
+PRJ-0848,Dự án Công nghiệp 848,Miền Nam,Công nghiệp,3/27/2021,7/29/2022,,860.95,581.3,Vinaconex,Nguyễn Văn A,Suspended,1,0,239.02,120.87,83.96,Medium,TRUE,Novaland
+PRJ-0849,Dự án Dân dụng 849,Miền Trung,Dân dụng,10/22/2020,5/27/2023,,1452.74,55.85,Fecon,Phạm Văn D,Planning,11,0,26.8,15.02,7.42,Medium,FALSE,Novaland
+PRJ-0850,Dự án Thương mại 850,Miền Bắc,Thương mại,10/1/2021,4/21/2024,4/7/2024,556.65,556.65,Fecon,Hoàng Thị E,Completed,405,1,247.2,127.94,58.66,High,FALSE,Nhà nước
+PRJ-0851,Dự án Công nghiệp 851,Miền Nam,Công nghiệp,7/25/2023,8/4/2024,,71.28,0.76,Hòa Bình,Trần Thị B,Planning,13,0,0.31,0.17,0.09,High,TRUE,BIM Group
+PRJ-0852,Dự án Thương mại 852,Miền Bắc,Thương mại,6/15/2023,8/2/2024,,61.35,1.6,Coteccons,Vũ Văn F,Planning,19,0,0.69,0.35,0.19,Medium,TRUE,Nhà nước
+PRJ-0853,Dự án Công nghiệp 853,Miền Bắc,Công nghiệp,6/25/2020,4/5/2022,3/31/2022,569.3,569.3,Delta,Vũ Văn F,Completed,489,3,242.91,148.81,73.76,High,FALSE,VinGroup
+PRJ-0854,Dự án Thương mại 854,Miền Trung,Thương mại,9/25/2020,11/5/2021,,1420.53,674.42,Ricons,Lê Văn C,Suspended,6,3,309.25,154.55,72.23,Low,FALSE,Phát Đạt
+PRJ-0855,Dự án Hạ tầng 855,Miền Trung,Hạ tầng,1/14/2018,11/25/2018,,466.53,12.01,Conteccons,Hoàng Thị E,Planning,4,0,5.68,2.67,1.78,Medium,TRUE,Nhà nước
+PRJ-0856,Dự án Hạ tầng 856,Miền Nam,Hạ tầng,3/2/2021,9/10/2022,,425,74.14,Ricons,Vũ Văn F,Suspended,7,4,33.36,21.93,9.06,Low,TRUE,Masterise
+PRJ-0857,Dự án Công nghiệp 857,Miền Trung,Công nghiệp,7/8/2024,4/15/2025,6/13/2025,1402.99,1402.99,Hòa Bình,Lê Văn C,Completed,763,2,631.87,382.68,178.77,Medium,TRUE,VinGroup
+PRJ-0858,Dự án Công nghiệp 858,Miền Trung,Công nghiệp,8/6/2024,12/16/2026,,1176.69,829.78,Fecon,Hoàng Thị E,Suspended,15,1,375.23,182.17,106.31,High,TRUE,Masterise
+PRJ-0859,Dự án Hạ tầng 859,Miền Bắc,Hạ tầng,3/11/2019,12/1/2019,,1350.22,31.14,Delta,Hoàng Thị E,Planning,19,0,12.8,9.07,4.02,High,FALSE,SunGroup
+PRJ-0860,Dự án Thương mại 860,Miền Nam,Thương mại,10/20/2019,7/9/2020,,893.62,456.63,Fecon,Trần Thị B,In Progress,173,4,194.87,117.21,45.86,High,FALSE,Masterise
+PRJ-0861,Dự án Dân dụng 861,Miền Nam,Dân dụng,2/21/2020,8/9/2022,,398.89,315.08,Coteccons,Vũ Văn F,In Progress,113,1,126.47,81.75,37.76,High,FALSE,Nhà nước
+PRJ-0862,Dự án Thương mại 862,Miền Nam,Thương mại,10/2/2019,2/26/2022,,688.37,407.8,Vinaconex,Vũ Văn F,Suspended,9,0,193.62,94.28,44.76,Low,TRUE,Phát Đạt
+PRJ-0863,Dự án Thương mại 863,Miền Nam,Thương mại,3/11/2023,10/1/2023,9/14/2023,795.54,795.54,Delta,Trần Thị B,Completed,742,5,365.98,165.59,115.16,Low,FALSE,VinGroup
+PRJ-0864,Dự án Thương mại 864,Miền Trung,Thương mại,12/6/2021,9/26/2023,,741.79,611.05,Hòa Bình,Hoàng Thị E,In Progress,1151,3,251.61,167.59,67.95,High,TRUE,Nhà nước
+PRJ-0865,Dự án Công nghiệp 865,Miền Bắc,Công nghiệp,6/12/2023,10/28/2024,,679.98,33.63,Coteccons,Lê Văn C,Planning,10,0,15.25,8.46,3.87,Low,TRUE,Masterise
+PRJ-0866,Dự án Hạ tầng 866,Miền Nam,Hạ tầng,7/16/2018,1/31/2020,,938.03,431.47,Vinaconex,Lê Văn C,In Progress,934,4,198.1,98.42,56.13,Medium,FALSE,Đất Xanh
+PRJ-0867,Dự án Dân dụng 867,Miền Trung,Dân dụng,12/26/2023,4/11/2026,,180.37,76.89,Fecon,Lê Văn C,Suspended,2,4,35.12,19.8,9,Medium,FALSE,VinGroup
+PRJ-0868,Dự án Dân dụng 868,Miền Nam,Dân dụng,5/7/2020,12/12/2020,,972.49,24,Hòa Bình,Vũ Văn F,Planning,2,0,9.83,6.64,2.89,High,FALSE,Đất Xanh
+PRJ-0869,Dự án Hạ tầng 869,Miền Nam,Hạ tầng,8/20/2018,9/4/2020,,1260.71,606.59,Ricons,Lê Văn C,Suspended,18,1,270.98,180.05,74.2,High,FALSE,VinGroup
+PRJ-0870,Dự án Dân dụng 870,Miền Nam,Dân dụng,11/21/2018,7/8/2021,,1124.4,693.97,Hòa Bình,Vũ Văn F,In Progress,1107,4,295.68,148.82,78.99,Medium,TRUE,Nhà nước
+PRJ-0871,Dự án Công nghiệp 871,Miền Bắc,Công nghiệp,6/25/2021,10/25/2022,,839.15,22.2,Coteccons,Lê Văn C,Planning,18,0,9.8,6.43,2.59,Low,FALSE,Novaland
+PRJ-0872,Dự án Thương mại 872,Miền Trung,Thương mại,7/19/2024,5/10/2026,,1350.19,999.65,Hòa Bình,Hoàng Thị E,In Progress,1162,1,450.92,245.4,114.36,Medium,TRUE,Đất Xanh
+PRJ-0873,Dự án Hạ tầng 873,Miền Nam,Hạ tầng,9/2/2023,9/27/2025,,292.38,14.26,Vinaconex,Trần Thị B,Planning,17,0,5.91,3.18,1.51,High,FALSE,Novaland
+PRJ-0874,Dự án Hạ tầng 874,Miền Bắc,Hạ tầng,11/20/2023,7/20/2025,,1243.88,520.94,Vinaconex,Trần Thị B,In Progress,905,0,258.42,107.23,60.2,Low,FALSE,Novaland
+PRJ-0875,Dự án Hạ tầng 875,Miền Bắc,Hạ tầng,1/10/2019,6/29/2021,,766.6,25.56,Delta,Hoàng Thị E,Planning,9,0,12.2,6.27,3.06,High,TRUE,Nhà nước
+PRJ-0876,Dự án Thương mại 876,Miền Trung,Thương mại,8/14/2023,10/30/2025,,1312.69,905.43,Ricons,Vũ Văn F,In Progress,1902,0,363.98,246.57,128.56,Medium,TRUE,Phát Đạt
+PRJ-0877,Dự án Công nghiệp 877,Miền Bắc,Công nghiệp,11/25/2020,9/26/2022,,452.34,336.3,Fecon,Lê Văn C,In Progress,94,4,155.8,93.79,38.18,Medium,TRUE,SunGroup
+PRJ-0878,Dự án Hạ tầng 878,Miền Nam,Hạ tầng,9/10/2021,3/23/2024,3/6/2024,517.88,517.88,Fecon,Hoàng Thị E,Completed,1172,3,231.68,135.04,70.73,Low,FALSE,Đất Xanh
+PRJ-0879,Dự án Hạ tầng 879,Miền Trung,Hạ tầng,6/3/2024,9/18/2026,,315.25,15.24,Coteccons,Vũ Văn F,Planning,12,0,7.08,4.26,1.67,Medium,TRUE,Novaland
+PRJ-0880,Dự án Hạ tầng 880,Miền Trung,Hạ tầng,8/25/2023,6/23/2024,,1145.26,22.06,Coteccons,Hoàng Thị E,Planning,12,0,9.39,6.03,2.94,Low,FALSE,Masterise
+PRJ-0881,Dự án Dân dụng 881,Miền Trung,Dân dụng,4/1/2023,3/18/2024,,542.96,21.77,Ricons,Vũ Văn F,Planning,0,0,8.86,5.1,2.67,High,FALSE,SunGroup
+PRJ-0882,Dự án Hạ tầng 882,Miền Trung,Hạ tầng,4/19/2018,2/17/2020,,1449.6,564.49,Fecon,Lê Văn C,In Progress,1478,0,245.7,134.93,79.4,High,FALSE,SunGroup
+PRJ-0883,Dự án Dân dụng 883,Miền Trung,Dân dụng,1/29/2019,3/20/2021,,1165.47,732.45,Conteccons,Vũ Văn F,Suspended,14,0,346.01,215.86,96.47,Low,FALSE,Nhà nước
+PRJ-0884,Dự án Thương mại 884,Miền Nam,Thương mại,4/4/2023,10/2/2025,,248.34,7.85,Vinaconex,Trần Thị B,Planning,5,0,3.65,1.67,0.9,Medium,TRUE,BIM Group
+PRJ-0885,Dự án Dân dụng 885,Miền Bắc,Dân dụng,12/10/2020,7/24/2021,10/12/2021,357.95,357.95,Fecon,Lê Văn C,Completed,1730,3,159.37,83.33,44.67,Medium,FALSE,BIM Group
+PRJ-0886,Dự án Hạ tầng 886,Miền Trung,Hạ tầng,1/31/2023,5/7/2025,,166.36,66.65,Conteccons,Trần Thị B,Suspended,11,4,29.01,19.89,7.59,Low,TRUE,Nhà nước
+PRJ-0887,Dự án Công nghiệp 887,Miền Trung,Công nghiệp,3/29/2018,4/9/2020,,1458.28,36.38,Delta,Trần Thị B,Planning,9,0,14.83,8.62,3.79,Medium,FALSE,SunGroup
+PRJ-0888,Dự án Công nghiệp 888,Miền Trung,Công nghiệp,10/16/2019,8/10/2020,,226.53,144.06,Coteccons,Phạm Văn D,Suspended,1,0,58.34,29.15,14.57,High,FALSE,VinGroup
+PRJ-0889,Dự án Dân dụng 889,Miền Bắc,Dân dụng,1/29/2022,11/27/2023,,1111.79,757.62,Hòa Bình,Hoàng Thị E,Suspended,13,1,363.56,221.86,98.34,Medium,FALSE,Masterise
+PRJ-0890,Dự án Hạ tầng 890,Miền Trung,Hạ tầng,1/25/2021,5/17/2022,,648.35,446.02,Coteccons,Lê Văn C,In Progress,422,3,196.29,96.11,44.99,High,FALSE,Masterise
+PRJ-0891,Dự án Hạ tầng 891,Miền Trung,Hạ tầng,11/4/2023,5/31/2025,,1027.82,228.12,Ricons,Vũ Văn F,Suspended,16,1,98.95,65.71,25.9,Low,FALSE,Nhà nước
+PRJ-0892,Dự án Hạ tầng 892,Miền Nam,Hạ tầng,2/26/2024,9/5/2024,,409.45,146.77,Ricons,Nguyễn Văn A,Suspended,19,4,70.6,38.45,14.79,High,FALSE,Nhà nước
+PRJ-0893,Dự án Dân dụng 893,Miền Bắc,Dân dụng,3/9/2018,12/3/2018,2/10/2019,339.84,339.84,Conteccons,Lê Văn C,Completed,449,5,152.38,85.69,49.99,High,TRUE,VinGroup
+PRJ-0894,Dự án Công nghiệp 894,Miền Nam,Công nghiệp,5/21/2019,4/13/2020,,183.75,2.93,Coteccons,Trần Thị B,Planning,2,0,1.27,0.62,0.33,Medium,FALSE,VinGroup
+PRJ-0895,Dự án Hạ tầng 895,Miền Trung,Hạ tầng,4/10/2020,6/22/2022,,408.97,141.46,Delta,Trần Thị B,Suspended,6,2,67.69,33.91,15.08,High,FALSE,Đất Xanh
+PRJ-0896,Dự án Công nghiệp 896,Miền Nam,Công nghiệp,3/17/2022,5/21/2023,,1262.79,45.66,Delta,Lê Văn C,Planning,20,0,19.11,10.83,5.17,High,FALSE,Đất Xanh
+PRJ-0897,Dự án Hạ tầng 897,Miền Bắc,Hạ tầng,9/28/2024,9/14/2025,,330.02,9.7,Ricons,Nguyễn Văn A,Planning,7,0,4.63,2.82,1.4,Low,FALSE,VinGroup
+PRJ-0898,Dự án Công nghiệp 898,Miền Nam,Công nghiệp,9/20/2020,2/2/2022,,949.05,332.67,Vinaconex,Hoàng Thị E,In Progress,560,1,151.99,77.47,35.33,Low,FALSE,Phát Đạt
+PRJ-0899,Dự án Thương mại 899,Miền Trung,Thương mại,2/17/2019,6/7/2020,5/23/2020,301.98,301.98,Delta,Phạm Văn D,Completed,1692,0,144.46,76.85,36.17,Low,TRUE,Đất Xanh
+PRJ-0900,Dự án Công nghiệp 900,Miền Trung,Công nghiệp,7/4/2020,7/24/2021,,605.41,521.25,Fecon,Lê Văn C,In Progress,1090,5,255.11,145.26,70.77,Low,TRUE,Novaland
+PRJ-0901,Dự án Công nghiệp 901,Miền Bắc,Công nghiệp,9/19/2022,11/1/2023,,169.1,37.21,Fecon,Trần Thị B,Suspended,3,4,16.96,9.96,3.91,High,TRUE,Novaland
+PRJ-0902,Dự án Công nghiệp 902,Miền Bắc,Công nghiệp,8/5/2022,3/14/2023,3/21/2023,1328.28,1328.28,Conteccons,Vũ Văn F,Completed,1530,5,653.7,311.19,169.26,Low,FALSE,BIM Group
+PRJ-0903,Dự án Hạ tầng 903,Miền Bắc,Hạ tầng,11/17/2023,5/13/2025,7/23/2025,628.52,628.52,Coteccons,Lê Văn C,Completed,180,0,254.91,162.36,76.08,Medium,FALSE,SunGroup
+PRJ-0904,Dự án Hạ tầng 904,Miền Nam,Hạ tầng,4/23/2019,1/28/2021,,536.38,14.29,Fecon,Nguyễn Văn A,Planning,12,0,6.4,3.57,1.78,High,FALSE,Masterise
+PRJ-0905,Dự án Hạ tầng 905,Miền Nam,Hạ tầng,6/16/2024,5/17/2026,,152.51,123.62,Fecon,Hoàng Thị E,Suspended,17,1,57.97,29.9,13.93,Low,TRUE,VinGroup
+PRJ-0906,Dự án Dân dụng 906,Miền Nam,Dân dụng,8/21/2022,5/13/2023,,670.71,400.35,Coteccons,Phạm Văn D,In Progress,781,2,175.32,90.16,46.4,Low,FALSE,BIM Group
+PRJ-0907,Dự án Công nghiệp 907,Miền Bắc,Công nghiệp,10/25/2020,5/17/2022,,1387.31,55.46,Hòa Bình,Trần Thị B,Planning,14,0,24.77,14.23,5.88,Low,FALSE,Novaland
+PRJ-0908,Dự án Dân dụng 908,Miền Bắc,Dân dụng,8/7/2020,9/27/2021,,1081.22,42.37,Hòa Bình,Phạm Văn D,Planning,3,0,17.22,11.64,4.77,Low,FALSE,VinGroup
+PRJ-0909,Dự án Thương mại 909,Miền Trung,Thương mại,3/31/2023,7/5/2025,,1394.05,62.27,Ricons,Trần Thị B,Planning,2,0,29.19,14.34,8.39,High,FALSE,Phát Đạt
+PRJ-0910,Dự án Công nghiệp 910,Miền Trung,Công nghiệp,10/8/2022,5/9/2025,,1174.6,992.53,Delta,Vũ Văn F,In Progress,346,3,467.5,232.16,106.85,High,TRUE,Đất Xanh
+PRJ-0911,Dự án Công nghiệp 911,Miền Trung,Công nghiệp,10/14/2022,2/29/2024,,613.15,255.91,Vinaconex,Trần Thị B,Suspended,2,0,122.67,51.55,30.61,High,TRUE,Nhà nước
+PRJ-0912,Dự án Dân dụng 912,Miền Nam,Dân dụng,10/9/2018,12/6/2019,12/31/2019,747.16,747.16,Conteccons,Nguyễn Văn A,Completed,633,4,315.4,187.38,111.88,High,FALSE,Novaland
+PRJ-0913,Dự án Hạ tầng 913,Miền Bắc,Hạ tầng,7/2/2019,12/10/2020,,857.64,343.88,Vinaconex,Lê Văn C,Suspended,19,5,145.94,95.22,37.47,Low,FALSE,Phát Đạt
+PRJ-0914,Dự án Công nghiệp 914,Miền Nam,Công nghiệp,4/4/2019,4/28/2021,5/15/2021,367.29,367.29,Delta,Phạm Văn D,Completed,382,1,177.84,100.98,53.28,Low,TRUE,Masterise
+PRJ-0915,Dự án Công nghiệp 915,Miền Bắc,Công nghiệp,7/3/2020,6/25/2022,,485.28,401.44,Hòa Bình,Trần Thị B,In Progress,1010,1,161.83,108.29,51.05,Low,FALSE,BIM Group
+PRJ-0916,Dự án Công nghiệp 916,Miền Nam,Công nghiệp,11/3/2022,9/11/2024,,735.86,16.92,Ricons,Phạm Văn D,Planning,19,0,7.31,3.88,1.79,High,TRUE,SunGroup
+PRJ-0917,Dự án Dân dụng 917,Miền Bắc,Dân dụng,8/16/2022,7/25/2023,9/14/2023,360.43,360.43,Hòa Bình,Trần Thị B,Completed,210,3,179.75,97.17,46.39,High,FALSE,Novaland
+PRJ-0918,Dự án Dân dụng 918,Miền Bắc,Dân dụng,3/15/2024,5/19/2025,,1211.99,344.73,Hòa Bình,Lê Văn C,Suspended,0,3,138.63,100.67,51.1,High,TRUE,Novaland
+PRJ-0919,Dự án Dân dụng 919,Miền Nam,Dân dụng,9/2/2021,4/22/2024,4/24/2024,420.89,420.89,Conteccons,Vũ Văn F,Completed,324,1,209.06,100.31,42.39,Medium,TRUE,Nhà nước
+PRJ-0920,Dự án Dân dụng 920,Miền Nam,Dân dụng,6/3/2020,9/28/2021,,753.44,29.08,Fecon,Trần Thị B,Planning,1,0,13.75,6.08,3.71,High,FALSE,SunGroup
+PRJ-0921,Dự án Thương mại 921,Miền Nam,Thương mại,3/22/2023,8/14/2025,,1234.06,32.96,Vinaconex,Trần Thị B,Planning,2,0,15.52,6.87,4.78,Low,TRUE,Đất Xanh
+PRJ-0922,Dự án Dân dụng 922,Miền Bắc,Dân dụng,12/24/2021,7/31/2023,,1173.74,890.25,Delta,Vũ Văn F,In Progress,1745,2,424.01,251.63,119.78,Low,FALSE,Nhà nước
+PRJ-0923,Dự án Thương mại 923,Miền Nam,Thương mại,3/8/2022,1/20/2023,3/29/2023,137.13,137.13,Ricons,Vũ Văn F,Completed,142,1,63.56,28.44,19.19,Medium,TRUE,Đất Xanh
+PRJ-0924,Dự án Thương mại 924,Miền Trung,Thương mại,5/28/2019,12/29/2019,,61.45,0.97,Delta,Trần Thị B,Planning,13,0,0.44,0.27,0.1,High,FALSE,Đất Xanh
+PRJ-0925,Dự án Thương mại 925,Miền Bắc,Thương mại,9/10/2022,1/7/2024,,1416.4,59.05,Conteccons,Phạm Văn D,Planning,11,0,29.21,12.76,6.97,Medium,TRUE,Novaland
+PRJ-0926,Dự án Công nghiệp 926,Miền Bắc,Công nghiệp,6/18/2021,6/28/2023,,555.87,408.14,Hòa Bình,Trần Thị B,In Progress,1121,2,173.67,112.47,42.08,Medium,TRUE,Masterise
+PRJ-0927,Dự án Công nghiệp 927,Miền Bắc,Công nghiệp,4/27/2024,9/25/2025,10/21/2025,75.19,75.19,Coteccons,Trần Thị B,Completed,1628,0,30.6,17.25,8.87,High,TRUE,Novaland
+PRJ-0928,Dự án Công nghiệp 928,Miền Bắc,Công nghiệp,12/8/2020,2/6/2022,,1402.96,688.01,Ricons,Vũ Văn F,Suspended,12,3,294.2,144.59,92.95,High,TRUE,Masterise
+PRJ-0929,Dự án Hạ tầng 929,Miền Trung,Hạ tầng,1/25/2020,7/23/2021,7/10/2021,1165.69,1165.69,Coteccons,Hoàng Thị E,Completed,780,3,580.07,296.86,122.09,Low,FALSE,SunGroup
+PRJ-0930,Dự án Hạ tầng 930,Miền Bắc,Hạ tầng,1/2/2020,8/5/2020,,1211.79,286.18,Hòa Bình,Trần Thị B,In Progress,1414,3,126.34,71.24,28.64,Medium,FALSE,SunGroup
+PRJ-0931,Dự án Dân dụng 931,Miền Nam,Dân dụng,11/25/2020,5/31/2021,,1121.84,161.95,Coteccons,Nguyễn Văn A,Suspended,19,4,74.42,47.57,17.39,Medium,TRUE,Masterise
+PRJ-0932,Dự án Công nghiệp 932,Miền Trung,Công nghiệp,7/20/2023,1/21/2026,,493.13,222.08,Fecon,Trần Thị B,Suspended,11,3,104.26,65.54,33.15,Low,FALSE,SunGroup
+PRJ-0933,Dự án Dân dụng 933,Miền Trung,Dân dụng,2/21/2021,11/3/2021,1/14/2022,1225.71,1225.71,Delta,Lê Văn C,Completed,907,5,554.84,267.77,167.29,High,TRUE,Đất Xanh
+PRJ-0934,Dự án Dân dụng 934,Miền Bắc,Dân dụng,2/22/2022,1/5/2024,,1200.05,43.34,Conteccons,Vũ Văn F,Planning,11,0,19,9.4,4.53,High,TRUE,Masterise
+PRJ-0935,Dự án Dân dụng 935,Miền Bắc,Dân dụng,5/5/2018,3/13/2020,,171.77,99.82,Coteccons,Nguyễn Văn A,In Progress,510,3,49.56,26.22,12.18,High,FALSE,Phát Đạt
+PRJ-0936,Dự án Thương mại 936,Miền Nam,Thương mại,9/19/2021,3/24/2022,3/25/2022,978.79,978.79,Hòa Bình,Trần Thị B,Completed,1305,4,455.5,210.68,140.43,Medium,FALSE,Masterise
+PRJ-0937,Dự án Công nghiệp 937,Miền Bắc,Công nghiệp,9/28/2022,3/18/2024,,1295.01,920.85,Vinaconex,Phạm Văn D,Suspended,11,2,426.22,231.18,114.11,Low,FALSE,Đất Xanh
+PRJ-0938,Dự án Thương mại 938,Miền Trung,Thương mại,11/5/2018,1/8/2020,,859.61,577.45,Vinaconex,Nguyễn Văn A,In Progress,561,2,238.76,172.96,65.37,High,FALSE,SunGroup
+PRJ-0939,Dự án Công nghiệp 939,Miền Nam,Công nghiệp,12/5/2019,3/31/2022,6/5/2022,1175.18,1175.18,Conteccons,Nguyễn Văn A,Completed,1984,3,535.96,266.93,173.14,Low,TRUE,Nhà nước
+PRJ-0940,Dự án Thương mại 940,Miền Trung,Thương mại,1/18/2022,2/16/2024,4/29/2024,863.03,863.03,Delta,Trần Thị B,Completed,564,1,424.92,245.35,128.07,Low,FALSE,Masterise
+PRJ-0941,Dự án Thương mại 941,Miền Nam,Thương mại,2/16/2020,1/14/2021,,862.62,618.66,Coteccons,Lê Văn C,In Progress,531,1,268.45,166.22,83.35,Medium,FALSE,Phát Đạt
+PRJ-0942,Dự án Thương mại 942,Miền Nam,Thương mại,2/11/2019,12/10/2020,,865.07,596.78,Conteccons,Vũ Văn F,Suspended,16,5,254.6,150.56,59.8,Low,TRUE,SunGroup
+PRJ-0943,Dự án Thương mại 943,Miền Nam,Thương mại,7/5/2023,7/12/2025,7/8/2025,874.25,874.25,Ricons,Trần Thị B,Completed,1735,1,363.83,181.25,94.13,Medium,FALSE,SunGroup
+PRJ-0944,Dự án Công nghiệp 944,Miền Trung,Công nghiệp,7/17/2022,11/3/2023,,74.38,35.82,Coteccons,Nguyễn Văn A,Suspended,10,4,16.72,7.48,5.11,Low,TRUE,Masterise
+PRJ-0945,Dự án Hạ tầng 945,Miền Nam,Hạ tầng,9/6/2023,5/9/2026,,52.15,5.95,Ricons,Vũ Văn F,In Progress,1669,5,2.45,1.47,0.63,High,TRUE,Phát Đạt
+PRJ-0946,Dự án Công nghiệp 946,Miền Trung,Công nghiệp,5/16/2024,1/25/2027,,202.67,97.19,Delta,Trần Thị B,In Progress,453,4,48.37,22.94,13.72,Low,FALSE,Phát Đạt
+PRJ-0947,Dự án Công nghiệp 947,Miền Trung,Công nghiệp,7/30/2021,1/30/2024,,357.83,263.02,Fecon,Lê Văn C,In Progress,1038,5,106.32,69.48,36.9,High,FALSE,Đất Xanh
+PRJ-0948,Dự án Thương mại 948,Miền Nam,Thương mại,2/3/2019,5/13/2020,6/27/2020,139.53,139.53,Fecon,Hoàng Thị E,Completed,572,1,59.11,39.47,18.87,High,FALSE,SunGroup
+PRJ-0949,Dự án Thương mại 949,Miền Nam,Thương mại,4/26/2020,8/18/2021,,778.47,673.09,Vinaconex,Lê Văn C,In Progress,1507,3,282.4,177.45,67.95,Medium,TRUE,Phát Đạt
+PRJ-0950,Dự án Công nghiệp 950,Miền Bắc,Công nghiệp,4/29/2018,4/29/2019,,978.27,774.47,Hòa Bình,Trần Thị B,Suspended,0,2,335.38,221.88,113.33,Medium,FALSE,Phát Đạt
+PRJ-0951,Dự án Thương mại 951,Miền Bắc,Thương mại,8/3/2020,8/27/2021,,1305.59,404.82,Conteccons,Hoàng Thị E,In Progress,1556,3,163.85,102.64,52.48,Low,FALSE,Phát Đạt
+PRJ-0952,Dự án Dân dụng 952,Miền Trung,Dân dụng,12/9/2019,2/12/2021,,1120.52,805.94,Fecon,Trần Thị B,Suspended,10,0,368.07,191.53,116.37,Low,FALSE,Đất Xanh
+PRJ-0953,Dự án Công nghiệp 953,Miền Trung,Công nghiệp,10/7/2022,12/6/2023,12/8/2023,681.29,681.29,Hòa Bình,Vũ Văn F,Completed,942,0,297.76,177.65,75.62,Medium,TRUE,Novaland
+PRJ-0954,Dự án Thương mại 954,Miền Trung,Thương mại,7/19/2019,6/24/2020,9/8/2020,1356.82,1356.82,Coteccons,Lê Văn C,Completed,908,0,581.17,285.11,193.14,Low,FALSE,Novaland
+PRJ-0955,Dự án Dân dụng 955,Miền Nam,Dân dụng,4/14/2022,1/23/2024,,777.92,27.29,Delta,Nguyễn Văn A,Planning,11,0,12.57,6.72,3.21,Medium,TRUE,Đất Xanh
+PRJ-0956,Dự án Công nghiệp 956,Miền Trung,Công nghiệp,6/2/2020,2/8/2023,,1044.76,331.86,Coteccons,Vũ Văn F,Suspended,7,1,163.83,69.64,34.33,Low,TRUE,SunGroup
+PRJ-0957,Dự án Dân dụng 957,Miền Nam,Dân dụng,3/12/2021,4/9/2022,3/16/2022,79.75,79.75,Hòa Bình,Hoàng Thị E,Completed,1922,5,35.53,22.09,11.74,Low,FALSE,Phát Đạt
+PRJ-0958,Dự án Hạ tầng 958,Miền Bắc,Hạ tầng,10/4/2023,5/9/2024,,1076.46,959.46,Hòa Bình,Trần Thị B,Suspended,14,0,466.68,205.49,113.88,Low,FALSE,VinGroup
+PRJ-0959,Dự án Hạ tầng 959,Miền Nam,Hạ tầng,9/16/2023,2/17/2025,,1186.89,54.52,Coteccons,Trần Thị B,Planning,18,0,23.6,11,5.47,Low,TRUE,Novaland
+PRJ-0960,Dự án Thương mại 960,Miền Bắc,Thương mại,10/20/2024,6/16/2025,,72.77,43.4,Vinaconex,Nguyễn Văn A,Suspended,6,0,18.15,9.73,5.63,High,TRUE,VinGroup
+PRJ-0961,Dự án Dân dụng 961,Miền Nam,Dân dụng,5/30/2022,1/17/2023,,1197.78,857.46,Ricons,Trần Thị B,Suspended,11,2,355.4,217.59,125.41,Medium,FALSE,Nhà nước
+PRJ-0962,Dự án Dân dụng 962,Miền Nam,Dân dụng,4/23/2022,9/23/2024,,293.68,12.42,Hòa Bình,Vũ Văn F,Planning,13,0,5.15,3.21,1.85,High,FALSE,Novaland
+PRJ-0963,Dự án Dân dụng 963,Miền Bắc,Dân dụng,6/25/2023,2/26/2025,,967.49,448.78,Ricons,Nguyễn Văn A,Suspended,6,1,181.44,133.63,56.67,High,FALSE,BIM Group
+PRJ-0964,Dự án Hạ tầng 964,Miền Trung,Hạ tầng,4/25/2020,11/5/2020,,1289.39,415.8,Coteccons,Trần Thị B,Suspended,8,3,168.11,95.57,49.28,Medium,TRUE,Đất Xanh
+PRJ-0965,Dự án Thương mại 965,Miền Trung,Thương mại,6/11/2024,5/26/2026,,1092.52,606.65,Conteccons,Vũ Văn F,Suspended,6,1,243.56,135.22,65.63,Low,TRUE,Đất Xanh
+PRJ-0966,Dự án Hạ tầng 966,Miền Bắc,Hạ tầng,6/30/2020,2/25/2021,,1291.73,1120.55,Fecon,Vũ Văn F,Suspended,13,1,471.05,270.01,139.03,Medium,TRUE,Phát Đạt
+PRJ-0967,Dự án Thương mại 967,Miền Bắc,Thương mại,12/27/2023,6/30/2026,7/16/2026,328.02,328.02,Delta,Hoàng Thị E,Completed,1106,2,153.17,83.1,39.5,High,TRUE,Novaland
+PRJ-0968,Dự án Hạ tầng 968,Miền Nam,Hạ tầng,8/13/2018,7/3/2019,,683.28,212.11,Coteccons,Hoàng Thị E,Suspended,12,4,86.84,58.33,28.07,High,TRUE,Nhà nước
+PRJ-0969,Dự án Hạ tầng 969,Miền Trung,Hạ tầng,3/27/2019,10/19/2019,,117.07,99.73,Vinaconex,Nguyễn Văn A,Suspended,10,2,49.35,25.09,14.27,Low,TRUE,Đất Xanh
+PRJ-0970,Dự án Hạ tầng 970,Miền Bắc,Hạ tầng,10/24/2020,5/19/2021,,1269.47,20.5,Vinaconex,Phạm Văn D,Planning,3,0,8.38,4.58,2.78,Low,FALSE,Masterise
+PRJ-0971,Dự án Dân dụng 971,Miền Bắc,Dân dụng,5/10/2023,6/14/2024,8/28/2024,119.8,119.8,Vinaconex,Nguyễn Văn A,Completed,340,5,56.25,33.27,13.36,High,TRUE,Novaland
+PRJ-0972,Dự án Dân dụng 972,Miền Bắc,Dân dụng,11/4/2018,7/14/2019,,1380.51,537.12,Hòa Bình,Phạm Văn D,Suspended,3,4,244.12,119.44,68.16,High,TRUE,SunGroup
+PRJ-0973,Dự án Dân dụng 973,Miền Bắc,Dân dụng,8/2/2024,9/20/2025,,647.77,559.74,Coteccons,Hoàng Thị E,In Progress,569,0,247.59,112.09,78.81,Medium,TRUE,Phát Đạt
+PRJ-0974,Dự án Công nghiệp 974,Miền Trung,Công nghiệp,6/8/2020,8/30/2021,,1266.53,42.95,Conteccons,Hoàng Thị E,Planning,18,0,17.51,9.4,6.16,High,TRUE,Masterise
+PRJ-0975,Dự án Thương mại 975,Miền Nam,Thương mại,2/3/2020,7/3/2022,,719.43,178.68,Fecon,Lê Văn C,Suspended,0,2,80.22,42.27,20.54,High,TRUE,VinGroup
+PRJ-0976,Dự án Dân dụng 976,Miền Trung,Dân dụng,9/20/2020,4/9/2021,,565.17,8.86,Delta,Hoàng Thị E,Planning,0,0,3.65,1.84,1.04,Low,TRUE,Masterise
+PRJ-0977,Dự án Dân dụng 977,Miền Bắc,Dân dụng,12/23/2020,5/9/2022,,137.94,80.31,Coteccons,Hoàng Thị E,In Progress,1699,0,38.52,22.59,9.27,Medium,TRUE,VinGroup
+PRJ-0978,Dự án Công nghiệp 978,Miền Trung,Công nghiệp,7/9/2021,10/8/2023,,779.49,365.15,Delta,Lê Văn C,Suspended,17,5,164.75,109.1,51.89,Low,FALSE,Phát Đạt
+PRJ-0979,Dự án Hạ tầng 979,Miền Trung,Hạ tầng,3/19/2024,12/11/2026,,110.5,4.82,Delta,Nguyễn Văn A,Planning,2,0,2.07,1.34,0.52,High,TRUE,Đất Xanh
+PRJ-0980,Dự án Thương mại 980,Miền Trung,Thương mại,3/4/2022,2/5/2024,,862.12,36.97,Vinaconex,Vũ Văn F,Planning,2,0,18.21,8.58,5.04,Medium,FALSE,Đất Xanh
+PRJ-0981,Dự án Hạ tầng 981,Miền Trung,Hạ tầng,12/18/2024,5/19/2026,,686.16,198.07,Hòa Bình,Phạm Văn D,Suspended,3,0,85.78,56.21,26.44,High,FALSE,Đất Xanh
+PRJ-0982,Dự án Thương mại 982,Miền Bắc,Thương mại,2/2/2023,1/21/2025,,422.35,14.18,Fecon,Lê Văn C,Planning,11,0,5.9,4.2,1.63,Low,TRUE,BIM Group
+PRJ-0983,Dự án Công nghiệp 983,Miền Nam,Công nghiệp,7/17/2019,7/29/2020,,1430.91,42.02,Fecon,Hoàng Thị E,Planning,11,0,18.71,12.31,5.94,Low,TRUE,Nhà nước
+PRJ-0984,Dự án Hạ tầng 984,Miền Bắc,Hạ tầng,1/29/2019,4/20/2020,,225.61,55.46,Delta,Hoàng Thị E,In Progress,1046,0,24.02,12.73,6.25,Medium,FALSE,Novaland
+PRJ-0985,Dự án Thương mại 985,Miền Bắc,Thương mại,9/27/2022,10/25/2023,11/25/2023,874.68,874.68,Delta,Phạm Văn D,Completed,909,4,387.43,182.93,88.79,High,TRUE,VinGroup
+PRJ-0986,Dự án Hạ tầng 986,Miền Trung,Hạ tầng,3/3/2019,12/26/2020,,962.93,27.2,Hòa Bình,Vũ Văn F,Planning,10,0,11.95,5.72,3.13,Low,TRUE,SunGroup
+PRJ-0987,Dự án Thương mại 987,Miền Nam,Thương mại,9/27/2019,7/3/2020,,56.9,0.8,Delta,Phạm Văn D,Planning,7,0,0.38,0.19,0.1,Medium,TRUE,SunGroup
+PRJ-0988,Dự án Thương mại 988,Miền Trung,Thương mại,8/22/2019,4/3/2022,,923.95,504.12,Hòa Bình,Hoàng Thị E,In Progress,520,0,213.52,126.45,60.94,Medium,TRUE,BIM Group
+PRJ-0989,Dự án Thương mại 989,Miền Nam,Thương mại,8/30/2023,2/9/2025,,158.36,32.58,Fecon,Trần Thị B,In Progress,737,2,13.66,7.88,4.22,High,FALSE,Đất Xanh
+PRJ-0990,Dự án Thương mại 990,Miền Bắc,Thương mại,5/27/2024,12/21/2026,,219.75,3.3,Conteccons,Nguyễn Văn A,Planning,20,0,1.58,0.88,0.34,High,TRUE,SunGroup
+PRJ-0991,Dự án Công nghiệp 991,Miền Trung,Công nghiệp,1/18/2020,6/25/2021,9/3/2021,473.94,473.94,Fecon,Vũ Văn F,Completed,1074,3,211.83,106.77,59.53,Medium,FALSE,Phát Đạt
+PRJ-0992,Dự án Thương mại 992,Miền Trung,Thương mại,9/3/2019,6/5/2021,,1411.54,283.77,Fecon,Trần Thị B,In Progress,1171,0,126.63,59.42,40.89,Low,TRUE,Masterise
+PRJ-0993,Dự án Thương mại 993,Miền Nam,Thương mại,2/25/2021,2/15/2023,,502.88,340.43,Fecon,Phạm Văn D,Suspended,9,3,142.95,68.52,38.1,Low,TRUE,VinGroup
+PRJ-0994,Dự án Dân dụng 994,Miền Bắc,Dân dụng,2/8/2021,5/1/2022,,1334.2,1064.91,Conteccons,Hoàng Thị E,In Progress,917,2,523.26,306.5,125.14,Medium,FALSE,BIM Group
+PRJ-0995,Dự án Dân dụng 995,Miền Nam,Dân dụng,11/15/2023,10/16/2024,,111.7,45.92,Coteccons,Lê Văn C,In Progress,691,4,20.96,9.23,6.24,Low,TRUE,SunGroup
+PRJ-0996,Dự án Dân dụng 996,Miền Bắc,Dân dụng,4/21/2018,9/15/2020,,1441.55,39.68,Hòa Bình,Lê Văn C,Planning,6,0,17.09,8.47,4.1,Low,TRUE,SunGroup
+PRJ-0997,Dự án Dân dụng 997,Miền Trung,Dân dụng,7/20/2022,5/10/2023,,775.69,455.53,Coteccons,Nguyễn Văn A,Suspended,6,5,194.54,135.08,56.43,Low,TRUE,Nhà nước
+PRJ-0998,Dự án Thương mại 998,Miền Nam,Thương mại,3/4/2024,12/29/2024,,1060.29,11.4,Fecon,Trần Thị B,Planning,8,0,5.62,3.4,1.61,Low,FALSE,Masterise
+PRJ-0999,Dự án Hạ tầng 999,Miền Trung,Hạ tầng,11/27/2022,7/6/2025,6/29/2025,1491.48,1491.48,Delta,Lê Văn C,Completed,1484,3,597.97,339.27,152.15,High,TRUE,SunGroup
+PRJ-1000,Dự án Thương mại 1000,Miền Trung,Thương mại,4/13/2019,10/24/2020,10/26/2020,505.3,505.3,Coteccons,Vũ Văn F,Completed,104,0,244.13,124.94,55.2,Medium,TRUE,VinGroup
